@@ -27,7 +27,7 @@ class DINA_Assets {
     public function get_scripts() {
         return array(
 
-            'divi-default_values-script' => array(
+            'divi-default_values-script'    => array(
                 'src'     => DINA_DIVINATIONKIT_URL . '/assets/js/dina-default-values.js',
                 'version' => filemtime( DINA_DIVINATIONKIT_PATH . '/assets/js/dina-default-values.js' ),
                 'deps'    => array( 'jquery' ),
@@ -35,21 +35,27 @@ class DINA_Assets {
             ),
 
             //Slick
-            'dina-slick'                 => array(
+            'dina-slick'                    => array(
                 'src'     => DINA_DIVINATIONKIT_URL . '/assets/lib/slick/slick.min.js',
                 'version' => filemtime( DINA_DIVINATIONKIT_PATH . '/assets/lib/slick/slick.min.js' ),
                 'deps'    => array( 'jquery' ),
                 'enqueue' => false,
             ),
-            'dina-slick-logo-slider'     => array(
+            'dina-slick-logo-slider'        => array(
                 'src'     => DINA_DIVINATIONKIT_URL . '/assets/js/dina-slick-logo-slider.js',
-                'version' => filemtime( DINA_DIVINATIONKIT_PATH . '/assets/js/dina-slick-logo-slider.js' ),
+                'version' => DINA_DIVINATIONKIT_VERSION,
+                'deps'    => array( 'jquery' ),
+                'enqueue' => false,
+            ),
+            'dina-slick-testimonial-slider' => array(
+                'src'     => DINA_DIVINATIONKIT_URL . '/assets/js/dina-slick-testimonial-slider.js',
+                'version' => DINA_DIVINATIONKIT_VERSION,
                 'deps'    => array( 'jquery' ),
                 'enqueue' => false,
             ),
 
             // Progress bar
-            'dina-progress-bar'          => array(
+            'dina-progress-bar'             => array(
                 'src'     => DINA_DIVINATIONKIT_URL . '/assets/js/dina-progress-bar.js',
                 'version' => filemtime( DINA_DIVINATIONKIT_PATH . '/assets/js/dina-progress-bar.js' ),
                 'deps'    => array( 'jquery' ),

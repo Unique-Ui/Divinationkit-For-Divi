@@ -229,7 +229,7 @@ export class Review extends Component {
                     ? props.button_link
                     : '';
 
-            const buttonicon =
+            const buttonIcon =
                 typeof props.button_icon !== 'undefined'
                     ? utils.processFontIcon(props.button_icon)
                     : '6';
@@ -253,7 +253,7 @@ export class Review extends Component {
                         )} dina_review_box_btn`}
                         href={buttonUrl}
                         target={target}
-                        data-icon={buttonicon}
+                        data-icon={buttonIcon}
                     >
                         {props.dynamic.button_text.render()}
                     </a>

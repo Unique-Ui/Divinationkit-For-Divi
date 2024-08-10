@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
-import { setResponsiveCSS } from '../Core/DiviNationKit-core';
+import {
+    dinaGetCustomBgCSS,
+    setResponsiveCSS,
+} from '../Core/DiviNationKit-core';
 
 export class Person extends Component {
     static slug = 'dina_person';
@@ -33,11 +36,12 @@ export class Person extends Component {
                 optionName: 'icon_size',
                 property: 'font-size',
             },
+
             {
                 selector:
                     '%%order_class%% .dina_person-social-network span::before',
-                optionName: 'icon_round',
-                property: 'border-radius',
+                optionName: 'icon_bg',
+                property: 'background',
             },
             {
                 selector:
@@ -45,9 +49,55 @@ export class Person extends Component {
                 optionName: 'icon_color',
                 property: 'color',
             },
+
+            // Custom Spacing
+            {
+                selector: '%%order_class%% .dina_person-info',
+                optionName: 'content_margin',
+                property: 'margin',
+            },
+            {
+                selector: '%%order_class%% .dina_person-info',
+                optionName: 'content_padding',
+                property: 'padding',
+            },
+            {
+                selector: '%%order_class%% .dina_person-social-links',
+                optionName: 'network_margin',
+                property: 'margin',
+            },
+            {
+                selector: '%%order_class%% .dina_person-social-links',
+                optionName: 'network_padding',
+                property: 'padding',
+            },
+
+            // Style three
+            {
+                selector:
+                    '%%order_class%% .dina_person-style-three .dina_person-social-links',
+                optionName: 'offset_x',
+                property: 'top',
+            },
+
+            // Style four
+            {
+                selector:
+                    '%%order_class%% .dina_person-style-four .dina_person-img',
+                optionName: 'image_width',
+                property: 'width',
+            },
         ]);
 
-        return additionalCss.concat(responsiveCss);
+        const content_bg = dinaGetCustomBgCSS(
+            props,
+            'content',
+            '%%order_class%% .dina_person-style-two .dina_person-info',
+            '',
+            '#00e091'
+        );
+
+        return additionalCss.concat(responsiveCss).concat(content_bg);
     }
 
     renderImage = () => {
@@ -78,18 +128,54 @@ export class Person extends Component {
         }
     };
 
+    renderDescription = () => {
+        const description = this.props.description;
+
+        if (description !== undefined) {
+            if (this.props.dynamic.description.value) {
+                return (
+                    <div className="dina_person-description">
+                        {this.props.dynamic.description.render()}
+                    </div>
+                );
+            } else {
+                return (
+                    <div
+                        className="dina_person-description"
+                        dangerouslySetInnerHTML={{ __html: description }}
+                    ></div>
+                );
+            }
+        }
+    };
+
     render() {
+        let classes = ['dina_person-container'];
+
+        classes.push(`dina_person-${this.props.layout}`);
+
+        if (this.props.show_info_on_hover === 'on') {
+            classes.push('dina_person-info-show-on-hover');
+        }
+
+        if (this.props.show_network_on_hover === 'on') {
+            classes.push('dina_person-network-show-on-hover');
+        }
+
         return (
-            <div
-                className={`dina_person-container dina_person-${this.props.layout}`}
-            >
+            <div className={classes.join(' ')}>
                 {this.renderImage()}
                 <div className="dina_person-info">
-                    {this.renderName()}
-                    {this.renderPosition()}
-                    <div className="dina_person-social-links">
-                        {this.props.content}
+                    <div className="dina_person-details">
+                        {this.renderName()}
+                        {this.renderPosition()}
+                        {this.renderDescription()}
                     </div>
+                    {this.props.content.length > 0 && (
+                        <div className="dina_person-social-links">
+                            {this.props.content}
+                        </div>
+                    )}
                 </div>
             </div>
         );

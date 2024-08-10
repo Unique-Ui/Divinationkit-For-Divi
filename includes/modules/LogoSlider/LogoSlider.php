@@ -143,7 +143,7 @@ class DINA_Logo_Slider extends DINA_Module_Core {
                 'range_settings'  => array(
                     'step' => 1,
                     'min'  => 1,
-                    'max'  => 1000,
+                    'max'  => 9000,
                 ),
                 'default'         => '500',
                 'fixed_unit'      => '',
@@ -371,11 +371,10 @@ class DINA_Logo_Slider extends DINA_Module_Core {
                 'show_if'        => array(
                     'is_dots' => 'on',
                 ),
-                'mobile_optios'  => true,
             ),
 
             'active_dot_color' => array(
-                'label'          => esc_html__( 'Acitve Dot Color', 'divinationkit-for-divi' ),
+                'label'          => esc_html__( 'Active Dot Color', 'divinationkit-for-divi' ),
                 'description'    => esc_html__( 'Define active dots color', 'divinationkit-for-divi' ),
                 'type'           => 'color-alpha',
                 'default'        => '#000000',
@@ -386,7 +385,6 @@ class DINA_Logo_Slider extends DINA_Module_Core {
                 'show_if'        => array(
                     'is_dots' => 'on',
                 ),
-                'mobile_optios'  => true,
             ),
 
             'dots_size'        => array(
@@ -406,7 +404,6 @@ class DINA_Logo_Slider extends DINA_Module_Core {
                 'show_if'        => array(
                     'is_dots' => 'on',
                 ),
-                'mobile_optios'  => true,
             ),
 
         );

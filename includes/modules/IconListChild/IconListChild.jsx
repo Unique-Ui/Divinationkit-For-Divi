@@ -5,8 +5,6 @@ import {
     setResponsiveCSS,
 } from '../Core/DiviNationKit-core';
 
-import './styles.css';
-
 export class IconListChild extends Component {
     static slug = 'dina_icon_list_child';
 
@@ -16,26 +14,69 @@ export class IconListChild extends Component {
         const iconStyle = renderIconStyle(
             props,
             'icon',
-            '%%order_class%% .dina_icon_list-icon i.dina_icon'
+            '.dina_icon_list-container %%order_class%% .dina_icon_list-icon i.dina_icon'
         );
 
         const responsiveCss = setResponsiveCSS(props, [
-            // {
-            //     selector: '%%order_class%% .dina_icon_list-badge',
-            //     optionName: 'badge_bg',
-            //     property: 'background',
-            // },
-            // {
-            //     selector: '%%order_class%% .dina_icon_list-badge',
-            //     optionName: 'badge_margin',
-            //     property: 'margin',
-            // },
-            // {
-            //     selector: '%%order_class%% .dina_icon_list-badge',
-            //     optionName: 'badge_padding',
-            //     property: 'padding',
-            // },
+            // Tooltip
+            {
+                selector:
+                    '.dina_icon_list-container %%order_class%% .dina_tooltip-wrapper',
+                optionName: 'tooltip_bg',
+                property: 'background',
+            },
+            {
+                selector:
+                    '.dina_icon_list-container %%order_class%% .dina_tooltip-wrapper::after',
+                optionName: 'tooltip_bg',
+                property: 'border-top-color',
+            },
+            {
+                selector:
+                    '.dina_icon_list-container %%order_class%% .dina_tooltip-trigger::after',
+                optionName: 'tooltip_button_color',
+                property: 'color',
+            },
+            {
+                selector:
+                    '.dina_icon_list-container %%order_class%% .dina_tooltip-trigger::after',
+                optionName: 'tooltip_button_size',
+                property: 'font-size',
+            },
+
+            {
+                selector:
+                    '.dina_icon_list-container %%order_class%% .dina_icon_list-badge',
+                optionName: 'badge_bg',
+                property: 'background',
+            },
         ]);
+
+        if (props.tooltip_padding !== '') {
+            additionalCss.push(
+                setResponsiveCSS(props, [
+                    {
+                        selector:
+                            '.dina_icon_list-container %%order_class%% .dina_tooltip-wrapper',
+                        optionName: 'tooltip_padding',
+                        property: 'padding',
+                    },
+                ])
+            );
+        }
+
+        if (props.badge_padding !== '') {
+            additionalCss.push(
+                setResponsiveCSS(props, [
+                    {
+                        selector:
+                            '.dina_icon_list-container %%order_class%% .dina_icon_list-badge',
+                        optionName: 'badge_padding',
+                        property: 'padding',
+                    },
+                ])
+            );
+        }
 
         return additionalCss.concat(iconStyle).concat(responsiveCss);
     }
@@ -69,13 +110,17 @@ export class IconListChild extends Component {
         if (useTooltip === 'on') {
             content = (
                 <div className="dina_icon_list-use-tooltip">
-                    <Title className={`dina_icon_list-title`}>{heading}</Title>
+                    <Title className={`dina_icon_list-title`}>
+                        {heading} {this.renderBadge()}
+                    </Title>
                     {this.renderTooltip()}
                 </div>
             );
         } else {
             content = (
-                <Title className={`dina_icon_list-title`}>{heading}</Title>
+                <Title className={`dina_icon_list-title`}>
+                    {heading} {this.renderBadge()}
+                </Title>
             );
         }
 
@@ -100,6 +145,15 @@ export class IconListChild extends Component {
             }
         }
     };
+
+    renderBadge() {
+        const isUseBadge = this.props.use_badge === 'on' ? true : false;
+        const badgeText = this.props.badge_text;
+
+        if (isUseBadge) {
+            return <span className="dina_icon_list-badge">{badgeText}</span>;
+        }
+    }
 
     render() {
         return (

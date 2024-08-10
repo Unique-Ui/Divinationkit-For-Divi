@@ -189,7 +189,7 @@ class DINA_Divider extends DINA_Module_Core {
                 'mobile_options' => true,
             ),
             'divider_position' => array(
-                'label'          => esc_html__( 'Divider Postions', 'divinationkit-for-divi' ),
+                'label'          => esc_html__( 'Divider Positions', 'divinationkit-for-divi' ),
                 'description'    => esc_html__( 'Define the divider positions', 'divinationkit-for-divi' ),
                 'type'           => 'select',
                 'tab_slug'       => 'advanced',
@@ -377,9 +377,9 @@ class DINA_Divider extends DINA_Module_Core {
     public function render( $attrs, $content, $render_slug ) {
 
         $this->render_css( $render_slug );
-        $dividier_position = $this->props['divider_position'];
-        $classes           = array();
-        array_push( $classes, 'dina_divider-' . $dividier_position );
+        $divider_position = $this->props['divider_position'];
+        $classes          = array();
+        array_push( $classes, 'dina_divider-' . $divider_position );
 
         return sprintf(
             '<div class="dina_divider_wrapper %1$s">

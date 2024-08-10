@@ -1,7 +1,7 @@
 <?php
 
 // Exit if accessed directly
-if ( ! defined( 'ABSPATH' ) ) {
+if ( !defined( 'ABSPATH' ) ) {
     exit;
 }
 
@@ -9,11 +9,11 @@ class DINA_Module_Core extends ET_Builder_Module {
 
     /**
      * @param icon
-     * 
+     *
      * @return module_icon
      */
-    public function dina_module_icon($icon_name) {
-        
+    public function dina_module_icon( $icon_name ) {
+
         return sprintf(
             '%1$s/assets/icons/%2$s.svg',
             DINA_DIVINATIONKIT_DIR,
@@ -23,14 +23,14 @@ class DINA_Module_Core extends ET_Builder_Module {
 
     /**
      * @param render_slug
-     * 
+     *
      * @param Array
-     * 
+     *
      * @return void
      */
-    public function dina_responsive_css($render_slug, $style_options = array()) {
+    public function dina_responsive_css( $render_slug, $style_options = array() ) {
 
-        foreach ($style_options as $style) {
+        foreach ( $style_options as $style ) {
 
             $default = array(
                 'option_slug' => '',
@@ -38,54 +38,54 @@ class DINA_Module_Core extends ET_Builder_Module {
                 'selector'    => '',
                 'hover'       => '',
                 'default'     => '',
-                'important'   => false
+                'important'   => false,
             );
 
-            $options = wp_parse_args($style, $default);
-            extract($options);
+            $options = wp_parse_args( $style, $default );
+            extract( $options );
 
             $module  = $this;
             $desktop = $module->props[$option_slug];
             $tablet  = $module->props[$option_slug . '_tablet'] ? $module->props[$option_slug . '_tablet'] : '';
             $phone   = $module->props[$option_slug . '_phone'] ? $module->props[$option_slug . '_phone'] : '';
 
-            if($options['default'] !== '') {
-                ET_Builder_Element::set_style($render_slug, array(
-                    'selector' => $options['selector'],
+            if ( $options['default'] !== '' ) {
+                ET_Builder_Element::set_style( $render_slug, array(
+                    'selector'    => $options['selector'],
                     'declaration' => $options['default'],
-                ));
+                ) );
             }
 
-            if (class_exists('ET_Builder_Element')) {
-                if (isset($desktop) && !empty($desktop)) {
-                    ET_Builder_Element::set_style($render_slug, array(
-                        'selector' => $options['selector'],
-                        'declaration' => $this->dina_conditional_css($property, $desktop, $important),
-                    ));
+            if ( class_exists( 'ET_Builder_Element' ) ) {
+                if ( isset( $desktop ) && !empty( $desktop ) ) {
+                    ET_Builder_Element::set_style( $render_slug, array(
+                        'selector'    => $options['selector'],
+                        'declaration' => $this->dina_conditional_css( $property, $desktop, $important ),
+                    ) );
                 }
-                if (isset($tablet) && !empty($tablet)) {
-                    ET_Builder_Element::set_style($render_slug, array(
-                        'selector' => $options['selector'],
-                        'declaration' => $this->dina_conditional_css($property, $desktop, $important),
-                        'media_query' => ET_Builder_Element::get_media_query('max_width_980'),
-                    ));
+                if ( isset( $tablet ) && !empty( $tablet ) ) {
+                    ET_Builder_Element::set_style( $render_slug, array(
+                        'selector'    => $options['selector'],
+                        'declaration' => $this->dina_conditional_css( $property, $desktop, $important ),
+                        'media_query' => ET_Builder_Element::get_media_query( 'max_width_980' ),
+                    ) );
                 }
-                if (isset($phone) && !empty($phone)) {
-                    ET_Builder_Element::set_style($render_slug, array(
-                        'selector' => $options['selector'],
-                        'declaration' => $this->dina_conditional_css($property, $phone, $important),
-                        'media_query' => ET_Builder_Element::get_media_query('max_width_767'),
-                    ));
+                if ( isset( $phone ) && !empty( $phone ) ) {
+                    ET_Builder_Element::set_style( $render_slug, array(
+                        'selector'    => $options['selector'],
+                        'declaration' => $this->dina_conditional_css( $property, $phone, $important ),
+                        'media_query' => ET_Builder_Element::get_media_query( 'max_width_767' ),
+                    ) );
                 }
 
-                if (et_builder_is_hover_enabled($option_slug, $module->props) && isset($module->props[$option_slug . '__hover'])) {
+                if ( et_builder_is_hover_enabled( $option_slug, $module->props ) && isset( $module->props[$option_slug . '__hover'] ) ) {
 
                     $hover = $module->props[$option_slug . '__hover'];
 
-                    ET_Builder_Element::set_style($render_slug, array(
-                        'selector' => $options['hover'],
-                        'declaration' => $this->dina_conditional_css($property, $hover, $important),
-                    ));
+                    ET_Builder_Element::set_style( $render_slug, array(
+                        'selector'    => $options['hover'],
+                        'declaration' => $this->dina_conditional_css( $property, $hover, $important ),
+                    ) );
                 }
             }
         }
@@ -93,24 +93,23 @@ class DINA_Module_Core extends ET_Builder_Module {
 
     public function dina_conditional_css( $property, $value, $important ) {
 
-        if ($property === 'margin' || $property === 'padding') {
-            return et_builder_get_element_style_css($value, $property, $important);
+        if ( $property === 'margin' || $property === 'padding' ) {
+            return et_builder_get_element_style_css( $value, $property, $important );
         } else {
-            return sprintf('%1$s: %2$s %3$s;', $property, $value, $important ? '!important' : '');
+            return sprintf( '%1$s: %2$s %3$s;', $property, $value, $important ? '!important' : '' );
         }
     }
-
 
     /**
      * @param Option_Name
      */
-    public function render_MCE($value)  {
+    public function render_MCE( $value ) {
 
-        $content      = force_balance_tags($value);
-        $content      = preg_replace('~\s?<p></p>\s?~', '', $content);
+        $content = force_balance_tags( $value );
+        $content = preg_replace( '~\s?<p></p>\s?~', '', $content );
 
-        if (!empty($content)) {
-            return  $content;
+        if ( !empty( $content ) ) {
+            return $content;
         }
     }
 
@@ -128,22 +127,22 @@ class DINA_Module_Core extends ET_Builder_Module {
         $gradient        = array();
         $image           = array();
         $advanced_fields = array();
-        $help_text       = esc_html__('Adjust background style of this element by customizing the background options', 'dina-divi-nations');
+        $help_text       = esc_html__( 'Adjust background style of this element by customizing the background options', 'dina-divi-nations' );
 
-        if (in_array('color', $background_tab, true)) {
-            $color = $this->generate_background_options("{$base_name}_bg", 'color', $tab_slug, $toggle_slug, "{$base_name}_bg_color");
+        if ( in_array( 'color', $background_tab, true ) ) {
+            $color = $this->generate_background_options( "{$base_name}_bg", 'color', $tab_slug, $toggle_slug, "{$base_name}_bg_color" );
         }
 
-        if (in_array('gradient', $background_tab, true)) {
-            $gradient = $this->generate_background_options("{$base_name}_bg", 'gradient', $tab_slug, $toggle_slug, "{$base_name}_bg_color");
+        if ( in_array( 'gradient', $background_tab, true ) ) {
+            $gradient = $this->generate_background_options( "{$base_name}_bg", 'gradient', $tab_slug, $toggle_slug, "{$base_name}_bg_color" );
         }
 
-        if (in_array('image', $background_tab, true)) {
-            $image = $this->generate_background_options("{$base_name}_bg", 'image', $tab_slug, $toggle_slug, "{$base_name}_bg_color");
+        if ( in_array( 'image', $background_tab, true ) ) {
+            $image = $this->generate_background_options( "{$base_name}_bg", 'image', $tab_slug, $toggle_slug, "{$base_name}_bg_color" );
         }
 
         $advanced_fields["{$base_name}_bg_color"] = array(
-            'label'             => sprintf('%1$s %2$s', $label, esc_html__('Background', 'addons-for-divi')),
+            'label'             => sprintf( '%1$s %2$s', $label, esc_html__( 'Background', 'addons-for-divi' ) ),
             'description'       => $help_text . '.',
             'type'              => 'background-field',
             'base_name'         => "{$base_name}_bg",
@@ -154,10 +153,10 @@ class DINA_Module_Core extends ET_Builder_Module {
             'tab_slug'          => $tab_slug,
             'toggle_slug'       => $toggle_slug,
             'show_if'           => $show_if,
-            'background_fields' => array_merge($color, $gradient, $image),
+            'background_fields' => array_merge( $color, $gradient, $image ),
         );
 
-        if (in_array('hover', $background_tab, true)) {
+        if ( in_array( 'hover', $background_tab, true ) ) {
             $advanced_fields["{$base_name}_background"]['hover'] = 'tabs';
         }
 
@@ -169,49 +168,49 @@ class DINA_Module_Core extends ET_Builder_Module {
             "{$base_name}_bg_color"
         );
 
-        $advanced_fields = array_merge($advanced_fields, $skip);
+        $advanced_fields = array_merge( $advanced_fields, $skip );
 
         return $advanced_fields;
     }
 
-    protected function dina_get_custom_gradient($args) {
+    protected function dina_get_custom_gradient( $args ) {
 
         $defaults = apply_filters(
             'et_pb_default_gradient',
-            [
-                'repeat'           => ET_Global_Settings::get_value('all_background_gradient_repeat'),
-                'type'             => ET_Global_Settings::get_value('all_background_gradient_type'),
-                'direction'        => ET_Global_Settings::get_value('all_background_gradient_direction'),
-                'radial_direction' => ET_Global_Settings::get_value('all_background_gradient_direction_radial'),
-                'stops'            => ET_Global_Settings::get_value('all_background_gradient_stops'),
-                'unit'             => ET_Global_Settings::get_value('all_background_gradient_unit'),
-            ]
+            array(
+                'repeat'           => ET_Global_Settings::get_value( 'all_background_gradient_repeat' ),
+                'type'             => ET_Global_Settings::get_value( 'all_background_gradient_type' ),
+                'direction'        => ET_Global_Settings::get_value( 'all_background_gradient_direction' ),
+                'radial_direction' => ET_Global_Settings::get_value( 'all_background_gradient_direction_radial' ),
+                'stops'            => ET_Global_Settings::get_value( 'all_background_gradient_stops' ),
+                'unit'             => ET_Global_Settings::get_value( 'all_background_gradient_unit' ),
+            )
         );
 
-        $args  = wp_parse_args(array_filter($args), $defaults);
-        $stops = str_replace('|', ', ', $args['stops']);
+        $args  = wp_parse_args( array_filter( $args ), $defaults );
+        $stops = str_replace( '|', ', ', $args['stops'] );
 
-        switch ($args['type']) {
-            case 'conic':
-                $type      = 'conic';
-                $direction = "from {$args['direction']} at {$args['radial_direction']}";
-                break;
-            case 'elliptical':
-                $type      = 'radial';
-                $direction = "ellipse at {$args['radial_direction']}";
-                break;
-            case 'radial':
-            case 'circular':
-                $type      = 'radial';
-                $direction = "circle at {$args['radial_direction']}";
-                break;
-            case 'linear':
-            default:
-                $type      = 'linear';
-                $direction = $args['direction'];
+        switch ( $args['type'] ) {
+        case 'conic':
+            $type      = 'conic';
+            $direction = "from {$args['direction']} at {$args['radial_direction']}";
+            break;
+        case 'elliptical':
+            $type      = 'radial';
+            $direction = "ellipse at {$args['radial_direction']}";
+            break;
+        case 'radial':
+        case 'circular':
+            $type      = 'radial';
+            $direction = "circle at {$args['radial_direction']}";
+            break;
+        case 'linear':
+        default:
+            $type      = 'linear';
+            $direction = $args['direction'];
         }
 
-        if ('on' === $args['repeat']) {
+        if ( 'on' === $args['repeat'] ) {
             $type = 'repeating-' . $type;
         }
 
@@ -220,7 +219,7 @@ class DINA_Module_Core extends ET_Builder_Module {
         );
     }
 
-    protected function dina_process_bg_styles($option_name, $hover_suffix) {
+    protected function dina_process_bg_styles( $option_name, $hover_suffix ) {
 
         // Background Options Styling.
         $background_base_name                     = "{$option_name}_bg";
@@ -232,16 +231,16 @@ class DINA_Module_Core extends ET_Builder_Module {
         $background_color_gradient_overlays_image = 'off';
 
         // A. Background Gradient.
-        $use_background_color_gradient = isset($this->props["{$background_prefix}use_color_gradient{$hover_suffix}"]) ? $this->props["{$background_prefix}use_color_gradient{$hover_suffix}"] : '';
+        $use_background_color_gradient = isset( $this->props["{$background_prefix}use_color_gradient{$hover_suffix}"] ) ? $this->props["{$background_prefix}use_color_gradient{$hover_suffix}"] : '';
 
-        if ('on' === $use_background_color_gradient) {
-            $background_color_gradient_overlays_image = isset($this->props["{$background_prefix}color_gradient_overlays_image{$hover_suffix}"]) ? $this->props["{$background_prefix}color_gradient_overlays_image{$hover_suffix}"] : 'off';
-            $type = isset($this->props["{$background_prefix}color_gradient_type{$hover_suffix}"]) ? $this->props["{$background_prefix}color_gradient_type{$hover_suffix}"] : '';
-            $direction = isset($this->props["{$background_prefix}color_gradient_direction{$hover_suffix}"]) ? $this->props["{$background_prefix}color_gradient_direction{$hover_suffix}"] : '';
-            $radial_direction = isset($this->props["{$background_prefix}color_gradient_direction_radial{$hover_suffix}"]) ? $this->props["{$background_prefix}color_gradient_direction_radial{$hover_suffix}"] : '';
-            $color_gradient_stops = isset($this->props["{$background_prefix}color_gradient_stops{$hover_suffix}"]) ? $this->props["{$background_prefix}color_gradient_stops{$hover_suffix}"] : $this->props["{$background_prefix}color_gradient_stops"];
-            $repeat = isset($this->props["{$background_prefix}color_gradient_repeat{$hover_suffix}"]) ? $this->props["{$background_prefix}color_gradient_repeat{$hover_suffix}"] : $this->props["{$background_prefix}color_gradient_repeat"];
-            $unit = isset($this->props["{$background_prefix}color_gradient_unit{$hover_suffix}"]) ? $this->props["{$background_prefix}color_gradient_unit{$hover_suffix}"] : $this->props["{$background_prefix}color_gradient_unit"];
+        if ( 'on' === $use_background_color_gradient ) {
+            $background_color_gradient_overlays_image = isset( $this->props["{$background_prefix}color_gradient_overlays_image{$hover_suffix}"] ) ? $this->props["{$background_prefix}color_gradient_overlays_image{$hover_suffix}"] : 'off';
+            $type                                     = isset( $this->props["{$background_prefix}color_gradient_type{$hover_suffix}"] ) ? $this->props["{$background_prefix}color_gradient_type{$hover_suffix}"] : '';
+            $direction                                = isset( $this->props["{$background_prefix}color_gradient_direction{$hover_suffix}"] ) ? $this->props["{$background_prefix}color_gradient_direction{$hover_suffix}"] : '';
+            $radial_direction                         = isset( $this->props["{$background_prefix}color_gradient_direction_radial{$hover_suffix}"] ) ? $this->props["{$background_prefix}color_gradient_direction_radial{$hover_suffix}"] : '';
+            $color_gradient_stops                     = isset( $this->props["{$background_prefix}color_gradient_stops{$hover_suffix}"] ) ? $this->props["{$background_prefix}color_gradient_stops{$hover_suffix}"] : $this->props["{$background_prefix}color_gradient_stops"];
+            $repeat                                   = isset( $this->props["{$background_prefix}color_gradient_repeat{$hover_suffix}"] ) ? $this->props["{$background_prefix}color_gradient_repeat{$hover_suffix}"] : $this->props["{$background_prefix}color_gradient_repeat"];
+            $unit                                     = isset( $this->props["{$background_prefix}color_gradient_unit{$hover_suffix}"] ) ? $this->props["{$background_prefix}color_gradient_unit{$hover_suffix}"] : $this->props["{$background_prefix}color_gradient_unit"];
 
             $gradient_properties = array(
                 'type'             => $type,
@@ -253,7 +252,7 @@ class DINA_Module_Core extends ET_Builder_Module {
             );
 
             // Save background gradient into background images list.
-            $background_gradient = $this->dina_get_custom_gradient($gradient_properties);
+            $background_gradient = $this->dina_get_custom_gradient( $gradient_properties );
             $background_images[] = $background_gradient;
 
             // Flag to inform BG Color if current module has Gradient.
@@ -261,73 +260,73 @@ class DINA_Module_Core extends ET_Builder_Module {
         }
 
         // Background Image.
-        $bg_image           = isset($this->props["{$option_name}_bg_image{$hover_suffix}"]) ? $this->props["{$option_name}_bg_image{$hover_suffix}"] : '';
-        $parallax           = isset($this->props["{$option_name}_bg_parallax{$hover_suffix}"]) ? $this->props["{$option_name}_bg_parallax{$hover_suffix}"] : '';
+        $bg_image           = isset( $this->props["{$option_name}_bg_image{$hover_suffix}"] ) ? $this->props["{$option_name}_bg_image{$hover_suffix}"] : '';
+        $parallax           = isset( $this->props["{$option_name}_bg_parallax{$hover_suffix}"] ) ? $this->props["{$option_name}_bg_parallax{$hover_suffix}"] : '';
         $is_bg_image_active = '' !== $bg_image && 'on' !== $parallax;
 
-        if ($is_bg_image_active) {
+        if ( $is_bg_image_active ) {
             $has_bg_image = true;
 
-            $bg_size = isset($this->props["{$option_name}_bg_size{$hover_suffix}"]) ? $this->props["{$option_name}_bg_size{$hover_suffix}"] : '';
-            if ('' !== $bg_size) {
+            $bg_size = isset( $this->props["{$option_name}_bg_size{$hover_suffix}"] ) ? $this->props["{$option_name}_bg_size{$hover_suffix}"] : '';
+            if ( '' !== $bg_size ) {
                 $background_style .= sprintf(
                     'background-size: %1$s !important; ',
-                    esc_html($bg_size)
+                    esc_html( $bg_size )
                 );
             }
 
-            $bg_position = isset($this->props["{$option_name}_bg_position{$hover_suffix}"]) ? $this->props["{$option_name}_bg_position{$hover_suffix}"] : '';
-            if ('' !== $bg_position) {
+            $bg_position = isset( $this->props["{$option_name}_bg_position{$hover_suffix}"] ) ? $this->props["{$option_name}_bg_position{$hover_suffix}"] : '';
+            if ( '' !== $bg_position ) {
                 $background_style .= sprintf(
                     'background-position: %1$s !important; ',
-                    esc_html(str_replace('_', ' ', $bg_position))
+                    esc_html( str_replace( '_', ' ', $bg_position ) )
                 );
             }
 
-            $bg_repeat = isset($this->props["{$option_name}_bg_repeat{$hover_suffix}"]) ? $this->props["{$option_name}_bg_repeat{$hover_suffix}"] : '';
-            if ('' !== $bg_repeat) {
+            $bg_repeat = isset( $this->props["{$option_name}_bg_repeat{$hover_suffix}"] ) ? $this->props["{$option_name}_bg_repeat{$hover_suffix}"] : '';
+            if ( '' !== $bg_repeat ) {
                 $background_style .= sprintf(
                     'background-repeat: %1$s !important; ',
-                    esc_html($bg_repeat)
+                    esc_html( $bg_repeat )
                 );
             }
 
-            $bg_blend = isset($this->props["{$option_name}_bg_blend{$hover_suffix}"]) ? $this->props["{$option_name}_bg_blend{$hover_suffix}"] : '';
-            if ('' !== $bg_blend) {
+            $bg_blend = isset( $this->props["{$option_name}_bg_blend{$hover_suffix}"] ) ? $this->props["{$option_name}_bg_blend{$hover_suffix}"] : '';
+            if ( '' !== $bg_blend ) {
                 $background_style .= sprintf(
                     'background-blend-mode: %1$s !important;',
-                    esc_html($bg_blend)
+                    esc_html( $bg_blend )
                 );
             }
 
-            $background_images[] = sprintf('url(%1$s)', esc_html($bg_image));
+            $background_images[] = sprintf( 'url(%1$s)', esc_html( $bg_image ) );
         } else {
             $has_bg_image = false;
         }
 
-        if (!empty($background_images)) {
+        if ( !empty( $background_images ) ) {
             // The browsers stack the images in the opposite order to what you'd expect.
-            if ('on' !== $background_color_gradient_overlays_image) {
-                $background_images = array_reverse($background_images);
+            if ( 'on' !== $background_color_gradient_overlays_image ) {
+                $background_images = array_reverse( $background_images );
             }
 
             // Set background image styles only it's different compared to the larger device.
-            $background_image_style = join(', ', $background_images);
+            $background_image_style = join( ', ', $background_images );
 
             $background_style .= sprintf(
                 'background-image: %1$s !important;',
-                esc_html($background_image_style)
+                esc_html( $background_image_style )
             );
         }
 
         // B. Background Color.
-        if (!$has_background_color_gradient || !$has_bg_image) {
-            $background_color = isset($this->props["{$background_prefix}color{$hover_suffix}"]) ? $this->props["{$background_prefix}color{$hover_suffix}"] : '';
-            if ('' !== $background_color) {
+        if ( !$has_background_color_gradient || !$has_bg_image ) {
+            $background_color = isset( $this->props["{$background_prefix}color{$hover_suffix}"] ) ? $this->props["{$background_prefix}color{$hover_suffix}"] : '';
+            if ( '' !== $background_color ) {
                 $background_style .= sprintf(
                     'background-color: %1$s%2$s; ',
-                    esc_html($background_color),
-                    esc_html(' !important')
+                    esc_html( $background_color ),
+                    esc_html( ' !important' )
                 );
             }
         }
@@ -335,9 +334,9 @@ class DINA_Module_Core extends ET_Builder_Module {
         return $background_style;
     }
 
-    protected function dina_custom_bg_style($render_slug, $option_slug, $selector, $hover_selector) {
+    protected function dina_custom_bg_style( $render_slug, $option_slug, $selector, $hover_selector ) {
 
-        $background = $this->dina_process_bg_styles($option_slug, '');
+        $background = $this->dina_process_bg_styles( $option_slug, '' );
 
         ET_Builder_Element::set_style(
             $render_slug,
@@ -347,7 +346,7 @@ class DINA_Module_Core extends ET_Builder_Module {
             )
         );
 
-        $hover_background = $this->dina_process_bg_styles($option_slug, '__hover');
+        $hover_background = $this->dina_process_bg_styles( $option_slug, '__hover' );
 
         ET_Builder_Element::set_style(
             $render_slug,
@@ -364,9 +363,9 @@ class DINA_Module_Core extends ET_Builder_Module {
     public function render_prev_icon() {
 
         // Inject Font Awesome Manually!.
-        dina_inject_fa_icons($this->props['prev_icon']);
+        dina_inject_fa_icons( $this->props['prev_icon'] );
 
-        $icon_name = esc_attr(et_pb_process_font_icon($this->props['prev_icon']));
+        $icon_name = esc_attr( et_pb_process_font_icon( $this->props['prev_icon'] ) );
 
         return sprintf(
             '<button class="dina_slider_icon dina_prev_icon">
@@ -379,14 +378,14 @@ class DINA_Module_Core extends ET_Builder_Module {
     /**
      * icon Option Name
      */
-    public function dina_render_icon($option_name) {
-        
+    public function dina_render_icon( $option_name ) {
+
         // Inject Font Awesome Manually!.
-        dina_inject_fa_icons($this->props[$option_name]);
-        $icon_name = esc_attr(et_pb_process_font_icon($this->props[$option_name]));
+        dina_inject_fa_icons( $this->props[$option_name] );
+        $icon_name = esc_attr( et_pb_process_font_icon( $this->props[$option_name] ) );
 
         return $icon_name;
-        
+
     }
 
     /**
@@ -395,9 +394,9 @@ class DINA_Module_Core extends ET_Builder_Module {
     public function render_next_icon() {
 
         // Inject Font Awesome Manually!.
-        dina_inject_fa_icons($this->props['next_icon']);
+        dina_inject_fa_icons( $this->props['next_icon'] );
 
-        $icon_name = esc_attr(et_pb_process_font_icon($this->props['next_icon']));
+        $icon_name = esc_attr( et_pb_process_font_icon( $this->props['next_icon'] ) );
 
         return sprintf(
             '<button class="dina_slider_icon dina_next_icon">
@@ -409,11 +408,11 @@ class DINA_Module_Core extends ET_Builder_Module {
 
     /**
      * @param Option_Name
-     * 
+     *
      * @return Bool
      */
-    public function check_on_off_options($option_name) {
-        if( $option_name ) {
+    public function check_on_off_options( $option_name ) {
+        if ( $option_name ) {
             return $option_name === 'on' ? true : false;
         }
     }
@@ -423,33 +422,33 @@ class DINA_Module_Core extends ET_Builder_Module {
      */
     public function dina_get_slick_slider_settings() {
 
-        $autoplay            = $this->props['autoplay']      === 'on' ? true: false;
-        $autoplaySpeed       = intval($this->props['autoplay_delay']);
-        $dots                = $this->check_on_off_options($this->props['is_dots']);
-        $arrows              = $this->check_on_off_options($this->props['is_arrows']);
-        $centerMode          = $this->props['centered_mode'] === 'on' ? true: false;
-        $draggable           = $this->props['is_grab']       === 'on' ? true: false;
-        $easing              = 'linear';
-        $infinite            = $this->check_on_off_options($this->props['loop']);
-        $pauseOnHover        = $this->check_on_off_options($this->props['pause_on_hover']);
-        $rtl                 = $this->check_on_off_options($this->props['rtl']);
-        $slidesToScroll      = intval($this->props['slide_to_scroll']);
-        $slidesToShow        = intval($this->props['slide_to_show']);
-        $speed               = intval($this->props['slider_speed']);
-        $prevArrow           = $this->render_prev_icon();
-        $nextArrow           = $this->render_next_icon();
-        $spaceBetween        = $this->props['space_between'];
-        
-        $autoplay_tablet     = $this->props['autoplay_tablet'] ? $this->check_on_off_options($this->props['autoplay_tablet']) : $autoplay;
-        $autoplay_phone      = $this->props['autoplay_phone'] ? $this->check_on_off_options($this->props['autoplay_phone']) : ( $autoplay_tablet ? $autoplay_tablet : $autoplay);
-        $dots_tablet         = $this->props['is_dots_tablet'] ? $this->check_on_off_options($this->props['is_dots_tablet']) : $dots;
-        $dots_phone          = $this->props['is_dots_phone'] ? $this->check_on_off_options($this->props['is_dots_phone']) : ($dots_tablet ? $dots_tablet : $dots);
-        $arrows_tablet       = $this->props['is_arrows_tablet'] ? $this->check_on_off_options($this->props['is_arrows_tablet']) : $arrows;
-        $arrows_phone        = $this->props['is_arrows_phone'] ? $this->check_on_off_options($this->props['is_arrows_phone']) : ($arrows_tablet ? $arrows_tablet : $arrows);
-        $slidesToShow_tablet = intval($this->props['slide_to_show_tablet'] ? $this->props['slide_to_show_tablet'] : '3');
-        $slidesToShow_phone  = intval($this->props['slide_to_show_phone'] ? $this->props['slide_to_show_phone'] : '2');
+        $autoplay       = $this->props['autoplay'] === 'on' ? true : false;
+        $autoplaySpeed  = intval( $this->props['autoplay_delay'] );
+        $dots           = $this->check_on_off_options( $this->props['is_dots'] );
+        $arrows         = $this->check_on_off_options( $this->props['is_arrows'] );
+        $centerMode     = $this->props['centered_mode'] === 'on' ? true : false;
+        $draggable      = $this->props['is_grab'] === 'on' ? true : false;
+        $easing         = 'linear';
+        $infinite       = $this->check_on_off_options( $this->props['loop'] );
+        $pauseOnHover   = $this->check_on_off_options( $this->props['pause_on_hover'] );
+        $rtl            = $this->check_on_off_options( $this->props['rtl'] );
+        $slidesToScroll = intval( $this->props['slide_to_scroll'] );
+        $slidesToShow   = intval( $this->props['slide_to_show'] );
+        $speed          = intval( $this->props['slider_speed'] );
+        $prevArrow      = $this->render_prev_icon();
+        $nextArrow      = $this->render_next_icon();
+        $spaceBetween   = $this->props['space_between'];
 
-        $settings = [
+        $autoplay_tablet     = $this->props['autoplay_tablet'] ? $this->check_on_off_options( $this->props['autoplay_tablet'] ) : $autoplay;
+        $autoplay_phone      = $this->props['autoplay_phone'] ? $this->check_on_off_options( $this->props['autoplay_phone'] ) : ( $autoplay_tablet ? $autoplay_tablet : $autoplay );
+        $dots_tablet         = $this->props['is_dots_tablet'] ? $this->check_on_off_options( $this->props['is_dots_tablet'] ) : $dots;
+        $dots_phone          = $this->props['is_dots_phone'] ? $this->check_on_off_options( $this->props['is_dots_phone'] ) : ( $dots_tablet ? $dots_tablet : $dots );
+        $arrows_tablet       = $this->props['is_arrows_tablet'] ? $this->check_on_off_options( $this->props['is_arrows_tablet'] ) : $arrows;
+        $arrows_phone        = $this->props['is_arrows_phone'] ? $this->check_on_off_options( $this->props['is_arrows_phone'] ) : ( $arrows_tablet ? $arrows_tablet : $arrows );
+        $slidesToShow_tablet = intval( $this->props['slide_to_show_tablet'] ? $this->props['slide_to_show_tablet'] : '2' );
+        $slidesToShow_phone  = intval( $this->props['slide_to_show_phone'] ? $this->props['slide_to_show_phone'] : '1' );
+
+        $settings = array(
             'spaceBetween'   => $spaceBetween,
             'dots'           => $dots,
             'arrows'         => $arrows,
@@ -466,43 +465,43 @@ class DINA_Module_Core extends ET_Builder_Module {
             'prevArrow'      => $prevArrow,
             'nextArrow'      => $nextArrow,
             'easing'         => $easing,
-            'responsive'     => [
-                
-                [
+            'responsive'     => array(
+
+                array(
                     'breakpoint' => 980,
-                    'settings'   => [
+                    'settings'   => array(
                         'autoplay'     => $autoplay_tablet,
                         'slidesToShow' => $slidesToShow_tablet,
                         'dots'         => $dots_tablet,
                         'arrows'       => $arrows_tablet,
-                    ],
-                ],
-                [
+                    ),
+                ),
+                array(
                     'breakpoint' => 767,
-                    'settings'   => [
+                    'settings'   => array(
                         'autoplay'     => $autoplay_phone,
                         'slidesToShow' => $slidesToShow_phone,
                         'dots'         => $dots_phone,
                         'arrows'       => $arrows_phone,
-                    ],
-                ],
-            ]
+                    ),
+                ),
+            ),
 
-        ];
+        );
 
-        return  wp_json_encode($settings);
+        return wp_json_encode( $settings );
     }
 
-    public function render_stars( $rating, $rating_scale) {
+    public function render_stars( $rating, $rating_scale ) {
 
-        $floored_rating = floor($rating);
-        $stars = '';
+        $floored_rating = floor( $rating );
+        $stars          = '';
 
-        for($i = 1.0; $i <= $rating_scale; $i++) {
-            if($i <= $floored_rating) {
+        for ( $i = 1.0; $i <= $rating_scale; $i++ ) {
+            if ( $i <= $floored_rating ) {
                 $stars .= '<span class="dina_rating-star dina_rating-star-full">★</span>';
-            } elseif($i === $floored_rating + 1 && $rating !== $floored_rating) {
-                $stars .= '<span class="dina_rating-star dina_rating-star-' . ( $rating - $floored_rating) * 10 . '">★</span>';
+            } elseif ( $i === $floored_rating + 1 && $rating !== $floored_rating ) {
+                $stars .= '<span class="dina_rating-star dina_rating-star-' . ( $rating - $floored_rating ) * 10 . '">★</span>';
             } else {
                 $stars .= '<span class="dina_rating-star dina_rating-star-empty">★</span>';
             }

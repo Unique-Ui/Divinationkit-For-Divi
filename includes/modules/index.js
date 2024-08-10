@@ -17,6 +17,8 @@ import ProgressBar from './ProgressBar/ProgressBar';
 import ProgressBarChild from './ProgressBarChild/ProgressBarChild';
 import Rating from './Rating/Rating';
 import Review from './Review/Review';
+import ReviewSlider from './ReviewSlider/ReviewSlider';
+import ReviewSliderChild from './ReviewSliderChild/ReviewSliderChild';
 
 export default [
     AdvancedDivider,
@@ -38,4 +40,6 @@ export default [
     BusinessHour,
     BusinessHourChild,
     GradientHeading,
+    ReviewSlider,
+    ReviewSliderChild,
 ];

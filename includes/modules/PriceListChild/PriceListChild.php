@@ -7,7 +7,6 @@ class DINA_PriceList_item extends DINA_Module_Core {
         $this->slug                     = 'dina_pricelist_child';
         $this->vb_support               = 'on';
         $this->type                     = 'child';
-        $this->main_css_element         = "%%order_class%%";
         $this->child_title_var          = 'admin_title';
         $this->child_title_fallback_var = 'title';
 
@@ -22,7 +21,7 @@ class DINA_PriceList_item extends DINA_Module_Core {
                     'layout'  => esc_html__( 'Layout', 'divinationkit-for-divi' ),
                     'icon'    => esc_html__( 'Price Icon', 'divinationkit-for-divi' ),
                     'image'   => esc_html__( 'Price Image', 'divinationkit-for-divi' ),
-                    'item'    => esc_html__( 'List Item', 'divinationkit-for-divi' ),
+                    'divider' => esc_html__( 'Divider', 'divinationkit-for-divi' ),
                     'content' => array(
                         'title'             => esc_html__( 'Price List Texts', 'divinationkit-for-divi' ),
                         'tabbed_subtoggles' => true,
@@ -212,7 +211,7 @@ class DINA_PriceList_item extends DINA_Module_Core {
             ),
 
             'icon_padding' => array(
-                'label'          => esc_html__( 'Image/Icon Padding', 'divinationkit-for-divi' ),
+                'label'          => esc_html__( 'Icon Padding', 'divinationkit-for-divi' ),
                 'description'    => esc_html__( 'Define custom padding for divider icon', 'divinationkit-for-divi' ),
                 'type'           => 'custom_padding',
                 'tab_slug'       => 'advanced',
@@ -221,7 +220,7 @@ class DINA_PriceList_item extends DINA_Module_Core {
             ),
 
             'icon_margin'  => array(
-                'label'          => esc_html__( 'Image/Icon Margin', 'divinationkit-for-divi' ),
+                'label'          => esc_html__( 'Icon Margin', 'divinationkit-for-divi' ),
                 'description'    => esc_html__( 'Define custom margin for divider icon', 'divinationkit-for-divi' ),
                 'type'           => 'custom_margin',
                 'tab_slug'       => 'advanced',
@@ -374,8 +373,8 @@ class DINA_PriceList_item extends DINA_Module_Core {
 
         $advanced_fields                = array();
         $advanced_fields['text']        = false;
-        $advanced_fields['text_shadow'] = false;
-        $advanced_fields['fonts']       = false;
+        $advanced_fields['text_shadow'] = array();
+        $advanced_fields['fonts']       = array();
 
         $advanced_fields['borders'] = array(
             'tab_slug'    => 'advanced',
@@ -489,6 +488,23 @@ class DINA_PriceList_item extends DINA_Module_Core {
             'sub_toggle'   => 'price',
             'line_height'  => array(
                 'default' => '1.3em',
+            ),
+        );
+
+        $advanced_fields['fonts']['description'] = array(
+            'label'       => esc_html__( 'Description', 'divinationkit-for-divi' ),
+            'css'         => array(
+                'main'      => '.dina_pricelist-container %%order_class%% .dina_pricelist-description p',
+                'important' => false,
+            ),
+            'tab_slug'    => 'advanced',
+            'toggle_slug' => 'content',
+            'sub_toggle'  => 'description',
+            'font_size'   => array(
+                'default' => '14px',
+            ),
+            'line_height' => array(
+                'default' => '1.2em',
             ),
         );
 

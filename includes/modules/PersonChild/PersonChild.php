@@ -3,14 +3,13 @@
 class DINA_Person_Child extends DINA_Module_Core {
 
     public function init() {
-        $this->name                        = esc_html__( 'Social Network', 'divinationkit-for-divi' );
-        $this->slug                        = 'dina_person_child';
-        $this->vb_support                  = 'on';
-        $this->type                        = 'child';
-        $this->main_css_element            = "%%order_class%%";
-        $this->advanced_setting_title_text = esc_html__( 'Social Network', 'dina-divinationkit' );
-        $this->settings_text               = esc_html__( 'Social Network Settings', 'dina-divinationkit' );
-        $this->child_title_var             = 'social_network';
+
+        $this->name                     = esc_html__( 'Social Network', 'divinationkit-for-divi' );
+        $this->slug                     = 'dina_person_child';
+        $this->type                     = 'child';
+        $this->vb_support               = 'on';
+        $this->child_title_var          = 'admin_title';
+        $this->child_title_fallback_var = 'social_network';
 
         $this->settings_modal_toggles = array(
             'general' => array(
@@ -122,10 +121,24 @@ class DINA_Person_Child extends DINA_Module_Core {
         $advanced_fields['link_options'] = false;
         $advanced_fields['sticky']       = false;
 
+        $advanced_fields['background'] = array(
+            'css'     => array(
+                'main'      => '.dina_person-container %%order_class%% .dina_person-social-network span::before',
+                'important' => true,
+            ),
+            'options' => array(
+                'background_color' => array(
+                    'default' => 'rgba(1, 86, 77, 0.05)',
+                ),
+            ),
+        );
+
         return $advanced_fields;
     }
 
     public function render( $attrs, $content, $render_slug ) {
+
+        $this->remove_classname( 'et_pb_module' );
 
         $social_network = $this->props['social_network'];
         $url            = $this->props['url'] ? $this->props['url'] : '#';

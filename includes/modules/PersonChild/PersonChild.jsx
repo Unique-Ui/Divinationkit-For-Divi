@@ -4,7 +4,10 @@ export class PersonChild extends Component {
     static slug = 'dina_person_child';
 
     renderUrl = () => {
-        let url;
+        let url,
+            skypeAction = this.props.skype_action
+                ? this.props.skype_action
+                : 'call';
 
         if (this.props.url === '') {
             url = '#';
@@ -13,7 +16,7 @@ export class PersonChild extends Component {
         }
 
         if (this.props.social_network === 'skype') {
-            url = `skype:${this.props.username}?${this.props.skype_action}`;
+            url = `skype:${this.props.username}?${skypeAction}`;
         }
 
         return url;

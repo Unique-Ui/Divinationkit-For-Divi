@@ -19,6 +19,12 @@ jQuery(function($) {
             ((window.ETBuilderBackend.defaults.dina_logo_slider_child = {
                 image: defaultImage,
             }),
+            (window.ETBuilderBackend.defaults.dina_accordion_child = {
+                title,
+                description: content,
+                open_icon: '&#x4c;||divi||400',
+                close_icon: '&#x4d;||divi||400',
+            }),
             (window.ETBuilderBackend.defaults.dina_pricelist_child = {
                 media_type: 'none',
                 icon,
@@ -46,17 +52,16 @@ jQuery(function($) {
             (window.ETBuilderBackend.defaults.dina_icon_list_child = {
                 icon: '&#xe052;||divi||400',
                 title: title,
-                tooltip_title: 'Tooltip Title',
+                tooltip_text: 'Tooltip Title',
                 tooltip_description: content,
-            }),
-            (window.ETBuilderBackend.defaults.dina_marquee_text = {
-                text: title,
+                badge_text: 'Hot',
             }),
             (window.ETBuilderBackend.defaults.dina_icon_box = {
                 icon: '&#xe105;||divi||400',
                 title: title,
                 subtitle: subtitle,
                 description: content,
+                badge_text: 'Hot',
             }),
             (window.ETBuilderBackend.defaults.dina_dual_button = {
                 button_one_text: 'Button One',
@@ -72,6 +77,9 @@ jQuery(function($) {
                 image: userImage,
                 name: 'John Doe',
                 position: 'Developer at Microsoft',
+            }),
+            (window.ETBuilderBackend.defaults.dina_person_child = {
+                skype_action: 'call',
             }),
             (window.ETBuilderBackend.defaults.dina_rating = {
                 rating_title: '10k+ Happy Customars',
@@ -104,6 +112,18 @@ jQuery(function($) {
                 name: 'John Smith',
                 position: 'Founder & CEO at Microfoft',
                 description: content,
+            }),
+            (window.ETBuilderBackend.defaults.dina_testimonial_slider = {}),
+            (window.ETBuilderBackend.defaults.dina_testimonial_slider_child = {
+                use_image: 'on',
+                image: userImage,
+                name: 'John Smith',
+                position: 'Manager',
+                description: content,
+                rating: 5,
+                rating_scale: 5,
+                background_enable_color: 'on',
+                background_color: 'rgba(1, 86, 77, 0.05)',
             }));
     });
 });
