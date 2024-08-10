@@ -75,7 +75,6 @@ export const setResponsiveCSS = (props, styles = []) => {
                 },
             ]);
         } else if (cssValue) {
-            console.log(cssValue, style.optionName);
             additionalCss.push([
                 {
                     selector,

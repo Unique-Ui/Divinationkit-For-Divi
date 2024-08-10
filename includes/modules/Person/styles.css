@@ -10,57 +10,6 @@
     margin-top: 15px;
 }
 
-/* Style two */
-.dina_person-style-two {
-    position: relative;
-}
-.dina_person-style-two .dina_person-info {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    z-index: 2;
-    transition: all 0.3s ease-in-out;
-}
-
-.dina_person-style-two.dina_person-info-show-on-hover .dina_person-info {
-    bottom: -50%;
-}
-
-.dina_person-info-show-on-hover:hover .dina_person-info {
-    bottom: 0;
-}
-
-/* Style three */
-.dina_person-style-three .dina_person-social-links {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.dina_person-style-three.dina_person-network-show-on-hover
-    .dina_person-social-links {
-    pointer-events: none;
-    opacity: 0;
-    transform: translate(-50%, 8px);
-    transition: all 0.3s ease;
-}
-
-.dina_person-style-three.dina_person-network-show-on-hover:hover
-    .dina_person-social-links {
-    pointer-events: all;
-    opacity: 1;
-    transform: translate(-50%, 0px);
-}
-
-/* Style four */
-.dina_person-container.dina_person-style-four {
-    display: flex;
-}
-
-.dina_person-style-four .dina_person-info {
-    flex: 1;
-}
-
 /* Social Icon */
 .dina_person-social-links ul {
     margin-top: 10px;
@@ -200,4 +149,57 @@
     content: '\F1BC';
     background-color: #1db954;
     font-family: FontAwesome;
+}
+
+/* Style two */
+.dina_person-style-two {
+    position: relative;
+}
+.dina_person-style-two .dina_person-info {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 2;
+    transition: all 0.3s ease-in-out;
+}
+
+.dina_person-style-two.dina_person-info-show-on-hover .dina_person-info {
+    bottom: -50%;
+}
+
+.dina_person-info-show-on-hover:hover .dina_person-info {
+    bottom: 0;
+}
+
+/* Style three */
+.dina_person-style-three .dina_person-social-links {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    justify-content: center;
+}
+
+.dina_person-style-three.dina_person-network-show-on-hover
+    .dina_person-social-links {
+    pointer-events: none;
+    opacity: 0;
+    transform: translate(-50%, 8px);
+    transition: all 0.3s ease;
+}
+
+.dina_person-style-three.dina_person-network-show-on-hover:hover
+    .dina_person-social-links {
+    pointer-events: all;
+    opacity: 1;
+    transform: translate(-50%, 0px);
+}
+
+/* Style four */
+.dina_person-container.dina_person-style-four {
+    display: flex;
+}
+
+.dina_person-style-four .dina_person-info {
+    flex: 1;
 }
