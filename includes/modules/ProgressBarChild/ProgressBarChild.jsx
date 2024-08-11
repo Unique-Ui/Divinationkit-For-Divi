@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {
     dinaGetCustomBgCSS,
     renderIcon,
+    renderIconStyle,
     setResponsiveCSS,
 } from '../Core/DiviNationKit-core';
 
@@ -25,6 +26,12 @@ export class ProgressBarChild extends Component {
             roundedLastEdited = props.bar_height_last_edited,
             isRoundedResponsive =
                 roundedLastEdited && roundedLastEdited.startsWith('on');
+
+        const iconStyle = renderIconStyle(
+            props,
+            'icon',
+            '.dina_progress_bar-container %%order_class%% .dina_progress_bar-icon i.dina_icon'
+        );
 
         const bar_bg = dinaGetCustomBgCSS(
             props,
@@ -127,29 +134,40 @@ export class ProgressBarChild extends Component {
 
         responsiveCSS = setResponsiveCSS(props, [
             {
-                selector: '%%order_class%% .dina_progress_bar-icon i.dina_icon',
+                selector:
+                    '.dina_progress_bar-container %%order_class%% .dina_progress_bar-icon i.dina_icon',
                 optionName: 'icon_color',
                 property: 'color',
             },
             {
-                selector: '%%order_class%% .dina_progress_bar-icon i.dina_icon',
+                selector:
+                    '.dina_progress_bar-container %%order_class%% .dina_progress_bar-icon i.dina_icon',
                 optionName: 'icon_bg',
                 property: 'background',
             },
             {
-                selector: '%%order_class%% .dina_progress_bar-icon i.dina_icon',
+                selector:
+                    '.dina_progress_bar-container %%order_class%% .dina_progress_bar-icon i.dina_icon',
                 optionName: 'icon_size',
                 property: 'font-size',
             },
             {
-                selector: '%%order_class%% .dina_progress_bar-icon i.dina_icon',
+                selector:
+                    '.dina_progress_bar-container %%order_class%% .dina_progress_bar-icon i.dina_icon',
                 optionName: 'icon_padding',
                 property: 'padding',
             },
             {
-                selector: '%%order_class%% .dina_progress_bar-icon',
+                selector:
+                    '.dina_progress_bar-container %%order_class%% .dina_progress_bar-icon',
                 optionName: 'icon_margin',
                 property: 'margin',
+            },
+            {
+                selector:
+                    '.dina_progress_bar-container %%order_class%% .dina_progress_bar-use-icon',
+                optionName: 'icon_space',
+                property: 'gap',
             },
 
             {
@@ -178,6 +196,7 @@ export class ProgressBarChild extends Component {
         }
 
         return additionalCss
+            .concat(iconStyle)
             .concat(bar_bg)
             .concat(level_bg)
             .concat(responsiveCSS);
@@ -186,7 +205,7 @@ export class ProgressBarChild extends Component {
     renderIcon() {
         if (this.props.use_icon === 'on') {
             return (
-                <div className="dina_progress-icon">
+                <div className="dina_progress_bar-icon">
                     <i className="dina_icon">{renderIcon(this.props.icon)}</i>
                 </div>
             );
@@ -195,7 +214,9 @@ export class ProgressBarChild extends Component {
 
     renderName() {
         const hideName = this.props.hide_name ? this.props.hide_name : 'off';
-        const namePlacement = this.props.name_placement;
+        const namePlacement = this.props.name_placement
+            ? this.props.name_placement
+            : 'outside';
         if (hideName === 'off') {
             return (
                 <span className={`dina_progress_bar-name ${namePlacement}`}>
@@ -242,7 +263,13 @@ export class ProgressBarChild extends Component {
         const level = this.props.level ? this.props.level : '90%';
 
         return (
-            <div className={`dina_progress_bar-item ${showLevel}`}>
+            <div
+                className={`dina_progress_bar-item ${showLevel} ${
+                    this.props.use_icon === 'on'
+                        ? 'dina_progress_bar-use-icon'
+                        : ''
+                }`}
+            >
                 {this.renderIcon()}
                 <div className="dina_progress_bar-wrapper">
                     {namePlacement === 'outside' && this.renderName()}

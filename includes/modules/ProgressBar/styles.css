@@ -1,5 +1,8 @@
 .dina_progress_bar-item {
     position: relative;
+}
+
+.dina_progress_bar-use-icon {
     display: flex;
     align-items: center;
     gap: 20px;
@@ -40,4 +43,8 @@
 .dina_progress_bar-name.inside {
     padding: 0 18px;
     color: #fff;
+}
+
+.dina_progress_bar-description {
+    margin-top: 10px;
 }

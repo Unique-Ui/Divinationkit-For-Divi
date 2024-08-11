@@ -96,6 +96,7 @@ jQuery(function($) {
             (window.ETBuilderBackend.defaults.dina_progress_bar_child = {
                 name: 'HTML',
                 level: '90%',
+                icon,
             }),
             (window.ETBuilderBackend.defaults.dina_business_hour_child = {
                 hide_separator: 'off',

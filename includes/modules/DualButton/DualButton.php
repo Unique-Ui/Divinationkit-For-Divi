@@ -238,7 +238,7 @@ class DINA_Dual_Button extends DINA_Module_Core {
                 'toggle_slug'    => 'button_one_hover_effect',
                 'sub_toggle'     => 'border',
                 'show_if_not'    => array(
-                    'button_one_border_hover_effect' => array( 'dina-ripple-in', 'dina-ripple-out', 'dina-underline-in', 'dina-underline-out' ),
+                    'button_one_border_hover_effect' => array( 'dina-ripple-in', 'dina-ripple-out', 'dina-outline-in', 'dina-outline-out' ),
                 ),
                 'show_if'        => array(
                     'button_one_border_hover_effect' => array( 'dina-underline-from-left', 'dina-underline-from-center', 'dina-underline-from-right', 'dina-overline-from-left', 'dina-overline-from-center', 'dina-overline-from-right', 'dina-underline-reveal', 'dina-overline-reveal' ),
@@ -419,7 +419,7 @@ class DINA_Dual_Button extends DINA_Module_Core {
                 'toggle_slug'    => 'button_two_hover_effect',
                 'sub_toggle'     => 'border',
                 'show_if_not'    => array(
-                    'button_two_border_hover_effect' => array( 'dina-ripple-in', 'dina-ripple-out', 'dina-underline-in', 'dina-underline-out' ),
+                    'button_two_border_hover_effect' => array( 'dina-ripple-in', 'dina-ripple-out', 'dina-outline-in', 'dina-outline-out' ),
                 ),
                 'show_if'        => array(
                     'button_two_border_hover_effect' => array( 'dina-underline-from-left', 'dina-underline-from-center', 'dina-underline-from-right', 'dina-overline-from-left', 'dina-overline-from-center', 'dina-overline-from-right', 'dina-underline-reveal', 'dina-overline-reveal' ),
@@ -1097,6 +1097,10 @@ class DINA_Dual_Button extends DINA_Module_Core {
             array_push( $classes, 'dina-bg-hover-effect' );
         }
 
+        if ( $button_text === '' ) {
+            return;
+        }
+
         return sprintf(
             '<a href="%4$s" target="%5$s" class="%6$s">
                 %1$s
@@ -1124,10 +1128,9 @@ class DINA_Dual_Button extends DINA_Module_Core {
         $button_two_border_hover_effect = $this->props['button_two_border_hover_effect'];
         $button_two_bg_hover_effect     = $this->props['button_two_bg_hover_effect'];
 
-        $icon                          = '';
-        $use_button_two_icon           = $this->props['use_button_two_icon'] === 'on' ? true : false;
-        $button_two_icon_placement     = $this->props['button_two_icon_placement'];
-        $button_two_icon_show_on_hover = $this->props['button_two_icon_show_on_hover'];
+        $icon                      = '';
+        $use_button_two_icon       = $this->props['use_button_two_icon'] === 'on' ? true : false;
+        $button_two_icon_placement = $this->props['button_two_icon_placement'];
 
         if ( $use_button_two_icon ) {
             $icon = sprintf( '<i class="dina_button_two-icon">%1$s</i>', $this->dina_render_icon( 'button_two_icon' ) );
@@ -1145,6 +1148,10 @@ class DINA_Dual_Button extends DINA_Module_Core {
         if ( $button_two_bg_hover_effect !== '' ) {
             array_push( $classes, $button_two_bg_hover_effect );
             array_push( $classes, 'dina-bg-hover-effect' );
+        }
+
+        if ( $button_text === '' ) {
+            return;
         }
 
         return sprintf(

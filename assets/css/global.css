@@ -61,6 +61,17 @@ body *[class^='dina'] img {
     line-height: 1;
 }
 
+.dina_rating-star::before {
+    content: '★';
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 .dina_rating-star-1::before {
     width: 10%;
 }

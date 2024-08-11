@@ -203,6 +203,23 @@ class DINA_Progress_Bar extends DINA_Module_Core {
                 'mobile_options' => true,
             ),
 
+            'icon_space'      => array(
+                'label'          => esc_html__( 'Icon Space', 'divinationkit-for-divi' ),
+                'description'    => esc_html__( 'Here you can change icon space from right content.', 'divinationkit-for-divi' ),
+                'type'           => 'range',
+                'default_unit'   => 'px',
+                'default'        => '20px',
+                'tab_slug'       => 'advanced',
+                'toggle_slug'    => 'icon',
+                'hover'          => 'tabs',
+                'mobile_options' => true,
+                'range_settings' => array(
+                    'min'  => 0,
+                    'step' => 1,
+                    'max'  => 1000,
+                ),
+            ),
+
             'icon_size'       => array(
                 'label'          => esc_html__( 'Icon Size', 'divinationkit-for-divi' ),
                 'description'    => esc_html__( 'Here you can change icon size.', 'divinationkit-for-divi' ),
@@ -311,8 +328,8 @@ class DINA_Progress_Bar extends DINA_Module_Core {
             'toggle_slug'  => 'icon',
             'css'          => array(
                 'main'      => array(
-                    'border_radii'  => '%%order_class%% .dina_progress-icon',
-                    'border_styles' => '%%order_class%% .dina_progress-icon',
+                    'border_radii'  => '%%order_class%% .dina_progress_bar-icon',
+                    'border_styles' => '%%order_class%% .dina_progress_bar-icon',
                 ),
                 'important' => false,
             ),
@@ -378,6 +395,11 @@ class DINA_Progress_Bar extends DINA_Module_Core {
                 'option_slug' => 'icon_margin',
                 'property'    => 'margin',
                 'selector'    => '%%order_class%% .dina_progress_bar-icon',
+            ),
+            array(
+                'option_slug' => 'icon_space',
+                'property'    => 'gap',
+                'selector'    => '%%order_class%% .dina_progress_bar-use-icon',
             ),
 
             array(

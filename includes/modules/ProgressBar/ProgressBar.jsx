@@ -147,6 +147,11 @@ export class ProgressBar extends Component {
                 optionName: 'icon_margin',
                 property: 'margin',
             },
+            {
+                selector: '%%order_class%% .dina_progress_bar-use-icon',
+                optionName: 'icon_space',
+                property: 'gap',
+            },
 
             {
                 selector:
