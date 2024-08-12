@@ -22,6 +22,11 @@
     flex: 1;
 }
 
+.dina_pricelist-image {
+    width: 100%;
+}
+
 .dina_pricelist-image img {
     display: block;
+    width: 100%;
 }
