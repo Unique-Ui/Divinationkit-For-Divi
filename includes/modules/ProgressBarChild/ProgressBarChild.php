@@ -395,8 +395,8 @@ class DINA_Progress_Bar_Child extends DINA_Module_Core {
             'toggle_slug'  => 'icon',
             'css'          => array(
                 'main'      => array(
-                    'border_radii'  => '.dina_progress_bar-container %%order_class%% .dina_progress-icon',
-                    'border_styles' => '.dina_progress_bar-container %%order_class%% .dina_progress-icon',
+                    'border_radii'  => '.dina_progress_bar-container %%order_class%% .dina_progress_bar-icon',
+                    'border_styles' => '.dina_progress_bar-container %%order_class%% .dina_progress_bar-icon',
                 ),
                 'important' => false,
             ),
