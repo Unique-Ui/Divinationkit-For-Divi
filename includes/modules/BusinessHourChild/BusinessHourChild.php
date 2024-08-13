@@ -36,6 +36,21 @@ class DINA_Business_Hour_Child extends DINA_Module_Core {
                 ),
             ),
         );
+
+        $this->custom_css_fields = array(
+            'day'     => array(
+                'label'    => esc_html__( 'Day Text', 'divinationkit-for-divi' ),
+                'selector' => '.dina_business_hour-container %%order_class%% .dina_business_hour-day',
+            ),
+            'divider' => array(
+                'label'    => esc_html__( 'Separator', 'divinationkit-for-divi' ),
+                'selector' => '.dina_business_hour-container %%order_class%% .dina_business_hour-day-separator',
+            ),
+            'time'    => array(
+                'label'    => esc_html__( 'Time Text', 'divinationkit-for-divi' ),
+                'selector' => '.dina_business_hour-container %%order_class%% .dina_business_hour-time',
+            ),
+        );
     }
 
     public function get_fields() {

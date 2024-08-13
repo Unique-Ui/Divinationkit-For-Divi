@@ -51,6 +51,29 @@ class DINA_Progress_Bar_Child extends DINA_Module_Core {
                 ),
             ),
         );
+
+        $this->custom_css_fields = array(
+            'name_text'      => array(
+                'label'    => esc_html__( 'Name Text', 'divinationkit-for-divi' ),
+                'selector' => '.dina_progress_bar-container %%order_class%% .dina_progress_bar-name',
+            ),
+            'level_text'     => array(
+                'label'    => esc_html__( 'Level Text', 'divinationkit-for-divi' ),
+                'selector' => '.dina_progress_bar-container %%order_class%% .dina_progress_bar-level',
+            ),
+            'icon'           => array(
+                'label'    => esc_html__( 'Progress Bar Icon', 'divinationkit-for-divi' ),
+                'selector' => '.dina_progress_bar-container %%order_class%% .dina_progress_bar-icon i.dina_icon',
+            ),
+            'progress_bar'   => array(
+                'label'    => esc_html__( 'Progress Bar', 'divinationkit-for-divi' ),
+                'selector' => '.dina_progress_bar-container %%order_class%% .dina_progress',
+            ),
+            'progress_level' => array(
+                'label'    => esc_html__( 'Progress Bar Level', 'divinationkit-for-divi' ),
+                'selector' => '.dina_progress_bar-container %%order_class%% .dina_progress-level',
+            ),
+        );
     }
 
     public function get_fields() {

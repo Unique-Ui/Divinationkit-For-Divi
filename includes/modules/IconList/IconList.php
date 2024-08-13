@@ -57,6 +57,41 @@ class DINA_Icon_List extends DINA_Module_Core {
                 ),
             ),
         );
+
+        $this->custom_css_fields = array(
+            'icon'                      => array(
+                'label'    => esc_html__( 'Icon', 'divinationkit-for-divi' ),
+                'selector' => '%%order_class%% .dina_icon_list-icon i.dina_icon',
+            ),
+            'icon_list_text'            => array(
+                'label'    => esc_html__( 'List Text', 'divinationkit-for-divi' ),
+                'selector' => '%%order_class%% .dina_icon_list-title',
+            ),
+            'icon_list_description'     => array(
+                'label'    => esc_html__( 'List Text', 'divinationkit-for-divi' ),
+                'selector' => '%%order_class%% .dina_icon_list-description',
+            ),
+            'icon_list_badge'           => array(
+                'label'    => esc_html__( 'Badge', 'divinationkit-for-divi' ),
+                'selector' => '%%order_class%% .dina_icon_list-badge',
+            ),
+            'icon_list_tooltip_button'  => array(
+                'label'    => esc_html__( 'Tooltip Button', 'divinationkit-for-divi' ),
+                'selector' => '%%order_class%% .dina_tooltip-trigger',
+            ),
+            'icon_list_tooltip_wrapper' => array(
+                'label'    => esc_html__( 'Tooltip Wrapper', 'divinationkit-for-divi' ),
+                'selector' => '%%order_class%% .dina_tooltip-wrapper',
+            ),
+            'icon_list_tooltip_text'    => array(
+                'label'    => esc_html__( 'Tooltip Wrapper', 'divinationkit-for-divi' ),
+                'selector' => '%%order_class%% .dina_tooltip-text',
+            ),
+            'item'                      => array(
+                'label'    => esc_html__( 'Icon List Item', 'divinationkit-for-divi' ),
+                'selector' => '%%order_class%% .dina_icon_list_child',
+            ),
+        );
     }
 
     public function get_fields() {

@@ -30,6 +30,21 @@ class DINA_Rating extends DINA_Module_Core {
                 ),
             ),
         );
+
+        $this->custom_css_fields = array(
+            'star'          => array(
+                'label'    => esc_html__( 'Star', 'divinationkit-for-divi' ),
+                'selector' => '%%order_class%% .dina_rating-star',
+            ),
+            'active_star'   => array(
+                'label'    => esc_html__( 'Active Star', 'divinationkit-for-divi' ),
+                'selector' => '%%order_class%% .dina_rating-star-full',
+            ),
+            'rating_number' => array(
+                'label'    => esc_html__( 'Rating Number', 'divinationkit-for-divi' ),
+                'selector' => '%%order_class%% .dina_rating-number',
+            ),
+        );
     }
 
     public function get_fields() {

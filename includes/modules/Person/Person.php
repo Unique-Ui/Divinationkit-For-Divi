@@ -50,6 +50,33 @@ class DINA_Person extends DINA_Module_Core {
                 ),
             ),
         );
+
+        $this->custom_css_fields = array(
+            'image'        => array(
+                'label'    => esc_html__( 'Image', 'divinationkit-for-divi' ),
+                'selector' => '%%order_class%% .dina_person-img img',
+            ),
+            'name'         => array(
+                'label'    => esc_html__( 'Name Text', 'divinationkit-for-divi' ),
+                'selector' => '%%order_class%% .dina_person-name',
+            ),
+            'position'     => array(
+                'label'    => esc_html__( 'Position Text', 'divinationkit-for-divi' ),
+                'selector' => '%%order_class%% .dina_person-position',
+            ),
+            'description'  => array(
+                'label'    => esc_html__( 'Description Text', 'divinationkit-for-divi' ),
+                'selector' => '%%order_class%% .dina_person-description',
+            ),
+            'icon_wrapper' => array(
+                'label'    => esc_html__( 'Icon Wrapper', 'divinationkit-for-divi' ),
+                'selector' => '%%order_class%% .dina_person-social-links',
+            ),
+            'icon'         => array(
+                'label'    => esc_html__( 'Icon', 'divinationkit-for-divi' ),
+                'selector' => '%%order_class%% .dina_person-social-network span::before',
+            ),
+        );
     }
 
     public function get_fields() {
@@ -162,24 +189,6 @@ class DINA_Person extends DINA_Module_Core {
                 'mobile_options' => true,
             ),
 
-            'image_width'           => array(
-                'label'          => esc_html__( 'Image Width', 'divinationkit-for-divi' ),
-                'description'    => esc_html__( 'Define person image width', 'divinationkit-for-divi' ),
-                'type'           => 'range',
-                'default_unit'   => '%',
-                'default'        => '45%',
-                'range_settings' => array(
-                    'min'  => 0,
-                    'step' => 1,
-                ),
-                'tab_slug'       => 'advanced',
-                'toggle_slug'    => 'layout',
-                'show_if'        => array(
-                    'layout' => 'style-four',
-                ),
-                'mobile_options' => true,
-            ),
-
         );
 
         $content_bg = $this->dina_custom_background_fields( 'content', 'Content', 'advanced', 'layout',
@@ -255,6 +264,37 @@ class DINA_Person extends DINA_Module_Core {
                 'tab_slug'       => 'advanced',
                 'toggle_slug'    => 'icon',
                 'mobile_options' => true,
+            ),
+
+            'image_width'    => array(
+                'label'          => esc_html__( 'Image Width', 'divinationkit-for-divi' ),
+                'description'    => esc_html__( 'Here you can change image size.', 'divinationkit-for-divi' ),
+                'type'           => 'range',
+                'default_unit'   => '%',
+                'default'        => '100',
+                'tab_slug'       => 'advanced',
+                'toggle_slug'    => 'image',
+                'hover'          => 'tabs',
+                'mobile_options' => true,
+                'range_settings' => array(
+                    'min'  => 0,
+                    'step' => 1,
+                    'max'  => 100,
+                ),
+            ),
+
+            'image_align'    => array(
+                'label'           => esc_html__( 'image Alignment', 'divinationkit-for-divi' ),
+                'type'            => 'text_align',
+                'option_category' => 'configuration',
+                'options'         => et_builder_get_text_orientation_options( array( 'justified' ) ),
+                'tab_slug'        => 'advanced',
+                'toggle_slug'     => 'image',
+                'default'         => 'center',
+                'mobile_options'  => true,
+                'show_if_not'     => array(
+                    'layout' => 'style-four',
+                ),
             ),
         );
 
@@ -557,7 +597,37 @@ class DINA_Person extends DINA_Module_Core {
             'declaration' => "width:{$size}px; height: {$size}px;",
         ) );
 
+        if ( $layout === 'style-four' ) {
+            $this->dina_responsive_css( $render_slug, array(
+                array(
+                    'option_slug' => 'image_width',
+                    'property'    => 'width',
+                    'selector'    => '%%order_class%% .dina_person-img',
+                ),
+            ) );
+        } else {
+            $this->dina_responsive_css( $render_slug, array(
+                array(
+                    'option_slug' => 'image_width',
+                    'property'    => 'width',
+                    'selector'    => '%%order_class%% .dina_person-img img',
+                    'default'     => 'display: inline-block',
+                )
+                , array(
+                    'option_slug' => 'image_width',
+                    'property'    => 'width',
+                    'selector'    => '%%order_class%% .dina_person-img img',
+                ),
+            ) );
+        }
+
         $this->dina_responsive_css( $render_slug, array(
+
+            array(
+                'option_slug' => 'image_align',
+                'property'    => 'text-align',
+                'selector'    => '%%order_class%% .dina_person-img',
+            ),
             array(
                 'option_slug' => 'icon_alignment',
                 'property'    => 'justify-content',
@@ -616,12 +686,6 @@ class DINA_Person extends DINA_Module_Core {
                 'selector'    => '%%order_class%% .dina_person-style-three .dina_person-social-links',
             ),
 
-            // Style four
-            array(
-                'option_slug' => 'image_width',
-                'property'    => 'width',
-                'selector'    => '%%order_class%% .dina_person-style-four .dina_person-img',
-            ),
         ) );
 
         // Content background

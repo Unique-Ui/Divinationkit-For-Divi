@@ -102,6 +102,25 @@ class DINA_Dual_Button extends DINA_Module_Core {
                 ),
             ),
         );
+
+        $this->custom_css_fields = array(
+            'button_one'     => array(
+                'label'    => esc_html__( 'Button One', 'divinationkit-for-divi' ),
+                'selector' => '%%order_class%% .dina_button_one',
+            ),
+            'separator_icon' => array(
+                'label'    => esc_html__( 'Separator Icon', 'divinationkit-for-divi' ),
+                'selector' => '%%order_class%% .dina_dual_button-separator i.dina_icon',
+            ),
+            'separator_text' => array(
+                'label'    => esc_html__( 'Separator Text', 'divinationkit-for-divi' ),
+                'selector' => '%%order_class%% .dina_dual_button-separator-text',
+            ),
+            'button_two'     => array(
+                'label'    => esc_html__( 'Button Two', 'divinationkit-for-divi' ),
+                'selector' => '%%order_class%% .dina_button_two',
+            ),
+        );
     }
 
     public function get_fields() {

@@ -2,6 +2,10 @@
     overflow: hidden;
 }
 
+.dina_person-img img {
+    width: 100%;
+}
+
 .dina_person-name {
     font-weight: 600;
 }
@@ -196,6 +200,9 @@
 }
 
 /* Style four */
+.dina_person-style-four .dina_person-img {
+    width: 45%;
+}
 .dina_person-container.dina_person-style-four {
     display: flex;
 }

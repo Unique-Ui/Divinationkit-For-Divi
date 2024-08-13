@@ -29,6 +29,13 @@ class DINA_Gradient_Heading extends DINA_Module_Core {
                 ),
             ),
         );
+
+        $this->custom_css_fields = array(
+            'gradient_text' => array(
+                'label'    => esc_html__( 'Gradient Text', 'divinationkit-for-divi' ),
+                'selector' => '%%order_class%% .dina_gradient_heading-title',
+            ),
+        );
     }
 
     public function get_fields() {

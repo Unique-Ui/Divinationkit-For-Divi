@@ -9,6 +9,7 @@ export class Person extends Component {
 
     static css(props) {
         const additionalCss = [];
+        let imageWidth;
 
         const size = props.icon_size.split('px')[0] * 2;
 
@@ -19,7 +20,36 @@ export class Person extends Component {
             },
         ]);
 
+        if (props.layout === 'style-four') {
+            imageWidth = setResponsiveCSS(props, [
+                {
+                    selector: '%%order_class%% .dina_person-img',
+                    optionName: 'image_width',
+                    property: 'width',
+                },
+            ]);
+        } else {
+            imageWidth = setResponsiveCSS(props, [
+                {
+                    selector: '%%order_class%% .dina_person-img img',
+                    optionName: 'image_width',
+                    property: 'width',
+                    defaultCss: 'display: inline-block',
+                },
+                {
+                    selector: '%%order_class%% .dina_person-img img',
+                    optionName: 'image_width',
+                    property: 'width',
+                },
+            ]);
+        }
+
         const responsiveCss = setResponsiveCSS(props, [
+            {
+                selector: '%%order_class%% .dina_person-img',
+                optionName: 'image_align',
+                property: 'text-align',
+            },
             {
                 selector: '%%order_class%% .dina_person-social-links',
                 optionName: 'icon_alignment',
@@ -79,14 +109,6 @@ export class Person extends Component {
                 optionName: 'offset_x',
                 property: 'top',
             },
-
-            // Style four
-            {
-                selector:
-                    '%%order_class%% .dina_person-style-four .dina_person-img',
-                optionName: 'image_width',
-                property: 'width',
-            },
         ]);
 
         const content_bg = dinaGetCustomBgCSS(
@@ -97,7 +119,10 @@ export class Person extends Component {
             '#00e091'
         );
 
-        return additionalCss.concat(responsiveCss).concat(content_bg);
+        return additionalCss
+            .concat(responsiveCss)
+            .concat(content_bg)
+            .concat(imageWidth);
     }
 
     renderImage = () => {

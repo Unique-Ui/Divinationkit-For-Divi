@@ -41,6 +41,41 @@ class DINA_PriceList_item extends DINA_Module_Core {
                 ),
             ),
         );
+
+        $this->custom_css_fields = array(
+            'separator'     => array(
+                'label'    => esc_html__( 'Divider', 'divinationkit-for-divi' ),
+                'selector' => '.dina_pricelist-container %%order_class%% .dina_pricelist-content .dina_pricelist-divider',
+            ),
+            'icon_wrapper'  => array(
+                'label'    => esc_html__( 'Icon Wrapper', 'divinationkit-for-divi' ),
+                'selector' => '.dina_pricelist-container %%order_class%% .dina_pricelist-icon',
+            ),
+            'icon'          => array(
+                'label'    => esc_html__( 'Icon', 'divinationkit-for-divi' ),
+                'selector' => '.dina_pricelist-container %%order_class%% .dina_pricelist-icon i.dina_icon',
+            ),
+            'image_wrapper' => array(
+                'label'    => esc_html__( 'Image Wrapper', 'divinationkit-for-divi' ),
+                'selector' => '.dina_pricelist-container %%order_class%% .dina_pricelist-image',
+            ),
+            'image'         => array(
+                'label'    => esc_html__( 'Image', 'divinationkit-for-divi' ),
+                'selector' => '.dina_pricelist-container %%order_class%% .dina_pricelist-image img',
+            ),
+            'title'         => array(
+                'label'    => esc_html__( 'Price Title', 'divinationkit-for-divi' ),
+                'selector' => '.dina_pricelist-container %%order_class%% .dina_pricelist-content .dina_pricelist-title',
+            ),
+            'price'         => array(
+                'label'    => esc_html__( 'Price', 'divinationkit-for-divi' ),
+                'selector' => '.dina_pricelist-container %%order_class%% .dina_pricelist-content .dina_pricelist-price',
+            ),
+            'description'   => array(
+                'label'    => esc_html__( 'Description', 'divinationkit-for-divi' ),
+                'selector' => '.dina_pricelist-container %%order_class%% .dina_pricelist-content .dina_pricelist-description p',
+            ),
+        );
     }
 
     public function get_fields() {
