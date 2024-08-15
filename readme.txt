@@ -111,7 +111,7 @@ Yes! DiviNationKit is absolutely free. There is no hidden charge.
 
 == Changelog ==
 
-= Version 1.0.4 - 14 August 2024 =
+= Version 1.0.4 - 15 August 2024 =
 - Feature: Added icon position (left/right/center) on Divider
 - Feature: Business Hour items settings
 - Fixed: Business Hour global divider issue
