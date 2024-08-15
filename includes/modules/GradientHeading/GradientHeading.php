@@ -248,6 +248,12 @@ class DINA_Gradient_Heading extends DINA_Module_Core {
             'toggle_slug'     => 'gradient_text',
         );
 
+        $advanced_fields['margin_padding'] = array(
+            'css' => array(
+                'important' => 'all',
+            ),
+        );
+
         return $advanced_fields;
     }
 

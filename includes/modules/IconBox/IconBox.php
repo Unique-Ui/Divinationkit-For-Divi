@@ -54,6 +54,7 @@ class DINA_Icon_Box extends DINA_Module_Core {
                             ),
                         ),
                     ),
+                    'border'    => esc_html__( 'Border', 'divinationkit-for-divi' ),
                 ),
             ),
         );
@@ -386,13 +387,13 @@ class DINA_Icon_Box extends DINA_Module_Core {
         $advanced_fields['borders']['icon_box'] = array(
             'label_prefix' => esc_html__( 'List Item', 'divinationkit-for-divi' ),
             'tab_slug'     => 'advanced',
-            'toggle_slug'  => 'list_item',
+            'toggle_slug'  => 'border',
             'css'          => array(
                 'main'      => array(
-                    'border_radii'  => '%%order_class%% .dina_icon_box',
-                    'border_styles' => '%%order_class%% .dina_icon_box',
+                    'border_radii'  => '%%order_class%%',
+                    'border_styles' => '%%order_class%%',
                 ),
-                'important' => false,
+                'important' => 'all',
             ),
             'defaults'     => array(
                 'border_radii'  => 'on|0px|0px|0px|0px',
@@ -566,6 +567,12 @@ class DINA_Icon_Box extends DINA_Module_Core {
                 'background_color' => array(
                     'default' => '#eaeaea',
                 ),
+            ),
+        );
+
+        $advanced_fields['margin_padding'] = array(
+            'css' => array(
+                'important' => 'all',
             ),
         );
 

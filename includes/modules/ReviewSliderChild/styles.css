@@ -6,6 +6,10 @@
     display: flex;
 }
 
+.dina_testimonial_box-author {
+    align-items: self-start;
+}
+
 .dina_testimonial_box-style-three .dina_testimonial_box-img {
     flex: 1;
 }

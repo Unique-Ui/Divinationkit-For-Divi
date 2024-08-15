@@ -615,6 +615,12 @@ class DINA_Review extends DINA_Module_Core {
             ),
         );
 
+        $advanced_fields['margin_padding'] = array(
+            'css' => array(
+                'important' => 'all',
+            ),
+        );
+
         return $advanced_fields;
     }
 

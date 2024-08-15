@@ -106,13 +106,37 @@ class AdvancedDivider extends Component {
     render() {
         const classes = [];
         classes.push('dina_divider-' + this.props.divider_position);
-        return (
-            <div className={`dina_divider_wrapper ${classes.join(' ')}`}>
-                <div className="dina_divider-before dina_divider"></div>
-                {this.render_content()}
-                <div className="dina_divider-after dina_divider"></div>
-            </div>
-        );
+
+        let layout;
+
+        if (this.props.divider_alignment === 'left') {
+            layout = (
+                <div className={`dina_divider_wrapper ${classes.join(' ')}`}>
+                    {this.render_content()}
+                    <div className="dina_divider-after dina_divider"></div>
+                </div>
+            );
+        }
+
+        if (this.props.divider_alignment === 'center') {
+            layout = (
+                <div className={`dina_divider_wrapper ${classes.join(' ')}`}>
+                    <div className="dina_divider-before dina_divider"></div>
+                    {this.render_content()}
+                    <div className="dina_divider-after dina_divider"></div>
+                </div>
+            );
+        }
+
+        if (this.props.divider_alignment === 'right') {
+            layout = (
+                <div className={`dina_divider_wrapper ${classes.join(' ')}`}>
+                    <div className="dina_divider-after dina_divider"></div>
+                    {this.render_content()}
+                </div>
+            );
+        }
+        return layout;
     }
 }
 

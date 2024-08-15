@@ -789,6 +789,12 @@ class DINA_testimonial_Slider extends DINA_Module_Core {
             ),
         );
 
+        $advanced_fields['margin_padding'] = array(
+            'css' => array(
+                'important' => 'all',
+            ),
+        );
+
         return $advanced_fields;
 
     }

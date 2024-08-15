@@ -28,6 +28,19 @@ export class BusinessHour extends Component {
                 optionName: 'separator_position',
                 property: 'align-items',
             },
+
+            {
+                selector: '%%order_class%% .dina_business_hour_child',
+                optionName: 'item_margin',
+                property: 'margin',
+                important: true,
+            },
+            {
+                selector: '%%order_class%% .dina_business_hour_child',
+                optionName: 'item_padding',
+                property: 'padding',
+                important: true,
+            },
         ]);
 
         return additionalCss.concat(responsiveCss);

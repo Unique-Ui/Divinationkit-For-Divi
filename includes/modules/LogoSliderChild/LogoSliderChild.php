@@ -79,8 +79,8 @@ class DINA_Logo_Slider_Child extends DINA_Module_Core {
             'toggle_slug' => 'border',
             'css'         => array(
                 'main'      => array(
-                    'border_radii'  => '%%order_class%% .dina_logo_slider-item',
-                    'border_styles' => '%%order_class%% .dina_logo_slider-item',
+                    'border_radii'  => '%%order_class%% .dina_logo_slider_child',
+                    'border_styles' => '%%order_class%% .dina_logo_slider_child',
                 ),
                 'important' => false,
             ),
@@ -93,6 +93,15 @@ class DINA_Logo_Slider_Child extends DINA_Module_Core {
                 ),
             ),
         );
+
+        $advanced_fields['margin_padding'] = array(
+            'css' => array(
+                'important' => 'all',
+            ),
+        );
+
+        return $advanced_fields;
+
     }
 
     public function render( $attrs, $render_slug, $content ) {

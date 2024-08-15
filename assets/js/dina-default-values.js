@@ -99,7 +99,6 @@ jQuery(function($) {
             }),
             (window.ETBuilderBackend.defaults.dina_business_hour_child = {
                 hide_separator: 'off',
-                separator_style: 'solid',
                 day: 'Monday',
                 time: '08:00am - 18:00pm',
                 separator_position: 'center',

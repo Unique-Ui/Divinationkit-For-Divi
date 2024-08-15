@@ -478,7 +478,6 @@ class DINA_Dual_Button extends DINA_Module_Core {
                 'default'         => 'left',
                 'tab_slug'        => 'advanced',
                 'toggle_slug'     => 'general',
-                'default'         => 'left',
                 'mobile_options'  => true,
             ),
 
@@ -1058,6 +1057,12 @@ class DINA_Dual_Button extends DINA_Module_Core {
                     'color' => $et_accent_color,
                     'style' => 'solid',
                 ),
+            ),
+        );
+
+        $advanced_fields['margin_padding'] = array(
+            'css' => array(
+                'important' => 'all',
             ),
         );
 

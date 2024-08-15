@@ -15,6 +15,7 @@
 
 .dina_tooltip-text {
     color: #fff;
+    font-size: 14px;
 }
 
 .dina_tooltip-trigger::after {

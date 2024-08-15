@@ -281,7 +281,6 @@ class DINA_Icon_List extends DINA_Module_Core {
         $advanced_fields['text_shadow'] = array();
         $advanced_fields['fonts']       = array();
 
-        // Flip card border
         $advanced_fields['borders']['list_item'] = array(
             'label_prefix' => esc_html__( 'List Item', 'divinationkit-for-divi' ),
             'tab_slug'     => 'advanced',
@@ -422,6 +421,12 @@ class DINA_Icon_List extends DINA_Module_Core {
                     'color' => $et_accent_color,
                     'style' => 'solid',
                 ),
+            ),
+        );
+
+        $advanced_fields['margin_padding'] = array(
+            'css' => array(
+                'important' => 'all',
             ),
         );
 

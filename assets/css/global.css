@@ -42,6 +42,7 @@ body *[class^='dina'] img {
 .dina_pricelist-image,
 .dina_pricelist_child,
 .dina_icon_list_child,
+.dina_business_hour_child,
 .dian_slider_icon,
 .dina_icon_list_item {
     border-style: solid;
