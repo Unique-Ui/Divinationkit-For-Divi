@@ -12,11 +12,9 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Powerful Divi modules to make your website more creative and professional
 
 == Description ==
-Introducing "DiviNationKit," a powerful Divi extension to elevate your Divi theme experience by offering a plethora of functional and creative Divi modules. Perfect for designers, developers, and website owners, DiviNationKit empowers you to build stunning, highly customizable websites with ease.
+🔥Introducing "DiviNationKit," a powerful Divi extension to elevate your Divi theme experience by offering a plethora of functional and creative Divi modules. Perfect for designers, developers, and website owners, DiviNationKit empowers you to build stunning, highly customizable websites with ease.
 
-<a href="https://divinationkit.com/modules" target="_blank">Preview Demos</a>
-
-Our plugin seamlessly integrates with the Divi Builder, providing a rich library of unique modules that enhance your site’s functionality and aesthetics. Whether you need advanced sliders, interactive galleries, dynamic content displays, or specialized forms, DiviNationKit has got you covered. Each module is meticulously crafted to ensure responsiveness, fast loading times, and intuitive customization options.
+<a href="https://divinationkit.com/modules" target="_blank">Live Preview</a>
 
 With DiviNationKit, the possibilities are endless. You can effortlessly create visually striking pages that captivate your audience and improve user engagement. The user-friendly interface allows for quick module deployment and real-time editing, ensuring your website design process is smooth and efficient. Plus, our regular updates ensure compatibility with the latest Divi and WordPress versions, along with the introduction of new features to keep your website ahead of the curve.
 
@@ -112,6 +110,7 @@ Yes! DiviNationKit is absolutely free. There is no hidden charge.
 == Changelog ==
 
 = Version 1.0.4 - 15 August 2024 =
+- compatibility: Divi 4.27.1
 - Feature: Added icon position (left/right/center) on Divider
 - Feature: Business Hour items settings
 - Fixed: Business Hour global divider issue
