@@ -116,7 +116,7 @@ class DINA_Dual_Button extends DINA_Module_Core {
                     'dina-hover-grow'                   => esc_html__( 'Grow', 'divinationkit-for-divi' ),
                     'dina-hover-shrink'                 => esc_html__( 'Shrink', 'divinationkit-for-divi' ),
                     'dina-hover-pulse'                  => esc_html__( 'Pulse', 'divinationkit-for-divi' ),
-                    'dina-hover-pulse-grow'             => esc_html__( 'Pulse Gow', 'divinationkit-for-divi' ),
+                    'dina-hover-pulse-grow'             => esc_html__( 'Pulse Grow', 'divinationkit-for-divi' ),
                     'dina-hover-pulse-shrink'           => esc_html__( 'Pulse Shrink', 'divinationkit-for-divi' ),
                     'dina-hover-pop'                    => esc_html__( 'Pop', 'divinationkit-for-divi' ),
                     'dina-hover-push'                   => esc_html__( 'Push', 'divinationkit-for-divi' ),
@@ -605,6 +605,7 @@ class DINA_Dual_Button extends DINA_Module_Core {
                 'toggle_slug'    => 'button_one_design',
                 'sub_toggle'     => 'wrapper',
                 'default'        => '18px|30px|18px|30px',
+                'hover'          => 'tabs',
                 'mobile_options' => true,
             ),
 
@@ -616,6 +617,7 @@ class DINA_Dual_Button extends DINA_Module_Core {
                 'toggle_slug'    => 'button_one_design',
                 'sub_toggle'     => 'wrapper',
                 'default'        => '0px|0px|0px|0px',
+                'hover'          => 'tabs',
                 'mobile_options' => true,
             ),
         );
@@ -883,6 +885,7 @@ class DINA_Dual_Button extends DINA_Module_Core {
                 'toggle_slug'    => 'button_two_design',
                 'sub_toggle'     => 'wrapper',
                 'default'        => '18px|30px|18px|30px',
+                'hover'          => 'tabs',
                 'mobile_options' => true,
             ),
 
@@ -894,6 +897,7 @@ class DINA_Dual_Button extends DINA_Module_Core {
                 'toggle_slug'    => 'button_two_design',
                 'sub_toggle'     => 'wrapper',
                 'default'        => '0px|0px|0px|0px',
+                'hover'          => 'tabs',
                 'mobile_options' => true,
             ),
         );
@@ -1073,7 +1077,7 @@ class DINA_Dual_Button extends DINA_Module_Core {
     public function render_button_one() {
 
         $classes                        = array( 'dina_button', 'dina_button_one' );
-        $button_text                    = isset( $this->props['button_one_text'] ) ? $this->props['button_one_text'] : 'Button One';
+        $button_text                    = isset( $this->props['button_one_text'] ) ? $this->props['button_one_text'] : '';
         $button_url                     = isset( $this->props['button_one_url'] ) ? $this->props['button_one_url'] : '#';
         $new_window                     = $this->props['url_new_window_one'] === 'on' ? '_blank' : '_self';
         $button_one_2d_hover_effect     = $this->props['button_one_2d_hover_effect'];
@@ -1102,6 +1106,10 @@ class DINA_Dual_Button extends DINA_Module_Core {
             array_push( $classes, 'dina-bg-hover-effect' );
         }
 
+        if ( $button_text === '' ) {
+            return;
+        }
+
         return sprintf(
             '<a href="%4$s" target="%5$s" class="%6$s">
                 %1$s
@@ -1122,7 +1130,7 @@ class DINA_Dual_Button extends DINA_Module_Core {
     public function render_button_two() {
 
         $classes                        = array( 'dina_button', 'dina_button_two' );
-        $button_text                    = isset( $this->props['button_two_text'] ) ? $this->props['button_two_text'] : 'Button two';
+        $button_text                    = isset( $this->props['button_two_text'] ) ? $this->props['button_two_text'] : '';
         $button_url                     = isset( $this->props['button_two_url'] ) ? $this->props['button_two_url'] : '#';
         $new_window                     = $this->props['url_new_window_two'] === 'on' ? '_blank' : '_self';
         $button_two_2d_hover_effect     = $this->props['button_two_2d_hover_effect'];
@@ -1150,6 +1158,10 @@ class DINA_Dual_Button extends DINA_Module_Core {
         if ( $button_two_bg_hover_effect !== '' ) {
             array_push( $classes, $button_two_bg_hover_effect );
             array_push( $classes, 'dina-bg-hover-effect' );
+        }
+
+        if ( $button_text === '' ) {
+            return;
         }
 
         return sprintf(
@@ -1191,7 +1203,7 @@ class DINA_Dual_Button extends DINA_Module_Core {
         if ( $separator_type === 'text' ) {
             return sprintf(
                 '<div class="dina_dual_button-separator">
-                    <span class="dina_dual_button-separator-text>
+                    <span class="dina_dual_button-separator-text">
                         %1$s
                     </span>
                 </div>',
@@ -1493,6 +1505,16 @@ class DINA_Dual_Button extends DINA_Module_Core {
                     ),
 
                 ) );
+
+                ET_Builder_Element::set_style( $render_slug, array(
+                    'selector'    => '%%order_class%% .dina_button_one.dina-border-hover-effect::before',
+                    'declaration' => "transform: translateY(-{$this->props['button_one_hover_border_bg_height']})",
+                ) );
+
+                ET_Builder_Element::set_style( $render_slug, array(
+                    'selector'    => '%%order_class%% .dina_button_one.dina-border-hover-effect:hover::before',
+                    'declaration' => "transform: translateY(0)",
+                ) );
             }
 
         }
@@ -1545,6 +1567,16 @@ class DINA_Dual_Button extends DINA_Module_Core {
                         'selector'    => '%%order_class%% .dina_button_two.dina-border-hover-effect::before',
                     ),
 
+                ) );
+
+                ET_Builder_Element::set_style( $render_slug, array(
+                    'selector'    => '%%order_class%% .dina_button_two.dina-border-hover-effect::before',
+                    'declaration' => "transform: translateY(-{$this->props['button_two_hover_border_bg_height']})",
+                ) );
+
+                ET_Builder_Element::set_style( $render_slug, array(
+                    'selector'    => '%%order_class%% .dina_button_two.dina-border-hover-effect:hover::before',
+                    'declaration' => "transform: translateY(0)",
                 ) );
             }
 

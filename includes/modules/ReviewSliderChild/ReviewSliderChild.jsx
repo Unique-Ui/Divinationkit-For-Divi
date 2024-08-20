@@ -80,7 +80,7 @@ export class TestimonialSliderChild extends Component {
             },
             {
                 selector:
-                    '.dina_testimonial_slider-container %%order_class%% .dina_testimonial_box-author, .dina_testimonial_slider-container %%order_class%% .dina_testimonial_box-style-three',
+                    '.dina_testimonial_slider-container %%order_class%% .dina_testimonial_box-style-three',
                 optionName: 'vertical_alignment',
                 property: 'align-items',
             },

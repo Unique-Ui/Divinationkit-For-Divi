@@ -484,7 +484,7 @@ class DINA_testimonial_Slider extends DINA_Module_Core {
                 'description'    => esc_html__( 'Here you can change space between author image and info.', 'divinationkit-for-divi' ),
                 'type'           => 'range',
                 'default_unit'   => 'px',
-                'default'        => '10px',
+                'default'        => '20px',
                 'tab_slug'       => 'advanced',
                 'toggle_slug'    => 'image',
                 'range_settings' => array(
@@ -502,7 +502,8 @@ class DINA_testimonial_Slider extends DINA_Module_Core {
                 'label'          => esc_html__( 'Image Width', 'divinationkit-for-divi' ),
                 'description'    => esc_html__( 'Here you can change your back side image width.', 'divinationkit-for-divi' ),
                 'type'           => 'range',
-                'default_unit'   => '%',
+                'default'        => '50px',
+                'default_unit'   => 'px',
                 'tab_slug'       => 'advanced',
                 'toggle_slug'    => 'image',
                 'mobile_options' => true,

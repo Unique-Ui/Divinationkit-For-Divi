@@ -1,9 +1,9 @@
 <?php
 /*
 Plugin Name: DiviNationKit for Divi
-Plugin URI:  https://divinationkit.comm
+Plugin URI:  https://divinationkit.com
 Description: DiviNationKit is a powerful Divi extension to elevate your Divi theme experience by offering a plethora of functional and creative Divi modules. Perfect for designers, developers, and website owners, DiviNationKit empowers you to build stunning, highly customizable websites with ease.
-Version:     1.0.4
+Version:     1.0.5
 Author:      DiviNationKit
 Author URI:  https://divinationkit.com
 License:     GPL2
@@ -47,7 +47,7 @@ if ( !class_exists( 'DINA_DIVINATIONKIT' ) ):
          *
          * @var string
          */
-        const version = '1.0.2';
+        const version = '1.0.5';
 
         /**
          * Plugin documentation
@@ -133,13 +133,13 @@ if ( !class_exists( 'DINA_DIVINATIONKIT' ) ):
          * @return void
          */
         public function activate() {
-            $installed = get_option( 'dne_divi_nation_installed' );
+            $installed = get_option( 'dina_divinatiokit_installed' );
 
             if ( !$installed ) {
-                update_option( 'dne_divi_nation_installed', time() );
+                update_option( 'dina_divinatiokit_installed', time() );
             }
 
-            update_option( 'dne_divi_nation_version', '1.0.0' );
+            update_option( 'dina_divinatiokit_version', self::version );
         }
 
         /**
@@ -153,8 +153,8 @@ if ( !class_exists( 'DINA_DIVINATIONKIT' ) ):
 
             $links[] = sprintf(
                 '<a href="%1$s" target="_blank" style="color: #01564D;font-weight: 600;">
-													%2$s
-												</a>',
+															%2$s
+														</a>',
                 self::DOCUMENTATION_LINK,
                 esc_html__( 'Docs', 'dne-divi-nations' )
             );

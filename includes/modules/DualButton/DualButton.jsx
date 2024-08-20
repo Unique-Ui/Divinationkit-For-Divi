@@ -6,9 +6,9 @@ import {
     setResponsiveCSS,
 } from '../Core/DiviNationKit-core';
 
-import '../../../assets/css/dina-2d-hover-effects.css';
-import '../../../assets/css/dina-border-hover-effects.css';
-import '../../../assets/css/dina-bg-hover-effects.css';
+import './dina-2d-hover-effects.css';
+import './dina-border-hover-effects.css';
+import './dina-bg-hover-effects.css';
 import './styles.css';
 
 export class DualButton extends Component {
@@ -26,8 +26,10 @@ export class DualButton extends Component {
             buttonOneBg,
             buttonTwoBg,
             responsiveCss,
-            borderHoverEffectCss,
-            bgHoverEffectCss,
+            borderHoverEffectCssOne,
+            bgHoverEffectCssOne,
+            borderHoverEffectCssTwo,
+            bgHoverEffectCssTwo,
             buttonOneIconPlacement = props.button_one_icon_placement,
             buttonOneIconShowOnHover = props.button_one_icon_show_on_hover,
             buttonTwoIconPlacement = props.button_two_icon_placement,
@@ -245,7 +247,7 @@ export class DualButton extends Component {
                 borderHoverEffectOne === 'dina-outline-in' ||
                 borderHoverEffectOne === 'dina-outline-out'
             ) {
-                borderHoverEffectCss = setResponsiveCSS(props, [
+                borderHoverEffectCssOne = setResponsiveCSS(props, [
                     {
                         selector:
                             '%%order_class%% .dina_button_one.dina-border-hover-effect::before',
@@ -260,7 +262,7 @@ export class DualButton extends Component {
                     },
                 ]);
             } else {
-                borderHoverEffectCss = setResponsiveCSS(props, [
+                borderHoverEffectCssOne = setResponsiveCSS(props, [
                     {
                         selector:
                             '%%order_class%% .dina_button_one.dina-border-hover-effect::before',
@@ -274,6 +276,22 @@ export class DualButton extends Component {
                         property: 'height',
                     },
                 ]);
+
+                additionalCss.push([
+                    {
+                        selector:
+                            '%%order_class%% .dina_button_one.dina-border-hover-effect::before',
+                        declaration: `transform: translateY(-${props.button_one_hover_border_bg_height})`,
+                    },
+                ]);
+
+                additionalCss.push([
+                    {
+                        selector:
+                            '%%order_class%% .dina_button_one.dina-border-hover-effect:hover::before',
+                        declaration: `transform: translateY(0)`,
+                    },
+                ]);
             }
         }
 
@@ -281,7 +299,7 @@ export class DualButton extends Component {
         const bgEffectOne = props.button_one_bg_hover_effect;
 
         if (bgEffectOne !== '') {
-            bgHoverEffectCss = setResponsiveCSS(props, [
+            bgHoverEffectCssOne = setResponsiveCSS(props, [
                 {
                     selector:
                         '%%order_class%% .dina_button_one.dina-bg-hover-effect::before',
@@ -300,7 +318,7 @@ export class DualButton extends Component {
                 borderHoverEffectTwo === 'dina-outline-in' ||
                 borderHoverEffectTwo === 'dina-outline-out'
             ) {
-                borderHoverEffectCss = setResponsiveCSS(props, [
+                borderHoverEffectCssTwo = setResponsiveCSS(props, [
                     {
                         selector:
                             '%%order_class%% .dina_button_two.dina-border-hover-effect::before',
@@ -315,7 +333,7 @@ export class DualButton extends Component {
                     },
                 ]);
             } else {
-                borderHoverEffectCss = setResponsiveCSS(props, [
+                borderHoverEffectCssTwo = setResponsiveCSS(props, [
                     {
                         selector:
                             '%%order_class%% .dina_button_two.dina-border-hover-effect::before',
@@ -329,6 +347,22 @@ export class DualButton extends Component {
                         property: 'height',
                     },
                 ]);
+
+                additionalCss.push([
+                    {
+                        selector:
+                            '%%order_class%% .dina_button_two.dina-border-hover-effect::before',
+                        declaration: `transform: translateY(-${props.button_two_hover_border_bg_height})`,
+                    },
+                ]);
+
+                additionalCss.push([
+                    {
+                        selector:
+                            '%%order_class%% .dina_button_two.dina-border-hover-effect:hover::before',
+                        declaration: `transform: translateY(0)`,
+                    },
+                ]);
             }
         }
 
@@ -336,7 +370,7 @@ export class DualButton extends Component {
         const bgEffectTwo = props.button_two_bg_hover_effect;
 
         if (bgEffectTwo !== '') {
-            bgHoverEffectCss = setResponsiveCSS(props, [
+            bgHoverEffectCssTwo = setResponsiveCSS(props, [
                 {
                     selector:
                         '%%order_class%% .dina_button_two.dina-bg-hover-effect::before',
@@ -353,8 +387,10 @@ export class DualButton extends Component {
             .concat(buttonOneBg)
             .concat(buttonTwoBg)
             .concat(responsiveCss)
-            .concat(borderHoverEffectCss)
-            .concat(bgHoverEffectCss);
+            .concat(borderHoverEffectCssOne)
+            .concat(bgHoverEffectCssOne)
+            .concat(borderHoverEffectCssTwo)
+            .concat(bgHoverEffectCssTwo);
     }
 
     // Render Button one
@@ -401,6 +437,10 @@ export class DualButton extends Component {
                     {renderIcon(props.button_one_icon)}
                 </i>
             );
+        }
+
+        if (props.button_one_text === '') {
+            return;
         }
 
         return (
@@ -456,6 +496,10 @@ export class DualButton extends Component {
                     {renderIcon(props.button_two_icon)}
                 </i>
             );
+        }
+
+        if (props.button_two_text === '') {
+            return;
         }
 
         return (

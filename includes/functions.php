@@ -23,3 +23,14 @@ function dina_inject_fa_icons( $icon_data ) {
         add_filter( 'et_late_global_assets_list', 'dina_global_assets_list' );
     }
 }
+
+function dina_get_menu_options() {
+    $menus   = wp_get_nav_menus();
+    $options = array( 'none' => esc_html__( 'Select a menu', 'divinationkit-for-divi' ) );
+
+    foreach ( $menus as $menu ) {
+        $options[$menu->term_id] = $menu->name;
+    }
+
+    return $options;
+}

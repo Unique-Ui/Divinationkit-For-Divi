@@ -22,10 +22,10 @@
     flex-direction: column;
 }
 
-.dina_testimonial_box-style-one .dina_testimonial_box-img {
+/* .dina_testimonial_box-style-one .dina_testimonial_box-img {
     width: 20%;
     overflow: hidden;
-}
+} */
 
 .dina_testimonial_box-style-one .dina_testimonial_box-description {
     margin-top: 14px;

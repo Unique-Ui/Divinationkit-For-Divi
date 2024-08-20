@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './styles.css';
-import '../../../assets/css/dina-2d-hover-effects.css';
+import './dina-2d-hover-effects.css';
 
 export class GradientHeading extends Component {
     static slug = 'dina_gradient_heading';

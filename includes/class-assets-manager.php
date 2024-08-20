@@ -62,6 +62,13 @@ class DINA_Assets {
                 'enqueue' => false,
             ),
 
+            'dina-basic-menu'               => array(
+                'src'     => DINA_DIVINATIONKIT_URL . '/assets/js/dina-basic-menu.js',
+                'version' => DINA_DIVINATIONKIT_VERSION,
+                'deps'    => array( 'jquery' ),
+                'enqueue' => false,
+            ),
+
         );
     }
 

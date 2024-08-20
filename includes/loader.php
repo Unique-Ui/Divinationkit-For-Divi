@@ -10,6 +10,7 @@ if ( !class_exists( 'ET_Builder_Element' ) ) {
 }
 
 require_once DINA_DIVINATIONKIT_DIR . 'includes/modules/Core/DiviNationKit-core.php';
+require_once DINA_DIVINATIONKIT_DIR . 'includes/modules/Core/type/PostBased.php';
 
 $module_files = glob( __DIR__ . '/modules/*/*.php' );
 

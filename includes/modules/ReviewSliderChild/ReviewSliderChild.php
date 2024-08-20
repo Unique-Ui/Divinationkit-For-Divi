@@ -855,7 +855,7 @@ class DINA_Testimonial_Slider_Child extends DINA_Module_Core {
             array(
                 'option_slug' => 'vertical_alignment',
                 'property'    => 'align-items',
-                'selector'    => '.dina_testimonial_slider-container %%order_class%% .dina_testimonial_box-author, .dina_testimonial_slider-container %%order_class%% .dina_testimonial_box-style-three',
+                'selector'    => '.dina_testimonial_slider-container %%order_class%% .dina_testimonial_box-style-three',
             ),
 
             array(

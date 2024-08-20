@@ -18,8 +18,7 @@
     align-items: flex-end;
 }
 
-.dina_divider-before,
-.dina_divider-after {
+.dina_divider {
     flex-grow: 1;
 }
 
