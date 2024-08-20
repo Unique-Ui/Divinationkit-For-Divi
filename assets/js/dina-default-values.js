@@ -19,8 +19,15 @@ jQuery(function($) {
             ((window.ETBuilderBackend.defaults.dina_logo_slider_child = {
                 image: defaultImage,
             }),
+            (window.ETBuilderBackend.defaults.dina_accordion_child = {
+                title,
+                description: content,
+                open_icon: '&#x4c;||divi||400',
+                close_icon: '&#x4d;||divi||400',
+            }),
             (window.ETBuilderBackend.defaults.dina_pricelist_child = {
-                icon: '&#xe0f3;||divi||400',
+                media_type: 'none',
+                icon,
                 image: defaultImage,
                 title: 'Price Title',
                 price: '$49.99',
@@ -45,17 +52,16 @@ jQuery(function($) {
             (window.ETBuilderBackend.defaults.dina_icon_list_child = {
                 icon: '&#xe052;||divi||400',
                 title: title,
-                tooltip_title: 'Tooltip Title',
+                tooltip_text: 'Tooltip Title',
                 tooltip_description: content,
-            }),
-            (window.ETBuilderBackend.defaults.dina_marquee_text = {
-                text: title,
+                badge_text: 'Hot',
             }),
             (window.ETBuilderBackend.defaults.dina_icon_box = {
                 icon: '&#xe105;||divi||400',
                 title: title,
                 subtitle: subtitle,
                 description: content,
+                badge_text: 'Hot',
             }),
             (window.ETBuilderBackend.defaults.dina_dual_button = {
                 button_one_text: 'Button One',
@@ -72,6 +78,9 @@ jQuery(function($) {
                 name: 'John Doe',
                 position: 'Developer at Microsoft',
             }),
+            (window.ETBuilderBackend.defaults.dina_person_child = {
+                skype_action: 'call',
+            }),
             (window.ETBuilderBackend.defaults.dina_rating = {
                 rating_title: '10k+ Happy Customars',
             }),
@@ -79,19 +88,17 @@ jQuery(function($) {
                 text_placement: 'outside',
                 hide_name: 'off',
                 hide_level: 'off',
-                bar_height: '10px',
-                border_radius: '10px',
+                bar_height: '28px',
+                border_radius: '3px',
                 offset_x: '10px',
                 tooltip_round: '3px',
             }),
             (window.ETBuilderBackend.defaults.dina_progress_bar_child = {
                 name: 'HTML',
                 level: '90%',
-                tooltip_padding: 'false|false|false|false',
             }),
             (window.ETBuilderBackend.defaults.dina_business_hour_child = {
                 hide_separator: 'off',
-                separator_style: 'solid',
                 day: 'Monday',
                 time: '08:00am - 18:00pm',
                 separator_position: 'center',
@@ -104,6 +111,18 @@ jQuery(function($) {
                 name: 'John Smith',
                 position: 'Founder & CEO at Microfoft',
                 description: content,
+            }),
+            (window.ETBuilderBackend.defaults.dina_testimonial_slider = {}),
+            (window.ETBuilderBackend.defaults.dina_testimonial_slider_child = {
+                use_image: 'on',
+                image: userImage,
+                name: 'John Smith',
+                position: 'Manager',
+                description: content,
+                rating: 5,
+                rating_scale: 5,
+                background_enable_color: 'on',
+                background_color: 'rgba(1, 86, 77, 0.05)',
             }));
     });
 });

@@ -1,0 +1,3498 @@
+# Copyright (C) 2024 DiviNationKit
+# This file is distributed under the GPL2.
+msgid ""
+msgstr ""
+"Project-Id-Version: DiviNationKit for Divi 1.0.4\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/divinationkit\n"
+"POT-Creation-Date: 2024-08-15 09:17:31+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2024-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Country: United States\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: "
+"__;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;_nx_noop:1,2,3c;esc_"
+"attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;esc_html_x:1,2c;\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-Bookmarks: \n"
+"X-Textdomain-Support: yes\n"
+"X-Generator: grunt-wp-i18n 1.0.3\n"
+
+#: divinationkit.php:159
+msgid "Docs"
+msgstr ""
+
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:12
+msgid "Advanced Divider"
+msgstr ""
+
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:21
+#: includes/modules/BusinessHourChild/BusinessHourChild.php:17
+#: includes/modules/DualButton/DualButton.php:23
+#: includes/modules/FlipCard/FlipCard.php:23
+#: includes/modules/GradientHeading/GradientHeading.php:21
+#: includes/modules/IconBox/IconBox.php:22
+#: includes/modules/IconList/IconList.php:23
+#: includes/modules/IconListChild/IconListChild.php:18
+#: includes/modules/LogoSlider/LogoSlider.php:23
+#: includes/modules/LogoSliderChild/LogoSliderChild.php:16
+#: includes/modules/Person/Person.php:25
+#: includes/modules/PriceList/PriceList.php:24
+#: includes/modules/PriceListChild/PriceListChild.php:16
+#: includes/modules/ProgressBarChild/ProgressBarChild.php:17
+#: includes/modules/Rating/Rating.php:22 includes/modules/Review/Review.php:23
+#: includes/modules/ReviewSlider/ReviewSlider.php:23
+#: includes/modules/ReviewSlider/ReviewSlider.php:53
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:18
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:31
+msgid "Content"
+msgstr ""
+
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:26
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:46
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:293
+#: includes/modules/PriceList/PriceList.php:32
+#: includes/modules/PriceList/PriceList.php:56
+#: includes/modules/PriceListChild/PriceListChild.php:24
+msgid "Divider"
+msgstr ""
+
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:28
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:54
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:88
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:339
+msgid "Divider Text"
+msgstr ""
+
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:32
+#: includes/modules/DualButton/DualButton.php:68
+#: includes/modules/DualButton/DualButton.php:644
+#: includes/modules/ReviewSlider/ReviewSlider.php:66
+msgid "Text"
+msgstr ""
+
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:35
+#: includes/modules/IconBox/IconBox.php:50
+#: includes/modules/IconList/IconList.php:37
+#: includes/modules/IconList/IconList.php:49
+#: includes/modules/IconListChild/IconListChild.php:32
+#: includes/modules/IconListChild/IconListChild.php:44
+msgid "Style"
+msgstr ""
+
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:39
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:50
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:78
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:316
+#: includes/modules/DualButton/DualButton.php:65
+#: includes/modules/DualButton/DualButton.php:643
+#: includes/modules/FlipCard/FlipCard.php:181
+#: includes/modules/FlipCard/FlipCard.php:320
+#: includes/modules/IconBox/IconBox.php:29
+#: includes/modules/IconBox/IconBox.php:68
+#: includes/modules/IconBox/IconBox.php:410
+#: includes/modules/IconList/IconList.php:29
+#: includes/modules/IconList/IconList.php:307
+#: includes/modules/IconListChild/IconListChild.php:17
+#: includes/modules/IconListChild/IconListChild.php:24
+#: includes/modules/Person/Person.php:31
+#: includes/modules/PriceList/PriceList.php:64
+#: includes/modules/PriceList/PriceList.php:430
+#: includes/modules/PriceListChild/PriceListChild.php:57
+#: includes/modules/PriceListChild/PriceListChild.php:403
+#: includes/modules/ProgressBar/ProgressBar.php:24
+#: includes/modules/ProgressBar/ProgressBar.php:309
+#: includes/modules/ProgressBarChild/ProgressBarChild.php:24
+#: includes/modules/ProgressBarChild/ProgressBarChild.php:381
+msgid "Icon"
+msgstr ""
+
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:65
+msgid "Use Text"
+msgstr ""
+
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:66
+msgid "Define content type icon/text"
+msgstr ""
+
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:71
+#: includes/modules/BusinessHourChild/BusinessHourChild.php:64
+#: includes/modules/DualButton/DualButton.php:547
+#: includes/modules/DualButton/DualButton.php:589
+#: includes/modules/DualButton/DualButton.php:631
+#: includes/modules/DualButton/DualButton.php:827
+#: includes/modules/DualButton/DualButton.php:869
+#: includes/modules/FlipCard/FlipCard.php:395
+#: includes/modules/FlipCard/FlipCard.php:791
+#: includes/modules/FlipCard/FlipCard.php:839
+#: includes/modules/IconBox/IconBox.php:134
+#: includes/modules/IconBox/IconBox.php:193
+#: includes/modules/IconListChild/IconListChild.php:65
+#: includes/modules/IconListChild/IconListChild.php:106
+#: includes/modules/IconListChild/IconListChild.php:202
+#: includes/modules/LogoSlider/LogoSlider.php:72
+#: includes/modules/LogoSlider/LogoSlider.php:95
+#: includes/modules/LogoSlider/LogoSlider.php:106
+#: includes/modules/LogoSlider/LogoSlider.php:118
+#: includes/modules/LogoSlider/LogoSlider.php:133
+#: includes/modules/LogoSlider/LogoSlider.php:159
+#: includes/modules/LogoSlider/LogoSlider.php:208
+#: includes/modules/LogoSlider/LogoSlider.php:221
+#: includes/modules/LogoSlider/LogoSlider.php:234
+#: includes/modules/Person/Person.php:120
+#: includes/modules/Person/Person.php:136
+#: includes/modules/ProgressBarChild/ProgressBarChild.php:65
+#: includes/modules/ProgressBarChild/ProgressBarChild.php:114
+#: includes/modules/ProgressBarChild/ProgressBarChild.php:127
+#: includes/modules/Rating/Rating.php:87 includes/modules/Review/Review.php:91
+#: includes/modules/Review/Review.php:149
+#: includes/modules/ReviewSlider/ReviewSlider.php:111
+#: includes/modules/ReviewSlider/ReviewSlider.php:134
+#: includes/modules/ReviewSlider/ReviewSlider.php:145
+#: includes/modules/ReviewSlider/ReviewSlider.php:157
+#: includes/modules/ReviewSlider/ReviewSlider.php:172
+#: includes/modules/ReviewSlider/ReviewSlider.php:198
+#: includes/modules/ReviewSlider/ReviewSlider.php:247
+#: includes/modules/ReviewSlider/ReviewSlider.php:260
+#: includes/modules/ReviewSlider/ReviewSlider.php:273
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:87
+msgid "Yes"
+msgstr ""
+
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:72
+#: includes/modules/BusinessHourChild/BusinessHourChild.php:65
+#: includes/modules/DualButton/DualButton.php:548
+#: includes/modules/DualButton/DualButton.php:590
+#: includes/modules/DualButton/DualButton.php:632
+#: includes/modules/DualButton/DualButton.php:828
+#: includes/modules/DualButton/DualButton.php:870
+#: includes/modules/FlipCard/FlipCard.php:396
+#: includes/modules/FlipCard/FlipCard.php:792
+#: includes/modules/FlipCard/FlipCard.php:840
+#: includes/modules/IconBox/IconBox.php:135
+#: includes/modules/IconBox/IconBox.php:194
+#: includes/modules/IconListChild/IconListChild.php:66
+#: includes/modules/IconListChild/IconListChild.php:107
+#: includes/modules/IconListChild/IconListChild.php:203
+#: includes/modules/LogoSlider/LogoSlider.php:73
+#: includes/modules/LogoSlider/LogoSlider.php:96
+#: includes/modules/LogoSlider/LogoSlider.php:107
+#: includes/modules/LogoSlider/LogoSlider.php:119
+#: includes/modules/LogoSlider/LogoSlider.php:134
+#: includes/modules/LogoSlider/LogoSlider.php:160
+#: includes/modules/LogoSlider/LogoSlider.php:209
+#: includes/modules/LogoSlider/LogoSlider.php:222
+#: includes/modules/LogoSlider/LogoSlider.php:235
+#: includes/modules/Person/Person.php:121
+#: includes/modules/Person/Person.php:137
+#: includes/modules/ProgressBarChild/ProgressBarChild.php:66
+#: includes/modules/ProgressBarChild/ProgressBarChild.php:115
+#: includes/modules/ProgressBarChild/ProgressBarChild.php:128
+#: includes/modules/Rating/Rating.php:88 includes/modules/Review/Review.php:92
+#: includes/modules/Review/Review.php:150
+#: includes/modules/ReviewSlider/ReviewSlider.php:112
+#: includes/modules/ReviewSlider/ReviewSlider.php:135
+#: includes/modules/ReviewSlider/ReviewSlider.php:146
+#: includes/modules/ReviewSlider/ReviewSlider.php:158
+#: includes/modules/ReviewSlider/ReviewSlider.php:173
+#: includes/modules/ReviewSlider/ReviewSlider.php:199
+#: includes/modules/ReviewSlider/ReviewSlider.php:248
+#: includes/modules/ReviewSlider/ReviewSlider.php:261
+#: includes/modules/ReviewSlider/ReviewSlider.php:274
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:88
+msgid "No"
+msgstr ""
+
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:79
+msgid "Define divider icon"
+msgstr ""
+
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:89
+msgid "Enter your divider text here"
+msgstr ""
+
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:101
+#: includes/modules/DualButton/DualButton.php:716
+#: includes/modules/FlipCard/FlipCard.php:269
+#: includes/modules/FlipCard/FlipCard.php:465
+#: includes/modules/IconBox/IconBox.php:324
+#: includes/modules/IconList/IconList.php:124
+#: includes/modules/LogoSlider/LogoSlider.php:287
+#: includes/modules/Person/Person.php:216
+#: includes/modules/PriceList/PriceList.php:159
+#: includes/modules/PriceListChild/PriceListChild.php:187
+#: includes/modules/ProgressBar/ProgressBar.php:195
+#: includes/modules/ProgressBarChild/ProgressBarChild.php:253
+#: includes/modules/ReviewSlider/ReviewSlider.php:345
+msgid "Icon Color"
+msgstr ""
+
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:102
+msgid "Define divider icon color"
+msgstr ""
+
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:115
+#: includes/modules/DualButton/DualButton.php:700
+#: includes/modules/FlipCard/FlipCard.php:254
+#: includes/modules/FlipCard/FlipCard.php:450
+#: includes/modules/IconBox/IconBox.php:312
+#: includes/modules/IconList/IconList.php:113
+#: includes/modules/LogoSlider/LogoSlider.php:301
+#: includes/modules/Person/Person.php:205
+#: includes/modules/PriceList/PriceList.php:147
+#: includes/modules/PriceListChild/PriceListChild.php:176
+#: includes/modules/ProgressBar/ProgressBar.php:183
+#: includes/modules/ProgressBarChild/ProgressBarChild.php:241
+#: includes/modules/ReviewSlider/ReviewSlider.php:360
+msgid "Icon Background"
+msgstr ""
+
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:116
+msgid "Define divider icon background color"
+msgstr ""
+
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:129
+#: includes/modules/DualButton/DualButton.php:732
+#: includes/modules/FlipCard/FlipCard.php:284
+#: includes/modules/FlipCard/FlipCard.php:481
+#: includes/modules/IconBox/IconBox.php:336
+#: includes/modules/IconList/IconList.php:135
+#: includes/modules/LogoSlider/LogoSlider.php:315
+#: includes/modules/Person/Person.php:228
+#: includes/modules/PriceList/PriceList.php:171
+#: includes/modules/PriceListChild/PriceListChild.php:198
+#: includes/modules/ProgressBar/ProgressBar.php:207
+#: includes/modules/ProgressBarChild/ProgressBarChild.php:265
+#: includes/modules/ReviewSlider/ReviewSlider.php:375
+msgid "Icon Size"
+msgstr ""
+
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:130
+msgid "Here you can change your divider icon size."
+msgstr ""
+
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:148
+msgid "Padding"
+msgstr ""
+
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:149
+#: includes/modules/PriceList/PriceList.php:189
+#: includes/modules/PriceListChild/PriceListChild.php:215
+msgid "Define custom padding for divider icon"
+msgstr ""
+
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:161
+msgid "Divider Alignment"
+msgstr ""
+
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:175
+#: includes/modules/PriceList/PriceList.php:266
+#: includes/modules/PriceListChild/PriceListChild.php:286
+msgid "Divider Color"
+msgstr ""
+
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:176
+#: includes/modules/PriceList/PriceList.php:267
+#: includes/modules/PriceListChild/PriceListChild.php:287
+msgid "Define the divi line color"
+msgstr ""
+
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:186
+#: includes/modules/PriceList/PriceList.php:279
+#: includes/modules/PriceListChild/PriceListChild.php:299
+msgid "Divider Style"
+msgstr ""
+
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:187
+#: includes/modules/PriceList/PriceList.php:280
+#: includes/modules/PriceListChild/PriceListChild.php:300
+msgid "Define the divider style"
+msgstr ""
+
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:192
+#: includes/modules/BusinessHour/BusinessHour.php:53
+#: includes/modules/BusinessHourChild/BusinessHourChild.php:78
+#: includes/modules/PriceList/PriceList.php:285
+#: includes/modules/PriceListChild/PriceListChild.php:305
+msgid "Dotted"
+msgstr ""
+
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:193
+#: includes/modules/BusinessHour/BusinessHour.php:54
+#: includes/modules/BusinessHourChild/BusinessHourChild.php:79
+#: includes/modules/PriceList/PriceList.php:286
+#: includes/modules/PriceListChild/PriceListChild.php:306
+msgid "Dashed"
+msgstr ""
+
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:194
+#: includes/modules/BusinessHour/BusinessHour.php:55
+#: includes/modules/BusinessHourChild/BusinessHourChild.php:80
+#: includes/modules/PriceList/PriceList.php:287
+#: includes/modules/PriceListChild/PriceListChild.php:307
+msgid "Solid"
+msgstr ""
+
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:195
+#: includes/modules/BusinessHour/BusinessHour.php:56
+#: includes/modules/BusinessHourChild/BusinessHourChild.php:81
+#: includes/modules/PriceList/PriceList.php:288
+#: includes/modules/PriceListChild/PriceListChild.php:308
+msgid "Double"
+msgstr ""
+
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:196
+#: includes/modules/BusinessHour/BusinessHour.php:57
+#: includes/modules/BusinessHourChild/BusinessHourChild.php:82
+#: includes/modules/PriceList/PriceList.php:289
+#: includes/modules/PriceListChild/PriceListChild.php:309
+msgid "Groove"
+msgstr ""
+
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:197
+#: includes/modules/BusinessHour/BusinessHour.php:58
+#: includes/modules/BusinessHourChild/BusinessHourChild.php:83
+#: includes/modules/PriceList/PriceList.php:290
+#: includes/modules/PriceListChild/PriceListChild.php:310
+msgid "Ridge"
+msgstr ""
+
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:198
+#: includes/modules/BusinessHour/BusinessHour.php:59
+#: includes/modules/BusinessHourChild/BusinessHourChild.php:84
+#: includes/modules/PriceList/PriceList.php:291
+#: includes/modules/PriceListChild/PriceListChild.php:311
+msgid "Inset"
+msgstr ""
+
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:199
+#: includes/modules/BusinessHour/BusinessHour.php:60
+#: includes/modules/BusinessHourChild/BusinessHourChild.php:85
+#: includes/modules/PriceList/PriceList.php:292
+#: includes/modules/PriceListChild/PriceListChild.php:312
+msgid "Outset"
+msgstr ""
+
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:200
+#: includes/modules/BusinessHour/BusinessHour.php:61
+#: includes/modules/BusinessHourChild/BusinessHourChild.php:86
+#: includes/modules/FlipCard/FlipCard.php:180
+#: includes/modules/FlipCard/FlipCard.php:319
+#: includes/modules/PriceList/PriceList.php:293
+#: includes/modules/PriceListChild/PriceListChild.php:56
+#: includes/modules/PriceListChild/PriceListChild.php:313
+#: includes/modules/Review/Review.php:203
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:146
+msgid "None"
+msgstr ""
+
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:206
+msgid "Divider Positions"
+msgstr ""
+
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:207
+#: includes/modules/PriceList/PriceList.php:301
+#: includes/modules/PriceListChild/PriceListChild.php:321
+msgid "Define the divider positions"
+msgstr ""
+
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:212
+#: includes/modules/BusinessHour/BusinessHour.php:119
+#: includes/modules/BusinessHourChild/BusinessHourChild.php:151
+#: includes/modules/FlipCard/FlipCard.php:515
+#: includes/modules/FlipCard/FlipCard.php:542
+#: includes/modules/GradientHeading/GradientHeading.php:108
+#: includes/modules/IconList/IconList.php:84
+#: includes/modules/IconListChild/IconListChild.php:129
+#: includes/modules/PriceList/PriceList.php:112
+#: includes/modules/PriceList/PriceList.php:306
+#: includes/modules/PriceListChild/PriceListChild.php:143
+#: includes/modules/PriceListChild/PriceListChild.php:326
+#: includes/modules/Review/Review.php:303
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:245
+msgid "Top"
+msgstr ""
+
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:213
+#: includes/modules/BusinessHour/BusinessHour.php:120
+#: includes/modules/BusinessHourChild/BusinessHourChild.php:152
+#: includes/modules/IconList/IconList.php:85
+#: includes/modules/PriceList/PriceList.php:113
+#: includes/modules/PriceList/PriceList.php:307
+#: includes/modules/PriceListChild/PriceListChild.php:144
+#: includes/modules/PriceListChild/PriceListChild.php:327
+msgid "Vertically Center"
+msgstr ""
+
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:214
+#: includes/modules/BusinessHour/BusinessHour.php:121
+#: includes/modules/BusinessHourChild/BusinessHourChild.php:153
+#: includes/modules/FlipCard/FlipCard.php:517
+#: includes/modules/FlipCard/FlipCard.php:544
+#: includes/modules/GradientHeading/GradientHeading.php:112
+#: includes/modules/IconList/IconList.php:86
+#: includes/modules/IconListChild/IconListChild.php:131
+#: includes/modules/PriceList/PriceList.php:114
+#: includes/modules/PriceList/PriceList.php:308
+#: includes/modules/PriceListChild/PriceListChild.php:145
+#: includes/modules/PriceListChild/PriceListChild.php:328
+#: includes/modules/Review/Review.php:305
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:247
+msgid "Bottom"
+msgstr ""
+
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:220
+#: includes/modules/PriceList/PriceList.php:315
+#: includes/modules/PriceListChild/PriceListChild.php:334
+msgid "Divider Weight"
+msgstr ""
+
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:221
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:236
+#: includes/modules/PriceList/PriceList.php:316
+#: includes/modules/PriceList/PriceList.php:332
+#: includes/modules/PriceListChild/PriceListChild.php:335
+#: includes/modules/PriceListChild/PriceListChild.php:350
+msgid "Define space between divider and text/icon"
+msgstr ""
+
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:235
+#: includes/modules/PriceList/PriceList.php:331
+#: includes/modules/PriceListChild/PriceListChild.php:349
+msgid "Divider Space"
+msgstr ""
+
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:251
+msgid "Text Background"
+msgstr ""
+
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:252
+msgid "Define divider text background color"
+msgstr ""
+
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:265
+msgid "Text Padding"
+msgstr ""
+
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:266
+msgid "Define custom padding for divider text"
+msgstr ""
+
+#: includes/modules/BusinessHour/BusinessHour.php:13
+#: includes/modules/BusinessHourChild/BusinessHourChild.php:6
+msgid "Business Hour"
+msgstr ""
+
+#: includes/modules/BusinessHour/BusinessHour.php:14
+msgid "Business Hours"
+msgstr ""
+
+#: includes/modules/BusinessHour/BusinessHour.php:26
+#: includes/modules/BusinessHourChild/BusinessHourChild.php:23
+msgid "Day & Time"
+msgstr ""
+
+#: includes/modules/BusinessHour/BusinessHour.php:30
+#: includes/modules/BusinessHour/BusinessHour.php:180
+#: includes/modules/BusinessHourChild/BusinessHourChild.php:27
+#: includes/modules/BusinessHourChild/BusinessHourChild.php:44
+#: includes/modules/BusinessHourChild/BusinessHourChild.php:172
+msgid "Day"
+msgstr ""
+
+#: includes/modules/BusinessHour/BusinessHour.php:33
+#: includes/modules/BusinessHourChild/BusinessHourChild.php:30
+#: includes/modules/BusinessHourChild/BusinessHourChild.php:51
+msgid "Time"
+msgstr ""
+
+#: includes/modules/BusinessHour/BusinessHour.php:37
+#: includes/modules/BusinessHourChild/BusinessHourChild.php:34
+#: includes/modules/DualButton/DualButton.php:30
+#: includes/modules/DualButton/DualButton.php:61
+#: includes/modules/DualButton/DualButton.php:1014
+msgid "Separator"
+msgstr ""
+
+#: includes/modules/BusinessHour/BusinessHour.php:38
+msgid "Business Hour Item"
+msgstr ""
+
+#: includes/modules/BusinessHour/BusinessHour.php:47
+#: includes/modules/BusinessHourChild/BusinessHourChild.php:72
+msgid "Separator Style"
+msgstr ""
+
+#: includes/modules/BusinessHour/BusinessHour.php:48
+#: includes/modules/BusinessHourChild/BusinessHourChild.php:73
+msgid "Define the separator style"
+msgstr ""
+
+#: includes/modules/BusinessHour/BusinessHour.php:68
+#: includes/modules/BusinessHourChild/BusinessHourChild.php:95
+msgid "Separator Color"
+msgstr ""
+
+#: includes/modules/BusinessHour/BusinessHour.php:69
+#: includes/modules/BusinessHourChild/BusinessHourChild.php:96
+msgid "Define the separator color"
+msgstr ""
+
+#: includes/modules/BusinessHour/BusinessHour.php:80
+#: includes/modules/BusinessHourChild/BusinessHourChild.php:109
+msgid "Separator Weight"
+msgstr ""
+
+#: includes/modules/BusinessHour/BusinessHour.php:81
+#: includes/modules/BusinessHourChild/BusinessHourChild.php:110
+msgid "Define separator weight"
+msgstr ""
+
+#: includes/modules/BusinessHour/BusinessHour.php:97
+#: includes/modules/BusinessHourChild/BusinessHourChild.php:127
+msgid "Separator Space"
+msgstr ""
+
+#: includes/modules/BusinessHour/BusinessHour.php:98
+#: includes/modules/BusinessHourChild/BusinessHourChild.php:128
+msgid "Define space between day, time and separator"
+msgstr ""
+
+#: includes/modules/BusinessHour/BusinessHour.php:113
+#: includes/modules/BusinessHourChild/BusinessHourChild.php:145
+msgid "Separator Vertical Align"
+msgstr ""
+
+#: includes/modules/BusinessHour/BusinessHour.php:114
+#: includes/modules/BusinessHourChild/BusinessHourChild.php:146
+msgid "Define the separator positions"
+msgstr ""
+
+#: includes/modules/BusinessHour/BusinessHour.php:130
+#: includes/modules/IconList/IconList.php:225
+#: includes/modules/PriceList/PriceList.php:349
+#: includes/modules/ReviewSlider/ReviewSlider.php:301
+msgid "Item Margin"
+msgstr ""
+
+#: includes/modules/BusinessHour/BusinessHour.php:131
+msgid "Define custom margin for business hour item"
+msgstr ""
+
+#: includes/modules/BusinessHour/BusinessHour.php:140
+#: includes/modules/IconList/IconList.php:235
+#: includes/modules/PriceList/PriceList.php:359
+#: includes/modules/ReviewSlider/ReviewSlider.php:311
+msgid "Item Padding"
+msgstr ""
+
+#: includes/modules/BusinessHour/BusinessHour.php:141
+msgid "Define custom padding for business hour item"
+msgstr ""
+
+#: includes/modules/BusinessHour/BusinessHour.php:159
+#: includes/modules/IconBox/IconBox.php:388
+#: includes/modules/IconList/IconList.php:56
+#: includes/modules/IconList/IconList.php:285
+#: includes/modules/PriceList/PriceList.php:33
+msgid "List Item"
+msgstr ""
+
+#: includes/modules/BusinessHour/BusinessHour.php:197
+#: includes/modules/BusinessHourChild/BusinessHourChild.php:189
+#: includes/modules/FlipCard/FlipCard.php:95
+#: includes/modules/FlipCard/FlipCard.php:111
+#: includes/modules/FlipCard/FlipCard.php:995
+#: includes/modules/FlipCard/FlipCard.php:1096
+#: includes/modules/IconBox/IconBox.php:41
+#: includes/modules/IconBox/IconBox.php:80
+#: includes/modules/IconBox/IconBox.php:84
+#: includes/modules/IconBox/IconBox.php:120
+#: includes/modules/IconBox/IconBox.php:500
+#: includes/modules/IconList/IconList.php:31
+#: includes/modules/IconList/IconList.php:353
+#: includes/modules/IconList/IconList.php:369
+#: includes/modules/IconListChild/IconListChild.php:26
+#: includes/modules/IconListChild/IconListChild.php:91
+#: includes/modules/IconListChild/IconListChild.php:277
+#: includes/modules/IconListChild/IconListChild.php:293
+#: includes/modules/Person/Person.php:44 includes/modules/Person/Person.php:90
+#: includes/modules/Person/Person.php:419
+#: includes/modules/PriceList/PriceList.php:42
+#: includes/modules/PriceList/PriceList.php:84
+#: includes/modules/PriceList/PriceList.php:513
+#: includes/modules/PriceListChild/PriceListChild.php:33
+#: includes/modules/PriceListChild/PriceListChild.php:115
+#: includes/modules/PriceListChild/PriceListChild.php:495
+#: includes/modules/ProgressBarChild/ProgressBarChild.php:87
+#: includes/modules/Review/Review.php:136
+#: includes/modules/Review/Review.php:577
+#: includes/modules/ReviewSlider/ReviewSlider.php:776
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:132
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:516
+msgid "Description"
+msgstr ""
+
+#: includes/modules/BusinessHourChild/BusinessHourChild.php:35
+#: includes/modules/DualButton/DualButton.php:80
+#: includes/modules/DualButton/DualButton.php:95
+#: includes/modules/FlipCard/FlipCard.php:116
+#: includes/modules/IconBox/IconBox.php:57
+#: includes/modules/Person/Person.php:49
+#: includes/modules/PriceList/PriceList.php:49
+#: includes/modules/PriceListChild/PriceListChild.php:40
+#: includes/modules/Review/Review.php:37
+#: includes/modules/ReviewSlider/ReviewSlider.php:72
+msgid "Border"
+msgstr ""
+
+#: includes/modules/BusinessHourChild/BusinessHourChild.php:45
+msgid "Define the day your for business hour."
+msgstr ""
+
+#: includes/modules/BusinessHourChild/BusinessHourChild.php:52
+msgid "Define the time your for business hour."
+msgstr ""
+
+#: includes/modules/BusinessHourChild/BusinessHourChild.php:60
+msgid "Hide Separator"
+msgstr ""
+
+#: includes/modules/Core/DiviNationKit-core.php:130
+msgid ""
+"Adjust background style of this element by customizing the background "
+"options"
+msgstr ""
+
+#: includes/modules/Core/DiviNationKit-core.php:145
+msgid "Background"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:13
+msgid "Dual Button"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:27
+#: includes/modules/DualButton/DualButton.php:53
+#: includes/modules/DualButton/DualButton.php:933
+#: includes/modules/DualButton/DualButton.php:950
+msgid "Button One"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:33
+#: includes/modules/DualButton/DualButton.php:56
+#: includes/modules/DualButton/DualButton.php:1031
+#: includes/modules/DualButton/DualButton.php:1047
+msgid "Button Two"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:43
+msgid "General"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:44
+msgid "Global Style"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:45
+msgid "Button One Design"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:46
+msgid "Button Two Design"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:49
+msgid "Button Texts"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:73
+msgid "Button One Hover"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:77
+#: includes/modules/DualButton/DualButton.php:92
+msgid "2D"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:83
+#: includes/modules/DualButton/DualButton.php:98
+msgid "BG"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:88
+msgid "Button Two Hover"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:111
+#: includes/modules/DualButton/DualButton.php:292
+msgid "Select 2D Hover Effect"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:115
+#: includes/modules/DualButton/DualButton.php:154
+#: includes/modules/DualButton/DualButton.php:254
+#: includes/modules/DualButton/DualButton.php:296
+#: includes/modules/DualButton/DualButton.php:335
+#: includes/modules/DualButton/DualButton.php:435
+msgid "Select"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:116
+#: includes/modules/DualButton/DualButton.php:297
+#: includes/modules/GradientHeading/GradientHeading.php:180
+msgid "Grow"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:117
+#: includes/modules/DualButton/DualButton.php:298
+#: includes/modules/GradientHeading/GradientHeading.php:181
+msgid "Shrink"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:118
+#: includes/modules/DualButton/DualButton.php:299
+#: includes/modules/GradientHeading/GradientHeading.php:182
+msgid "Pulse"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:119
+#: includes/modules/DualButton/DualButton.php:300
+#: includes/modules/GradientHeading/GradientHeading.php:183
+msgid "Pulse Gow"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:120
+#: includes/modules/DualButton/DualButton.php:301
+#: includes/modules/GradientHeading/GradientHeading.php:184
+msgid "Pulse Shrink"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:121
+#: includes/modules/DualButton/DualButton.php:302
+#: includes/modules/GradientHeading/GradientHeading.php:185
+msgid "Pop"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:122
+#: includes/modules/DualButton/DualButton.php:303
+#: includes/modules/GradientHeading/GradientHeading.php:186
+msgid "Push"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:123
+#: includes/modules/DualButton/DualButton.php:304
+#: includes/modules/GradientHeading/GradientHeading.php:187
+msgid "Bounce In"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:124
+#: includes/modules/DualButton/DualButton.php:305
+#: includes/modules/GradientHeading/GradientHeading.php:188
+msgid "Bounce Out"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:125
+#: includes/modules/DualButton/DualButton.php:306
+#: includes/modules/FlipCard/FlipCard.php:721
+#: includes/modules/GradientHeading/GradientHeading.php:189
+msgid "Rotate"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:126
+#: includes/modules/DualButton/DualButton.php:307
+#: includes/modules/GradientHeading/GradientHeading.php:190
+msgid "Rotate Grow"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:127
+#: includes/modules/DualButton/DualButton.php:308
+#: includes/modules/GradientHeading/GradientHeading.php:191
+msgid "Float"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:128
+#: includes/modules/DualButton/DualButton.php:309
+#: includes/modules/GradientHeading/GradientHeading.php:192
+msgid "Sink"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:129
+#: includes/modules/DualButton/DualButton.php:310
+#: includes/modules/GradientHeading/GradientHeading.php:193
+msgid "Bob"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:130
+#: includes/modules/DualButton/DualButton.php:311
+#: includes/modules/GradientHeading/GradientHeading.php:194
+msgid "Hang"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:131
+#: includes/modules/DualButton/DualButton.php:312
+#: includes/modules/GradientHeading/GradientHeading.php:195
+msgid "Skew Forward"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:132
+#: includes/modules/DualButton/DualButton.php:313
+#: includes/modules/GradientHeading/GradientHeading.php:196
+msgid "Skew Backward"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:133
+#: includes/modules/DualButton/DualButton.php:314
+#: includes/modules/GradientHeading/GradientHeading.php:197
+msgid "Wobble Horizontal"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:134
+#: includes/modules/DualButton/DualButton.php:315
+#: includes/modules/GradientHeading/GradientHeading.php:198
+msgid "Wobble Vertical"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:135
+#: includes/modules/DualButton/DualButton.php:316
+#: includes/modules/GradientHeading/GradientHeading.php:199
+msgid "Wobble to Bottom Right"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:136
+#: includes/modules/DualButton/DualButton.php:317
+#: includes/modules/GradientHeading/GradientHeading.php:200
+msgid "Wobble to Top Right"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:137
+#: includes/modules/DualButton/DualButton.php:318
+#: includes/modules/GradientHeading/GradientHeading.php:201
+msgid "Wobble Top"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:138
+#: includes/modules/DualButton/DualButton.php:319
+#: includes/modules/GradientHeading/GradientHeading.php:202
+msgid "Wobble Bottom"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:139
+#: includes/modules/DualButton/DualButton.php:320
+#: includes/modules/GradientHeading/GradientHeading.php:203
+msgid "Wobble Skew"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:140
+#: includes/modules/DualButton/DualButton.php:321
+#: includes/modules/GradientHeading/GradientHeading.php:204
+msgid "Buzz"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:141
+#: includes/modules/DualButton/DualButton.php:322
+#: includes/modules/GradientHeading/GradientHeading.php:205
+msgid "Buzz Out"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:142
+#: includes/modules/DualButton/DualButton.php:323
+#: includes/modules/GradientHeading/GradientHeading.php:206
+msgid "Forward"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:143
+#: includes/modules/DualButton/DualButton.php:324
+#: includes/modules/GradientHeading/GradientHeading.php:207
+msgid "Backward"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:150
+#: includes/modules/DualButton/DualButton.php:331
+msgid "Select Border Hover Effect"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:155
+#: includes/modules/DualButton/DualButton.php:336
+msgid "Ripple In"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:156
+#: includes/modules/DualButton/DualButton.php:337
+msgid "Ripple Out"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:157
+#: includes/modules/DualButton/DualButton.php:338
+msgid "Outline In"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:158
+#: includes/modules/DualButton/DualButton.php:339
+msgid "Outline Out"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:159
+#: includes/modules/DualButton/DualButton.php:340
+msgid "Underline From Left"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:160
+#: includes/modules/DualButton/DualButton.php:341
+msgid "Underline From Center"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:161
+#: includes/modules/DualButton/DualButton.php:342
+msgid "Underline From Right"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:162
+#: includes/modules/DualButton/DualButton.php:343
+msgid "Overline From Left"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:163
+#: includes/modules/DualButton/DualButton.php:344
+msgid "Overline From Center"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:164
+#: includes/modules/DualButton/DualButton.php:345
+msgid "Overline From Right"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:165
+#: includes/modules/DualButton/DualButton.php:346
+msgid "Underline Reveal"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:166
+#: includes/modules/DualButton/DualButton.php:347
+msgid "Overline Reveal"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:174
+#: includes/modules/DualButton/DualButton.php:355
+msgid "Border Color"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:175
+#: includes/modules/DualButton/DualButton.php:210
+#: includes/modules/DualButton/DualButton.php:356
+#: includes/modules/DualButton/DualButton.php:391
+msgid "Choose hover effect border color"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:189
+#: includes/modules/DualButton/DualButton.php:370
+msgid "Border Width"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:190
+#: includes/modules/DualButton/DualButton.php:371
+msgid "Choose hover effect border width"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:209
+#: includes/modules/DualButton/DualButton.php:390
+msgid "Line Color"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:227
+#: includes/modules/DualButton/DualButton.php:408
+msgid "Line Height"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:228
+#: includes/modules/DualButton/DualButton.php:409
+msgid "Choose hover effect border height"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:250
+#: includes/modules/DualButton/DualButton.php:431
+msgid "Select Background Hover Effect"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:255
+#: includes/modules/DualButton/DualButton.php:436
+msgid "Swipe To Right"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:256
+#: includes/modules/DualButton/DualButton.php:437
+msgid "Swipe To Left"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:257
+#: includes/modules/DualButton/DualButton.php:438
+msgid "Swipe To Bottom"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:258
+#: includes/modules/DualButton/DualButton.php:439
+msgid "Swipe To Top"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:259
+#: includes/modules/DualButton/DualButton.php:440
+msgid "Bounce To Right"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:260
+#: includes/modules/DualButton/DualButton.php:441
+msgid "Bounce To Left"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:261
+#: includes/modules/DualButton/DualButton.php:442
+msgid "Bounce To Bottom"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:262
+#: includes/modules/DualButton/DualButton.php:443
+msgid "Bounce To Top"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:263
+#: includes/modules/DualButton/DualButton.php:444
+msgid "Radial In"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:264
+#: includes/modules/DualButton/DualButton.php:445
+msgid "Radial Out"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:265
+#: includes/modules/DualButton/DualButton.php:446
+msgid "Rectangle In"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:266
+#: includes/modules/DualButton/DualButton.php:447
+msgid "Rectangle Out"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:267
+#: includes/modules/DualButton/DualButton.php:448
+msgid "Shutter In Horizontal"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:268
+#: includes/modules/DualButton/DualButton.php:449
+msgid "Shutter Out Horizontal"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:269
+#: includes/modules/DualButton/DualButton.php:450
+msgid "Shutter In Vertical"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:270
+#: includes/modules/DualButton/DualButton.php:451
+msgid "Shutter Out Vertical"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:278
+#: includes/modules/DualButton/DualButton.php:459
+msgid "Background Color"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:279
+#: includes/modules/DualButton/DualButton.php:460
+msgid "Choose hover effect background color"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:474
+#: includes/modules/FlipCard/FlipCard.php:43
+#: includes/modules/IconBox/IconBox.php:28
+msgid "Alignment"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:485
+msgid "Space Between Buttons"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:486
+msgid "Define space between button and separator."
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:504
+#: includes/modules/DualButton/DualButton.php:784
+#: includes/modules/FlipCard/FlipCard.php:404
+#: includes/modules/IconBox/IconBox.php:143
+#: includes/modules/Review/Review.php:157
+msgid "Button Text"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:505
+#: includes/modules/DualButton/DualButton.php:785
+#: includes/modules/FlipCard/FlipCard.php:405
+#: includes/modules/IconBox/IconBox.php:144
+#: includes/modules/Review/Review.php:158
+msgid "Here you can define the button text."
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:514
+#: includes/modules/DualButton/DualButton.php:794
+#: includes/modules/FlipCard/FlipCard.php:417
+#: includes/modules/IconBox/IconBox.php:156
+#: includes/modules/Review/Review.php:169
+msgid "Button Url"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:515
+#: includes/modules/DualButton/DualButton.php:795
+#: includes/modules/FlipCard/FlipCard.php:418
+#: includes/modules/IconBox/IconBox.php:157
+#: includes/modules/Review/Review.php:170
+msgid "Define the button link url for your button."
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:524
+#: includes/modules/DualButton/DualButton.php:804
+#: includes/modules/FlipCard/FlipCard.php:430
+#: includes/modules/IconBox/IconBox.php:169
+#: includes/modules/Review/Review.php:181
+msgid "Open Button link in new window"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:525
+#: includes/modules/DualButton/DualButton.php:805
+#: includes/modules/FlipCard/FlipCard.php:431
+#: includes/modules/IconBox/IconBox.php:170
+#: includes/modules/Review/Review.php:182
+msgid "Here you can choose whether button URL should be opened in new window."
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:529
+#: includes/modules/DualButton/DualButton.php:809
+#: includes/modules/FlipCard/FlipCard.php:435
+#: includes/modules/IconBox/IconBox.php:174
+#: includes/modules/PersonChild/PersonChild.php:82
+#: includes/modules/Review/Review.php:186
+msgid "In The Same Window"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:530
+#: includes/modules/DualButton/DualButton.php:810
+#: includes/modules/FlipCard/FlipCard.php:436
+#: includes/modules/IconBox/IconBox.php:175
+#: includes/modules/PersonChild/PersonChild.php:83
+#: includes/modules/Review/Review.php:187
+msgid "In The New Tab"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:542
+msgid "Show Button One Icon"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:543
+msgid "Choose whether you want to show button one icon or not"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:555
+msgid "Select Button One Icon"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:556
+#: includes/modules/DualButton/DualButton.php:836
+#: includes/modules/FlipCard/FlipCard.php:327
+msgid "Select back side icon."
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:567
+msgid "Button One Icon Placement"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:568
+msgid "Choose where the button one icon should be displayed (left/right)"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:572
+#: includes/modules/DualButton/DualButton.php:852
+#: includes/modules/GradientHeading/GradientHeading.php:110
+#: includes/modules/IconListChild/IconListChild.php:130
+#: includes/modules/PriceList/PriceList.php:216
+#: includes/modules/PriceListChild/PriceListChild.php:240
+msgid "Right"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:573
+#: includes/modules/DualButton/DualButton.php:853
+#: includes/modules/GradientHeading/GradientHeading.php:114
+#: includes/modules/IconListChild/IconListChild.php:132
+#: includes/modules/PriceList/PriceList.php:214
+#: includes/modules/PriceListChild/PriceListChild.php:238
+msgid "Left"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:584
+msgid "Only Show Icon On Hover For Button One"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:585
+#: includes/modules/DualButton/DualButton.php:865
+msgid ""
+"By default button icons are displayed on hover. If you want you would like "
+"button icon to display always"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:601
+msgid "Button One Padding"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:602
+msgid "Define custom padding for button one"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:613
+msgid "Button One Margin"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:614
+msgid "Define custom margin for button one"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:627
+msgid "Use Separator"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:628
+msgid "Here you can define weather you want to use separator or not between buttons"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:640
+msgid "Select Separator Type"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:655
+#: includes/modules/FlipCard/FlipCard.php:187
+#: includes/modules/FlipCard/FlipCard.php:326
+#: includes/modules/IconBox/IconBox.php:96
+#: includes/modules/IconListChild/IconListChild.php:73
+#: includes/modules/PersonChild/PersonChild.php:57
+#: includes/modules/PriceListChild/PriceListChild.php:64
+#: includes/modules/ProgressBarChild/ProgressBarChild.php:72
+msgid "Select Icon"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:656
+msgid "Select separator icon."
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:668
+#: includes/modules/DualButton/DualButton.php:992
+msgid "Separator Text"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:669
+msgid "Define text that will display between buttons"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:684
+msgid "Separator Text Background"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:685
+#: includes/modules/DualButton/DualButton.php:701
+#: includes/modules/FlipCard/FlipCard.php:255
+msgid "Here you can change your front side icon background color."
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:717
+#: includes/modules/FlipCard/FlipCard.php:270
+msgid "Here you can change your front side icon color."
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:733
+#: includes/modules/FlipCard/FlipCard.php:285
+msgid "Here you can change your front side icon size."
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:753
+#: includes/modules/FlipCard/FlipCard.php:600
+#: includes/modules/FlipCard/FlipCard.php:657
+#: includes/modules/IconBox/IconBox.php:353
+#: includes/modules/IconList/IconList.php:151
+#: includes/modules/LogoSlider/LogoSlider.php:333
+#: includes/modules/PriceList/PriceList.php:188
+#: includes/modules/PriceListChild/PriceListChild.php:214
+#: includes/modules/ProgressBar/ProgressBar.php:224
+#: includes/modules/ProgressBarChild/ProgressBarChild.php:281
+#: includes/modules/ReviewSlider/ReviewSlider.php:394
+msgid "Icon Padding"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:754
+#: includes/modules/DualButton/DualButton.php:768
+#: includes/modules/IconBox/IconBox.php:354
+#: includes/modules/IconList/IconList.php:152
+#: includes/modules/ProgressBar/ProgressBar.php:225
+#: includes/modules/ProgressBarChild/ProgressBarChild.php:282
+msgid "Define custom padding for icon"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:767
+msgid "Separator Text Padding"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:822
+msgid "Show Button Two Icon"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:823
+msgid "Choose whether you want to show button Two icon or not"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:835
+msgid "Select Button Two Icon"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:847
+msgid "Button Two Icon Placement"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:848
+msgid "Choose where the button Two icon should be displayed (left/right)"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:864
+msgid "Only Show Icon On Hover For Button Two"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:881
+msgid "Button Two Padding"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:882
+msgid "Define custom padding for button two"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:893
+msgid "Button Two Margin"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:894
+msgid "Define custom margin for button two"
+msgstr ""
+
+#: includes/modules/DualButton/DualButton.php:971
+msgid "Separator Icon"
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:12
+msgid "Flip Card"
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:27
+msgid "Front Side"
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:30
+msgid "Back Side"
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:34
+#: includes/modules/ProgressBarChild/ProgressBarChild.php:18
+msgid "Settings"
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:35
+msgid "Background Front Side"
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:36
+msgid "Background Back Side"
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:47
+#: includes/modules/FlipCard/FlipCard.php:60
+#: includes/modules/FlipCard/FlipCard.php:76
+msgid "Front"
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:50
+#: includes/modules/FlipCard/FlipCard.php:63
+#: includes/modules/FlipCard/FlipCard.php:79
+msgid "Back"
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:56
+msgid "Image & Icon"
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:69
+#: includes/modules/Person/Person.php:48 includes/modules/Review/Review.php:36
+#: includes/modules/ReviewSlider/ReviewSlider.php:71
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:32
+msgid "Custom Spacing"
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:73
+msgid "Wrapper"
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:85
+msgid "Front Texts"
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:89
+#: includes/modules/FlipCard/FlipCard.php:105
+#: includes/modules/FlipCard/FlipCard.php:955
+#: includes/modules/FlipCard/FlipCard.php:1056
+#: includes/modules/GradientHeading/GradientHeading.php:37
+#: includes/modules/GradientHeading/GradientHeading.php:228
+#: includes/modules/IconBox/IconBox.php:35
+#: includes/modules/IconBox/IconBox.php:458
+#: includes/modules/IconBox/IconBox.php:479
+#: includes/modules/IconList/IconList.php:30
+#: includes/modules/IconList/IconList.php:331
+#: includes/modules/IconListChild/IconListChild.php:25
+#: includes/modules/IconListChild/IconListChild.php:83
+#: includes/modules/IconListChild/IconListChild.php:255
+#: includes/modules/Person/Person.php:38
+#: includes/modules/PriceList/PriceList.php:39
+#: includes/modules/PriceList/PriceList.php:479
+#: includes/modules/PriceListChild/PriceListChild.php:30
+#: includes/modules/PriceListChild/PriceListChild.php:98
+#: includes/modules/PriceListChild/PriceListChild.php:452
+msgid "Title"
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:92
+#: includes/modules/FlipCard/FlipCard.php:108
+#: includes/modules/FlipCard/FlipCard.php:975
+#: includes/modules/FlipCard/FlipCard.php:1076
+#: includes/modules/IconBox/IconBox.php:38
+msgid "Subtitle"
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:101
+msgid "Back Texts"
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:123
+msgid "Front Content Wrapper"
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:127
+msgid "Front Icon"
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:131
+#: includes/modules/FlipCard/FlipCard.php:224
+msgid "Front Title"
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:135
+#: includes/modules/FlipCard/FlipCard.php:233
+msgid "Front Sub Title"
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:139
+#: includes/modules/FlipCard/FlipCard.php:242
+msgid "Front Description"
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:144
+msgid "Back Content Wrapper"
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:148
+msgid "Back Icon"
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:152
+#: includes/modules/FlipCard/FlipCard.php:363
+msgid "Back Title"
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:156
+#: includes/modules/FlipCard/FlipCard.php:372
+msgid "Back Sub Title"
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:160
+#: includes/modules/FlipCard/FlipCard.php:381
+msgid "Back Description"
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:172
+#: includes/modules/FlipCard/FlipCard.php:312
+#: includes/modules/PriceListChild/PriceListChild.php:50
+msgid "Media Type"
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:173
+#: includes/modules/PriceListChild/PriceListChild.php:51
+msgid "Select front side media type."
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:182
+#: includes/modules/FlipCard/FlipCard.php:321
+#: includes/modules/LogoSliderChild/LogoSliderChild.php:30
+#: includes/modules/Person/Person.php:24 includes/modules/Person/Person.php:32
+#: includes/modules/Person/Person.php:355
+#: includes/modules/PriceList/PriceList.php:72
+#: includes/modules/PriceList/PriceList.php:455
+#: includes/modules/PriceListChild/PriceListChild.php:58
+#: includes/modules/PriceListChild/PriceListChild.php:428
+#: includes/modules/Review/Review.php:22 includes/modules/Review/Review.php:30
+#: includes/modules/Review/Review.php:48
+#: includes/modules/ReviewSlider/ReviewSlider.php:57
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:19
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:26
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:44
+msgid "Image"
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:188
+#: includes/modules/IconBox/IconBox.php:97
+#: includes/modules/PriceListChild/PriceListChild.php:65
+msgid "Select front side icon."
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:199
+#: includes/modules/FlipCard/FlipCard.php:338
+#: includes/modules/Person/Person.php:59
+#: includes/modules/PriceListChild/PriceListChild.php:75
+#: includes/modules/Review/Review.php:99
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:95
+msgid "Upload Image"
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:200
+msgid ""
+"Upload an image or type in the URL of the image you would like to display "
+"for the front side."
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:202
+#: includes/modules/FlipCard/FlipCard.php:341
+#: includes/modules/LogoSliderChild/LogoSliderChild.php:34
+#: includes/modules/Person/Person.php:62
+#: includes/modules/PriceListChild/PriceListChild.php:78
+#: includes/modules/Review/Review.php:102
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:98
+msgid "Upload an image"
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:203
+#: includes/modules/FlipCard/FlipCard.php:342
+#: includes/modules/LogoSliderChild/LogoSliderChild.php:35
+#: includes/modules/Person/Person.php:63
+#: includes/modules/PriceListChild/PriceListChild.php:79
+#: includes/modules/Review/Review.php:103
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:99
+msgid "Choose an Image"
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:204
+#: includes/modules/FlipCard/FlipCard.php:343
+#: includes/modules/Person/Person.php:64
+#: includes/modules/PriceListChild/PriceListChild.php:80
+#: includes/modules/Review/Review.php:104
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:100
+msgid "Set As Image"
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:213
+#: includes/modules/FlipCard/FlipCard.php:352
+#: includes/modules/LogoSliderChild/LogoSliderChild.php:44
+#: includes/modules/Person/Person.php:69
+#: includes/modules/PriceListChild/PriceListChild.php:88
+#: includes/modules/Review/Review.php:112
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:108
+msgid "Image Alt Text"
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:214
+#: includes/modules/LogoSliderChild/LogoSliderChild.php:45
+#: includes/modules/PriceListChild/PriceListChild.php:89
+msgid "Define the front side image alt text for your flip box."
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:225
+msgid "Define the front side title for your flip box."
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:234
+#: includes/modules/PriceListChild/PriceListChild.php:107
+msgid "Define the front side sub-title for your flip box."
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:243
+msgid "Define the front side description text for your flip box."
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:313
+msgid "Select back side media type."
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:339
+msgid ""
+"Upload an image or type in the URL of the image you would like to display "
+"for the back side."
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:353
+msgid "Define the back side image alt text for your flip box."
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:364
+msgid "Define the back side title for your flip box."
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:373
+msgid "Define the back side sub-title for your flip box."
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:382
+msgid "Define the back side description text for your flip box."
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:390
+#: includes/modules/IconBox/IconBox.php:129
+#: includes/modules/Review/Review.php:144
+msgid "Use Button"
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:391
+#: includes/modules/IconBox/IconBox.php:130
+#: includes/modules/Review/Review.php:145
+msgid "Here you can choose whether button should be used."
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:451
+msgid "Here you can change your back side icon background color."
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:466
+msgid "Here you can change your back side icon color."
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:482
+msgid "Here you can change your back side icon size."
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:509
+#: includes/modules/FlipCard/FlipCard.php:536
+#: includes/modules/Review/Review.php:299
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:241
+msgid "Vertical Alignment"
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:516
+#: includes/modules/FlipCard/FlipCard.php:543
+#: includes/modules/GradientHeading/GradientHeading.php:106
+#: includes/modules/PriceList/PriceList.php:215
+#: includes/modules/PriceListChild/PriceListChild.php:239
+#: includes/modules/Review/Review.php:304
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:246
+msgid "Center"
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:524
+#: includes/modules/FlipCard/FlipCard.php:551
+#: includes/modules/IconBox/IconBox.php:301
+#: includes/modules/Review/Review.php:285
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:227
+msgid "Content Alignment"
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:566
+msgid "Container Padding"
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:567
+msgid "Define custom padding for flip card container"
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:577
+#: includes/modules/Person/Person.php:272
+#: includes/modules/Review/Review.php:454
+#: includes/modules/ReviewSlider/ReviewSlider.php:627
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:393
+msgid "Content Wrapper Padding"
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:578
+msgid "Define custom padding for flip card content wrapper"
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:588
+#: includes/modules/Person/Person.php:263
+#: includes/modules/Review/Review.php:441
+#: includes/modules/ReviewSlider/ReviewSlider.php:614
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:380
+msgid "Content Wrapper Margin"
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:589
+msgid "Define custom margin for flip card content wrapper"
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:601
+#: includes/modules/FlipCard/FlipCard.php:658
+msgid "Define custom padding for flip card icon"
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:614
+#: includes/modules/FlipCard/FlipCard.php:671
+#: includes/modules/IconBox/IconBox.php:363
+#: includes/modules/IconList/IconList.php:161
+#: includes/modules/LogoSlider/LogoSlider.php:347
+#: includes/modules/PriceList/PriceList.php:198
+#: includes/modules/PriceListChild/PriceListChild.php:223
+#: includes/modules/ProgressBar/ProgressBar.php:234
+#: includes/modules/ProgressBarChild/ProgressBarChild.php:291
+#: includes/modules/ReviewSlider/ReviewSlider.php:409
+msgid "Icon Margin"
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:615
+#: includes/modules/FlipCard/FlipCard.php:672
+msgid "Define custom margin for flip card icon"
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:628
+#: includes/modules/FlipCard/FlipCard.php:685
+#: includes/modules/PriceList/PriceList.php:254
+#: includes/modules/PriceListChild/PriceListChild.php:275
+#: includes/modules/Review/Review.php:411
+#: includes/modules/ReviewSlider/ReviewSlider.php:584
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:350
+msgid "Image Padding"
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:629
+#: includes/modules/FlipCard/FlipCard.php:686
+msgid "Define custom padding for image/icon"
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:642
+#: includes/modules/FlipCard/FlipCard.php:698
+#: includes/modules/PriceList/PriceList.php:244
+#: includes/modules/PriceListChild/PriceListChild.php:266
+#: includes/modules/Review/Review.php:401
+#: includes/modules/ReviewSlider/ReviewSlider.php:574
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:340
+msgid "Image Margin"
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:643
+#: includes/modules/FlipCard/FlipCard.php:699
+msgid "Define custom margin for image/icon"
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:715
+msgid "Flip Type"
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:716
+msgid "Select the flip type."
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:726
+msgid "Rotate Direction"
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:727
+msgid "Select the rotate direction."
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:732
+msgid "Rotate Left"
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:733
+msgid "Rotate Right"
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:734
+msgid "Rotate Up"
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:735
+msgid "Rotate Down"
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:743
+msgid "Animation Speed"
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:744
+msgid "Choose flip card animation speed"
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:757
+msgid "Animation Delay"
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:758
+msgid "Choose flip card animation delay, how long it will wait to animate"
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:771
+msgid "Animation Speed Curve"
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:776
+msgid "Ease"
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:777
+msgid "Ease In"
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:778
+msgid "Ease In Out"
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:779
+msgid "Ease Out"
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:780
+msgid "Linear"
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:781
+msgid "Bounce"
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:786
+msgid "Use 3D Animation"
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:787
+msgid "Here you can choose whether 3d animation should be used"
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:799
+msgid "Translate Z"
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:816
+msgid "Scale"
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:835
+msgid "Use Custom Height"
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:847
+msgid "Flip Card Height"
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:912
+#: includes/modules/FlipCard/FlipCard.php:933
+#: includes/modules/FlipCard/FlipCard.php:1013
+#: includes/modules/FlipCard/FlipCard.php:1034
+#: includes/modules/Review/Review.php:502
+#: includes/modules/ReviewSlider/ReviewSlider.php:698
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:441
+msgid "Image/Icon"
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:1113
+msgid "Back Button"
+msgstr ""
+
+#: includes/modules/GradientHeading/GradientHeading.php:12
+msgid "Gradient Heading"
+msgstr ""
+
+#: includes/modules/GradientHeading/GradientHeading.php:26
+msgid "Gradient Text"
+msgstr ""
+
+#: includes/modules/GradientHeading/GradientHeading.php:27
+msgid "Gradient Color"
+msgstr ""
+
+#: includes/modules/GradientHeading/GradientHeading.php:28
+msgid "Hover Effect"
+msgstr ""
+
+#: includes/modules/GradientHeading/GradientHeading.php:38
+msgid "Define gradient heading text"
+msgstr ""
+
+#: includes/modules/GradientHeading/GradientHeading.php:45
+msgid "Primary Color"
+msgstr ""
+
+#: includes/modules/GradientHeading/GradientHeading.php:46
+msgid "Here you can change gradient primary color."
+msgstr ""
+
+#: includes/modules/GradientHeading/GradientHeading.php:56
+msgid "Secondary Color"
+msgstr ""
+
+#: includes/modules/GradientHeading/GradientHeading.php:57
+msgid "Here you can change gradient secondary color."
+msgstr ""
+
+#: includes/modules/GradientHeading/GradientHeading.php:68
+msgid "Select Gradient Type"
+msgstr ""
+
+#: includes/modules/GradientHeading/GradientHeading.php:69
+msgid "Select gradient type (linear/radial) for gradient heading"
+msgstr ""
+
+#: includes/modules/GradientHeading/GradientHeading.php:73
+msgid "Leaner"
+msgstr ""
+
+#: includes/modules/GradientHeading/GradientHeading.php:74
+msgid "Radial"
+msgstr ""
+
+#: includes/modules/GradientHeading/GradientHeading.php:82
+msgid "Gradient direction"
+msgstr ""
+
+#: includes/modules/GradientHeading/GradientHeading.php:83
+#: includes/modules/GradientHeading/GradientHeading.php:103
+msgid "Adjust the direction of the gradient for the title text."
+msgstr ""
+
+#: includes/modules/GradientHeading/GradientHeading.php:102
+msgid "Radial Direction"
+msgstr ""
+
+#: includes/modules/GradientHeading/GradientHeading.php:107
+msgid "Top Left"
+msgstr ""
+
+#: includes/modules/GradientHeading/GradientHeading.php:109
+msgid "Top Right"
+msgstr ""
+
+#: includes/modules/GradientHeading/GradientHeading.php:111
+msgid "Bottom Right"
+msgstr ""
+
+#: includes/modules/GradientHeading/GradientHeading.php:113
+msgid "Bottom Left"
+msgstr ""
+
+#: includes/modules/GradientHeading/GradientHeading.php:126
+msgid "Start Position"
+msgstr ""
+
+#: includes/modules/GradientHeading/GradientHeading.php:127
+msgid "Adjust the position for the beginning of the gradient color."
+msgstr ""
+
+#: includes/modules/GradientHeading/GradientHeading.php:143
+msgid "End Position"
+msgstr ""
+
+#: includes/modules/GradientHeading/GradientHeading.php:144
+msgid "Adjust the position for the ending of the gradient color."
+msgstr ""
+
+#: includes/modules/GradientHeading/GradientHeading.php:161
+msgid "Use Hover Effect"
+msgstr ""
+
+#: includes/modules/GradientHeading/GradientHeading.php:162
+msgid "Select if you would like to use text hover effect"
+msgstr ""
+
+#: includes/modules/GradientHeading/GradientHeading.php:167
+msgid "Off"
+msgstr ""
+
+#: includes/modules/GradientHeading/GradientHeading.php:168
+msgid "On"
+msgstr ""
+
+#: includes/modules/GradientHeading/GradientHeading.php:175
+msgid "Select Hover Effect"
+msgstr ""
+
+#: includes/modules/GradientHeading/GradientHeading.php:176
+msgid "Choose hover effect for gradient heading text"
+msgstr ""
+
+#: includes/modules/IconBox/IconBox.php:13
+msgid "Icon Box"
+msgstr ""
+
+#: includes/modules/IconBox/IconBox.php:23
+#: includes/modules/IconBox/IconBox.php:46
+#: includes/modules/IconBox/IconBox.php:433
+#: includes/modules/IconList/IconList.php:45
+#: includes/modules/IconList/IconList.php:403
+#: includes/modules/IconListChild/IconListChild.php:40
+#: includes/modules/IconListChild/IconListChild.php:327
+msgid "Badge"
+msgstr ""
+
+#: includes/modules/IconBox/IconBox.php:31
+msgid "Icon Box Texts"
+msgstr ""
+
+#: includes/modules/IconBox/IconBox.php:53
+#: includes/modules/IconBox/IconBox.php:201
+#: includes/modules/IconBox/IconBox.php:518
+#: includes/modules/IconList/IconList.php:52
+#: includes/modules/IconList/IconList.php:386
+#: includes/modules/IconListChild/IconListChild.php:47
+#: includes/modules/IconListChild/IconListChild.php:210
+#: includes/modules/IconListChild/IconListChild.php:310
+msgid "Badge Text"
+msgstr ""
+
+#: includes/modules/IconBox/IconBox.php:64
+#: includes/modules/PriceList/PriceList.php:60
+msgid "Icon Wrapper"
+msgstr ""
+
+#: includes/modules/IconBox/IconBox.php:72
+#: includes/modules/IconBox/IconBox.php:104
+msgid "Icon Box Title"
+msgstr ""
+
+#: includes/modules/IconBox/IconBox.php:76
+msgid "Icon Box Subtitle"
+msgstr ""
+
+#: includes/modules/IconBox/IconBox.php:105
+msgid "Define the icon box title."
+msgstr ""
+
+#: includes/modules/IconBox/IconBox.php:112
+msgid "Icon  Box Subtitle"
+msgstr ""
+
+#: includes/modules/IconBox/IconBox.php:113
+msgid "Define icon box subtitle."
+msgstr ""
+
+#: includes/modules/IconBox/IconBox.php:121
+#: includes/modules/Person/Person.php:91
+msgid "Define description text for your icon box."
+msgstr ""
+
+#: includes/modules/IconBox/IconBox.php:188
+#: includes/modules/IconListChild/IconListChild.php:197
+msgid "Use Badge"
+msgstr ""
+
+#: includes/modules/IconBox/IconBox.php:189
+#: includes/modules/IconListChild/IconListChild.php:198
+msgid "Here you can choose whether badge will be display or not"
+msgstr ""
+
+#: includes/modules/IconBox/IconBox.php:202
+#: includes/modules/IconListChild/IconListChild.php:211
+msgid "Define badge text"
+msgstr ""
+
+#: includes/modules/IconBox/IconBox.php:211
+#: includes/modules/IconList/IconList.php:247
+#: includes/modules/IconListChild/IconListChild.php:220
+msgid "Badge Background"
+msgstr ""
+
+#: includes/modules/IconBox/IconBox.php:212
+#: includes/modules/IconList/IconList.php:248
+#: includes/modules/IconListChild/IconListChild.php:221
+msgid "Here you can change your front side badge background color."
+msgstr ""
+
+#: includes/modules/IconBox/IconBox.php:226
+#: includes/modules/IconList/IconList.php:259
+#: includes/modules/IconListChild/IconListChild.php:234
+msgid "Badge Wrapper Padding"
+msgstr ""
+
+#: includes/modules/IconBox/IconBox.php:227
+#: includes/modules/IconList/IconList.php:260
+#: includes/modules/IconListChild/IconListChild.php:235
+msgid "Define custom padding for flip card badge wrapper"
+msgstr ""
+
+#: includes/modules/IconBox/IconBox.php:237
+#: includes/modules/Person/Person.php:148
+msgid "Vertical Offset"
+msgstr ""
+
+#: includes/modules/IconBox/IconBox.php:238
+msgid "Here you can change vertical offset."
+msgstr ""
+
+#: includes/modules/IconBox/IconBox.php:257
+msgid "Horizontal Offset"
+msgstr ""
+
+#: includes/modules/IconBox/IconBox.php:258
+msgid "Here you can change horizontal offset."
+msgstr ""
+
+#: includes/modules/IconBox/IconBox.php:277
+msgid "Z Index"
+msgstr ""
+
+#: includes/modules/IconBox/IconBox.php:313
+#: includes/modules/IconList/IconList.php:114
+#: includes/modules/Person/Person.php:206
+#: includes/modules/PriceList/PriceList.php:148
+#: includes/modules/PriceListChild/PriceListChild.php:177
+#: includes/modules/ProgressBar/ProgressBar.php:184
+#: includes/modules/ProgressBarChild/ProgressBarChild.php:242
+msgid "Here you can change icon background color."
+msgstr ""
+
+#: includes/modules/IconBox/IconBox.php:325
+#: includes/modules/IconList/IconList.php:125
+#: includes/modules/Person/Person.php:217
+#: includes/modules/PriceList/PriceList.php:160
+#: includes/modules/PriceListChild/PriceListChild.php:188
+#: includes/modules/ProgressBar/ProgressBar.php:196
+#: includes/modules/ProgressBarChild/ProgressBarChild.php:254
+msgid "Here you can change icon color."
+msgstr ""
+
+#: includes/modules/IconBox/IconBox.php:337
+#: includes/modules/IconList/IconList.php:136
+#: includes/modules/Person/Person.php:229
+#: includes/modules/PriceList/PriceList.php:172
+#: includes/modules/PriceListChild/PriceListChild.php:199
+#: includes/modules/ProgressBar/ProgressBar.php:208
+#: includes/modules/ProgressBarChild/ProgressBarChild.php:266
+msgid "Here you can change icon size."
+msgstr ""
+
+#: includes/modules/IconBox/IconBox.php:364
+#: includes/modules/IconList/IconList.php:162
+#: includes/modules/ProgressBar/ProgressBar.php:235
+#: includes/modules/ProgressBarChild/ProgressBarChild.php:292
+msgid "Define custom margin for icon"
+msgstr ""
+
+#: includes/modules/IconBox/IconBox.php:536
+#: includes/modules/Review/Review.php:593
+msgid "Button"
+msgstr ""
+
+#: includes/modules/IconList/IconList.php:13
+msgid "Icon List"
+msgstr ""
+
+#: includes/modules/IconList/IconList.php:28
+#: includes/modules/Person/Person.php:30
+#: includes/modules/PriceList/PriceList.php:29
+#: includes/modules/PriceListChild/PriceListChild.php:21
+msgid "Layout"
+msgstr ""
+
+#: includes/modules/IconList/IconList.php:33
+#: includes/modules/IconListChild/IconListChild.php:19
+#: includes/modules/IconListChild/IconListChild.php:28
+msgid "Tooltip"
+msgstr ""
+
+#: includes/modules/IconList/IconList.php:40
+#: includes/modules/IconListChild/IconListChild.php:35
+#: includes/modules/IconListChild/IconListChild.php:114
+msgid "Tooltip Text"
+msgstr ""
+
+#: includes/modules/IconList/IconList.php:69
+msgid "Horizontal Align"
+msgstr ""
+
+#: includes/modules/IconList/IconList.php:80
+msgid "Vertical Align"
+msgstr ""
+
+#: includes/modules/IconList/IconList.php:81
+#: includes/modules/PriceList/PriceList.php:109
+#: includes/modules/PriceListChild/PriceListChild.php:140
+msgid "Define the content vertical alignment"
+msgstr ""
+
+#: includes/modules/IconList/IconList.php:95
+msgid "Icon Gap"
+msgstr ""
+
+#: includes/modules/IconList/IconList.php:96
+#: includes/modules/PriceList/PriceList.php:127
+#: includes/modules/PriceListChild/PriceListChild.php:157
+msgid "Define space between media and content"
+msgstr ""
+
+#: includes/modules/IconList/IconList.php:171
+#: includes/modules/IconListChild/IconListChild.php:144
+msgid "Tooltip Background"
+msgstr ""
+
+#: includes/modules/IconList/IconList.php:172
+#: includes/modules/IconListChild/IconListChild.php:145
+msgid "Here you can change tooltip background color."
+msgstr ""
+
+#: includes/modules/IconList/IconList.php:183
+#: includes/modules/IconListChild/IconListChild.php:156
+msgid "Tooltip Button Color"
+msgstr ""
+
+#: includes/modules/IconList/IconList.php:184
+#: includes/modules/IconListChild/IconListChild.php:157
+msgid "Here you can change tooltip button color."
+msgstr ""
+
+#: includes/modules/IconList/IconList.php:195
+#: includes/modules/IconListChild/IconListChild.php:168
+msgid "Tooltip button Size"
+msgstr ""
+
+#: includes/modules/IconList/IconList.php:196
+#: includes/modules/IconListChild/IconListChild.php:169
+msgid "Define tooltip button size"
+msgstr ""
+
+#: includes/modules/IconList/IconList.php:212
+#: includes/modules/IconListChild/IconListChild.php:185
+msgid "Tooltip Wrapper Padding"
+msgstr ""
+
+#: includes/modules/IconList/IconList.php:213
+#: includes/modules/IconListChild/IconListChild.php:186
+msgid "Define custom padding for flip card tooltip wrapper"
+msgstr ""
+
+#: includes/modules/IconList/IconList.php:226
+#: includes/modules/PriceList/PriceList.php:245
+#: includes/modules/PriceList/PriceList.php:350
+#: includes/modules/PriceListChild/PriceListChild.php:267
+msgid "Define custom margin for price image"
+msgstr ""
+
+#: includes/modules/IconList/IconList.php:236
+#: includes/modules/PriceList/PriceList.php:255
+#: includes/modules/PriceList/PriceList.php:360
+#: includes/modules/PriceListChild/PriceListChild.php:276
+msgid "Define custom padding for price image"
+msgstr ""
+
+#: includes/modules/IconListChild/IconListChild.php:7
+msgid "Icon List Item"
+msgstr ""
+
+#: includes/modules/IconListChild/IconListChild.php:60
+#: includes/modules/ProgressBarChild/ProgressBarChild.php:60
+msgid "Use Icon"
+msgstr ""
+
+#: includes/modules/IconListChild/IconListChild.php:61
+msgid "Here you can choose whether icon will be display or not"
+msgstr ""
+
+#: includes/modules/IconListChild/IconListChild.php:84
+msgid "Define icon list title."
+msgstr ""
+
+#: includes/modules/IconListChild/IconListChild.php:92
+msgid "Define icon list description"
+msgstr ""
+
+#: includes/modules/IconListChild/IconListChild.php:101
+msgid "Use Tooltip"
+msgstr ""
+
+#: includes/modules/IconListChild/IconListChild.php:102
+msgid "Here you can choose whether tooltip will be display or not"
+msgstr ""
+
+#: includes/modules/IconListChild/IconListChild.php:115
+msgid "Define tooltip text and this will display whenever hover the info icon"
+msgstr ""
+
+#: includes/modules/IconListChild/IconListChild.php:125
+msgid "Tooltip Position"
+msgstr ""
+
+#: includes/modules/IconListChild/IconListChild.php:126
+msgid "Here you can define tooltip position like (top, bottom, left, right)"
+msgstr ""
+
+#: includes/modules/LogoSlider/LogoSlider.php:13
+msgid "Logo Slider"
+msgstr ""
+
+#: includes/modules/LogoSlider/LogoSlider.php:24
+#: includes/modules/ReviewSlider/ReviewSlider.php:24
+msgid "Slider Settings"
+msgstr ""
+
+#: includes/modules/LogoSlider/LogoSlider.php:25
+#: includes/modules/ReviewSlider/ReviewSlider.php:25
+msgid "Navigation Settings"
+msgstr ""
+
+#: includes/modules/LogoSlider/LogoSlider.php:30
+msgid "Image Border"
+msgstr ""
+
+#: includes/modules/LogoSlider/LogoSlider.php:31
+#: includes/modules/LogoSlider/LogoSlider.php:52
+#: includes/modules/ReviewSlider/ReviewSlider.php:35
+#: includes/modules/ReviewSlider/ReviewSlider.php:91
+msgid "Dots"
+msgstr ""
+
+#: includes/modules/LogoSlider/LogoSlider.php:32
+#: includes/modules/ReviewSlider/ReviewSlider.php:38
+msgid "Arrows"
+msgstr ""
+
+#: includes/modules/LogoSlider/LogoSlider.php:33
+#: includes/modules/LogoSlider/LogoSlider.php:40
+#: includes/modules/ReviewSlider/ReviewSlider.php:70
+#: includes/modules/ReviewSlider/ReviewSlider.php:79
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:7
+msgid "Slider Item"
+msgstr ""
+
+#: includes/modules/LogoSlider/LogoSlider.php:44
+#: includes/modules/ReviewSlider/ReviewSlider.php:83
+msgid "Slider Left Arrow"
+msgstr ""
+
+#: includes/modules/LogoSlider/LogoSlider.php:48
+#: includes/modules/ReviewSlider/ReviewSlider.php:87
+msgid "Slider Right Arrow"
+msgstr ""
+
+#: includes/modules/LogoSlider/LogoSlider.php:56
+#: includes/modules/ReviewSlider/ReviewSlider.php:95
+msgid "Active Dot"
+msgstr ""
+
+#: includes/modules/LogoSlider/LogoSlider.php:68
+#: includes/modules/ReviewSlider/ReviewSlider.php:107
+msgid "Autoplay"
+msgstr ""
+
+#: includes/modules/LogoSlider/LogoSlider.php:70
+#: includes/modules/LogoSlider/LogoSlider.php:93
+#: includes/modules/LogoSlider/LogoSlider.php:104
+#: includes/modules/LogoSlider/LogoSlider.php:131
+#: includes/modules/ReviewSlider/ReviewSlider.php:109
+#: includes/modules/ReviewSlider/ReviewSlider.php:132
+#: includes/modules/ReviewSlider/ReviewSlider.php:143
+#: includes/modules/ReviewSlider/ReviewSlider.php:170
+msgid "Content entered here will appear inside the module."
+msgstr ""
+
+#: includes/modules/LogoSlider/LogoSlider.php:80
+#: includes/modules/ReviewSlider/ReviewSlider.php:119
+msgid "Autoplay Delay"
+msgstr ""
+
+#: includes/modules/LogoSlider/LogoSlider.php:83
+#: includes/modules/ReviewSlider/ReviewSlider.php:122
+msgid "Adjust the autoplay delay in milliseconds (ms)"
+msgstr ""
+
+#: includes/modules/LogoSlider/LogoSlider.php:91
+#: includes/modules/ReviewSlider/ReviewSlider.php:130
+msgid "Loop"
+msgstr ""
+
+#: includes/modules/LogoSlider/LogoSlider.php:102
+#: includes/modules/ReviewSlider/ReviewSlider.php:141
+msgid "Center Slide"
+msgstr ""
+
+#: includes/modules/LogoSlider/LogoSlider.php:114
+#: includes/modules/ReviewSlider/ReviewSlider.php:153
+msgid "Pause On Hover"
+msgstr ""
+
+#: includes/modules/LogoSlider/LogoSlider.php:116
+#: includes/modules/ReviewSlider/ReviewSlider.php:155
+msgid "Enable this option if you want to pause the slider on mouse hover"
+msgstr ""
+
+#: includes/modules/LogoSlider/LogoSlider.php:129
+#: includes/modules/ReviewSlider/ReviewSlider.php:168
+msgid "Use Grab Cursor"
+msgstr ""
+
+#: includes/modules/LogoSlider/LogoSlider.php:140
+#: includes/modules/ReviewSlider/ReviewSlider.php:179
+msgid "Speed"
+msgstr ""
+
+#: includes/modules/LogoSlider/LogoSlider.php:155
+#: includes/modules/ReviewSlider/ReviewSlider.php:194
+msgid "RTL (Slide Right to Left)"
+msgstr ""
+
+#: includes/modules/LogoSlider/LogoSlider.php:157
+#: includes/modules/ReviewSlider/ReviewSlider.php:196
+msgid "Turn on if you want to Slide Right to Left"
+msgstr ""
+
+#: includes/modules/LogoSlider/LogoSlider.php:167
+#: includes/modules/ReviewSlider/ReviewSlider.php:206
+msgid "Slide to Show"
+msgstr ""
+
+#: includes/modules/LogoSlider/LogoSlider.php:168
+#: includes/modules/ReviewSlider/ReviewSlider.php:207
+msgid "Define how many slide you want to show at a time"
+msgstr ""
+
+#: includes/modules/LogoSlider/LogoSlider.php:184
+#: includes/modules/ReviewSlider/ReviewSlider.php:223
+msgid "Slide to Scroll"
+msgstr ""
+
+#: includes/modules/LogoSlider/LogoSlider.php:185
+#: includes/modules/ReviewSlider/ReviewSlider.php:224
+msgid "Define how many slide you want to scroll at a time"
+msgstr ""
+
+#: includes/modules/LogoSlider/LogoSlider.php:204
+#: includes/modules/ReviewSlider/ReviewSlider.php:243
+msgid "Show Navigation"
+msgstr ""
+
+#: includes/modules/LogoSlider/LogoSlider.php:206
+#: includes/modules/ReviewSlider/ReviewSlider.php:245
+msgid "Turn on if you want to display slider navigation dots"
+msgstr ""
+
+#: includes/modules/LogoSlider/LogoSlider.php:217
+#: includes/modules/ReviewSlider/ReviewSlider.php:256
+msgid "Show Arrows"
+msgstr ""
+
+#: includes/modules/LogoSlider/LogoSlider.php:219
+#: includes/modules/ReviewSlider/ReviewSlider.php:258
+msgid "Turn on if you want to display slider arrows"
+msgstr ""
+
+#: includes/modules/LogoSlider/LogoSlider.php:230
+#: includes/modules/ReviewSlider/ReviewSlider.php:269
+msgid "Show Arrows on Hover"
+msgstr ""
+
+#: includes/modules/LogoSlider/LogoSlider.php:232
+#: includes/modules/ReviewSlider/ReviewSlider.php:271
+msgid "Turn on if you want to show arrows on hover the slider"
+msgstr ""
+
+#: includes/modules/LogoSlider/LogoSlider.php:248
+#: includes/modules/ReviewSlider/ReviewSlider.php:287
+msgid "Space Between Sliders"
+msgstr ""
+
+#: includes/modules/LogoSlider/LogoSlider.php:265
+#: includes/modules/ReviewSlider/ReviewSlider.php:323
+msgid "Previous Icon"
+msgstr ""
+
+#: includes/modules/LogoSlider/LogoSlider.php:266
+#: includes/modules/ReviewSlider/ReviewSlider.php:324
+msgid "Change previous arrow icon"
+msgstr ""
+
+#: includes/modules/LogoSlider/LogoSlider.php:276
+#: includes/modules/ReviewSlider/ReviewSlider.php:334
+msgid "Next Icon"
+msgstr ""
+
+#: includes/modules/LogoSlider/LogoSlider.php:277
+#: includes/modules/ReviewSlider/ReviewSlider.php:335
+msgid "Change next arrow icon"
+msgstr ""
+
+#: includes/modules/LogoSlider/LogoSlider.php:288
+#: includes/modules/ReviewSlider/ReviewSlider.php:346
+msgid "Define arrows icon color"
+msgstr ""
+
+#: includes/modules/LogoSlider/LogoSlider.php:302
+#: includes/modules/ReviewSlider/ReviewSlider.php:361
+msgid "Define arrows icon background color"
+msgstr ""
+
+#: includes/modules/LogoSlider/LogoSlider.php:316
+#: includes/modules/ReviewSlider/ReviewSlider.php:376
+msgid "Here you can change your arrows icon size."
+msgstr ""
+
+#: includes/modules/LogoSlider/LogoSlider.php:334
+#: includes/modules/ReviewSlider/ReviewSlider.php:395
+msgid "Define custom padding for arrow icon"
+msgstr ""
+
+#: includes/modules/LogoSlider/LogoSlider.php:348
+#: includes/modules/ReviewSlider/ReviewSlider.php:410
+msgid "Define custom margin for arrow icon"
+msgstr ""
+
+#: includes/modules/LogoSlider/LogoSlider.php:363
+#: includes/modules/ReviewSlider/ReviewSlider.php:426
+msgid "Dots Color"
+msgstr ""
+
+#: includes/modules/LogoSlider/LogoSlider.php:364
+#: includes/modules/ReviewSlider/ReviewSlider.php:427
+msgid "Define dots icon color"
+msgstr ""
+
+#: includes/modules/LogoSlider/LogoSlider.php:377
+#: includes/modules/ReviewSlider/ReviewSlider.php:442
+msgid "Active Dot Color"
+msgstr ""
+
+#: includes/modules/LogoSlider/LogoSlider.php:378
+#: includes/modules/ReviewSlider/ReviewSlider.php:443
+msgid "Define active dots color"
+msgstr ""
+
+#: includes/modules/LogoSlider/LogoSlider.php:391
+#: includes/modules/ReviewSlider/ReviewSlider.php:458
+msgid "Dots Size"
+msgstr ""
+
+#: includes/modules/LogoSlider/LogoSlider.php:392
+#: includes/modules/ReviewSlider/ReviewSlider.php:459
+msgid "Here you can change your arrows dots size."
+msgstr ""
+
+#: includes/modules/LogoSlider/LogoSlider.php:425
+#: includes/modules/LogoSlider/LogoSlider.php:446
+#: includes/modules/ReviewSlider/ReviewSlider.php:655
+#: includes/modules/ReviewSlider/ReviewSlider.php:677
+msgid "Arrow Icon"
+msgstr ""
+
+#: includes/modules/LogoSliderChild/LogoSliderChild.php:6
+#: includes/modules/PriceList/PriceList.php:17
+#: includes/modules/PriceListChild/PriceListChild.php:6
+msgid "Price Item"
+msgstr ""
+
+#: includes/modules/LogoSliderChild/LogoSliderChild.php:21
+msgid "Logo Settings"
+msgstr ""
+
+#: includes/modules/LogoSliderChild/LogoSliderChild.php:31
+msgid "Select your logo image as a slider child"
+msgstr ""
+
+#: includes/modules/LogoSliderChild/LogoSliderChild.php:36
+msgid "Update Image"
+msgstr ""
+
+#: includes/modules/LogoSliderChild/LogoSliderChild.php:51
+msgid "Logo Width"
+msgstr ""
+
+#: includes/modules/LogoSliderChild/LogoSliderChild.php:52
+msgid "Adjust the width of the image."
+msgstr ""
+
+#: includes/modules/Person/Person.php:13
+msgid "Person"
+msgstr ""
+
+#: includes/modules/Person/Person.php:16
+#: includes/modules/PersonChild/PersonChild.php:7
+#: includes/modules/PersonChild/PersonChild.php:28
+msgid "Social Network"
+msgstr ""
+
+#: includes/modules/Person/Person.php:34
+msgid "Person Texts"
+msgstr ""
+
+#: includes/modules/Person/Person.php:41 includes/modules/Person/Person.php:83
+#: includes/modules/Review/Review.php:56 includes/modules/Review/Review.php:129
+#: includes/modules/ReviewSlider/ReviewSlider.php:50
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:52
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:125
+msgid "Position"
+msgstr ""
+
+#: includes/modules/Person/Person.php:60 includes/modules/Review/Review.php:100
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:96
+msgid "Upload an image or type in the URL of the image you would like to display."
+msgstr ""
+
+#: includes/modules/Person/Person.php:70 includes/modules/Review/Review.php:113
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:109
+msgid "Define the image alternative text"
+msgstr ""
+
+#: includes/modules/Person/Person.php:76 includes/modules/Person/Person.php:376
+#: includes/modules/ProgressBar/ProgressBar.php:256
+#: includes/modules/ProgressBarChild/ProgressBarChild.php:82
+#: includes/modules/ProgressBarChild/ProgressBarChild.php:328
+#: includes/modules/Review/Review.php:52 includes/modules/Review/Review.php:122
+#: includes/modules/Review/Review.php:539
+#: includes/modules/ReviewSlider/ReviewSlider.php:47
+#: includes/modules/ReviewSlider/ReviewSlider.php:736
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:48
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:118
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:478
+msgid "Name"
+msgstr ""
+
+#: includes/modules/Person/Person.php:77
+msgid "Define person name"
+msgstr ""
+
+#: includes/modules/Person/Person.php:84
+msgid "Define person designation and company name"
+msgstr ""
+
+#: includes/modules/Person/Person.php:101
+msgid "Select Layout Style"
+msgstr ""
+
+#: includes/modules/Person/Person.php:102
+#: includes/modules/Review/Review.php:252
+msgid "Here you can choose different kind of review layout styles"
+msgstr ""
+
+#: includes/modules/Person/Person.php:105
+#: includes/modules/Review/Review.php:255
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:198
+msgid "Style 1"
+msgstr ""
+
+#: includes/modules/Person/Person.php:106
+#: includes/modules/Review/Review.php:256
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:199
+msgid "Style 2"
+msgstr ""
+
+#: includes/modules/Person/Person.php:107
+#: includes/modules/Review/Review.php:257
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:200
+msgid "Style 3"
+msgstr ""
+
+#: includes/modules/Person/Person.php:108
+#: includes/modules/Review/Review.php:258
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:201
+msgid "Style 4"
+msgstr ""
+
+#: includes/modules/Person/Person.php:116
+msgid "Show Info On Hover"
+msgstr ""
+
+#: includes/modules/Person/Person.php:117
+msgid "Turn off you wan to show the person info on hover"
+msgstr ""
+
+#: includes/modules/Person/Person.php:132
+msgid "Show Social Icon On Hover"
+msgstr ""
+
+#: includes/modules/Person/Person.php:133
+msgid "Turn off you wan to show the person social icon on hover"
+msgstr ""
+
+#: includes/modules/Person/Person.php:149
+msgid "Define social links vertical position"
+msgstr ""
+
+#: includes/modules/Person/Person.php:166
+#: includes/modules/PriceList/PriceList.php:228
+#: includes/modules/PriceListChild/PriceListChild.php:251
+#: includes/modules/Review/Review.php:332
+#: includes/modules/ReviewSlider/ReviewSlider.php:502
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:274
+msgid "Image Width"
+msgstr ""
+
+#: includes/modules/Person/Person.php:167
+msgid "Define person image width"
+msgstr ""
+
+#: includes/modules/Person/Person.php:195
+msgid "Icon Alignment"
+msgstr ""
+
+#: includes/modules/Person/Person.php:245
+msgid "Space Between Icons"
+msgstr ""
+
+#: includes/modules/Person/Person.php:246
+msgid "Define space between icons"
+msgstr ""
+
+#: includes/modules/Person/Person.php:264
+msgid "Define custom margin content wrapper"
+msgstr ""
+
+#: includes/modules/Person/Person.php:273
+msgid "Define custom padding content wrapper"
+msgstr ""
+
+#: includes/modules/Person/Person.php:282
+msgid "Social Link Wrapper Margin"
+msgstr ""
+
+#: includes/modules/Person/Person.php:283
+msgid "Define custom margin social link wrapper"
+msgstr ""
+
+#: includes/modules/Person/Person.php:291
+msgid "Social Link Wrapper Padding"
+msgstr ""
+
+#: includes/modules/Person/Person.php:292
+msgid "Define custom padding social link wrapper"
+msgstr ""
+
+#: includes/modules/Person/Person.php:399
+#: includes/modules/Review/Review.php:558
+#: includes/modules/ReviewSlider/ReviewSlider.php:756
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:497
+msgid "position"
+msgstr ""
+
+#: includes/modules/PersonChild/PersonChild.php:17
+msgid "Network"
+msgstr ""
+
+#: includes/modules/PersonChild/PersonChild.php:18
+msgid "Link"
+msgstr ""
+
+#: includes/modules/PersonChild/PersonChild.php:19
+msgid "Link Window"
+msgstr ""
+
+#: includes/modules/PersonChild/PersonChild.php:32
+msgid "Facebook"
+msgstr ""
+
+#: includes/modules/PersonChild/PersonChild.php:33
+msgid "X (Twitter)"
+msgstr ""
+
+#: includes/modules/PersonChild/PersonChild.php:34
+msgid "Pinterest"
+msgstr ""
+
+#: includes/modules/PersonChild/PersonChild.php:35
+msgid "Instagram"
+msgstr ""
+
+#: includes/modules/PersonChild/PersonChild.php:36
+msgid "Linkedin"
+msgstr ""
+
+#: includes/modules/PersonChild/PersonChild.php:37
+msgid "Tumblr"
+msgstr ""
+
+#: includes/modules/PersonChild/PersonChild.php:38
+msgid "Skype"
+msgstr ""
+
+#: includes/modules/PersonChild/PersonChild.php:39
+msgid "Vimeo"
+msgstr ""
+
+#: includes/modules/PersonChild/PersonChild.php:40
+msgid "Dribbble"
+msgstr ""
+
+#: includes/modules/PersonChild/PersonChild.php:41
+msgid "Behance"
+msgstr ""
+
+#: includes/modules/PersonChild/PersonChild.php:42
+msgid "Flickr"
+msgstr ""
+
+#: includes/modules/PersonChild/PersonChild.php:43
+msgid "Github"
+msgstr ""
+
+#: includes/modules/PersonChild/PersonChild.php:44
+msgid "Telegram"
+msgstr ""
+
+#: includes/modules/PersonChild/PersonChild.php:45
+msgid "TikTok"
+msgstr ""
+
+#: includes/modules/PersonChild/PersonChild.php:46
+msgid "Twitch"
+msgstr ""
+
+#: includes/modules/PersonChild/PersonChild.php:47
+msgid "WhatsApp"
+msgstr ""
+
+#: includes/modules/PersonChild/PersonChild.php:48
+msgid "YouTube"
+msgstr ""
+
+#: includes/modules/PersonChild/PersonChild.php:49
+msgid "Spotify"
+msgstr ""
+
+#: includes/modules/PersonChild/PersonChild.php:50
+msgid "Select Other"
+msgstr ""
+
+#: includes/modules/PersonChild/PersonChild.php:58
+msgid "Select social network icon"
+msgstr ""
+
+#: includes/modules/PersonChild/PersonChild.php:67
+msgid "Account Link URL"
+msgstr ""
+
+#: includes/modules/PersonChild/PersonChild.php:68
+msgid "The URL for this social network link"
+msgstr ""
+
+#: includes/modules/PersonChild/PersonChild.php:78
+msgid "Link Target"
+msgstr ""
+
+#: includes/modules/PersonChild/PersonChild.php:79
+msgid "Here you can choose whether or not your links opens in a new window"
+msgstr ""
+
+#: includes/modules/PersonChild/PersonChild.php:92
+msgid "Account Username"
+msgstr ""
+
+#: includes/modules/PersonChild/PersonChild.php:101
+msgid "Skype Button Action"
+msgstr ""
+
+#: includes/modules/PersonChild/PersonChild.php:104
+msgid "Call"
+msgstr ""
+
+#: includes/modules/PersonChild/PersonChild.php:105
+msgid "Chat"
+msgstr ""
+
+#: includes/modules/PriceList/PriceList.php:13
+msgid "Price List"
+msgstr ""
+
+#: includes/modules/PriceList/PriceList.php:30
+#: includes/modules/PriceListChild/PriceListChild.php:22
+msgid "Price Icon"
+msgstr ""
+
+#: includes/modules/PriceList/PriceList.php:31
+#: includes/modules/PriceListChild/PriceListChild.php:23
+msgid "Price Image"
+msgstr ""
+
+#: includes/modules/PriceList/PriceList.php:35
+#: includes/modules/PriceListChild/PriceListChild.php:26
+msgid "Price List Texts"
+msgstr ""
+
+#: includes/modules/PriceList/PriceList.php:45
+#: includes/modules/PriceList/PriceList.php:80
+#: includes/modules/PriceList/PriceList.php:496
+#: includes/modules/PriceListChild/PriceListChild.php:36
+#: includes/modules/PriceListChild/PriceListChild.php:475
+msgid "Price"
+msgstr ""
+
+#: includes/modules/PriceList/PriceList.php:68
+msgid "Image Wrapper"
+msgstr ""
+
+#: includes/modules/PriceList/PriceList.php:76
+msgid "Price Title"
+msgstr ""
+
+#: includes/modules/PriceList/PriceList.php:94
+#: includes/modules/PriceListChild/PriceListChild.php:125
+msgid "Choose Layout"
+msgstr ""
+
+#: includes/modules/PriceList/PriceList.php:95
+#: includes/modules/PriceListChild/PriceListChild.php:126
+msgid "Here you can choose different type of style"
+msgstr ""
+
+#: includes/modules/PriceList/PriceList.php:98
+#: includes/modules/PriceListChild/PriceListChild.php:129
+msgid "Media position left"
+msgstr ""
+
+#: includes/modules/PriceList/PriceList.php:99
+#: includes/modules/PriceListChild/PriceListChild.php:130
+msgid "Media position top"
+msgstr ""
+
+#: includes/modules/PriceList/PriceList.php:108
+#: includes/modules/PriceListChild/PriceListChild.php:139
+msgid "Content alignment"
+msgstr ""
+
+#: includes/modules/PriceList/PriceList.php:126
+#: includes/modules/PriceListChild/PriceListChild.php:156
+msgid "Content space"
+msgstr ""
+
+#: includes/modules/PriceList/PriceList.php:199
+#: includes/modules/PriceListChild/PriceListChild.php:224
+msgid "Define custom margin for divider icon"
+msgstr ""
+
+#: includes/modules/PriceList/PriceList.php:210
+#: includes/modules/PriceListChild/PriceListChild.php:234
+msgid "Image Alignment"
+msgstr ""
+
+#: includes/modules/PriceList/PriceList.php:229
+#: includes/modules/PriceListChild/PriceListChild.php:252
+msgid "Here you can change image width."
+msgstr ""
+
+#: includes/modules/PriceList/PriceList.php:300
+#: includes/modules/PriceListChild/PriceListChild.php:320
+msgid "Divider Vertical Align"
+msgstr ""
+
+#: includes/modules/PriceList/PriceList.php:408
+msgid "Price item"
+msgstr ""
+
+#: includes/modules/PriceListChild/PriceListChild.php:76
+msgid "Upload an image you would like to display for the price list."
+msgstr ""
+
+#: includes/modules/PriceListChild/PriceListChild.php:99
+msgid "Define the price list title."
+msgstr ""
+
+#: includes/modules/PriceListChild/PriceListChild.php:106
+msgid "price"
+msgstr ""
+
+#: includes/modules/PriceListChild/PriceListChild.php:116
+msgid "Define the price description"
+msgstr ""
+
+#: includes/modules/ProgressBar/ProgressBar.php:12
+msgid "Skill Progress Bar"
+msgstr ""
+
+#: includes/modules/ProgressBar/ProgressBar.php:23
+#: includes/modules/ProgressBarChild/ProgressBarChild.php:23
+msgid "Progress Bar"
+msgstr ""
+
+#: includes/modules/ProgressBar/ProgressBar.php:27
+#: includes/modules/ProgressBar/ProgressBar.php:273
+#: includes/modules/ProgressBar/ProgressBar.php:290
+#: includes/modules/ProgressBarChild/ProgressBarChild.php:27
+#: includes/modules/ProgressBarChild/ProgressBarChild.php:94
+#: includes/modules/ProgressBarChild/ProgressBarChild.php:345
+#: includes/modules/ProgressBarChild/ProgressBarChild.php:362
+msgid "Level"
+msgstr ""
+
+#: includes/modules/ProgressBar/ProgressBar.php:31
+#: includes/modules/ProgressBarChild/ProgressBarChild.php:31
+#: includes/modules/ReviewSlider/ReviewSlider.php:63
+msgid "Design"
+msgstr ""
+
+#: includes/modules/ProgressBar/ProgressBar.php:34
+#: includes/modules/ProgressBar/ProgressBar.php:61
+#: includes/modules/ProgressBarChild/ProgressBarChild.php:34
+msgid "Level Text"
+msgstr ""
+
+#: includes/modules/ProgressBar/ProgressBar.php:40
+#: includes/modules/ProgressBarChild/ProgressBarChild.php:40
+#: includes/modules/ReviewSlider/ReviewSlider.php:43
+msgid "Texts"
+msgstr ""
+
+#: includes/modules/ProgressBar/ProgressBar.php:44
+#: includes/modules/ProgressBar/ProgressBar.php:57
+#: includes/modules/ProgressBarChild/ProgressBarChild.php:44
+#: includes/modules/Review/Review.php:33
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:29
+msgid "Name Text"
+msgstr ""
+
+#: includes/modules/ProgressBar/ProgressBar.php:47
+#: includes/modules/ProgressBarChild/ProgressBarChild.php:47
+msgid "Description Text"
+msgstr ""
+
+#: includes/modules/ProgressBar/ProgressBar.php:65
+#: includes/modules/ProgressBarChild/ProgressBarChild.php:6
+msgid "Progress Bar Item"
+msgstr ""
+
+#: includes/modules/ProgressBar/ProgressBar.php:94
+#: includes/modules/ProgressBarChild/ProgressBarChild.php:158
+msgid "Height"
+msgstr ""
+
+#: includes/modules/ProgressBar/ProgressBar.php:95
+#: includes/modules/ProgressBarChild/ProgressBarChild.php:159
+msgid "Define the progress bar height"
+msgstr ""
+
+#: includes/modules/ProgressBar/ProgressBar.php:110
+#: includes/modules/ProgressBarChild/ProgressBarChild.php:173
+msgid "Corner Round"
+msgstr ""
+
+#: includes/modules/ProgressBar/ProgressBar.php:111
+#: includes/modules/ProgressBarChild/ProgressBarChild.php:174
+msgid "Define the progress bar corner border radius"
+msgstr ""
+
+#: includes/modules/ProgressBar/ProgressBar.php:126
+#: includes/modules/ProgressBarChild/ProgressBarChild.php:188
+msgid "Level Tooltip Background"
+msgstr ""
+
+#: includes/modules/ProgressBar/ProgressBar.php:127
+#: includes/modules/ProgressBarChild/ProgressBarChild.php:189
+msgid "Define level tooltip background color"
+msgstr ""
+
+#: includes/modules/ProgressBar/ProgressBar.php:140
+#: includes/modules/ProgressBarChild/ProgressBarChild.php:201
+msgid "Tooltip Padding"
+msgstr ""
+
+#: includes/modules/ProgressBar/ProgressBar.php:141
+#: includes/modules/ProgressBarChild/ProgressBarChild.php:202
+msgid "Define custom padding for level tooltip"
+msgstr ""
+
+#: includes/modules/ProgressBar/ProgressBar.php:151
+#: includes/modules/ProgressBarChild/ProgressBarChild.php:211
+msgid "Tooltip Round"
+msgstr ""
+
+#: includes/modules/ProgressBar/ProgressBar.php:152
+#: includes/modules/ProgressBarChild/ProgressBarChild.php:212
+msgid "Define the progress bar level tooltip border radius"
+msgstr ""
+
+#: includes/modules/ProgressBar/ProgressBar.php:168
+#: includes/modules/ProgressBarChild/ProgressBarChild.php:227
+msgid "Tooltip Vertical Offset"
+msgstr ""
+
+#: includes/modules/ProgressBar/ProgressBar.php:169
+#: includes/modules/ProgressBarChild/ProgressBarChild.php:228
+msgid "Define the progress bar level tooltip vertical position"
+msgstr ""
+
+#: includes/modules/ProgressBarChild/ProgressBarChild.php:61
+msgid "Turn on if you want to icon for the progress bar"
+msgstr ""
+
+#: includes/modules/ProgressBarChild/ProgressBarChild.php:73
+msgid "Select progress bar icon."
+msgstr ""
+
+#: includes/modules/ProgressBarChild/ProgressBarChild.php:109
+msgid "Hide Name Text"
+msgstr ""
+
+#: includes/modules/ProgressBarChild/ProgressBarChild.php:110
+msgid "Turn on if you want to hide all the name text"
+msgstr ""
+
+#: includes/modules/ProgressBarChild/ProgressBarChild.php:122
+msgid "Hide level Text"
+msgstr ""
+
+#: includes/modules/ProgressBarChild/ProgressBarChild.php:123
+msgid "Turn on if you want to hide all the level text"
+msgstr ""
+
+#: includes/modules/ProgressBarChild/ProgressBarChild.php:304
+msgid "Name Placement"
+msgstr ""
+
+#: includes/modules/ProgressBarChild/ProgressBarChild.php:305
+msgid ""
+"Define the position of progress bar Name position (outside or inside) "
+"progress bar"
+msgstr ""
+
+#: includes/modules/ProgressBarChild/ProgressBarChild.php:308
+msgid "Outside"
+msgstr ""
+
+#: includes/modules/ProgressBarChild/ProgressBarChild.php:309
+msgid "Inside"
+msgstr ""
+
+#: includes/modules/Rating/Rating.php:13 includes/modules/Rating/Rating.php:67
+#: includes/modules/Review/Review.php:31 includes/modules/Review/Review.php:231
+#: includes/modules/ReviewSlider/ReviewSlider.php:59
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:27
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:174
+msgid "Rating"
+msgstr ""
+
+#: includes/modules/Rating/Rating.php:27
+msgid "Stars"
+msgstr ""
+
+#: includes/modules/Rating/Rating.php:28 includes/modules/Rating/Rating.php:156
+#: includes/modules/Review/Review.php:32 includes/modules/Review/Review.php:523
+#: includes/modules/ReviewSlider/ReviewSlider.php:719
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:28
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:462
+msgid "Rating Number"
+msgstr ""
+
+#: includes/modules/Rating/Rating.php:29 includes/modules/Rating/Rating.php:95
+#: includes/modules/Rating/Rating.php:172
+msgid "Rating Title"
+msgstr ""
+
+#: includes/modules/Rating/Rating.php:39 includes/modules/Review/Review.php:199
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:142
+msgid "Choose Rating Style"
+msgstr ""
+
+#: includes/modules/Rating/Rating.php:40 includes/modules/Review/Review.php:200
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:143
+msgid "Here you can choose different kind of styles"
+msgstr ""
+
+#: includes/modules/Rating/Rating.php:43 includes/modules/Review/Review.php:204
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:147
+msgid "Only Stars"
+msgstr ""
+
+#: includes/modules/Rating/Rating.php:44 includes/modules/Review/Review.php:205
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:148
+msgid "Only Number"
+msgstr ""
+
+#: includes/modules/Rating/Rating.php:45 includes/modules/Review/Review.php:206
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:149
+msgid "Both Start and Number"
+msgstr ""
+
+#: includes/modules/Rating/Rating.php:52 includes/modules/Review/Review.php:213
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:156
+msgid "Rating Scale"
+msgstr ""
+
+#: includes/modules/Rating/Rating.php:82
+msgid "Use Title"
+msgstr ""
+
+#: includes/modules/Rating/Rating.php:83
+msgid "Here you can choose whether rating title will be display or not"
+msgstr ""
+
+#: includes/modules/Rating/Rating.php:96
+msgid "Define rating title"
+msgstr ""
+
+#: includes/modules/Rating/Rating.php:107
+#: includes/modules/Review/Review.php:350
+#: includes/modules/ReviewSlider/ReviewSlider.php:520
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:292
+msgid "Star Color"
+msgstr ""
+
+#: includes/modules/Rating/Rating.php:108
+#: includes/modules/Review/Review.php:351
+#: includes/modules/ReviewSlider/ReviewSlider.php:521
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:293
+msgid "Here you can change star color."
+msgstr ""
+
+#: includes/modules/Rating/Rating.php:119
+#: includes/modules/Review/Review.php:365
+#: includes/modules/ReviewSlider/ReviewSlider.php:536
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:306
+msgid "Active Star Color"
+msgstr ""
+
+#: includes/modules/Rating/Rating.php:120
+#: includes/modules/Review/Review.php:366
+#: includes/modules/ReviewSlider/ReviewSlider.php:537
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:307
+msgid "Here you can change filled/active star color."
+msgstr ""
+
+#: includes/modules/Rating/Rating.php:131
+#: includes/modules/Review/Review.php:380
+#: includes/modules/ReviewSlider/ReviewSlider.php:552
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:320
+msgid "star Size"
+msgstr ""
+
+#: includes/modules/Rating/Rating.php:132
+#: includes/modules/Review/Review.php:381
+#: includes/modules/ReviewSlider/ReviewSlider.php:553
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:321
+msgid "Here you can change your back side star size."
+msgstr ""
+
+#: includes/modules/Review/Review.php:13
+msgid "Review"
+msgstr ""
+
+#: includes/modules/Review/Review.php:24
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:20
+msgid "Rating Settings"
+msgstr ""
+
+#: includes/modules/Review/Review.php:29
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:25
+msgid "Layouts"
+msgstr ""
+
+#: includes/modules/Review/Review.php:34
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:30
+msgid "Position Text"
+msgstr ""
+
+#: includes/modules/Review/Review.php:35
+msgid "Review Text"
+msgstr ""
+
+#: includes/modules/Review/Review.php:44
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:40
+msgid "Container"
+msgstr ""
+
+#: includes/modules/Review/Review.php:60
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:56
+msgid "Stars Wrapper"
+msgstr ""
+
+#: includes/modules/Review/Review.php:64
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:60
+msgid "Star"
+msgstr ""
+
+#: includes/modules/Review/Review.php:68 includes/modules/Review/Review.php:72
+#: includes/modules/Review/Review.php:76
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:64
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:68
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:72
+msgid "Active Star"
+msgstr ""
+
+#: includes/modules/Review/Review.php:86
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:82
+msgid "Show Image"
+msgstr ""
+
+#: includes/modules/Review/Review.php:87
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:83
+msgid "Here you can choose whether reviewer image will be display or not"
+msgstr ""
+
+#: includes/modules/Review/Review.php:123
+msgid "Define reviewer name"
+msgstr ""
+
+#: includes/modules/Review/Review.php:130
+msgid "Define reviewer designation and company name"
+msgstr ""
+
+#: includes/modules/Review/Review.php:137
+msgid "Define review description."
+msgstr ""
+
+#: includes/modules/Review/Review.php:251
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:194
+msgid "Layout Style"
+msgstr ""
+
+#: includes/modules/Review/Review.php:266
+#: includes/modules/ReviewSlider/ReviewSlider.php:483
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:209
+msgid "Image Space"
+msgstr ""
+
+#: includes/modules/Review/Review.php:267
+#: includes/modules/ReviewSlider/ReviewSlider.php:484
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:210
+msgid "Here you can change space between author image and info."
+msgstr ""
+
+#: includes/modules/Review/Review.php:317
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:259
+msgid "Rating Position"
+msgstr ""
+
+#: includes/modules/Review/Review.php:320
+msgid "Under Review Text"
+msgstr ""
+
+#: includes/modules/Review/Review.php:321
+msgid "Top Review Text"
+msgstr ""
+
+#: includes/modules/Review/Review.php:322
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:264
+msgid "Under Position Text"
+msgstr ""
+
+#: includes/modules/Review/Review.php:333
+#: includes/modules/ReviewSlider/ReviewSlider.php:503
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:275
+msgid "Here you can change your back side image width."
+msgstr ""
+
+#: includes/modules/Review/Review.php:402
+#: includes/modules/ReviewSlider/ReviewSlider.php:575
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:341
+msgid "Define custom margin for image"
+msgstr ""
+
+#: includes/modules/Review/Review.php:412
+#: includes/modules/ReviewSlider/ReviewSlider.php:585
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:351
+msgid "Define custom padding for image"
+msgstr ""
+
+#: includes/modules/Review/Review.php:421
+#: includes/modules/ReviewSlider/ReviewSlider.php:594
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:360
+msgid "Rating Margin"
+msgstr ""
+
+#: includes/modules/Review/Review.php:422
+#: includes/modules/ReviewSlider/ReviewSlider.php:595
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:361
+msgid "Define custom margin for rating section"
+msgstr ""
+
+#: includes/modules/Review/Review.php:431
+#: includes/modules/ReviewSlider/ReviewSlider.php:604
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:370
+msgid "Rating Padding"
+msgstr ""
+
+#: includes/modules/Review/Review.php:432
+#: includes/modules/ReviewSlider/ReviewSlider.php:605
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:371
+msgid "Define custom padding for rating section"
+msgstr ""
+
+#: includes/modules/Review/Review.php:442
+#: includes/modules/ReviewSlider/ReviewSlider.php:615
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:381
+msgid "Define custom margin for content wrapper"
+msgstr ""
+
+#: includes/modules/Review/Review.php:455
+#: includes/modules/ReviewSlider/ReviewSlider.php:628
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:394
+msgid "Define custom padding for content wrapper"
+msgstr ""
+
+#: includes/modules/ReviewSlider/ReviewSlider.php:13
+msgid "Testimonial Slider"
+msgstr ""
+
+#: includes/modules/ReviewSlider/ReviewSlider.php:31
+msgid "Navigation"
+msgstr ""
+
+#: includes/modules/ReviewSlider/ReviewSlider.php:302
+msgid "Define custom margin for testimonial slider item"
+msgstr ""
+
+#: includes/modules/ReviewSlider/ReviewSlider.php:312
+msgid "Define custom padding for testimonial slider item"
+msgstr ""
+
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:33
+msgid "Borders"
+msgstr ""
+
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:119
+msgid "Define testimonial name"
+msgstr ""
+
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:126
+msgid "Define testimonial designation and company name"
+msgstr ""
+
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:133
+msgid "Define testimonial description."
+msgstr ""
+
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:195
+msgid "Here you can choose different kind of testimonial layout styles"
+msgstr ""
+
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:262
+msgid "Under testimonial Text"
+msgstr ""
+
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:263
+msgid "Top testimonial Text"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "DiviNationKit for Divi"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://divinationkit.comm"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"DiviNationKit is a powerful Divi extension to elevate your Divi theme "
+"experience by offering a plethora of functional and creative Divi modules. "
+"Perfect for designers, developers, and website owners, DiviNationKit "
+"empowers you to build stunning, highly customizable websites with ease."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "DiviNationKit"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://divinationkit.com"
+msgstr ""

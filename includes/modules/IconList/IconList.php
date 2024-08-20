@@ -29,7 +29,30 @@ class DINA_Icon_List extends DINA_Module_Core {
                     'icon'        => esc_html__( 'Icon', 'divinationkit-for-divi' ),
                     'title'       => esc_html__( 'Title', 'divinationkit-for-divi' ),
                     'description' => esc_html__( 'Description', 'divinationkit-for-divi' ),
-                    'tooltip'     => esc_html__( 'Tooltip', 'divinationkit-for-divi' ),
+                    'tooltip'     => array(
+                        'title'             => esc_html__( 'Tooltip', 'divinationkit-for-divi' ),
+                        'tabbed_subtoggles' => true,
+                        'sub_toggles'       => array(
+                            'style'        => array(
+                                'name' => esc_html__( 'Style', 'divinationkit-for-divi' ),
+                            ),
+                            'tooltip_text' => array(
+                                'name' => esc_html__( 'Tooltip Text', 'divinationkit-for-divi' ),
+                            ),
+                        ),
+                    ),
+                    'badge'       => array(
+                        'title'             => esc_html__( 'Badge', 'divinationkit-for-divi' ),
+                        'tabbed_subtoggles' => true,
+                        'sub_toggles'       => array(
+                            'style'      => array(
+                                'name' => esc_html__( 'Style', 'divinationkit-for-divi' ),
+                            ),
+                            'badge_text' => array(
+                                'name' => esc_html__( 'Badge Text', 'divinationkit-for-divi' ),
+                            ),
+                        ),
+                    ),
                     'list_item'   => esc_html__( 'List Item', 'divinationkit-for-divi' ),
                 ),
             ),
@@ -152,17 +175,7 @@ class DINA_Icon_List extends DINA_Module_Core {
                 'custom_color'   => true,
                 'tab_slug'       => 'advanced',
                 'toggle_slug'    => 'tooltip',
-                'mobile_options' => true,
-            ),
-
-            'tooltip_text_color'   => array(
-                'label'          => esc_html__( 'Tooltip Text Color', 'divinationkit-for-divi' ),
-                'description'    => esc_html__( 'Here you can change tooltip text color.', 'divinationkit-for-divi' ),
-                'type'           => 'color-alpha',
-                'default'        => '#ffffff',
-                'custom_color'   => true,
-                'tab_slug'       => 'advanced',
-                'toggle_slug'    => 'tooltip',
+                'sub_toggle'     => 'style',
                 'mobile_options' => true,
             ),
 
@@ -170,27 +183,12 @@ class DINA_Icon_List extends DINA_Module_Core {
                 'label'          => esc_html__( 'Tooltip Button Color', 'divinationkit-for-divi' ),
                 'description'    => esc_html__( 'Here you can change tooltip button color.', 'divinationkit-for-divi' ),
                 'type'           => 'color-alpha',
-                'default'        => '#ffffff',
+                'default'        => '#dddddd',
                 'custom_color'   => true,
                 'tab_slug'       => 'advanced',
                 'toggle_slug'    => 'tooltip',
+                'sub_toggle'     => 'style',
                 'mobile_options' => true,
-            ),
-
-            'tooltip_font_size'    => array(
-                'label'          => esc_html__( 'Tooltip Font Size', 'divinationkit-for-divi' ),
-                'description'    => esc_html__( 'Define tooltip font size', 'divinationkit-for-divi' ),
-                'type'           => 'range',
-                'default_unit'   => 'px',
-                'default'        => '12px',
-                'mobile_options' => true,
-                'range_settings' => array(
-                    'min'  => 0,
-                    'step' => 1,
-                    'max'  => 500,
-                ),
-                'tab_slug'       => 'advanced',
-                'toggle_slug'    => 'tooltip',
             ),
 
             'tooltip_button_size'  => array(
@@ -207,6 +205,7 @@ class DINA_Icon_List extends DINA_Module_Core {
                 ),
                 'tab_slug'       => 'advanced',
                 'toggle_slug'    => 'tooltip',
+                'sub_toggle'     => 'style',
             ),
 
             'tooltip_padding'      => array(
@@ -215,6 +214,7 @@ class DINA_Icon_List extends DINA_Module_Core {
                 'type'           => 'custom_padding',
                 'tab_slug'       => 'advanced',
                 'toggle_slug'    => 'tooltip',
+                'sub_toggle'     => 'style',
                 'default'        => '2px|10px|2px|10px',
                 'mobile_options' => true,
             ),
@@ -242,7 +242,33 @@ class DINA_Icon_List extends DINA_Module_Core {
             ),
         );
 
-        return array_merge( $layout, $design, $items );
+        $badge = array(
+            'badge_bg'      => array(
+                'label'          => esc_html__( 'Badge Background', 'divinationkit-for-divi' ),
+                'description'    => esc_html__( 'Here you can change your front side badge background color.', 'divinationkit-for-divi' ),
+                'type'           => 'color-alpha',
+                'default'        => '#0c71c3',
+                'custom_color'   => true,
+                'tab_slug'       => 'advanced',
+                'toggle_slug'    => 'badge',
+                'sub_toggle'     => 'style',
+                'mobile_options' => true,
+            ),
+
+            'badge_padding' => array(
+                'label'          => esc_html__( 'Badge Wrapper Padding', 'divinationkit-for-divi' ),
+                'description'    => esc_html__( 'Define custom padding for flip card badge wrapper', 'divinationkit-for-divi' ),
+                'type'           => 'custom_padding',
+                'tab_slug'       => 'advanced',
+                'toggle_slug'    => 'badge',
+                'sub_toggle'     => 'style',
+                'default'        => '2px|10px|2px|10px',
+                'mobile_options' => true,
+            ),
+
+        );
+
+        return array_merge( $layout, $design, $items, $badge );
     }
 
     public function get_advanced_fields_config() {
@@ -255,15 +281,14 @@ class DINA_Icon_List extends DINA_Module_Core {
         $advanced_fields['text_shadow'] = array();
         $advanced_fields['fonts']       = array();
 
-        // Flip card border
         $advanced_fields['borders']['list_item'] = array(
             'label_prefix' => esc_html__( 'List Item', 'divinationkit-for-divi' ),
             'tab_slug'     => 'advanced',
             'toggle_slug'  => 'list_item',
             'css'          => array(
                 'main'      => array(
-                    'border_radii'  => '%%order_class%% .dina_icon_list-item',
-                    'border_styles' => '%%order_class%% .dina_icon_list-item',
+                    'border_radii'  => '%%order_class%% .dina_icon_list_child',
+                    'border_styles' => '%%order_class%% .dina_icon_list_child',
                 ),
                 'important' => false,
             ),
@@ -337,6 +362,71 @@ class DINA_Icon_List extends DINA_Module_Core {
             ),
             'line_height' => array(
                 'default' => '1.2em',
+            ),
+        );
+
+        $advanced_fields['fonts']['tooltip'] = array(
+            'label'       => esc_html__( 'Description', 'divinationkit-for-divi' ),
+            'css'         => array(
+                'main'      => '%%order_class%% .dina_tooltip-text',
+                'important' => false,
+            ),
+            'tab_slug'    => 'advanced',
+            'toggle_slug' => 'tooltip',
+            'sub_toggle'  => 'tooltip_text',
+            'font_size'   => array(
+                'default' => '14px',
+            ),
+            'line_height' => array(
+                'default' => '1.2em',
+            ),
+        );
+
+        $advanced_fields['fonts']['badge_text'] = array(
+            'label'       => esc_html__( 'Badge Text', 'divinationkit-for-divi' ),
+            'css'         => array(
+                'main'      => '%%order_class%% .dina_icon_list-badge',
+                'important' => true,
+            ),
+            'tab_slug'    => 'advanced',
+            'toggle_slug' => 'badge',
+            'sub_toggle'  => 'badge_text',
+            'font_size'   => array(
+                'default' => '12px',
+            ),
+            'line_height' => array(
+                'default' => '1.2em',
+            ),
+        );
+
+        $advanced_fields['borders']['badge'] = array(
+            'label_prefix'    => esc_html__( 'Badge', 'divinationkit-for-divi' ),
+            'tab_slug'        => 'advanced',
+            'toggle_slug'     => 'badge',
+            'sub_toggle'      => 'style',
+            'css'             => array(
+                'main'      => array(
+                    'border_radii'  => '%%order_class%% .dina_icon_list-badge',
+                    'border_styles' => '%%order_class%% .dina_icon_list-badge',
+                ),
+                'important' => false,
+            ),
+            'depends_show_if' => array(
+                'use_badge' => 'on',
+            ),
+            'defaults'        => array(
+                'border_radii'  => 'on|0px|0px|0px|0px',
+                'border_styles' => array(
+                    'width' => '0px',
+                    'color' => $et_accent_color,
+                    'style' => 'solid',
+                ),
+            ),
+        );
+
+        $advanced_fields['margin_padding'] = array(
+            'css' => array(
+                'important' => 'all',
             ),
         );
 
@@ -423,6 +513,7 @@ class DINA_Icon_List extends DINA_Module_Core {
                 'important'   => true,
             ),
 
+            // Tooltip
             array(
                 'option_slug' => 'tooltip_bg',
                 'property'    => 'background',
@@ -432,16 +523,6 @@ class DINA_Icon_List extends DINA_Module_Core {
                 'option_slug' => 'tooltip_bg',
                 'property'    => 'border-top-color',
                 'selector'    => '%%order_class%% .dina_tooltip-wrapper::after',
-            ),
-            array(
-                'option_slug' => 'tooltip_text_color',
-                'property'    => 'color',
-                'selector'    => '%%order_class%% .dina_tooltip-wrapper',
-            ),
-            array(
-                'option_slug' => 'tooltip_font_size',
-                'property'    => 'font-size',
-                'selector'    => '%%order_class%% .dina_tooltip-wrapper',
             ),
             array(
                 'option_slug' => 'tooltip_button_color',
@@ -457,6 +538,18 @@ class DINA_Icon_List extends DINA_Module_Core {
                 'option_slug' => 'tooltip_padding',
                 'property'    => 'padding',
                 'selector'    => '%%order_class%% .dina_tooltip-wrapper',
+            ),
+
+            // Badge
+            array(
+                'option_slug' => 'badge_bg',
+                'property'    => 'background',
+                'selector'    => '%%order_class%% .dina_icon_list-badge',
+            ),
+            array(
+                'option_slug' => 'badge_padding',
+                'property'    => 'padding',
+                'selector'    => '%%order_class%% .dina_icon_list-badge',
             ),
         ) );
 

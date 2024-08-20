@@ -1,3 +1,6 @@
+export const defaultImage =
+    'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDUwMCA1MDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxwYXRoIGZpbGw9IiNFQkVCRUIiIGQ9Ik0wIDBoNTAwdjUwMEgweiIvPgogICAgICAgIDxyZWN0IGZpbGwtb3BhY2l0eT0iLjEiIGZpbGw9IiMwMDAiIHg9IjY4IiB5PSIzMDUiIHdpZHRoPSIzNjQiIGhlaWdodD0iNTY4IiByeD0iMTgyIi8+CiAgICAgICAgPGNpcmNsZSBmaWxsLW9wYWNpdHk9Ii4xIiBmaWxsPSIjMDAwIiBjeD0iMjQ5IiBjeT0iMTcyIiByPSIxMDAiLz4KICAgIDwvZz4KPC9zdmc+Cg==';
+
 export const setMarginPadding = (
     property = 'margin',
     values = '0|0|0|0',
@@ -71,7 +74,7 @@ export const setResponsiveCSS = (props, styles = []) => {
                     ),
                 },
             ]);
-        } else if (property) {
+        } else if (cssValue) {
             additionalCss.push([
                 {
                     selector,
@@ -223,9 +226,9 @@ export const dinaGetCustomBgCSS = (
         }
 
         // Background blend mode
-        const bgBelndMode = props[opt_prefix + 'bg_blend'];
-        if (bgBelndMode) {
-            bgStyle += `background-blend-mode: ${bgBelndMode};`;
+        const bgBlendMode = props[opt_prefix + 'bg_blend'];
+        if (bgBlendMode) {
+            bgStyle += `background-blend-mode: ${bgBlendMode};`;
         }
 
         const bgImageCSS = `url(${bgImageUrl})`;
@@ -261,7 +264,7 @@ export const dinaGetCustomBgCSS = (
 
     // :TO DO Hover CSS
 
-    // Retrun the style
+    // Return the style
     return additionalCss;
 };
 

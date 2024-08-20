@@ -27,31 +27,44 @@ class DINA_Assets {
     public function get_scripts() {
         return array(
 
-            'divi-default_values-script' => array(
-                'src'     => DINA_DIVINATIONKIT_URL . '/assets/js/dina-default-values.js',
-                'version' => filemtime( DINA_DIVINATIONKIT_PATH . '/assets/js/dina-default-values.js' ),
+            'divi-default_values-script'    => array(
+                'src'     => DINA_DIVINATIONKIT_URL . '/assets/js/dina-default-values.min.js',
+                'version' => DINA_DIVINATIONKIT_VERSION,
                 'deps'    => array( 'jquery' ),
                 'enqueue' => true,
             ),
 
             //Slick
-            'dina-slick'                 => array(
+            'dina-slick'                    => array(
                 'src'     => DINA_DIVINATIONKIT_URL . '/assets/lib/slick/slick.min.js',
-                'version' => filemtime( DINA_DIVINATIONKIT_PATH . '/assets/lib/slick/slick.min.js' ),
+                'version' => DINA_DIVINATIONKIT_VERSION,
                 'deps'    => array( 'jquery' ),
                 'enqueue' => false,
             ),
-            'dina-slick-logo-slider'     => array(
-                'src'     => DINA_DIVINATIONKIT_URL . '/assets/js/dina-slick-logo-slider.js',
-                'version' => filemtime( DINA_DIVINATIONKIT_PATH . '/assets/js/dina-slick-logo-slider.js' ),
+            'dina-slick-logo-slider'        => array(
+                'src'     => DINA_DIVINATIONKIT_URL . '/assets/js/dina-slick-logo-slider.min.js',
+                'version' => DINA_DIVINATIONKIT_VERSION,
+                'deps'    => array( 'jquery' ),
+                'enqueue' => false,
+            ),
+            'dina-slick-testimonial-slider' => array(
+                'src'     => DINA_DIVINATIONKIT_URL . '/assets/js/dina-slick-testimonial-slider.min.js',
+                'version' => DINA_DIVINATIONKIT_VERSION,
                 'deps'    => array( 'jquery' ),
                 'enqueue' => false,
             ),
 
             // Progress bar
-            'dina-progress-bar'          => array(
-                'src'     => DINA_DIVINATIONKIT_URL . '/assets/js/dina-progress-bar.js',
-                'version' => filemtime( DINA_DIVINATIONKIT_PATH . '/assets/js/dina-progress-bar.js' ),
+            'dina-progress-bar'             => array(
+                'src'     => DINA_DIVINATIONKIT_URL . '/assets/js/dina-progress-bar.min.js',
+                'version' => DINA_DIVINATIONKIT_VERSION,
+                'deps'    => array( 'jquery' ),
+                'enqueue' => false,
+            ),
+
+            'dina-basic-menu'               => array(
+                'src'     => DINA_DIVINATIONKIT_URL . '/assets/js/dina-basic-menu.js',
+                'version' => DINA_DIVINATIONKIT_VERSION,
                 'deps'    => array( 'jquery' ),
                 'enqueue' => false,
             ),
@@ -68,31 +81,36 @@ class DINA_Assets {
         return array(
 
             'divi-nations-admin-style'  => array(
-                'src'     => DINA_DIVINATIONKIT_URL . '/assets/admin/css/admin.css',
-                'version' => filemtime( DINA_DIVINATIONKIT_PATH . '/assets/admin/css/admin.css' ),
+                'src'     => DINA_DIVINATIONKIT_URL . '/assets/admin/css/admin.min.css',
+                'version' => DINA_DIVINATIONKIT_VERSION,
                 'enqueue' => true,
             ),
             'global'                    => array(
-                'src'     => DINA_DIVINATIONKIT_URL . '/assets/css/global.css',
-                'version' => filemtime( DINA_DIVINATIONKIT_PATH . '/assets/css/global.css' ),
+                'src'     => DINA_DIVINATIONKIT_URL . '/assets/css/global.min.css',
+                'version' => DINA_DIVINATIONKIT_VERSION,
                 'enqueue' => true,
             ),
 
             'dina-2d-hover-effects'     => array(
-                'src'     => DINA_DIVINATIONKIT_URL . '/assets/css/dina-2d-hover-effects.css',
+                'src'     => DINA_DIVINATIONKIT_URL . '/assets/css/dina-2d-hover-effects.min.css',
                 'version' => DINA_DIVINATIONKIT_VERSION,
                 'enqueue' => false,
             ),
             'dina-border-hover-effects' => array(
-                'src'     => DINA_DIVINATIONKIT_URL . '/assets/css/dina-border-hover-effects.css',
+                'src'     => DINA_DIVINATIONKIT_URL . '/assets/css/dina-border-hover-effects.min.css',
+                'version' => DINA_DIVINATIONKIT_VERSION,
+                'enqueue' => false,
+            ),
+            'dina-bg-hover-effects'     => array(
+                'src'     => DINA_DIVINATIONKIT_URL . '/assets/css/dina-bg-hover-effects.min.css',
                 'version' => DINA_DIVINATIONKIT_VERSION,
                 'enqueue' => false,
             ),
 
             // Slick
             'dina-slick'                => array(
-                'src'     => DINA_DIVINATIONKIT_URL . '/assets/lib/slick/slick.css',
-                'version' => filemtime( DINA_DIVINATIONKIT_PATH . '/assets/lib/slick/slick.css' ),
+                'src'     => DINA_DIVINATIONKIT_URL . '/assets/lib/slick/slick.min.css',
+                'version' => DINA_DIVINATIONKIT_VERSION,
                 'enqueue' => false,
             ),
         );

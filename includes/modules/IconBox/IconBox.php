@@ -54,6 +54,7 @@ class DINA_Icon_Box extends DINA_Module_Core {
                             ),
                         ),
                     ),
+                    'border'    => esc_html__( 'Border', 'divinationkit-for-divi' ),
                 ),
             ),
         );
@@ -116,8 +117,8 @@ class DINA_Icon_Box extends DINA_Module_Core {
             ),
 
             'description'    => array(
-                'label'           => esc_html__( 'Front Description', 'divinationkit-for-divi' ),
-                'description'     => esc_html__( 'Define the front side description text for your flip box.', 'divinationkit-for-divi' ),
+                'label'           => esc_html__( 'Description', 'divinationkit-for-divi' ),
+                'description'     => esc_html__( 'Define description text for your icon box.', 'divinationkit-for-divi' ),
                 'type'            => 'tiny_mce',
                 'toggle_slug'     => 'content',
                 'sub_toggle'      => 'side',
@@ -210,7 +211,7 @@ class DINA_Icon_Box extends DINA_Module_Core {
                 'label'          => esc_html__( 'Badge Background', 'divinationkit-for-divi' ),
                 'description'    => esc_html__( 'Here you can change your front side badge background color.', 'divinationkit-for-divi' ),
                 'type'           => 'color-alpha',
-                'default'        => '',
+                'default'        => '#e02b20',
                 'custom_color'   => true,
                 'tab_slug'       => 'advanced',
                 'toggle_slug'    => 'badge',
@@ -236,8 +237,8 @@ class DINA_Icon_Box extends DINA_Module_Core {
                 'label'          => esc_html__( 'Vertical Offset', 'divinationkit-for-divi' ),
                 'description'    => esc_html__( 'Here you can change vertical offset.', 'divinationkit-for-divi' ),
                 'type'           => 'range',
-                'default_unit'   => '%',
-                'default'        => '0%',
+                'default_unit'   => 'px',
+                'default'        => '0px',
                 'tab_slug'       => 'advanced',
                 'toggle_slug'    => 'badge',
                 'sub_toggle'     => 'style',
@@ -256,8 +257,8 @@ class DINA_Icon_Box extends DINA_Module_Core {
                 'label'          => esc_html__( 'Horizontal Offset', 'divinationkit-for-divi' ),
                 'description'    => esc_html__( 'Here you can change horizontal offset.', 'divinationkit-for-divi' ),
                 'type'           => 'range',
-                'default_unit'   => '%',
-                'default'        => '0%',
+                'default_unit'   => 'px',
+                'default'        => '0px',
                 'tab_slug'       => 'advanced',
                 'toggle_slug'    => 'badge',
                 'sub_toggle'     => 'style',
@@ -386,13 +387,13 @@ class DINA_Icon_Box extends DINA_Module_Core {
         $advanced_fields['borders']['icon_box'] = array(
             'label_prefix' => esc_html__( 'List Item', 'divinationkit-for-divi' ),
             'tab_slug'     => 'advanced',
-            'toggle_slug'  => 'list_item',
+            'toggle_slug'  => 'border',
             'css'          => array(
                 'main'      => array(
-                    'border_radii'  => '%%order_class%% .dina_icon_box',
-                    'border_styles' => '%%order_class%% .dina_icon_box',
+                    'border_radii'  => '%%order_class%%',
+                    'border_styles' => '%%order_class%%',
                 ),
-                'important' => false,
+                'important' => 'all',
             ),
             'defaults'     => array(
                 'border_radii'  => 'on|0px|0px|0px|0px',
@@ -566,6 +567,12 @@ class DINA_Icon_Box extends DINA_Module_Core {
                 'background_color' => array(
                     'default' => '#eaeaea',
                 ),
+            ),
+        );
+
+        $advanced_fields['margin_padding'] = array(
+            'css' => array(
+                'important' => 'all',
             ),
         );
 

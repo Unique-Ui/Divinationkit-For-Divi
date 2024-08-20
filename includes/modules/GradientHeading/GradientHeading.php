@@ -56,7 +56,7 @@ class DINA_Gradient_Heading extends DINA_Module_Core {
                 'label'          => esc_html__( 'Secondary Color', 'divinationkit-for-divi' ),
                 'description'    => esc_html__( 'Here you can change gradient secondary color.', 'divinationkit-for-divi' ),
                 'type'           => 'color-alpha',
-                'default'        => '#111111',
+                'default'        => '#a8ed28',
                 'custom_color'   => true,
                 'tab_slug'       => 'advanced',
                 'toggle_slug'    => 'gradient_color',
@@ -233,15 +233,24 @@ class DINA_Gradient_Heading extends DINA_Module_Core {
             'header_level'    => array(
                 'default' => 'h3',
             ),
+            'line_height'     => array(
+                'default' => '1.5em',
+            ),
             'font_size'       => array(
-                'default' => '22px',
+                'default' => '40px',
+            ),
+            'font'            => array(
+                'default' => '|700|||||||',
             ),
             'hide_text_align' => true,
             'hide_text_color' => true,
             'tab_slug'        => 'advanced',
             'toggle_slug'     => 'gradient_text',
-            'line_height'     => array(
-                'default' => '1.5em',
+        );
+
+        $advanced_fields['margin_padding'] = array(
+            'css' => array(
+                'important' => 'all',
             ),
         );
 

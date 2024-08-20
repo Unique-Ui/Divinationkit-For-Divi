@@ -13,6 +13,11 @@
     top: 2px;
 }
 
+.dina_tooltip-text {
+    color: #fff;
+    font-size: 14px;
+}
+
 .dina_tooltip-trigger::after {
     position: absolute;
     content: '\71';
@@ -27,13 +32,13 @@
     position: absolute;
     padding: 14px 20px;
     width: max-content;
-    max-width: 320px;
+    max-width: 280px;
     border-radius: 5px;
     box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.05);
     opacity: 0;
     visibility: hidden;
     transition: all 0.3s ease;
-    z-index: 99;
+    z-index: 9999;
 }
 
 .dina_tooltip-wrapper::after {
@@ -52,7 +57,37 @@
     visibility: visible;
 }
 
-/* Tooltip possition top */
+/* Icon List */
+
+.dina_icon_list-item {
+    display: flex;
+    align-items: center;
+}
+
+.dina_icon_list-title {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+.dina_icon_list-icon i.dina_icon {
+    display: block;
+}
+
+.dina_icon_list-use-tooltip {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.dina_icon_list-badge {
+    font-size: 12px;
+    color: #ffffff;
+    margin-left: 10px;
+    border-radius: 50px;
+}
+
+/* Tooltip position top */
 .dina_tooltip-wrapper.dina_tooltip-top {
     bottom: calc(100% + 8px);
     left: 50%;
@@ -64,7 +99,7 @@
     transform: translateX(-50%);
 }
 
-/* Tooltip possition bottom */
+/* Tooltip position bottom */
 .dina_tooltip-wrapper.dina_tooltip-bottom {
     top: calc(100% + 10px);
     left: 50%;
@@ -76,7 +111,7 @@
     transform: translateX(-50%) rotate(180deg);
 }
 
-/* Tooltip possition left */
+/* Tooltip position left */
 .dina_tooltip-wrapper.dina_tooltip-left {
     right: calc(100% + 10px);
     top: 50%;
@@ -88,7 +123,7 @@
     transform: translateY(-50%) rotate(270deg);
 }
 
-/* Tooltip possition right */
+/* Tooltip position right */
 .dina_tooltip-wrapper.dina_tooltip-right {
     left: calc(100% + 10px);
     top: 50%;

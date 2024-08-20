@@ -2,6 +2,10 @@ body *[class^='dina'] {
     border-style: solid;
 }
 
+body *[class^='dina'] img {
+    display: block;
+}
+
 /* Default css */
 .dina_icon {
     position: relative;
@@ -36,7 +40,9 @@ body *[class^='dina'] {
 .dina_image_magnifier-lens,
 .dina_pricelist-item-wrapper,
 .dina_pricelist-image,
-.dina_pricelist_item,
+.dina_pricelist_child,
+.dina_icon_list_child,
+.dina_business_hour_child,
 .dian_slider_icon,
 .dina_icon_list_item {
     border-style: solid;
@@ -54,17 +60,6 @@ body *[class^='dina'] {
     font-style: normal;
     display: inline-block;
     line-height: 1;
-}
-
-.dina_rating-star::before {
-    content: '★';
-    display: block;
-    text-align: center;
-    text-decoration: none;
-    overflow: hidden;
-    position: absolute;
-    top: 0;
-    left: 0;
 }
 
 .dina_rating-star-1::before {

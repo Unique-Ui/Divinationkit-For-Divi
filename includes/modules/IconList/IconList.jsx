@@ -7,7 +7,8 @@ export class IconList extends Component {
     static slug = 'dina_icon_list';
 
     static css(props) {
-        const additionalCss = [];
+        let additionalCss = [],
+            badgeCss = [];
 
         const responsiveCss = setResponsiveCSS(props, [
             {
@@ -65,6 +66,7 @@ export class IconList extends Component {
                 important: true,
             },
 
+            // Tooltip
             {
                 selector: '%%order_class%% .dina_tooltip-wrapper',
                 optionName: 'tooltip_bg',
@@ -74,16 +76,6 @@ export class IconList extends Component {
                 selector: '%%order_class%% .dina_tooltip-wrapper::after',
                 optionName: 'tooltip_bg',
                 property: 'border-top-color',
-            },
-            {
-                selector: '%%order_class%% .dina_tooltip-wrapper',
-                optionName: 'tooltip_text_color',
-                property: 'color',
-            },
-            {
-                selector: '%%order_class%% .dina_tooltip-wrapper',
-                optionName: 'tooltip_font_size',
-                property: 'font-size',
             },
             {
                 selector: '%%order_class%% .dina_tooltip-trigger::after',
@@ -100,9 +92,21 @@ export class IconList extends Component {
                 optionName: 'tooltip_padding',
                 property: 'padding',
             },
+
+            // badge
+            {
+                selector: '%%order_class%% .dina_icon_list-badge',
+                optionName: 'badge_bg',
+                property: 'background',
+            },
+            {
+                selector: '%%order_class%% .dina_icon_list-badge',
+                optionName: 'badge_padding',
+                property: 'padding',
+            },
         ]);
 
-        return additionalCss.concat(responsiveCss);
+        return additionalCss.concat(responsiveCss).concat(badgeCss);
     }
 
     render() {

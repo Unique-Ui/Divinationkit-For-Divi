@@ -85,7 +85,6 @@ class DINA_Business_Hour_Child extends DINA_Module_Core {
                     'outset' => esc_html__( 'Outset', 'divinationkit-for-divi' ),
                     'none'   => esc_html__( 'None', 'divinationkit-for-divi' ),
                 ),
-                'default'        => 'solid',
                 'mobile_options' => true,
                 'show_if'        => array(
                     'hide_separator' => 'off',

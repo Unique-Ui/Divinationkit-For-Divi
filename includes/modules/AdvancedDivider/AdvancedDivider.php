@@ -97,7 +97,7 @@ class DINA_Divider extends DINA_Module_Core {
         );
 
         $styles = array(
-            'icon_color'       => array(
+            'icon_color'        => array(
                 'label'          => esc_html__( 'Icon Color', 'divinationkit-for-divi' ),
                 'description'    => esc_html__( 'Define divider icon color', 'divinationkit-for-divi' ),
                 'type'           => 'color-alpha',
@@ -111,7 +111,7 @@ class DINA_Divider extends DINA_Module_Core {
                 'mobile_options' => true,
             ),
 
-            'icon_bg'          => array(
+            'icon_bg'           => array(
                 'label'          => esc_html__( 'Icon Background', 'divinationkit-for-divi' ),
                 'description'    => esc_html__( 'Define divider icon background color', 'divinationkit-for-divi' ),
                 'type'           => 'color-alpha',
@@ -125,7 +125,7 @@ class DINA_Divider extends DINA_Module_Core {
                 'mobile_options' => true,
             ),
 
-            'icon_size'        => array(
+            'icon_size'         => array(
                 'label'          => esc_html__( 'Icon Size', 'divinationkit-for-divi' ),
                 'description'    => esc_html__( 'Here you can change your divider icon size.', 'divinationkit-for-divi' ),
                 'type'           => 'range',
@@ -144,7 +144,7 @@ class DINA_Divider extends DINA_Module_Core {
                 ),
             ),
 
-            'icon_padding'     => array(
+            'icon_padding'      => array(
                 'label'          => esc_html__( 'Padding', 'divinationkit-for-divi' ),
                 'description'    => esc_html__( 'Define custom padding for divider icon', 'divinationkit-for-divi' ),
                 'type'           => 'custom_padding',
@@ -157,7 +157,21 @@ class DINA_Divider extends DINA_Module_Core {
                 ),
             ),
 
-            'divider_color'    => array(
+            'divider_alignment' => array(
+                'label'           => esc_html__( 'Divider Alignment', 'divinationkit-for-divi' ),
+                'type'            => 'text_align',
+                'option_category' => 'configuration',
+                'options'         => et_builder_get_text_orientation_options( array( 'justified' ) ),
+                'default'         => 'center',
+                'tab_slug'        => 'advanced',
+                'toggle_slug'     => 'divider',
+                'mobile_options'  => true,
+                'show_if'         => array(
+                    'use_text' => 'off',
+                ),
+            ),
+
+            'divider_color'     => array(
                 'label'       => esc_html__( 'Divider Color', 'divinationkit-for-divi' ),
                 'description' => esc_html__( 'Define the divi line color', 'divinationkit-for-divi' ),
                 'type'        => 'color-alpha',
@@ -168,7 +182,7 @@ class DINA_Divider extends DINA_Module_Core {
 
             ),
 
-            'divider_style'    => array(
+            'divider_style'     => array(
                 'label'          => esc_html__( 'Divider Style', 'divinationkit-for-divi' ),
                 'description'    => esc_html__( 'Define the divider style', 'divinationkit-for-divi' ),
                 'type'           => 'select',
@@ -188,8 +202,8 @@ class DINA_Divider extends DINA_Module_Core {
                 'default'        => 'solid',
                 'mobile_options' => true,
             ),
-            'divider_position' => array(
-                'label'          => esc_html__( 'Divider Postions', 'divinationkit-for-divi' ),
+            'divider_position'  => array(
+                'label'          => esc_html__( 'Divider Positions', 'divinationkit-for-divi' ),
                 'description'    => esc_html__( 'Define the divider positions', 'divinationkit-for-divi' ),
                 'type'           => 'select',
                 'tab_slug'       => 'advanced',
@@ -202,7 +216,7 @@ class DINA_Divider extends DINA_Module_Core {
                 'default'        => 'center',
                 'mobile_options' => true,
             ),
-            'divider_weight'   => array(
+            'divider_weight'    => array(
                 'label'          => esc_html__( 'Divider Weight', 'divinationkit-for-divi' ),
                 'description'    => esc_html__( 'Define space between divider and text/icon', 'divinationkit-for-divi' ),
                 'type'           => 'range',
@@ -217,7 +231,7 @@ class DINA_Divider extends DINA_Module_Core {
                 'toggle_slug'    => 'divider',
                 'mobile_options' => true,
             ),
-            'divider_gap'      => array(
+            'divider_gap'       => array(
                 'label'          => esc_html__( 'Divider Space', 'divinationkit-for-divi' ),
                 'description'    => esc_html__( 'Define space between divider and text/icon', 'divinationkit-for-divi' ),
                 'type'           => 'range',
@@ -233,7 +247,7 @@ class DINA_Divider extends DINA_Module_Core {
                 'mobile_options' => true,
             ),
 
-            'text_bg'          => array(
+            'text_bg'           => array(
                 'label'          => esc_html__( 'Text Background', 'divinationkit-for-divi' ),
                 'description'    => esc_html__( 'Define divider text background color', 'divinationkit-for-divi' ),
                 'type'           => 'color-alpha',
@@ -247,7 +261,7 @@ class DINA_Divider extends DINA_Module_Core {
                 'mobile_options' => true,
             ),
 
-            'text_padding'     => array(
+            'text_padding'      => array(
                 'label'          => esc_html__( 'Text Padding', 'divinationkit-for-divi' ),
                 'description'    => esc_html__( 'Define custom padding for divider text', 'divinationkit-for-divi' ),
                 'type'           => 'custom_padding',
@@ -285,7 +299,10 @@ class DINA_Divider extends DINA_Module_Core {
                 'default' => 'h3',
             ),
             'font_size'    => array(
-                'default' => '26px',
+                'default' => '18px',
+            ),
+            'font'         => array(
+                'default' => '|400|||||||',
             ),
             'tab_slug'     => 'advanced',
             'toggle_slug'  => 'divider_text',
@@ -317,6 +334,7 @@ class DINA_Divider extends DINA_Module_Core {
                 'use_text' => 'off',
             ),
         );
+
         $advanced_fields['borders']['divider_text'] = array(
             'label_prefix' => esc_html__( 'Divider Text', 'divinationkit-for-divi' ),
             'toggle_slug'  => 'divider_text',
@@ -335,6 +353,12 @@ class DINA_Divider extends DINA_Module_Core {
                     'color' => $et_accent_color,
                     'style' => 'none',
                 ),
+            ),
+        );
+
+        $advanced_fields['margin_padding'] = array(
+            'css' => array(
+                'important' => 'all',
             ),
         );
 
@@ -377,19 +401,45 @@ class DINA_Divider extends DINA_Module_Core {
     public function render( $attrs, $content, $render_slug ) {
 
         $this->render_css( $render_slug );
-        $dividier_position = $this->props['divider_position'];
+        $divider_position  = $this->props['divider_position'];
+        $divider_alignment = $this->props['divider_alignment'];
+        $layout            = '';
         $classes           = array();
-        array_push( $classes, 'dina_divider-' . $dividier_position );
+        array_push( $classes, 'dina_divider-' . $divider_position );
 
-        return sprintf(
-            '<div class="dina_divider_wrapper %1$s">
-                <div class="dina_divider-before dina_divider"></div>
-                %2$s
-                <div class="dina_divider-after dina_divider"></div>
-            </div>',
-            join( ' ', $classes ), // 1
-            $this->render_content(), // 2
-        );
+        if ( $divider_alignment === 'left' ) {
+            $layout = sprintf(
+                '<div class="dina_divider_wrapper %1$s">
+                    %2$s
+                    <div class="dina_divider"></div>
+                </div>',
+                join( ' ', $classes ), // 1
+                $this->render_content(), // 2
+            );
+        }
+        if ( $divider_alignment === 'center' ) {
+            $layout = sprintf(
+                '<div class="dina_divider_wrapper %1$s">
+                    <div class="dina_divider"></div>
+                    %2$s
+                    <div class="dina_divider"></div>
+                </div>',
+                join( ' ', $classes ), // 1
+                $this->render_content(), // 2
+            );
+        }
+        if ( $divider_alignment === 'right' ) {
+            $layout = sprintf(
+                '<div class="dina_divider_wrapper %1$s">
+                    <div class="dina_divider"></div>
+                    %2$s
+                </div>',
+                join( ' ', $classes ), // 1
+                $this->render_content(), // 2
+            );
+        }
+
+        return $layout;
     }
 
     public function render_css( $render_slug ) {

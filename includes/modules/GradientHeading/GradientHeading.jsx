@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import '../../../assets/css/dina-2d-hover-effects.css';
+import './styles.css';
+import './dina-2d-hover-effects.css';
 
 export class GradientHeading extends Component {
     static slug = 'dina_gradient_heading';
@@ -45,7 +46,8 @@ export class GradientHeading extends Component {
     };
 
     render() {
-        const isHoverEnable = this.props.use_hover_effect;
+        const isHoverEnable =
+            this.props.use_hover_effect === 'on' ? true : false;
         const hoverEffect = this.props.hover_effect;
 
         return (

@@ -1,4 +1,5 @@
 import AdvancedDivider from './AdvancedDivider/AdvancedDivider';
+import BasicMenu from './BasicMenu/BasicMenu';
 import BusinessHour from './BusinessHour/BusinessHour';
 import BusinessHourChild from './BusinessHourChild/BusinessHourChild';
 import DualButton from './DualButton/DualButton';
@@ -17,7 +18,9 @@ import ProgressBar from './ProgressBar/ProgressBar';
 import ProgressBarChild from './ProgressBarChild/ProgressBarChild';
 import Rating from './Rating/Rating';
 import Review from './Review/Review';
-
+import ReviewSlider from './ReviewSlider/ReviewSlider';
+import ReviewSliderChild from './ReviewSliderChild/ReviewSliderChild';
+import Posts from './Posts/Posts';
 export default [
     AdvancedDivider,
     IconBox,
@@ -38,4 +41,8 @@ export default [
     BusinessHour,
     BusinessHourChild,
     GradientHeading,
+    ReviewSlider,
+    ReviewSliderChild,
+    BasicMenu,
+    Posts,
 ];

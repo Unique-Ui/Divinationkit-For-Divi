@@ -125,13 +125,56 @@ class DINA_Business_Hour extends DINA_Module_Core {
             ),
         );
 
-        return array_merge( $separator );
+        $items = array(
+            'item_margin'  => array(
+                'label'          => esc_html__( 'Item Margin', 'divinationkit-for-divi' ),
+                'description'    => esc_html__( 'Define custom margin for business hour item', 'divinationkit-for-divi' ),
+                'type'           => 'custom_margin',
+                'tab_slug'       => 'advanced',
+                'toggle_slug'    => 'list_item',
+                'default'        => '0px|0px|10px|0px',
+                'mobile_options' => true,
+            ),
+
+            'item_padding' => array(
+                'label'          => esc_html__( 'Item Padding', 'divinationkit-for-divi' ),
+                'description'    => esc_html__( 'Define custom padding for business hour item', 'divinationkit-for-divi' ),
+                'type'           => 'custom_padding',
+                'tab_slug'       => 'advanced',
+                'toggle_slug'    => 'list_item',
+                'default'        => '0px|0px|0px|0px',
+                'mobile_options' => true,
+            ),
+        );
+
+        return array_merge( $separator, $items );
     }
 
     public function get_advanced_fields_config() {
         $advanced_fields            = array();
         $advanced_fields['text']    = false;
         $advanced_fields['filters'] = false;
+
+        $advanced_fields['borders']['list_item'] = array(
+            'label_prefix' => esc_html__( 'List Item', 'divinationkit-for-divi' ),
+            'tab_slug'     => 'advanced',
+            'toggle_slug'  => 'list_item',
+            'css'          => array(
+                'main'      => array(
+                    'border_radii'  => '%%order_class%% .dina_business_hour_child',
+                    'border_styles' => '%%order_class%% .dina_business_hour_child',
+                ),
+                'important' => false,
+            ),
+            'defaults'     => array(
+                'border_radii'  => 'on|0px|0px|0px|0px',
+                'border_styles' => array(
+                    'width' => '0px',
+                    'color' => '#333333',
+                    'style' => 'solid',
+                ),
+            ),
+        );
 
         $advanced_fields['fonts']['day'] = array(
             'label_prefix' => esc_html__( 'Day', 'divinationkit-for-divi' ),
@@ -164,6 +207,12 @@ class DINA_Business_Hour extends DINA_Module_Core {
             ),
             'line_height' => array(
                 'default' => '1.2em',
+            ),
+        );
+
+        $advanced_fields['margin_padding'] = array(
+            'css' => array(
+                'important' => 'all',
             ),
         );
 
@@ -200,6 +249,20 @@ class DINA_Business_Hour extends DINA_Module_Core {
                 'option_slug' => 'separator_position',
                 'property'    => 'align-items',
                 'selector'    => '%%order_class%% .dina_business_hour-item',
+            ),
+
+            array(
+                'option_slug' => 'item_margin',
+                'property'    => 'margin',
+                'selector'    => '%%order_class%% .dina_business_hour_child',
+                'important'   => true,
+            ),
+
+            array(
+                'option_slug' => 'item_padding',
+                'property'    => 'padding',
+                'selector'    => '%%order_class%% .dina_business_hour_child',
+                'important'   => true,
             ),
 
         ) );

@@ -1,14 +1,14 @@
 <?php
 /*
-Plugin Name: DiviNationKit for Divim
-Plugin URI:  https://divinationkit.comm
-Description: Divinationkit is a Powerful Divi module extension to enhance your Divi website to the next level.
-Version:     1.0.3
-Author:      DiviNationKitm
+Plugin Name: DiviNationKit for Divi
+Plugin URI:  https://divinationkit.com
+Description: DiviNationKit is a powerful Divi extension to elevate your Divi theme experience by offering a plethora of functional and creative Divi modules. Perfect for designers, developers, and website owners, DiviNationKit empowers you to build stunning, highly customizable websites with ease.
+Version:     1.0.5
+Author:      DiviNationKit
 Author URI:  https://divinationkit.com
 License:     GPL2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: divinationkit-for-divim
+Text Domain: divinationkit-for-divi
 Domain Path: /languages
 
 Divinationkit for Divi is free software: you can redistribute it and/or modify
@@ -26,17 +26,16 @@ along with Divinationkit for Divi. If not, see https://www.gnu.org/licenses/gpl-
  */
 
 // Exit if accessed directly
-if (!defined('ABSPATH')) {
+if ( !defined( 'ABSPATH' ) ) {
     exit;
 }
 
 /**
  * The plugin main class
  */
-if (!class_exists('DINA_DIVINATIONKIT')) :
+if ( !class_exists( 'DINA_DIVINATIONKIT' ) ):
 
-    final class DINA_Divinationkit_plugin
-    {
+    final class DINA_Divinationkit_plugin {
 
         /**
          * Website url
@@ -48,7 +47,7 @@ if (!class_exists('DINA_DIVINATIONKIT')) :
          *
          * @var string
          */
-        const version = '1.0.2';
+        const version = '1.0.5';
 
         /**
          * Plugin documentation
@@ -63,17 +62,16 @@ if (!class_exists('DINA_DIVINATIONKIT')) :
         private static $instance;
 
         /**
-         * Class construcotr
+         * Class constructor
          */
-        private function __construct()
-        {
+        private function __construct() {
             $this->define_constants();
 
-            register_activation_hook(__FILE__, array($this, 'activate'));
+            register_activation_hook( __FILE__, array( $this, 'activate' ) );
 
-            add_action('plugins_loaded', array($this, 'init_plugin'));
-            add_action('divi_extensions_init', array($this, 'dne_extension_initialize'));
-            add_filter('plugin_action_links_' . DINA_DIVINATIONKIT_BASE, array($this, 'add_plugin_action_links'));
+            add_action( 'plugins_loaded', array( $this, 'init_plugin' ) );
+            add_action( 'divi_extensions_init', array( $this, 'dne_extension_initialize' ) );
+            add_filter( 'plugin_action_links_' . DINA_DIVINATIONKIT_BASE, array( $this, 'add_plugin_action_links' ) );
         }
 
         /**
@@ -81,10 +79,9 @@ if (!class_exists('DINA_DIVINATIONKIT')) :
          *
          * @return \DINA_Divinationkit_plugin
          */
-        public static function init()
-        {
+        public static function init() {
 
-            if (!isset(self::$instance) && !(self::$instance instanceof DINA_DIVINATIONKIT)) {
+            if ( !isset( self::$instance ) && !( self::$instance instanceof DINA_DIVINATIONKIT ) ) {
                 $instance = new self();
             }
 
@@ -96,19 +93,18 @@ if (!class_exists('DINA_DIVINATIONKIT')) :
          *
          * @return void
          */
-        public function define_constants()
-        {
+        public function define_constants() {
 
-            define('DINA_DIVINATIONKIT_VERSION', self::version);
-            define('DINA_DIVINATIONKIT_FILE', __FILE__);
-            define('DINA_DIVINATIONKIT_DIR', plugin_dir_path(__FILE__));
-            define('DINA_DIVINATIONKIT_PATH', __DIR__);
-            define('DINA_DIVINATIONKIT_URL', plugins_url('', DINA_DIVINATIONKIT_FILE));
-            define('DINA_DIVINATIONKIT_ASSETS', DINA_DIVINATIONKIT_URL . '/assets');
-            define('DINA_DIVINATIONKIT_BASE', plugin_basename(__FILE__));
+            define( 'DINA_DIVINATIONKIT_VERSION', self::version );
+            define( 'DINA_DIVINATIONKIT_FILE', __FILE__ );
+            define( 'DINA_DIVINATIONKIT_DIR', plugin_dir_path( __FILE__ ) );
+            define( 'DINA_DIVINATIONKIT_PATH', __DIR__ );
+            define( 'DINA_DIVINATIONKIT_URL', plugins_url( '', DINA_DIVINATIONKIT_FILE ) );
+            define( 'DINA_DIVINATIONKIT_ASSETS', DINA_DIVINATIONKIT_URL . '/assets' );
+            define( 'DINA_DIVINATIONKIT_BASE', plugin_basename( __FILE__ ) );
 
-            define('DINA_DIVINATIONKIT_WEBSITE', self::website_url);
-            define('DINA_DIVINATIONKIT_AUTHOR', 'DiviNationKit');
+            define( 'DINA_DIVINATIONKIT_WEBSITE', self::website_url );
+            define( 'DINA_DIVINATIONKIT_AUTHOR', 'DiviNationKit' );
         }
 
         /**
@@ -116,8 +112,7 @@ if (!class_exists('DINA_DIVINATIONKIT')) :
          *
          * @return void
          */
-        public function init_plugin()
-        {
+        public function init_plugin() {
 
             require_once DINA_DIVINATIONKIT_DIR . 'includes/functions.php';
 
@@ -128,8 +123,7 @@ if (!class_exists('DINA_DIVINATIONKIT')) :
         /**
          * Initialize divi modules
          */
-        public function dne_extension_initialize()
-        {
+        public function dne_extension_initialize() {
             require_once DINA_DIVINATIONKIT_DIR . 'includes/Divinationkit.php';
         }
 
@@ -138,33 +132,31 @@ if (!class_exists('DINA_DIVINATIONKIT')) :
          *
          * @return void
          */
-        public function activate()
-        {
-            $installed = get_option('dne_divi_nation_installed');
+        public function activate() {
+            $installed = get_option( 'dina_divinatiokit_installed' );
 
-            if (!$installed) {
-                update_option('dne_divi_nation_installed', time());
+            if ( !$installed ) {
+                update_option( 'dina_divinatiokit_installed', time() );
             }
 
-            update_option('dne_divi_nation_version', '1.0.0');
+            update_option( 'dina_divinatiokit_version', self::version );
         }
 
         /**
-         * Add Pluign actions links
+         * Add Plugin actions links
          *
          * @param mixed $links
          *
          * @return mixed $links
          */
-        public function add_plugin_action_links($links)
-        {
+        public function add_plugin_action_links( $links ) {
 
             $links[] = sprintf(
-                '<a href="%1$s" target="_blank" style="color: #197efb;font-weight: 600;">
-								%2$s
-							</a>',
+                '<a href="%1$s" target="_blank" style="color: #01564D;font-weight: 600;">
+															%2$s
+														</a>',
                 self::DOCUMENTATION_LINK,
-                esc_html__('Docs', 'dne-divi-nations')
+                esc_html__( 'Docs', 'dne-divi-nations' )
             );
 
             return $links;
@@ -178,8 +170,7 @@ endif;
  *
  * @return void
  */
-function dina_divinationkit_plugin()
-{
+function dina_divinationkit_plugin() {
     return DINA_Divinationkit_plugin::init();
 }
 
