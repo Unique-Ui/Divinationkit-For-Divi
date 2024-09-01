@@ -465,6 +465,7 @@
                     'fixed_unit'      => '',
                     'validate_unit'   => false,
                     'unitless'        => true,
+                    'mobile_options'  => true,
                     'tab_slug'        => 'advanced',
                     'toggle_slug'     => 'layout',
                 ),
@@ -1373,6 +1374,32 @@
                         'selector'    => '%%order_class%% .dina_posts-pagination .page-numbers',
                         'hover'       => '%%order_class%% .dina_posts-pagination .page-numbers:hover',
                     ),
+                ) );
+            }
+
+            // Responsive column number
+            $column_number = $this->props['column_number'];
+            $tablet_column = $this->props['column_number_tablet'] ? $this->props['column_number_tablet'] : $column_number;
+            $phone_column  = $this->props['column_number_phone'] ? $this->props['column_number_phone'] : ( $tablet_column ? $tablet_column : $column_number );
+
+            if ( isset( $column_number ) && !empty( $column_number ) ) {
+                ET_Builder_Element::set_style( $render_slug, array(
+                    'selector'    => '%%order_class%% .dina_posts-wrapper',
+                    'declaration' => sprintf( 'grid-template-columns: repeat(%1$s, 1fr);', $column_number ),
+                ) );
+            }
+            if ( isset( $tablet_column ) && !empty( $tablet_column ) ) {
+                ET_Builder_Element::set_style( $render_slug, array(
+                    'selector'    => '%%order_class%% .dina_posts-wrapper',
+                    'declaration' => sprintf( 'grid-template-columns: repeat(%1$s, 1fr);', $tablet_column ),
+                    'media_query' => ET_Builder_Element::get_media_query( 'max_width_980' ),
+                ) );
+            }
+            if ( isset( $phone_column ) && !empty( $phone_column ) ) {
+                ET_Builder_Element::set_style( $render_slug, array(
+                    'selector'    => '%%order_class%% .dina_posts-wrapper',
+                    'declaration' => sprintf( 'grid-template-columns: repeat(%1$s, 1fr);', $phone_column ),
+                    'media_query' => ET_Builder_Element::get_media_query( 'max_width_767' ),
                 ) );
             }
         }

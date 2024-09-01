@@ -159,6 +159,44 @@ export class Posts extends Component {
             ]);
         }
 
+        // Responsive column number
+        let column = props.column_number,
+            tabletColumn = props.column_number_tablet,
+            phoneColumn = props.column_number_phone,
+            last_edited_option = props.column_number_last_edited,
+            isEnabled =
+                last_edited_option && last_edited_option.startsWith('on');
+
+        console.log(props);
+
+        additionalCss.push([
+            {
+                selector: '%%order_class%% .dina_posts-wrapper',
+                declaration: `grid-template-columns: repeat(${column}, 1fr);`,
+            },
+        ]);
+
+        if (isEnabled) {
+            if (tabletColumn) {
+                additionalCss.push([
+                    {
+                        selector: '%%order_class%% .dina_posts-wrapper',
+                        device: 'tablet',
+                        declaration: `grid-template-columns: repeat(${tabletColumn}, 1fr);`,
+                    },
+                ]);
+            }
+            if (phoneColumn) {
+                additionalCss.push([
+                    {
+                        selector: '%%order_class%% .dina_posts-wrapper',
+                        device: 'phone',
+                        declaration: `grid-template-columns: repeat(${phoneColumn}, 1fr);`,
+                    },
+                ]);
+            }
+        }
+
         return additionalCss
             .concat(responsiveCss)
             .concat(layoutList)

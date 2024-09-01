@@ -3,7 +3,7 @@
 Plugin Name: DiviNationKit for Divi
 Plugin URI:  https://divinationkit.com
 Description: DiviNationKit is a powerful Divi extension to elevate your Divi theme experience by offering creative Divi modules. Perfect for designers, developers, and website owners, DiviNationKit empowers you to build stunning, highly customizable websites with ease.
-Version:     1.0.5
+Version:     1.0.6
 Author:      DiviNationKit
 Author URI:  https://divinationkit.com
 License:     GPL2
@@ -47,7 +47,7 @@ if ( !class_exists( 'DINA_Divinationkit_plugin' ) ):
          *
          * @var string
          */
-        const version = '1.0.5';
+        const version = '1.0.6';
 
         /**
          * Plugin documentation
@@ -153,8 +153,8 @@ if ( !class_exists( 'DINA_Divinationkit_plugin' ) ):
 
             $links[] = sprintf(
                 '<a href="%1$s" target="_blank" style="color: #01564D;font-weight: 600;">
-																	%2$s
-																</a>',
+																		%2$s
+																	</a>',
                 self::DOCUMENTATION_LINK,
                 esc_html__( 'Docs', 'dne-divi-nations' )
             );

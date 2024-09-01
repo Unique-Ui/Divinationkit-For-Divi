@@ -5,7 +5,7 @@ Donate link: https://divinationkit.com/donate
 Requires at least: 5.0
 Tested up to: 6.6.1
 Requires PHP: 7.0
-Stable tag: 1.0.5
+Stable tag: 1.0.6
 License: GPL2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -94,6 +94,9 @@ Yes! DiviNationKit is absolutely free. There is no hidden charge.
 4. Logo Slider
 
 == Changelog ==
+
+= Version 1.0.6 - 02 September 2024 =
+- Fixed: Blog posts module column issue
 
 = Version 1.0.5 - 31 August 2024 =
 - Updated: Performance issues

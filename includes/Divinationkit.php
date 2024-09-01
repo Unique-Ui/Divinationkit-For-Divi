@@ -27,7 +27,7 @@ class DINA_Divinationkit extends DiviExtension {
      *
      * @var string
      */
-    public $version = '1.0.5';
+    public $version = '1.0.6';
 
     /**
      * DINA_Divinationkit constructor.
