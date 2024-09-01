@@ -1,13 +1,13 @@
-.dina_person-container {
-    overflow: hidden;
-}
-
 .dina_person-name {
     font-weight: 600;
 }
 
 .dina_person-description {
     margin-top: 15px;
+}
+
+.dina_person_child {
+    margin-bottom: 0 !important;
 }
 
 /* Style two */
@@ -28,6 +28,10 @@
 
 .dina_person-info-show-on-hover:hover .dina_person-info {
     bottom: 0;
+}
+
+.dina_person-style-two {
+    overflow: hidden;
 }
 
 /* Style three */
@@ -61,19 +65,15 @@
     flex: 1;
 }
 
-/* Social Icon */
-.dina_person-social-links ul {
-    margin-top: 10px;
-    list-style: none !important;
+.dina_person-img {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
 }
 
+/* Social Icon */
 .dina_person-social-links {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .dina_person-social-network {

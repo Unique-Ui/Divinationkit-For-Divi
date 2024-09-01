@@ -68,6 +68,18 @@ class DINA_Assets {
                 'deps'    => array( 'jquery' ),
                 'enqueue' => false,
             ),
+            'dina-photoswipe'               => array(
+                'src'     => DINA_DIVINATIONKIT_URL . '/assets/lib/photoswipe/photoswipe-lightbox.esm.min.js',
+                'version' => DINA_DIVINATIONKIT_VERSION,
+                'deps'    => array( 'jquery' ),
+                'enqueue' => false,
+            ),
+            'dina-photoswipe-script'        => array(
+                'src'     => DINA_DIVINATIONKIT_URL . '/assets/js/dina-photoswipe.min.js',
+                'version' => DINA_DIVINATIONKIT_VERSION,
+                'deps'    => array( 'jquery', 'dina-photoswipe' ),
+                'enqueue' => false,
+            ),
 
         );
     }
@@ -110,6 +122,11 @@ class DINA_Assets {
             // Slick
             'dina-slick'                => array(
                 'src'     => DINA_DIVINATIONKIT_URL . '/assets/lib/slick/slick.min.css',
+                'version' => DINA_DIVINATIONKIT_VERSION,
+                'enqueue' => false,
+            ),
+            'dina-photoswipe'           => array(
+                'src'     => DINA_DIVINATIONKIT_URL . '/assets/lib/photoswipe/photoswipe.min.css',
                 'version' => DINA_DIVINATIONKIT_VERSION,
                 'enqueue' => false,
             ),

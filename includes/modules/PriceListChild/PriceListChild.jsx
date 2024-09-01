@@ -24,7 +24,7 @@ class PriceListChild extends Component {
                 selector:
                     '.dina_pricelist-container %%order_class%% .dina_pricelist-item-wrapper',
                 optionName: 'layout',
-                property: 'display',
+                property: 'flex-direction',
             },
             {
                 selector:
@@ -84,7 +84,7 @@ class PriceListChild extends Component {
             },
             {
                 selector:
-                    '.dina_pricelist-container %%order_class%% .dina_pricelist-image-wrapper',
+                    '.dina_pricelist-container %%order_class%% .dina_pricelist-image',
                 optionName: 'image_align',
                 property: 'justify-content',
             },
@@ -125,7 +125,7 @@ class PriceListChild extends Component {
             imageDesign = setResponsiveCSS(props, [
                 {
                     selector:
-                        '.dina_pricelist-container %%order_class%% .dina_pricelist-image-wrapper',
+                        '.dina_pricelist-container %%order_class%% .dina_pricelist-image',
                     optionName: 'image_width',
                     property: 'width',
                 },
@@ -157,13 +157,11 @@ class PriceListChild extends Component {
 
     renderImage = () => {
         return (
-            <div className="dina_pricelist-image-wrapper">
-                <div className="dina_pricelist-image">
-                    <img
-                        src={`${this.props.image}`}
-                        alt={`${this.props.image_alt}`}
-                    />
-                </div>
+            <div className="dina_pricelist-image">
+                <img
+                    src={`${this.props.image}`}
+                    alt={`${this.props.image_alt}`}
+                />
             </div>
         );
     };

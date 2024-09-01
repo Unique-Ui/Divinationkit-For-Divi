@@ -8,9 +8,9 @@ export class Person extends Component {
     static slug = 'dina_person';
 
     static css(props) {
-        const additionalCss = [];
-
-        const size = props.icon_size.split('px')[0] * 2;
+        let additionalCss = [],
+            imageWidth,
+            size = props.icon_size.split('px')[0] * 2;
 
         additionalCss.push([
             {
@@ -72,6 +72,23 @@ export class Person extends Component {
                 property: 'padding',
             },
 
+            {
+                selector: '%%order_class%% .dina_person-img',
+                optionName: 'image_alignment',
+                property: 'justify-content',
+            },
+
+            {
+                selector: '%%order_class%% .dina_person-img',
+                optionName: 'image_margin',
+                property: 'margin',
+            },
+            {
+                selector: '%%order_class%% .dina_person-img img',
+                optionName: 'image_padding',
+                property: 'padding',
+            },
+
             // Style three
             {
                 selector:
@@ -79,15 +96,25 @@ export class Person extends Component {
                 optionName: 'offset_x',
                 property: 'top',
             },
-
-            // Style four
-            {
-                selector:
-                    '%%order_class%% .dina_person-style-four .dina_person-img',
-                optionName: 'image_width',
-                property: 'width',
-            },
         ]);
+
+        if (props.layout === 'style-four') {
+            imageWidth = setResponsiveCSS(props, [
+                {
+                    selector: '%%order_class%% .dina_person-img',
+                    optionName: 'image_width',
+                    property: 'width',
+                },
+            ]);
+        } else {
+            imageWidth = setResponsiveCSS(props, [
+                {
+                    selector: '%%order_class%% .dina_person-img img',
+                    optionName: 'image_width',
+                    property: 'width',
+                },
+            ]);
+        }
 
         const content_bg = dinaGetCustomBgCSS(
             props,
@@ -97,7 +124,10 @@ export class Person extends Component {
             '#00e091'
         );
 
-        return additionalCss.concat(responsiveCss).concat(content_bg);
+        return additionalCss
+            .concat(responsiveCss)
+            .concat(content_bg)
+            .concat(imageWidth);
     }
 
     renderImage = () => {

@@ -1,3 +1,7 @@
+.dina_progress_bar_child {
+    border-style: solid;
+}
+
 .dina_progress_bar-item {
     position: relative;
     display: flex;
@@ -9,6 +13,10 @@
     flex: 1;
 }
 
+.dina_progress_bar-description {
+    margin-top: 8px;
+}
+
 .dina_progress-level {
     position: relative;
     display: flex;
@@ -17,7 +25,7 @@
     transition: width 1.5s ease;
 }
 
-.dina_progress_bar-show-level .dina_progress-level:before {
+.dina_progress-level.outside:before {
     position: absolute;
     content: attr(data-per);
     width: -moz-max-content;
@@ -28,7 +36,7 @@
     left: 100%;
     transform: translateX(-50%);
 }
-.dina_progress_bar-show-level .dina_progress-level::after {
+.dina_progress-level.outside::after {
     position: absolute;
     width: 10px;
     height: 10px;
@@ -39,5 +47,11 @@
 
 .dina_progress_bar-name.inside {
     padding: 0 18px;
+    color: #fff;
+}
+
+.dina_progress_bar-level-text {
+    position: absolute;
+    right: 10px;
     color: #fff;
 }

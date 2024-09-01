@@ -111,7 +111,7 @@ class DINA_Business_Hour_Child extends DINA_Module_Core {
                 'type'           => 'range',
                 'default_unit'   => 'px',
                 'range_settings' => array(
-                    'min'  => 1,
+                    'min'  => 0,
                     'step' => 1,
                     'max'  => 25,
                 ),
@@ -168,10 +168,32 @@ class DINA_Business_Hour_Child extends DINA_Module_Core {
         $advanced_fields['text']    = false;
         $advanced_fields['filters'] = false;
 
+        $advanced_fields['borders']['main'] = array(
+            'label_prefix' => esc_html__( 'List Item', 'divinationkit-for-divi' ),
+            'tab_slug'     => 'advanced',
+            'toggle_slug'  => 'border',
+            'css'          => array(
+                'main'      => array(
+                    'border_radii'  => '%%order_class%%',
+                    'border_styles' => '%%order_class%%',
+                ),
+                'important' => 'all',
+            ),
+            'defaults'     => array(
+                'border_radii'  => 'on|0px|0px|0px|0px',
+                'border_styles' => array(
+                    'width' => '0px',
+                    'color' => '#333333',
+                    'style' => 'solid',
+                ),
+            ),
+        );
+
         $advanced_fields['fonts']['day'] = array(
             'label_prefix' => esc_html__( 'Day', 'divinationkit-for-divi' ),
             'css'          => array(
                 'main'      => '.dina_business_hour-container %%order_class%% .dina_business_hour-day',
+                'hover'     => '.dina_business_hour-container %%order_class%%:hover .dina_business_hour-day',
                 'important' => 'all',
             ),
             'tab_slug'     => 'advanced',
@@ -186,9 +208,10 @@ class DINA_Business_Hour_Child extends DINA_Module_Core {
         );
 
         $advanced_fields['fonts']['time'] = array(
-            'label'       => esc_html__( 'Description', 'divinationkit-for-divi' ),
+            'label'       => esc_html__( 'Time', 'divinationkit-for-divi' ),
             'css'         => array(
                 'main'      => '.dina_business_hour-container %%order_class%% .dina_business_hour-time',
+                'hover'     => '.dina_business_hour-container %%order_class%%:hover .dina_business_hour-time',
                 'important' => 'all',
             ),
             'tab_slug'    => 'advanced',

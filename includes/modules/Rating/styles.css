@@ -3,8 +3,24 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    flex-wrap: wrap;
 }
 
 .dina_rating-container .dina_rating-title {
     padding-bottom: 0;
+}
+
+.dina_rating-number {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.dina_rating-number span.dina_rating-star {
+    margin-top: -10%;
+    display: inline-block;
+}
+
+.dina_rating-number {
+    font-size: 18px;
 }

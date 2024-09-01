@@ -2,9 +2,9 @@
 # This file is distributed under the GPL2.
 msgid ""
 msgstr ""
-"Project-Id-Version: DiviNationKit for Divi 1.0.4\n"
+"Project-Id-Version: DiviNationKit for Divi 1.0.5\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/divinationkit\n"
-"POT-Creation-Date: 2024-08-15 09:17:31+00:00\n"
+"POT-Creation-Date: 2024-08-31 03:57:09+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -28,6 +28,44 @@ msgstr ""
 msgid "Docs"
 msgstr ""
 
+#: includes/functions.php:29
+msgid "Select a menu"
+msgstr ""
+
+#: includes/functions.php:40
+msgid "For Gallery Module"
+msgstr ""
+
+#: includes/functions.php:42
+msgid " "
+msgstr ""
+
+#: includes/functions.php:46
+msgid "Link Url"
+msgstr ""
+
+#: includes/functions.php:55 includes/modules/PersonChild/PersonChild.php:78
+msgid "Link Target"
+msgstr ""
+
+#: includes/functions.php:58 includes/modules/DualButton/DualButton.php:529
+#: includes/modules/DualButton/DualButton.php:809
+#: includes/modules/FlipCard/FlipCard.php:435
+#: includes/modules/IconBox/IconBox.php:174
+#: includes/modules/PersonChild/PersonChild.php:82
+#: includes/modules/Review/Review.php:186
+msgid "In The Same Window"
+msgstr ""
+
+#: includes/functions.php:59 includes/modules/DualButton/DualButton.php:530
+#: includes/modules/DualButton/DualButton.php:810
+#: includes/modules/FlipCard/FlipCard.php:436
+#: includes/modules/IconBox/IconBox.php:175
+#: includes/modules/PersonChild/PersonChild.php:83
+#: includes/modules/Review/Review.php:187
+msgid "In The New Tab"
+msgstr ""
+
 #: includes/modules/AdvancedDivider/AdvancedDivider.php:12
 msgid "Advanced Divider"
 msgstr ""
@@ -42,7 +80,7 @@ msgstr ""
 #: includes/modules/IconListChild/IconListChild.php:18
 #: includes/modules/LogoSlider/LogoSlider.php:23
 #: includes/modules/LogoSliderChild/LogoSliderChild.php:16
-#: includes/modules/Person/Person.php:25
+#: includes/modules/Person/Person.php:25 includes/modules/Posts/Posts.php:22
 #: includes/modules/PriceList/PriceList.php:24
 #: includes/modules/PriceListChild/PriceListChild.php:16
 #: includes/modules/ProgressBarChild/ProgressBarChild.php:17
@@ -56,8 +94,8 @@ msgstr ""
 
 #: includes/modules/AdvancedDivider/AdvancedDivider.php:26
 #: includes/modules/AdvancedDivider/AdvancedDivider.php:46
-#: includes/modules/AdvancedDivider/AdvancedDivider.php:293
-#: includes/modules/PriceList/PriceList.php:32
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:290
+#: includes/modules/PriceList/PriceList.php:47
 #: includes/modules/PriceList/PriceList.php:56
 #: includes/modules/PriceListChild/PriceListChild.php:24
 msgid "Divider"
@@ -66,13 +104,14 @@ msgstr ""
 #: includes/modules/AdvancedDivider/AdvancedDivider.php:28
 #: includes/modules/AdvancedDivider/AdvancedDivider.php:54
 #: includes/modules/AdvancedDivider/AdvancedDivider.php:88
-#: includes/modules/AdvancedDivider/AdvancedDivider.php:339
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:336
 msgid "Divider Text"
 msgstr ""
 
 #: includes/modules/AdvancedDivider/AdvancedDivider.php:32
 #: includes/modules/DualButton/DualButton.php:68
 #: includes/modules/DualButton/DualButton.php:644
+#: includes/modules/Posts/Posts.php:50 includes/modules/Posts/Posts.php:62
 #: includes/modules/ReviewSlider/ReviewSlider.php:66
 msgid "Text"
 msgstr ""
@@ -89,7 +128,7 @@ msgstr ""
 #: includes/modules/AdvancedDivider/AdvancedDivider.php:39
 #: includes/modules/AdvancedDivider/AdvancedDivider.php:50
 #: includes/modules/AdvancedDivider/AdvancedDivider.php:78
-#: includes/modules/AdvancedDivider/AdvancedDivider.php:316
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:313
 #: includes/modules/DualButton/DualButton.php:65
 #: includes/modules/DualButton/DualButton.php:643
 #: includes/modules/FlipCard/FlipCard.php:181
@@ -101,13 +140,16 @@ msgstr ""
 #: includes/modules/IconList/IconList.php:307
 #: includes/modules/IconListChild/IconListChild.php:17
 #: includes/modules/IconListChild/IconListChild.php:24
+#: includes/modules/MasonryGallery/MasonryGallery.php:30
 #: includes/modules/Person/Person.php:31
 #: includes/modules/PriceList/PriceList.php:64
-#: includes/modules/PriceList/PriceList.php:430
+#: includes/modules/PriceList/PriceList.php:470
 #: includes/modules/PriceListChild/PriceListChild.php:57
-#: includes/modules/PriceListChild/PriceListChild.php:403
+#: includes/modules/PriceListChild/PriceListChild.php:390
 #: includes/modules/ProgressBar/ProgressBar.php:24
-#: includes/modules/ProgressBar/ProgressBar.php:309
+#: includes/modules/ProgressBar/ProgressBar.php:334
+#: includes/modules/ProgressBar/ProgressBar.php:354
+#: includes/modules/ProgressBar/ProgressBar.php:374
 #: includes/modules/ProgressBarChild/ProgressBarChild.php:24
 #: includes/modules/ProgressBarChild/ProgressBarChild.php:381
 msgid "Icon"
@@ -145,22 +187,27 @@ msgstr ""
 #: includes/modules/LogoSlider/LogoSlider.php:208
 #: includes/modules/LogoSlider/LogoSlider.php:221
 #: includes/modules/LogoSlider/LogoSlider.php:234
+#: includes/modules/MasonryGallery/MasonryGallery.php:118
 #: includes/modules/Person/Person.php:120
-#: includes/modules/Person/Person.php:136
+#: includes/modules/Person/Person.php:136 includes/modules/Posts/Posts.php:195
+#: includes/modules/Posts/Posts.php:231 includes/modules/Posts/Posts.php:248
+#: includes/modules/Posts/Posts.php:265 includes/modules/Posts/Posts.php:282
+#: includes/modules/Posts/Posts.php:299 includes/modules/Posts/Posts.php:316
+#: includes/modules/Posts/Posts.php:334 includes/modules/Posts/Posts.php:352
 #: includes/modules/ProgressBarChild/ProgressBarChild.php:65
 #: includes/modules/ProgressBarChild/ProgressBarChild.php:114
 #: includes/modules/ProgressBarChild/ProgressBarChild.php:127
-#: includes/modules/Rating/Rating.php:87 includes/modules/Review/Review.php:91
+#: includes/modules/Rating/Rating.php:88 includes/modules/Review/Review.php:91
 #: includes/modules/Review/Review.php:149
-#: includes/modules/ReviewSlider/ReviewSlider.php:111
-#: includes/modules/ReviewSlider/ReviewSlider.php:134
-#: includes/modules/ReviewSlider/ReviewSlider.php:145
-#: includes/modules/ReviewSlider/ReviewSlider.php:157
-#: includes/modules/ReviewSlider/ReviewSlider.php:172
-#: includes/modules/ReviewSlider/ReviewSlider.php:198
-#: includes/modules/ReviewSlider/ReviewSlider.php:247
-#: includes/modules/ReviewSlider/ReviewSlider.php:260
-#: includes/modules/ReviewSlider/ReviewSlider.php:273
+#: includes/modules/ReviewSlider/ReviewSlider.php:125
+#: includes/modules/ReviewSlider/ReviewSlider.php:148
+#: includes/modules/ReviewSlider/ReviewSlider.php:159
+#: includes/modules/ReviewSlider/ReviewSlider.php:171
+#: includes/modules/ReviewSlider/ReviewSlider.php:186
+#: includes/modules/ReviewSlider/ReviewSlider.php:212
+#: includes/modules/ReviewSlider/ReviewSlider.php:261
+#: includes/modules/ReviewSlider/ReviewSlider.php:274
+#: includes/modules/ReviewSlider/ReviewSlider.php:287
 #: includes/modules/ReviewSliderChild/ReviewSliderChild.php:87
 msgid "Yes"
 msgstr ""
@@ -189,22 +236,27 @@ msgstr ""
 #: includes/modules/LogoSlider/LogoSlider.php:209
 #: includes/modules/LogoSlider/LogoSlider.php:222
 #: includes/modules/LogoSlider/LogoSlider.php:235
+#: includes/modules/MasonryGallery/MasonryGallery.php:119
 #: includes/modules/Person/Person.php:121
-#: includes/modules/Person/Person.php:137
+#: includes/modules/Person/Person.php:137 includes/modules/Posts/Posts.php:196
+#: includes/modules/Posts/Posts.php:230 includes/modules/Posts/Posts.php:249
+#: includes/modules/Posts/Posts.php:266 includes/modules/Posts/Posts.php:283
+#: includes/modules/Posts/Posts.php:300 includes/modules/Posts/Posts.php:317
+#: includes/modules/Posts/Posts.php:335 includes/modules/Posts/Posts.php:353
 #: includes/modules/ProgressBarChild/ProgressBarChild.php:66
 #: includes/modules/ProgressBarChild/ProgressBarChild.php:115
 #: includes/modules/ProgressBarChild/ProgressBarChild.php:128
-#: includes/modules/Rating/Rating.php:88 includes/modules/Review/Review.php:92
+#: includes/modules/Rating/Rating.php:89 includes/modules/Review/Review.php:92
 #: includes/modules/Review/Review.php:150
-#: includes/modules/ReviewSlider/ReviewSlider.php:112
-#: includes/modules/ReviewSlider/ReviewSlider.php:135
-#: includes/modules/ReviewSlider/ReviewSlider.php:146
-#: includes/modules/ReviewSlider/ReviewSlider.php:158
-#: includes/modules/ReviewSlider/ReviewSlider.php:173
-#: includes/modules/ReviewSlider/ReviewSlider.php:199
-#: includes/modules/ReviewSlider/ReviewSlider.php:248
-#: includes/modules/ReviewSlider/ReviewSlider.php:261
-#: includes/modules/ReviewSlider/ReviewSlider.php:274
+#: includes/modules/ReviewSlider/ReviewSlider.php:126
+#: includes/modules/ReviewSlider/ReviewSlider.php:149
+#: includes/modules/ReviewSlider/ReviewSlider.php:160
+#: includes/modules/ReviewSlider/ReviewSlider.php:172
+#: includes/modules/ReviewSlider/ReviewSlider.php:187
+#: includes/modules/ReviewSlider/ReviewSlider.php:213
+#: includes/modules/ReviewSlider/ReviewSlider.php:262
+#: includes/modules/ReviewSlider/ReviewSlider.php:275
+#: includes/modules/ReviewSlider/ReviewSlider.php:288
 #: includes/modules/ReviewSliderChild/ReviewSliderChild.php:88
 msgid "No"
 msgstr ""
@@ -224,10 +276,10 @@ msgstr ""
 #: includes/modules/IconBox/IconBox.php:324
 #: includes/modules/IconList/IconList.php:124
 #: includes/modules/LogoSlider/LogoSlider.php:287
-#: includes/modules/Person/Person.php:216
-#: includes/modules/PriceList/PriceList.php:159
-#: includes/modules/PriceListChild/PriceListChild.php:187
-#: includes/modules/ProgressBar/ProgressBar.php:195
+#: includes/modules/Person/Person.php:198
+#: includes/modules/PriceList/PriceList.php:153
+#: includes/modules/PriceListChild/PriceListChild.php:180
+#: includes/modules/ProgressBar/ProgressBar.php:197
 #: includes/modules/ProgressBarChild/ProgressBarChild.php:253
 #: includes/modules/ReviewSlider/ReviewSlider.php:345
 msgid "Icon Color"
@@ -244,10 +296,10 @@ msgstr ""
 #: includes/modules/IconBox/IconBox.php:312
 #: includes/modules/IconList/IconList.php:113
 #: includes/modules/LogoSlider/LogoSlider.php:301
-#: includes/modules/Person/Person.php:205
-#: includes/modules/PriceList/PriceList.php:147
-#: includes/modules/PriceListChild/PriceListChild.php:176
-#: includes/modules/ProgressBar/ProgressBar.php:183
+#: includes/modules/Person/Person.php:187
+#: includes/modules/PriceList/PriceList.php:141
+#: includes/modules/PriceListChild/PriceListChild.php:169
+#: includes/modules/ProgressBar/ProgressBar.php:185
 #: includes/modules/ProgressBarChild/ProgressBarChild.php:241
 #: includes/modules/ReviewSlider/ReviewSlider.php:360
 msgid "Icon Background"
@@ -264,10 +316,10 @@ msgstr ""
 #: includes/modules/IconBox/IconBox.php:336
 #: includes/modules/IconList/IconList.php:135
 #: includes/modules/LogoSlider/LogoSlider.php:315
-#: includes/modules/Person/Person.php:228
-#: includes/modules/PriceList/PriceList.php:171
-#: includes/modules/PriceListChild/PriceListChild.php:198
-#: includes/modules/ProgressBar/ProgressBar.php:207
+#: includes/modules/Person/Person.php:210
+#: includes/modules/PriceList/PriceList.php:165
+#: includes/modules/PriceListChild/PriceListChild.php:191
+#: includes/modules/ProgressBar/ProgressBar.php:209
 #: includes/modules/ProgressBarChild/ProgressBarChild.php:265
 #: includes/modules/ReviewSlider/ReviewSlider.php:375
 msgid "Icon Size"
@@ -282,8 +334,8 @@ msgid "Padding"
 msgstr ""
 
 #: includes/modules/AdvancedDivider/AdvancedDivider.php:149
-#: includes/modules/PriceList/PriceList.php:189
-#: includes/modules/PriceListChild/PriceListChild.php:215
+#: includes/modules/PriceList/PriceList.php:183
+#: includes/modules/PriceListChild/PriceListChild.php:208
 msgid "Define custom padding for divider icon"
 msgstr ""
 
@@ -291,118 +343,119 @@ msgstr ""
 msgid "Divider Alignment"
 msgstr ""
 
-#: includes/modules/AdvancedDivider/AdvancedDivider.php:175
-#: includes/modules/PriceList/PriceList.php:266
-#: includes/modules/PriceListChild/PriceListChild.php:286
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:172
+#: includes/modules/PriceList/PriceList.php:260
+#: includes/modules/PriceListChild/PriceListChild.php:279
 msgid "Divider Color"
 msgstr ""
 
-#: includes/modules/AdvancedDivider/AdvancedDivider.php:176
-#: includes/modules/PriceList/PriceList.php:267
-#: includes/modules/PriceListChild/PriceListChild.php:287
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:173
+#: includes/modules/PriceList/PriceList.php:261
+#: includes/modules/PriceListChild/PriceListChild.php:280
 msgid "Define the divi line color"
 msgstr ""
 
-#: includes/modules/AdvancedDivider/AdvancedDivider.php:186
-#: includes/modules/PriceList/PriceList.php:279
-#: includes/modules/PriceListChild/PriceListChild.php:299
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:183
+#: includes/modules/PriceList/PriceList.php:273
+#: includes/modules/PriceListChild/PriceListChild.php:291
 msgid "Divider Style"
 msgstr ""
 
-#: includes/modules/AdvancedDivider/AdvancedDivider.php:187
-#: includes/modules/PriceList/PriceList.php:280
-#: includes/modules/PriceListChild/PriceListChild.php:300
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:184
+#: includes/modules/PriceList/PriceList.php:274
+#: includes/modules/PriceListChild/PriceListChild.php:292
 msgid "Define the divider style"
 msgstr ""
 
-#: includes/modules/AdvancedDivider/AdvancedDivider.php:192
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:189
 #: includes/modules/BusinessHour/BusinessHour.php:53
 #: includes/modules/BusinessHourChild/BusinessHourChild.php:78
-#: includes/modules/PriceList/PriceList.php:285
-#: includes/modules/PriceListChild/PriceListChild.php:305
+#: includes/modules/PriceList/PriceList.php:279
+#: includes/modules/PriceListChild/PriceListChild.php:297
 msgid "Dotted"
 msgstr ""
 
-#: includes/modules/AdvancedDivider/AdvancedDivider.php:193
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:190
 #: includes/modules/BusinessHour/BusinessHour.php:54
 #: includes/modules/BusinessHourChild/BusinessHourChild.php:79
-#: includes/modules/PriceList/PriceList.php:286
-#: includes/modules/PriceListChild/PriceListChild.php:306
+#: includes/modules/PriceList/PriceList.php:280
+#: includes/modules/PriceListChild/PriceListChild.php:298
 msgid "Dashed"
 msgstr ""
 
-#: includes/modules/AdvancedDivider/AdvancedDivider.php:194
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:191
 #: includes/modules/BusinessHour/BusinessHour.php:55
 #: includes/modules/BusinessHourChild/BusinessHourChild.php:80
-#: includes/modules/PriceList/PriceList.php:287
-#: includes/modules/PriceListChild/PriceListChild.php:307
+#: includes/modules/PriceList/PriceList.php:281
+#: includes/modules/PriceListChild/PriceListChild.php:299
 msgid "Solid"
 msgstr ""
 
-#: includes/modules/AdvancedDivider/AdvancedDivider.php:195
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:192
 #: includes/modules/BusinessHour/BusinessHour.php:56
 #: includes/modules/BusinessHourChild/BusinessHourChild.php:81
-#: includes/modules/PriceList/PriceList.php:288
-#: includes/modules/PriceListChild/PriceListChild.php:308
+#: includes/modules/PriceList/PriceList.php:282
+#: includes/modules/PriceListChild/PriceListChild.php:300
 msgid "Double"
 msgstr ""
 
-#: includes/modules/AdvancedDivider/AdvancedDivider.php:196
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:193
 #: includes/modules/BusinessHour/BusinessHour.php:57
 #: includes/modules/BusinessHourChild/BusinessHourChild.php:82
-#: includes/modules/PriceList/PriceList.php:289
-#: includes/modules/PriceListChild/PriceListChild.php:309
+#: includes/modules/PriceList/PriceList.php:283
+#: includes/modules/PriceListChild/PriceListChild.php:301
 msgid "Groove"
 msgstr ""
 
-#: includes/modules/AdvancedDivider/AdvancedDivider.php:197
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:194
 #: includes/modules/BusinessHour/BusinessHour.php:58
 #: includes/modules/BusinessHourChild/BusinessHourChild.php:83
-#: includes/modules/PriceList/PriceList.php:290
-#: includes/modules/PriceListChild/PriceListChild.php:310
+#: includes/modules/PriceList/PriceList.php:284
+#: includes/modules/PriceListChild/PriceListChild.php:302
 msgid "Ridge"
 msgstr ""
 
-#: includes/modules/AdvancedDivider/AdvancedDivider.php:198
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:195
 #: includes/modules/BusinessHour/BusinessHour.php:59
 #: includes/modules/BusinessHourChild/BusinessHourChild.php:84
-#: includes/modules/PriceList/PriceList.php:291
-#: includes/modules/PriceListChild/PriceListChild.php:311
+#: includes/modules/PriceList/PriceList.php:285
+#: includes/modules/PriceListChild/PriceListChild.php:303
 msgid "Inset"
 msgstr ""
 
-#: includes/modules/AdvancedDivider/AdvancedDivider.php:199
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:196
 #: includes/modules/BusinessHour/BusinessHour.php:60
 #: includes/modules/BusinessHourChild/BusinessHourChild.php:85
-#: includes/modules/PriceList/PriceList.php:292
-#: includes/modules/PriceListChild/PriceListChild.php:312
+#: includes/modules/PriceList/PriceList.php:286
+#: includes/modules/PriceListChild/PriceListChild.php:304
 msgid "Outset"
 msgstr ""
 
-#: includes/modules/AdvancedDivider/AdvancedDivider.php:200
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:197
 #: includes/modules/BusinessHour/BusinessHour.php:61
 #: includes/modules/BusinessHourChild/BusinessHourChild.php:86
 #: includes/modules/FlipCard/FlipCard.php:180
 #: includes/modules/FlipCard/FlipCard.php:319
-#: includes/modules/PriceList/PriceList.php:293
+#: includes/modules/MasonryGallery/MasonryGallery.php:175
+#: includes/modules/PriceList/PriceList.php:287
 #: includes/modules/PriceListChild/PriceListChild.php:56
-#: includes/modules/PriceListChild/PriceListChild.php:313
+#: includes/modules/PriceListChild/PriceListChild.php:305
 #: includes/modules/Review/Review.php:203
 #: includes/modules/ReviewSliderChild/ReviewSliderChild.php:146
 msgid "None"
 msgstr ""
 
-#: includes/modules/AdvancedDivider/AdvancedDivider.php:206
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:203
 msgid "Divider Positions"
 msgstr ""
 
-#: includes/modules/AdvancedDivider/AdvancedDivider.php:207
-#: includes/modules/PriceList/PriceList.php:301
-#: includes/modules/PriceListChild/PriceListChild.php:321
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:204
+#: includes/modules/PriceList/PriceList.php:295
+#: includes/modules/PriceListChild/PriceListChild.php:313
 msgid "Define the divider positions"
 msgstr ""
 
-#: includes/modules/AdvancedDivider/AdvancedDivider.php:212
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:209
 #: includes/modules/BusinessHour/BusinessHour.php:119
 #: includes/modules/BusinessHourChild/BusinessHourChild.php:151
 #: includes/modules/FlipCard/FlipCard.php:515
@@ -410,27 +463,24 @@ msgstr ""
 #: includes/modules/GradientHeading/GradientHeading.php:108
 #: includes/modules/IconList/IconList.php:84
 #: includes/modules/IconListChild/IconListChild.php:129
-#: includes/modules/PriceList/PriceList.php:112
-#: includes/modules/PriceList/PriceList.php:306
-#: includes/modules/PriceListChild/PriceListChild.php:143
-#: includes/modules/PriceListChild/PriceListChild.php:326
+#: includes/modules/Posts/Posts.php:442
+#: includes/modules/PriceList/PriceList.php:300
+#: includes/modules/PriceListChild/PriceListChild.php:318
 #: includes/modules/Review/Review.php:303
 #: includes/modules/ReviewSliderChild/ReviewSliderChild.php:245
 msgid "Top"
 msgstr ""
 
-#: includes/modules/AdvancedDivider/AdvancedDivider.php:213
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:210
 #: includes/modules/BusinessHour/BusinessHour.php:120
 #: includes/modules/BusinessHourChild/BusinessHourChild.php:152
 #: includes/modules/IconList/IconList.php:85
-#: includes/modules/PriceList/PriceList.php:113
-#: includes/modules/PriceList/PriceList.php:307
-#: includes/modules/PriceListChild/PriceListChild.php:144
-#: includes/modules/PriceListChild/PriceListChild.php:327
+#: includes/modules/PriceList/PriceList.php:301
+#: includes/modules/PriceListChild/PriceListChild.php:319
 msgid "Vertically Center"
 msgstr ""
 
-#: includes/modules/AdvancedDivider/AdvancedDivider.php:214
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:211
 #: includes/modules/BusinessHour/BusinessHour.php:121
 #: includes/modules/BusinessHourChild/BusinessHourChild.php:153
 #: includes/modules/FlipCard/FlipCard.php:517
@@ -438,49 +488,48 @@ msgstr ""
 #: includes/modules/GradientHeading/GradientHeading.php:112
 #: includes/modules/IconList/IconList.php:86
 #: includes/modules/IconListChild/IconListChild.php:131
-#: includes/modules/PriceList/PriceList.php:114
-#: includes/modules/PriceList/PriceList.php:308
-#: includes/modules/PriceListChild/PriceListChild.php:145
-#: includes/modules/PriceListChild/PriceListChild.php:328
+#: includes/modules/Posts/Posts.php:444
+#: includes/modules/PriceList/PriceList.php:302
+#: includes/modules/PriceListChild/PriceListChild.php:320
 #: includes/modules/Review/Review.php:305
 #: includes/modules/ReviewSliderChild/ReviewSliderChild.php:247
 msgid "Bottom"
 msgstr ""
 
-#: includes/modules/AdvancedDivider/AdvancedDivider.php:220
-#: includes/modules/PriceList/PriceList.php:315
-#: includes/modules/PriceListChild/PriceListChild.php:334
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:217
+#: includes/modules/PriceList/PriceList.php:309
+#: includes/modules/PriceListChild/PriceListChild.php:326
 msgid "Divider Weight"
 msgstr ""
 
-#: includes/modules/AdvancedDivider/AdvancedDivider.php:221
-#: includes/modules/AdvancedDivider/AdvancedDivider.php:236
-#: includes/modules/PriceList/PriceList.php:316
-#: includes/modules/PriceList/PriceList.php:332
-#: includes/modules/PriceListChild/PriceListChild.php:335
-#: includes/modules/PriceListChild/PriceListChild.php:350
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:218
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:233
+#: includes/modules/PriceList/PriceList.php:310
+#: includes/modules/PriceList/PriceList.php:326
+#: includes/modules/PriceListChild/PriceListChild.php:327
+#: includes/modules/PriceListChild/PriceListChild.php:342
 msgid "Define space between divider and text/icon"
 msgstr ""
 
-#: includes/modules/AdvancedDivider/AdvancedDivider.php:235
-#: includes/modules/PriceList/PriceList.php:331
-#: includes/modules/PriceListChild/PriceListChild.php:349
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:232
+#: includes/modules/PriceList/PriceList.php:325
+#: includes/modules/PriceListChild/PriceListChild.php:341
 msgid "Divider Space"
 msgstr ""
 
-#: includes/modules/AdvancedDivider/AdvancedDivider.php:251
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:248
 msgid "Text Background"
 msgstr ""
 
-#: includes/modules/AdvancedDivider/AdvancedDivider.php:252
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:249
 msgid "Define divider text background color"
 msgstr ""
 
-#: includes/modules/AdvancedDivider/AdvancedDivider.php:265
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:262
 msgid "Text Padding"
 msgstr ""
 
-#: includes/modules/AdvancedDivider/AdvancedDivider.php:266
+#: includes/modules/AdvancedDivider/AdvancedDivider.php:263
 msgid "Define custom padding for divider text"
 msgstr ""
 
@@ -502,13 +551,15 @@ msgstr ""
 #: includes/modules/BusinessHour/BusinessHour.php:180
 #: includes/modules/BusinessHourChild/BusinessHourChild.php:27
 #: includes/modules/BusinessHourChild/BusinessHourChild.php:44
-#: includes/modules/BusinessHourChild/BusinessHourChild.php:172
+#: includes/modules/BusinessHourChild/BusinessHourChild.php:193
 msgid "Day"
 msgstr ""
 
 #: includes/modules/BusinessHour/BusinessHour.php:33
+#: includes/modules/BusinessHour/BusinessHour.php:198
 #: includes/modules/BusinessHourChild/BusinessHourChild.php:30
 #: includes/modules/BusinessHourChild/BusinessHourChild.php:51
+#: includes/modules/BusinessHourChild/BusinessHourChild.php:211
 msgid "Time"
 msgstr ""
 
@@ -576,7 +627,7 @@ msgstr ""
 
 #: includes/modules/BusinessHour/BusinessHour.php:130
 #: includes/modules/IconList/IconList.php:225
-#: includes/modules/PriceList/PriceList.php:349
+#: includes/modules/PriceList/PriceList.php:343
 #: includes/modules/ReviewSlider/ReviewSlider.php:301
 msgid "Item Margin"
 msgstr ""
@@ -587,7 +638,7 @@ msgstr ""
 
 #: includes/modules/BusinessHour/BusinessHour.php:140
 #: includes/modules/IconList/IconList.php:235
-#: includes/modules/PriceList/PriceList.php:359
+#: includes/modules/PriceList/PriceList.php:353
 #: includes/modules/ReviewSlider/ReviewSlider.php:311
 msgid "Item Padding"
 msgstr ""
@@ -597,46 +648,12 @@ msgid "Define custom padding for business hour item"
 msgstr ""
 
 #: includes/modules/BusinessHour/BusinessHour.php:159
+#: includes/modules/BusinessHourChild/BusinessHourChild.php:172
 #: includes/modules/IconBox/IconBox.php:388
 #: includes/modules/IconList/IconList.php:56
 #: includes/modules/IconList/IconList.php:285
-#: includes/modules/PriceList/PriceList.php:33
+#: includes/modules/PriceList/PriceList.php:48
 msgid "List Item"
-msgstr ""
-
-#: includes/modules/BusinessHour/BusinessHour.php:197
-#: includes/modules/BusinessHourChild/BusinessHourChild.php:189
-#: includes/modules/FlipCard/FlipCard.php:95
-#: includes/modules/FlipCard/FlipCard.php:111
-#: includes/modules/FlipCard/FlipCard.php:995
-#: includes/modules/FlipCard/FlipCard.php:1096
-#: includes/modules/IconBox/IconBox.php:41
-#: includes/modules/IconBox/IconBox.php:80
-#: includes/modules/IconBox/IconBox.php:84
-#: includes/modules/IconBox/IconBox.php:120
-#: includes/modules/IconBox/IconBox.php:500
-#: includes/modules/IconList/IconList.php:31
-#: includes/modules/IconList/IconList.php:353
-#: includes/modules/IconList/IconList.php:369
-#: includes/modules/IconListChild/IconListChild.php:26
-#: includes/modules/IconListChild/IconListChild.php:91
-#: includes/modules/IconListChild/IconListChild.php:277
-#: includes/modules/IconListChild/IconListChild.php:293
-#: includes/modules/Person/Person.php:44 includes/modules/Person/Person.php:90
-#: includes/modules/Person/Person.php:419
-#: includes/modules/PriceList/PriceList.php:42
-#: includes/modules/PriceList/PriceList.php:84
-#: includes/modules/PriceList/PriceList.php:513
-#: includes/modules/PriceListChild/PriceListChild.php:33
-#: includes/modules/PriceListChild/PriceListChild.php:115
-#: includes/modules/PriceListChild/PriceListChild.php:495
-#: includes/modules/ProgressBarChild/ProgressBarChild.php:87
-#: includes/modules/Review/Review.php:136
-#: includes/modules/Review/Review.php:577
-#: includes/modules/ReviewSlider/ReviewSlider.php:776
-#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:132
-#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:516
-msgid "Description"
 msgstr ""
 
 #: includes/modules/BusinessHourChild/BusinessHourChild.php:35
@@ -644,9 +661,11 @@ msgstr ""
 #: includes/modules/DualButton/DualButton.php:95
 #: includes/modules/FlipCard/FlipCard.php:116
 #: includes/modules/IconBox/IconBox.php:57
-#: includes/modules/Person/Person.php:49
+#: includes/modules/MasonryGallery/MasonryGallery.php:32
+#: includes/modules/Person/Person.php:49 includes/modules/Posts/Posts.php:71
 #: includes/modules/PriceList/PriceList.php:49
 #: includes/modules/PriceListChild/PriceListChild.php:40
+#: includes/modules/ProgressBar/ProgressBar.php:52
 #: includes/modules/Review/Review.php:37
 #: includes/modules/ReviewSlider/ReviewSlider.php:72
 msgid "Border"
@@ -693,6 +712,7 @@ msgid "Button Two"
 msgstr ""
 
 #: includes/modules/DualButton/DualButton.php:43
+#: includes/modules/MasonryGallery/MasonryGallery.php:28
 msgid "General"
 msgstr ""
 
@@ -732,6 +752,7 @@ msgstr ""
 
 #: includes/modules/DualButton/DualButton.php:111
 #: includes/modules/DualButton/DualButton.php:292
+#: includes/modules/MasonryGallery/MasonryGallery.php:127
 msgid "Select 2D Hover Effect"
 msgstr ""
 
@@ -741,60 +762,68 @@ msgstr ""
 #: includes/modules/DualButton/DualButton.php:296
 #: includes/modules/DualButton/DualButton.php:335
 #: includes/modules/DualButton/DualButton.php:435
+#: includes/modules/MasonryGallery/MasonryGallery.php:134
 msgid "Select"
 msgstr ""
 
 #: includes/modules/DualButton/DualButton.php:116
 #: includes/modules/DualButton/DualButton.php:297
 #: includes/modules/GradientHeading/GradientHeading.php:180
+#: includes/modules/MasonryGallery/MasonryGallery.php:135
 msgid "Grow"
 msgstr ""
 
 #: includes/modules/DualButton/DualButton.php:117
 #: includes/modules/DualButton/DualButton.php:298
 #: includes/modules/GradientHeading/GradientHeading.php:181
+#: includes/modules/MasonryGallery/MasonryGallery.php:136
 msgid "Shrink"
 msgstr ""
 
 #: includes/modules/DualButton/DualButton.php:118
 #: includes/modules/DualButton/DualButton.php:299
 #: includes/modules/GradientHeading/GradientHeading.php:182
+#: includes/modules/MasonryGallery/MasonryGallery.php:137
 msgid "Pulse"
 msgstr ""
 
 #: includes/modules/DualButton/DualButton.php:119
-#: includes/modules/DualButton/DualButton.php:300
-#: includes/modules/GradientHeading/GradientHeading.php:183
-msgid "Pulse Gow"
+#: includes/modules/MasonryGallery/MasonryGallery.php:138
+msgid "Pulse Grow"
 msgstr ""
 
 #: includes/modules/DualButton/DualButton.php:120
 #: includes/modules/DualButton/DualButton.php:301
 #: includes/modules/GradientHeading/GradientHeading.php:184
+#: includes/modules/MasonryGallery/MasonryGallery.php:139
 msgid "Pulse Shrink"
 msgstr ""
 
 #: includes/modules/DualButton/DualButton.php:121
 #: includes/modules/DualButton/DualButton.php:302
 #: includes/modules/GradientHeading/GradientHeading.php:185
+#: includes/modules/MasonryGallery/MasonryGallery.php:140
 msgid "Pop"
 msgstr ""
 
 #: includes/modules/DualButton/DualButton.php:122
 #: includes/modules/DualButton/DualButton.php:303
 #: includes/modules/GradientHeading/GradientHeading.php:186
+#: includes/modules/MasonryGallery/MasonryGallery.php:141
 msgid "Push"
 msgstr ""
 
 #: includes/modules/DualButton/DualButton.php:123
 #: includes/modules/DualButton/DualButton.php:304
 #: includes/modules/GradientHeading/GradientHeading.php:187
+#: includes/modules/MasonryGallery/MasonryGallery.php:142
 msgid "Bounce In"
 msgstr ""
 
 #: includes/modules/DualButton/DualButton.php:124
 #: includes/modules/DualButton/DualButton.php:305
 #: includes/modules/GradientHeading/GradientHeading.php:188
+#: includes/modules/MasonryGallery/MasonryGallery.php:143
 msgid "Bounce Out"
 msgstr ""
 
@@ -802,114 +831,133 @@ msgstr ""
 #: includes/modules/DualButton/DualButton.php:306
 #: includes/modules/FlipCard/FlipCard.php:721
 #: includes/modules/GradientHeading/GradientHeading.php:189
+#: includes/modules/MasonryGallery/MasonryGallery.php:144
 msgid "Rotate"
 msgstr ""
 
 #: includes/modules/DualButton/DualButton.php:126
 #: includes/modules/DualButton/DualButton.php:307
 #: includes/modules/GradientHeading/GradientHeading.php:190
+#: includes/modules/MasonryGallery/MasonryGallery.php:145
 msgid "Rotate Grow"
 msgstr ""
 
 #: includes/modules/DualButton/DualButton.php:127
 #: includes/modules/DualButton/DualButton.php:308
 #: includes/modules/GradientHeading/GradientHeading.php:191
+#: includes/modules/MasonryGallery/MasonryGallery.php:146
 msgid "Float"
 msgstr ""
 
 #: includes/modules/DualButton/DualButton.php:128
 #: includes/modules/DualButton/DualButton.php:309
 #: includes/modules/GradientHeading/GradientHeading.php:192
+#: includes/modules/MasonryGallery/MasonryGallery.php:147
 msgid "Sink"
 msgstr ""
 
 #: includes/modules/DualButton/DualButton.php:129
 #: includes/modules/DualButton/DualButton.php:310
 #: includes/modules/GradientHeading/GradientHeading.php:193
+#: includes/modules/MasonryGallery/MasonryGallery.php:148
 msgid "Bob"
 msgstr ""
 
 #: includes/modules/DualButton/DualButton.php:130
 #: includes/modules/DualButton/DualButton.php:311
 #: includes/modules/GradientHeading/GradientHeading.php:194
+#: includes/modules/MasonryGallery/MasonryGallery.php:149
 msgid "Hang"
 msgstr ""
 
 #: includes/modules/DualButton/DualButton.php:131
 #: includes/modules/DualButton/DualButton.php:312
 #: includes/modules/GradientHeading/GradientHeading.php:195
+#: includes/modules/MasonryGallery/MasonryGallery.php:150
 msgid "Skew Forward"
 msgstr ""
 
 #: includes/modules/DualButton/DualButton.php:132
 #: includes/modules/DualButton/DualButton.php:313
 #: includes/modules/GradientHeading/GradientHeading.php:196
+#: includes/modules/MasonryGallery/MasonryGallery.php:151
 msgid "Skew Backward"
 msgstr ""
 
 #: includes/modules/DualButton/DualButton.php:133
 #: includes/modules/DualButton/DualButton.php:314
 #: includes/modules/GradientHeading/GradientHeading.php:197
+#: includes/modules/MasonryGallery/MasonryGallery.php:152
 msgid "Wobble Horizontal"
 msgstr ""
 
 #: includes/modules/DualButton/DualButton.php:134
 #: includes/modules/DualButton/DualButton.php:315
 #: includes/modules/GradientHeading/GradientHeading.php:198
+#: includes/modules/MasonryGallery/MasonryGallery.php:153
 msgid "Wobble Vertical"
 msgstr ""
 
 #: includes/modules/DualButton/DualButton.php:135
 #: includes/modules/DualButton/DualButton.php:316
 #: includes/modules/GradientHeading/GradientHeading.php:199
+#: includes/modules/MasonryGallery/MasonryGallery.php:154
 msgid "Wobble to Bottom Right"
 msgstr ""
 
 #: includes/modules/DualButton/DualButton.php:136
 #: includes/modules/DualButton/DualButton.php:317
 #: includes/modules/GradientHeading/GradientHeading.php:200
+#: includes/modules/MasonryGallery/MasonryGallery.php:155
 msgid "Wobble to Top Right"
 msgstr ""
 
 #: includes/modules/DualButton/DualButton.php:137
 #: includes/modules/DualButton/DualButton.php:318
 #: includes/modules/GradientHeading/GradientHeading.php:201
+#: includes/modules/MasonryGallery/MasonryGallery.php:156
 msgid "Wobble Top"
 msgstr ""
 
 #: includes/modules/DualButton/DualButton.php:138
 #: includes/modules/DualButton/DualButton.php:319
 #: includes/modules/GradientHeading/GradientHeading.php:202
+#: includes/modules/MasonryGallery/MasonryGallery.php:157
 msgid "Wobble Bottom"
 msgstr ""
 
 #: includes/modules/DualButton/DualButton.php:139
 #: includes/modules/DualButton/DualButton.php:320
 #: includes/modules/GradientHeading/GradientHeading.php:203
+#: includes/modules/MasonryGallery/MasonryGallery.php:158
 msgid "Wobble Skew"
 msgstr ""
 
 #: includes/modules/DualButton/DualButton.php:140
 #: includes/modules/DualButton/DualButton.php:321
 #: includes/modules/GradientHeading/GradientHeading.php:204
+#: includes/modules/MasonryGallery/MasonryGallery.php:159
 msgid "Buzz"
 msgstr ""
 
 #: includes/modules/DualButton/DualButton.php:141
 #: includes/modules/DualButton/DualButton.php:322
 #: includes/modules/GradientHeading/GradientHeading.php:205
+#: includes/modules/MasonryGallery/MasonryGallery.php:160
 msgid "Buzz Out"
 msgstr ""
 
 #: includes/modules/DualButton/DualButton.php:142
 #: includes/modules/DualButton/DualButton.php:323
 #: includes/modules/GradientHeading/GradientHeading.php:206
+#: includes/modules/MasonryGallery/MasonryGallery.php:161
 msgid "Forward"
 msgstr ""
 
 #: includes/modules/DualButton/DualButton.php:143
 #: includes/modules/DualButton/DualButton.php:324
 #: includes/modules/GradientHeading/GradientHeading.php:207
+#: includes/modules/MasonryGallery/MasonryGallery.php:162
 msgid "Backward"
 msgstr ""
 
@@ -1110,9 +1158,15 @@ msgstr ""
 msgid "Choose hover effect background color"
 msgstr ""
 
+#: includes/modules/DualButton/DualButton.php:300
+#: includes/modules/GradientHeading/GradientHeading.php:183
+msgid "Pulse Gow"
+msgstr ""
+
 #: includes/modules/DualButton/DualButton.php:474
 #: includes/modules/FlipCard/FlipCard.php:43
 #: includes/modules/IconBox/IconBox.php:28
+#: includes/modules/Rating/Rating.php:27
 msgid "Alignment"
 msgstr ""
 
@@ -1172,24 +1226,6 @@ msgstr ""
 msgid "Here you can choose whether button URL should be opened in new window."
 msgstr ""
 
-#: includes/modules/DualButton/DualButton.php:529
-#: includes/modules/DualButton/DualButton.php:809
-#: includes/modules/FlipCard/FlipCard.php:435
-#: includes/modules/IconBox/IconBox.php:174
-#: includes/modules/PersonChild/PersonChild.php:82
-#: includes/modules/Review/Review.php:186
-msgid "In The Same Window"
-msgstr ""
-
-#: includes/modules/DualButton/DualButton.php:530
-#: includes/modules/DualButton/DualButton.php:810
-#: includes/modules/FlipCard/FlipCard.php:436
-#: includes/modules/IconBox/IconBox.php:175
-#: includes/modules/PersonChild/PersonChild.php:83
-#: includes/modules/Review/Review.php:187
-msgid "In The New Tab"
-msgstr ""
-
 #: includes/modules/DualButton/DualButton.php:542
 msgid "Show Button One Icon"
 msgstr ""
@@ -1220,8 +1256,8 @@ msgstr ""
 #: includes/modules/DualButton/DualButton.php:852
 #: includes/modules/GradientHeading/GradientHeading.php:110
 #: includes/modules/IconListChild/IconListChild.php:130
-#: includes/modules/PriceList/PriceList.php:216
-#: includes/modules/PriceListChild/PriceListChild.php:240
+#: includes/modules/PriceList/PriceList.php:210
+#: includes/modules/PriceListChild/PriceListChild.php:233
 msgid "Right"
 msgstr ""
 
@@ -1229,8 +1265,8 @@ msgstr ""
 #: includes/modules/DualButton/DualButton.php:853
 #: includes/modules/GradientHeading/GradientHeading.php:114
 #: includes/modules/IconListChild/IconListChild.php:132
-#: includes/modules/PriceList/PriceList.php:214
-#: includes/modules/PriceListChild/PriceListChild.php:238
+#: includes/modules/PriceList/PriceList.php:208
+#: includes/modules/PriceListChild/PriceListChild.php:231
 msgid "Left"
 msgstr ""
 
@@ -1323,9 +1359,9 @@ msgstr ""
 #: includes/modules/IconBox/IconBox.php:353
 #: includes/modules/IconList/IconList.php:151
 #: includes/modules/LogoSlider/LogoSlider.php:333
-#: includes/modules/PriceList/PriceList.php:188
-#: includes/modules/PriceListChild/PriceListChild.php:214
-#: includes/modules/ProgressBar/ProgressBar.php:224
+#: includes/modules/PriceList/PriceList.php:182
+#: includes/modules/PriceListChild/PriceListChild.php:207
+#: includes/modules/ProgressBar/ProgressBar.php:236
 #: includes/modules/ProgressBarChild/ProgressBarChild.php:281
 #: includes/modules/ReviewSlider/ReviewSlider.php:394
 msgid "Icon Padding"
@@ -1335,7 +1371,7 @@ msgstr ""
 #: includes/modules/DualButton/DualButton.php:768
 #: includes/modules/IconBox/IconBox.php:354
 #: includes/modules/IconList/IconList.php:152
-#: includes/modules/ProgressBar/ProgressBar.php:225
+#: includes/modules/ProgressBar/ProgressBar.php:237
 #: includes/modules/ProgressBarChild/ProgressBarChild.php:282
 msgid "Define custom padding for icon"
 msgstr ""
@@ -1401,6 +1437,7 @@ msgid "Back Side"
 msgstr ""
 
 #: includes/modules/FlipCard/FlipCard.php:34
+#: includes/modules/MasonryGallery/MasonryGallery.php:23
 #: includes/modules/ProgressBarChild/ProgressBarChild.php:18
 msgid "Settings"
 msgstr ""
@@ -1430,7 +1467,8 @@ msgid "Image & Icon"
 msgstr ""
 
 #: includes/modules/FlipCard/FlipCard.php:69
-#: includes/modules/Person/Person.php:48 includes/modules/Review/Review.php:36
+#: includes/modules/Person/Person.php:48 includes/modules/Posts/Posts.php:70
+#: includes/modules/Review/Review.php:36
 #: includes/modules/ReviewSlider/ReviewSlider.php:71
 #: includes/modules/ReviewSliderChild/ReviewSliderChild.php:32
 msgid "Custom Spacing"
@@ -1458,12 +1496,14 @@ msgstr ""
 #: includes/modules/IconListChild/IconListChild.php:25
 #: includes/modules/IconListChild/IconListChild.php:83
 #: includes/modules/IconListChild/IconListChild.php:255
-#: includes/modules/Person/Person.php:38
-#: includes/modules/PriceList/PriceList.php:39
-#: includes/modules/PriceList/PriceList.php:479
+#: includes/modules/MasonryGallery/MasonryGallery.php:31
+#: includes/modules/Person/Person.php:38 includes/modules/Posts/Posts.php:35
+#: includes/modules/Posts/Posts.php:132 includes/modules/Posts/Posts.php:806
+#: includes/modules/PriceList/PriceList.php:35
+#: includes/modules/PriceList/PriceList.php:376
 #: includes/modules/PriceListChild/PriceListChild.php:30
 #: includes/modules/PriceListChild/PriceListChild.php:98
-#: includes/modules/PriceListChild/PriceListChild.php:452
+#: includes/modules/PriceListChild/PriceListChild.php:439
 msgid "Title"
 msgstr ""
 
@@ -1473,6 +1513,40 @@ msgstr ""
 #: includes/modules/FlipCard/FlipCard.php:1076
 #: includes/modules/IconBox/IconBox.php:38
 msgid "Subtitle"
+msgstr ""
+
+#: includes/modules/FlipCard/FlipCard.php:95
+#: includes/modules/FlipCard/FlipCard.php:111
+#: includes/modules/FlipCard/FlipCard.php:995
+#: includes/modules/FlipCard/FlipCard.php:1096
+#: includes/modules/IconBox/IconBox.php:41
+#: includes/modules/IconBox/IconBox.php:80
+#: includes/modules/IconBox/IconBox.php:84
+#: includes/modules/IconBox/IconBox.php:120
+#: includes/modules/IconBox/IconBox.php:500
+#: includes/modules/IconList/IconList.php:31
+#: includes/modules/IconList/IconList.php:353
+#: includes/modules/IconList/IconList.php:369
+#: includes/modules/IconListChild/IconListChild.php:26
+#: includes/modules/IconListChild/IconListChild.php:91
+#: includes/modules/IconListChild/IconListChild.php:277
+#: includes/modules/IconListChild/IconListChild.php:293
+#: includes/modules/Person/Person.php:44 includes/modules/Person/Person.php:90
+#: includes/modules/Person/Person.php:446 includes/modules/Posts/Posts.php:38
+#: includes/modules/Posts/Posts.php:832 includes/modules/Posts/Posts.php:849
+#: includes/modules/PriceList/PriceList.php:38
+#: includes/modules/PriceList/PriceList.php:84
+#: includes/modules/PriceList/PriceList.php:410
+#: includes/modules/PriceListChild/PriceListChild.php:33
+#: includes/modules/PriceListChild/PriceListChild.php:115
+#: includes/modules/PriceListChild/PriceListChild.php:482
+#: includes/modules/ProgressBarChild/ProgressBarChild.php:87
+#: includes/modules/Review/Review.php:136
+#: includes/modules/Review/Review.php:577
+#: includes/modules/ReviewSlider/ReviewSlider.php:771
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:132
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:516
+msgid "Description"
 msgstr ""
 
 #: includes/modules/FlipCard/FlipCard.php:101
@@ -1539,12 +1613,15 @@ msgstr ""
 #: includes/modules/FlipCard/FlipCard.php:182
 #: includes/modules/FlipCard/FlipCard.php:321
 #: includes/modules/LogoSliderChild/LogoSliderChild.php:30
+#: includes/modules/MasonryGallery/MasonryGallery.php:29
+#: includes/modules/MasonryGallery/MasonryGallery.php:196
+#: includes/modules/MasonryGallery/MasonryGallery.php:218
 #: includes/modules/Person/Person.php:24 includes/modules/Person/Person.php:32
-#: includes/modules/Person/Person.php:355
+#: includes/modules/Person/Person.php:382
 #: includes/modules/PriceList/PriceList.php:72
-#: includes/modules/PriceList/PriceList.php:455
+#: includes/modules/PriceList/PriceList.php:494
 #: includes/modules/PriceListChild/PriceListChild.php:58
-#: includes/modules/PriceListChild/PriceListChild.php:428
+#: includes/modules/PriceListChild/PriceListChild.php:415
 #: includes/modules/Review/Review.php:22 includes/modules/Review/Review.php:30
 #: includes/modules/Review/Review.php:48
 #: includes/modules/ReviewSlider/ReviewSlider.php:57
@@ -1693,8 +1770,11 @@ msgstr ""
 #: includes/modules/FlipCard/FlipCard.php:516
 #: includes/modules/FlipCard/FlipCard.php:543
 #: includes/modules/GradientHeading/GradientHeading.php:106
-#: includes/modules/PriceList/PriceList.php:215
-#: includes/modules/PriceListChild/PriceListChild.php:239
+#: includes/modules/Posts/Posts.php:443
+#: includes/modules/PriceList/PriceList.php:113
+#: includes/modules/PriceList/PriceList.php:209
+#: includes/modules/PriceListChild/PriceListChild.php:143
+#: includes/modules/PriceListChild/PriceListChild.php:232
 #: includes/modules/Review/Review.php:304
 #: includes/modules/ReviewSliderChild/ReviewSliderChild.php:246
 msgid "Center"
@@ -1703,7 +1783,7 @@ msgstr ""
 #: includes/modules/FlipCard/FlipCard.php:524
 #: includes/modules/FlipCard/FlipCard.php:551
 #: includes/modules/IconBox/IconBox.php:301
-#: includes/modules/Review/Review.php:285
+#: includes/modules/Posts/Posts.php:473 includes/modules/Review/Review.php:285
 #: includes/modules/ReviewSliderChild/ReviewSliderChild.php:227
 msgid "Content Alignment"
 msgstr ""
@@ -1717,9 +1797,9 @@ msgid "Define custom padding for flip card container"
 msgstr ""
 
 #: includes/modules/FlipCard/FlipCard.php:577
-#: includes/modules/Person/Person.php:272
+#: includes/modules/Person/Person.php:299 includes/modules/Posts/Posts.php:617
 #: includes/modules/Review/Review.php:454
-#: includes/modules/ReviewSlider/ReviewSlider.php:627
+#: includes/modules/ReviewSlider/ReviewSlider.php:625
 #: includes/modules/ReviewSliderChild/ReviewSliderChild.php:393
 msgid "Content Wrapper Padding"
 msgstr ""
@@ -1729,9 +1809,9 @@ msgid "Define custom padding for flip card content wrapper"
 msgstr ""
 
 #: includes/modules/FlipCard/FlipCard.php:588
-#: includes/modules/Person/Person.php:263
+#: includes/modules/Person/Person.php:290 includes/modules/Posts/Posts.php:607
 #: includes/modules/Review/Review.php:441
-#: includes/modules/ReviewSlider/ReviewSlider.php:614
+#: includes/modules/ReviewSlider/ReviewSlider.php:615
 #: includes/modules/ReviewSliderChild/ReviewSliderChild.php:380
 msgid "Content Wrapper Margin"
 msgstr ""
@@ -1750,9 +1830,9 @@ msgstr ""
 #: includes/modules/IconBox/IconBox.php:363
 #: includes/modules/IconList/IconList.php:161
 #: includes/modules/LogoSlider/LogoSlider.php:347
-#: includes/modules/PriceList/PriceList.php:198
-#: includes/modules/PriceListChild/PriceListChild.php:223
-#: includes/modules/ProgressBar/ProgressBar.php:234
+#: includes/modules/PriceList/PriceList.php:192
+#: includes/modules/PriceListChild/PriceListChild.php:216
+#: includes/modules/ProgressBar/ProgressBar.php:226
 #: includes/modules/ProgressBarChild/ProgressBarChild.php:291
 #: includes/modules/ReviewSlider/ReviewSlider.php:409
 msgid "Icon Margin"
@@ -1765,10 +1845,12 @@ msgstr ""
 
 #: includes/modules/FlipCard/FlipCard.php:628
 #: includes/modules/FlipCard/FlipCard.php:685
-#: includes/modules/PriceList/PriceList.php:254
-#: includes/modules/PriceListChild/PriceListChild.php:275
+#: includes/modules/MasonryGallery/MasonryGallery.php:101
+#: includes/modules/Person/Person.php:278
+#: includes/modules/PriceList/PriceList.php:248
+#: includes/modules/PriceListChild/PriceListChild.php:268
 #: includes/modules/Review/Review.php:411
-#: includes/modules/ReviewSlider/ReviewSlider.php:584
+#: includes/modules/ReviewSlider/ReviewSlider.php:585
 #: includes/modules/ReviewSliderChild/ReviewSliderChild.php:350
 msgid "Image Padding"
 msgstr ""
@@ -1780,10 +1862,11 @@ msgstr ""
 
 #: includes/modules/FlipCard/FlipCard.php:642
 #: includes/modules/FlipCard/FlipCard.php:698
-#: includes/modules/PriceList/PriceList.php:244
-#: includes/modules/PriceListChild/PriceListChild.php:266
+#: includes/modules/Person/Person.php:269
+#: includes/modules/PriceList/PriceList.php:238
+#: includes/modules/PriceListChild/PriceListChild.php:259
 #: includes/modules/Review/Review.php:401
-#: includes/modules/ReviewSlider/ReviewSlider.php:574
+#: includes/modules/ReviewSlider/ReviewSlider.php:575
 #: includes/modules/ReviewSliderChild/ReviewSliderChild.php:340
 msgid "Image Margin"
 msgstr ""
@@ -1898,7 +1981,7 @@ msgstr ""
 #: includes/modules/FlipCard/FlipCard.php:1013
 #: includes/modules/FlipCard/FlipCard.php:1034
 #: includes/modules/Review/Review.php:502
-#: includes/modules/ReviewSlider/ReviewSlider.php:698
+#: includes/modules/ReviewSlider/ReviewSlider.php:693
 #: includes/modules/ReviewSliderChild/ReviewSliderChild.php:441
 msgid "Image/Icon"
 msgstr ""
@@ -2005,6 +2088,7 @@ msgid "Adjust the position for the ending of the gradient color."
 msgstr ""
 
 #: includes/modules/GradientHeading/GradientHeading.php:161
+#: includes/modules/MasonryGallery/MasonryGallery.php:114
 msgid "Use Hover Effect"
 msgstr ""
 
@@ -2150,37 +2234,37 @@ msgstr ""
 
 #: includes/modules/IconBox/IconBox.php:313
 #: includes/modules/IconList/IconList.php:114
-#: includes/modules/Person/Person.php:206
-#: includes/modules/PriceList/PriceList.php:148
-#: includes/modules/PriceListChild/PriceListChild.php:177
-#: includes/modules/ProgressBar/ProgressBar.php:184
+#: includes/modules/Person/Person.php:188
+#: includes/modules/PriceList/PriceList.php:142
+#: includes/modules/PriceListChild/PriceListChild.php:170
+#: includes/modules/ProgressBar/ProgressBar.php:186
 #: includes/modules/ProgressBarChild/ProgressBarChild.php:242
 msgid "Here you can change icon background color."
 msgstr ""
 
 #: includes/modules/IconBox/IconBox.php:325
 #: includes/modules/IconList/IconList.php:125
-#: includes/modules/Person/Person.php:217
-#: includes/modules/PriceList/PriceList.php:160
-#: includes/modules/PriceListChild/PriceListChild.php:188
-#: includes/modules/ProgressBar/ProgressBar.php:196
+#: includes/modules/Person/Person.php:199
+#: includes/modules/PriceList/PriceList.php:154
+#: includes/modules/PriceListChild/PriceListChild.php:181
+#: includes/modules/ProgressBar/ProgressBar.php:198
 #: includes/modules/ProgressBarChild/ProgressBarChild.php:254
 msgid "Here you can change icon color."
 msgstr ""
 
 #: includes/modules/IconBox/IconBox.php:337
 #: includes/modules/IconList/IconList.php:136
-#: includes/modules/Person/Person.php:229
-#: includes/modules/PriceList/PriceList.php:172
-#: includes/modules/PriceListChild/PriceListChild.php:199
-#: includes/modules/ProgressBar/ProgressBar.php:208
+#: includes/modules/Person/Person.php:211
+#: includes/modules/PriceList/PriceList.php:166
+#: includes/modules/PriceListChild/PriceListChild.php:192
+#: includes/modules/ProgressBar/ProgressBar.php:210
 #: includes/modules/ProgressBarChild/ProgressBarChild.php:266
 msgid "Here you can change icon size."
 msgstr ""
 
 #: includes/modules/IconBox/IconBox.php:364
 #: includes/modules/IconList/IconList.php:162
-#: includes/modules/ProgressBar/ProgressBar.php:235
+#: includes/modules/ProgressBar/ProgressBar.php:227
 #: includes/modules/ProgressBarChild/ProgressBarChild.php:292
 msgid "Define custom margin for icon"
 msgstr ""
@@ -2195,7 +2279,7 @@ msgid "Icon List"
 msgstr ""
 
 #: includes/modules/IconList/IconList.php:28
-#: includes/modules/Person/Person.php:30
+#: includes/modules/Person/Person.php:30 includes/modules/Posts/Posts.php:28
 #: includes/modules/PriceList/PriceList.php:29
 #: includes/modules/PriceListChild/PriceListChild.php:21
 msgid "Layout"
@@ -2223,7 +2307,7 @@ msgstr ""
 
 #: includes/modules/IconList/IconList.php:81
 #: includes/modules/PriceList/PriceList.php:109
-#: includes/modules/PriceListChild/PriceListChild.php:140
+#: includes/modules/PriceListChild/PriceListChild.php:139
 msgid "Define the content vertical alignment"
 msgstr ""
 
@@ -2232,8 +2316,8 @@ msgid "Icon Gap"
 msgstr ""
 
 #: includes/modules/IconList/IconList.php:96
-#: includes/modules/PriceList/PriceList.php:127
-#: includes/modules/PriceListChild/PriceListChild.php:157
+#: includes/modules/PriceList/PriceList.php:124
+#: includes/modules/PriceListChild/PriceListChild.php:153
 msgid "Define space between media and content"
 msgstr ""
 
@@ -2278,16 +2362,16 @@ msgid "Define custom padding for flip card tooltip wrapper"
 msgstr ""
 
 #: includes/modules/IconList/IconList.php:226
-#: includes/modules/PriceList/PriceList.php:245
-#: includes/modules/PriceList/PriceList.php:350
-#: includes/modules/PriceListChild/PriceListChild.php:267
+#: includes/modules/PriceList/PriceList.php:239
+#: includes/modules/PriceList/PriceList.php:344
+#: includes/modules/PriceListChild/PriceListChild.php:260
 msgid "Define custom margin for price image"
 msgstr ""
 
 #: includes/modules/IconList/IconList.php:236
-#: includes/modules/PriceList/PriceList.php:255
-#: includes/modules/PriceList/PriceList.php:360
-#: includes/modules/PriceListChild/PriceListChild.php:276
+#: includes/modules/PriceList/PriceList.php:249
+#: includes/modules/PriceList/PriceList.php:354
+#: includes/modules/PriceListChild/PriceListChild.php:269
 msgid "Define custom padding for price image"
 msgstr ""
 
@@ -2386,7 +2470,7 @@ msgid "Active Dot"
 msgstr ""
 
 #: includes/modules/LogoSlider/LogoSlider.php:68
-#: includes/modules/ReviewSlider/ReviewSlider.php:107
+#: includes/modules/ReviewSlider/ReviewSlider.php:121
 msgid "Autoplay"
 msgstr ""
 
@@ -2394,115 +2478,115 @@ msgstr ""
 #: includes/modules/LogoSlider/LogoSlider.php:93
 #: includes/modules/LogoSlider/LogoSlider.php:104
 #: includes/modules/LogoSlider/LogoSlider.php:131
-#: includes/modules/ReviewSlider/ReviewSlider.php:109
-#: includes/modules/ReviewSlider/ReviewSlider.php:132
-#: includes/modules/ReviewSlider/ReviewSlider.php:143
-#: includes/modules/ReviewSlider/ReviewSlider.php:170
+#: includes/modules/ReviewSlider/ReviewSlider.php:123
+#: includes/modules/ReviewSlider/ReviewSlider.php:146
+#: includes/modules/ReviewSlider/ReviewSlider.php:157
+#: includes/modules/ReviewSlider/ReviewSlider.php:184
 msgid "Content entered here will appear inside the module."
 msgstr ""
 
 #: includes/modules/LogoSlider/LogoSlider.php:80
-#: includes/modules/ReviewSlider/ReviewSlider.php:119
+#: includes/modules/ReviewSlider/ReviewSlider.php:133
 msgid "Autoplay Delay"
 msgstr ""
 
 #: includes/modules/LogoSlider/LogoSlider.php:83
-#: includes/modules/ReviewSlider/ReviewSlider.php:122
+#: includes/modules/ReviewSlider/ReviewSlider.php:136
 msgid "Adjust the autoplay delay in milliseconds (ms)"
 msgstr ""
 
 #: includes/modules/LogoSlider/LogoSlider.php:91
-#: includes/modules/ReviewSlider/ReviewSlider.php:130
+#: includes/modules/ReviewSlider/ReviewSlider.php:144
 msgid "Loop"
 msgstr ""
 
 #: includes/modules/LogoSlider/LogoSlider.php:102
-#: includes/modules/ReviewSlider/ReviewSlider.php:141
+#: includes/modules/ReviewSlider/ReviewSlider.php:155
 msgid "Center Slide"
 msgstr ""
 
 #: includes/modules/LogoSlider/LogoSlider.php:114
-#: includes/modules/ReviewSlider/ReviewSlider.php:153
+#: includes/modules/ReviewSlider/ReviewSlider.php:167
 msgid "Pause On Hover"
 msgstr ""
 
 #: includes/modules/LogoSlider/LogoSlider.php:116
-#: includes/modules/ReviewSlider/ReviewSlider.php:155
+#: includes/modules/ReviewSlider/ReviewSlider.php:169
 msgid "Enable this option if you want to pause the slider on mouse hover"
 msgstr ""
 
 #: includes/modules/LogoSlider/LogoSlider.php:129
-#: includes/modules/ReviewSlider/ReviewSlider.php:168
+#: includes/modules/ReviewSlider/ReviewSlider.php:182
 msgid "Use Grab Cursor"
 msgstr ""
 
 #: includes/modules/LogoSlider/LogoSlider.php:140
-#: includes/modules/ReviewSlider/ReviewSlider.php:179
+#: includes/modules/ReviewSlider/ReviewSlider.php:193
 msgid "Speed"
 msgstr ""
 
 #: includes/modules/LogoSlider/LogoSlider.php:155
-#: includes/modules/ReviewSlider/ReviewSlider.php:194
+#: includes/modules/ReviewSlider/ReviewSlider.php:208
 msgid "RTL (Slide Right to Left)"
 msgstr ""
 
 #: includes/modules/LogoSlider/LogoSlider.php:157
-#: includes/modules/ReviewSlider/ReviewSlider.php:196
+#: includes/modules/ReviewSlider/ReviewSlider.php:210
 msgid "Turn on if you want to Slide Right to Left"
 msgstr ""
 
 #: includes/modules/LogoSlider/LogoSlider.php:167
-#: includes/modules/ReviewSlider/ReviewSlider.php:206
+#: includes/modules/ReviewSlider/ReviewSlider.php:220
 msgid "Slide to Show"
 msgstr ""
 
 #: includes/modules/LogoSlider/LogoSlider.php:168
-#: includes/modules/ReviewSlider/ReviewSlider.php:207
+#: includes/modules/ReviewSlider/ReviewSlider.php:221
 msgid "Define how many slide you want to show at a time"
 msgstr ""
 
 #: includes/modules/LogoSlider/LogoSlider.php:184
-#: includes/modules/ReviewSlider/ReviewSlider.php:223
+#: includes/modules/ReviewSlider/ReviewSlider.php:237
 msgid "Slide to Scroll"
 msgstr ""
 
 #: includes/modules/LogoSlider/LogoSlider.php:185
-#: includes/modules/ReviewSlider/ReviewSlider.php:224
+#: includes/modules/ReviewSlider/ReviewSlider.php:238
 msgid "Define how many slide you want to scroll at a time"
 msgstr ""
 
 #: includes/modules/LogoSlider/LogoSlider.php:204
-#: includes/modules/ReviewSlider/ReviewSlider.php:243
+#: includes/modules/ReviewSlider/ReviewSlider.php:257
 msgid "Show Navigation"
 msgstr ""
 
 #: includes/modules/LogoSlider/LogoSlider.php:206
-#: includes/modules/ReviewSlider/ReviewSlider.php:245
+#: includes/modules/ReviewSlider/ReviewSlider.php:259
 msgid "Turn on if you want to display slider navigation dots"
 msgstr ""
 
 #: includes/modules/LogoSlider/LogoSlider.php:217
-#: includes/modules/ReviewSlider/ReviewSlider.php:256
+#: includes/modules/ReviewSlider/ReviewSlider.php:270
 msgid "Show Arrows"
 msgstr ""
 
 #: includes/modules/LogoSlider/LogoSlider.php:219
-#: includes/modules/ReviewSlider/ReviewSlider.php:258
+#: includes/modules/ReviewSlider/ReviewSlider.php:272
 msgid "Turn on if you want to display slider arrows"
 msgstr ""
 
 #: includes/modules/LogoSlider/LogoSlider.php:230
-#: includes/modules/ReviewSlider/ReviewSlider.php:269
+#: includes/modules/ReviewSlider/ReviewSlider.php:283
 msgid "Show Arrows on Hover"
 msgstr ""
 
 #: includes/modules/LogoSlider/LogoSlider.php:232
-#: includes/modules/ReviewSlider/ReviewSlider.php:271
+#: includes/modules/ReviewSlider/ReviewSlider.php:285
 msgid "Turn on if you want to show arrows on hover the slider"
 msgstr ""
 
 #: includes/modules/LogoSlider/LogoSlider.php:248
-#: includes/modules/ReviewSlider/ReviewSlider.php:287
+#: includes/modules/ReviewSlider/ReviewSlider.php:107
 msgid "Space Between Sliders"
 msgstr ""
 
@@ -2583,8 +2667,8 @@ msgstr ""
 
 #: includes/modules/LogoSlider/LogoSlider.php:425
 #: includes/modules/LogoSlider/LogoSlider.php:446
-#: includes/modules/ReviewSlider/ReviewSlider.php:655
-#: includes/modules/ReviewSlider/ReviewSlider.php:677
+#: includes/modules/ReviewSlider/ReviewSlider.php:650
+#: includes/modules/ReviewSlider/ReviewSlider.php:672
 msgid "Arrow Icon"
 msgstr ""
 
@@ -2612,6 +2696,84 @@ msgstr ""
 
 #: includes/modules/LogoSliderChild/LogoSliderChild.php:52
 msgid "Adjust the width of the image."
+msgstr ""
+
+#: includes/modules/MasonryGallery/MasonryGallery.php:13
+msgid "Masonry Gallery"
+msgstr ""
+
+#: includes/modules/MasonryGallery/MasonryGallery.php:22
+#: includes/modules/MasonryGallery/MasonryGallery.php:42
+msgid "Images"
+msgstr ""
+
+#: includes/modules/MasonryGallery/MasonryGallery.php:43
+msgid "Choose the images that you would like to appear in the image gallery."
+msgstr ""
+
+#: includes/modules/MasonryGallery/MasonryGallery.php:52
+msgid "Image Order"
+msgstr ""
+
+#: includes/modules/MasonryGallery/MasonryGallery.php:53
+msgid ""
+"Select an ordering method for the gallery. This controls which gallery "
+"items appear first in the list."
+msgstr ""
+
+#: includes/modules/MasonryGallery/MasonryGallery.php:56
+msgid "Default"
+msgstr ""
+
+#: includes/modules/MasonryGallery/MasonryGallery.php:57
+msgid "Random"
+msgstr ""
+
+#: includes/modules/MasonryGallery/MasonryGallery.php:66
+msgid "Column Count"
+msgstr ""
+
+#: includes/modules/MasonryGallery/MasonryGallery.php:67
+msgid "Define how many column you want to display"
+msgstr ""
+
+#: includes/modules/MasonryGallery/MasonryGallery.php:75
+#: includes/modules/Posts/Posts.php:487 includes/modules/Posts/Posts.php:504
+#: includes/modules/Posts/Posts.php:678
+msgid "Space Between Item"
+msgstr ""
+
+#: includes/modules/MasonryGallery/MasonryGallery.php:102
+#: includes/modules/Review/Review.php:412
+#: includes/modules/ReviewSlider/ReviewSlider.php:586
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:351
+msgid "Define custom padding for image"
+msgstr ""
+
+#: includes/modules/MasonryGallery/MasonryGallery.php:115
+msgid "Turn on and off to use image hover effect."
+msgstr ""
+
+#: includes/modules/MasonryGallery/MasonryGallery.php:171
+msgid "Listbox/Link"
+msgstr ""
+
+#: includes/modules/MasonryGallery/MasonryGallery.php:172
+msgid ""
+"Choose action option where if you choose lightbox the image will popup on "
+"click, and for link it will navigate to the destination page"
+msgstr ""
+
+#: includes/modules/MasonryGallery/MasonryGallery.php:172
+msgid "Learn More"
+msgstr ""
+
+#: includes/modules/MasonryGallery/MasonryGallery.php:176
+msgid "Use Lightbox"
+msgstr ""
+
+#: includes/modules/MasonryGallery/MasonryGallery.php:177
+msgid "Use Link"
 msgstr ""
 
 #: includes/modules/Person/Person.php:13
@@ -2646,14 +2808,14 @@ msgstr ""
 msgid "Define the image alternative text"
 msgstr ""
 
-#: includes/modules/Person/Person.php:76 includes/modules/Person/Person.php:376
-#: includes/modules/ProgressBar/ProgressBar.php:256
+#: includes/modules/Person/Person.php:76 includes/modules/Person/Person.php:403
+#: includes/modules/ProgressBar/ProgressBar.php:281
 #: includes/modules/ProgressBarChild/ProgressBarChild.php:82
 #: includes/modules/ProgressBarChild/ProgressBarChild.php:328
 #: includes/modules/Review/Review.php:52 includes/modules/Review/Review.php:122
 #: includes/modules/Review/Review.php:539
 #: includes/modules/ReviewSlider/ReviewSlider.php:47
-#: includes/modules/ReviewSlider/ReviewSlider.php:736
+#: includes/modules/ReviewSlider/ReviewSlider.php:731
 #: includes/modules/ReviewSliderChild/ReviewSliderChild.php:48
 #: includes/modules/ReviewSliderChild/ReviewSliderChild.php:118
 #: includes/modules/ReviewSliderChild/ReviewSliderChild.php:478
@@ -2721,58 +2883,72 @@ msgstr ""
 msgid "Define social links vertical position"
 msgstr ""
 
-#: includes/modules/Person/Person.php:166
-#: includes/modules/PriceList/PriceList.php:228
-#: includes/modules/PriceListChild/PriceListChild.php:251
+#: includes/modules/Person/Person.php:177
+msgid "Icon Alignment"
+msgstr ""
+
+#: includes/modules/Person/Person.php:227
+msgid "Space Between Icons"
+msgstr ""
+
+#: includes/modules/Person/Person.php:228
+msgid "Define space between icons"
+msgstr ""
+
+#: includes/modules/Person/Person.php:243
+#: includes/modules/PriceList/PriceList.php:204
+#: includes/modules/PriceListChild/PriceListChild.php:227
+msgid "Image Alignment"
+msgstr ""
+
+#: includes/modules/Person/Person.php:254
+#: includes/modules/PriceList/PriceList.php:222
+#: includes/modules/PriceListChild/PriceListChild.php:244
 #: includes/modules/Review/Review.php:332
 #: includes/modules/ReviewSlider/ReviewSlider.php:502
 #: includes/modules/ReviewSliderChild/ReviewSliderChild.php:274
 msgid "Image Width"
 msgstr ""
 
-#: includes/modules/Person/Person.php:167
+#: includes/modules/Person/Person.php:255
 msgid "Define person image width"
 msgstr ""
 
-#: includes/modules/Person/Person.php:195
-msgid "Icon Alignment"
+#: includes/modules/Person/Person.php:270
+msgid "Define custom margin for image wrapper"
 msgstr ""
 
-#: includes/modules/Person/Person.php:245
-msgid "Space Between Icons"
-msgstr ""
-
-#: includes/modules/Person/Person.php:246
-msgid "Define space between icons"
-msgstr ""
-
-#: includes/modules/Person/Person.php:264
-msgid "Define custom margin content wrapper"
-msgstr ""
-
-#: includes/modules/Person/Person.php:273
-msgid "Define custom padding content wrapper"
-msgstr ""
-
-#: includes/modules/Person/Person.php:282
-msgid "Social Link Wrapper Margin"
-msgstr ""
-
-#: includes/modules/Person/Person.php:283
-msgid "Define custom margin social link wrapper"
+#: includes/modules/Person/Person.php:279
+msgid "Define custom padding for image wrapper"
 msgstr ""
 
 #: includes/modules/Person/Person.php:291
+msgid "Define custom margin content wrapper"
+msgstr ""
+
+#: includes/modules/Person/Person.php:300
+msgid "Define custom padding content wrapper"
+msgstr ""
+
+#: includes/modules/Person/Person.php:309
+msgid "Social Link Wrapper Margin"
+msgstr ""
+
+#: includes/modules/Person/Person.php:310
+msgid "Define custom margin social link wrapper"
+msgstr ""
+
+#: includes/modules/Person/Person.php:318
 msgid "Social Link Wrapper Padding"
 msgstr ""
 
-#: includes/modules/Person/Person.php:292
+#: includes/modules/Person/Person.php:319
 msgid "Define custom padding social link wrapper"
 msgstr ""
 
-#: includes/modules/Person/Person.php:399
+#: includes/modules/Person/Person.php:426
 #: includes/modules/Review/Review.php:558
-#: includes/modules/ReviewSlider/ReviewSlider.php:756
+#: includes/modules/ReviewSlider/ReviewSlider.php:751
 #: includes/modules/ReviewSliderChild/ReviewSliderChild.php:497
 msgid "position"
 msgstr ""
@@ -2877,10 +3053,6 @@ msgstr ""
 msgid "The URL for this social network link"
 msgstr ""
 
-#: includes/modules/PersonChild/PersonChild.php:78
-msgid "Link Target"
-msgstr ""
-
 #: includes/modules/PersonChild/PersonChild.php:79
 msgid "Here you can choose whether or not your links opens in a new window"
 msgstr ""
@@ -2901,31 +3073,453 @@ msgstr ""
 msgid "Chat"
 msgstr ""
 
+#: includes/modules/Posts/Posts.php:13
+msgid "Blog Posts"
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:23
+msgid "Elements"
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:29
+msgid "Post Image"
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:31
+msgid "Post Texts"
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:41
+msgid "Meta"
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:46 includes/modules/Posts/Posts.php:786
+msgid "Category"
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:53 includes/modules/Posts/Posts.php:65
+#: includes/modules/ProgressBar/ProgressBar.php:31
+#: includes/modules/ProgressBarChild/ProgressBarChild.php:31
+#: includes/modules/ReviewSlider/ReviewSlider.php:63
+msgid "Design"
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:58
+msgid "Read More Text"
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:69
+msgid "Pagination"
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:81
+msgid "Post Type"
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:85
+msgid "Choose posts of which post type you would like to display."
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:93
+msgid "Post Count"
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:96
+msgid "Choose how much posts you would like to display per page."
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:104
+msgid "Included Categories"
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:107
+msgid "All Categories"
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:108
+msgid "Current Category"
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:114
+msgid "Choose which categories you would like to include in the feed."
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:124
+msgid "Order By"
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:125
+msgid "Choose how your posts should be ordered."
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:131
+msgid "Date"
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:140
+msgid "Sorted By"
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:141
+msgid "Choose how your posts should be sorted."
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:147
+msgid "Ascending"
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:148
+msgid "Descending"
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:155
+msgid "Date Format"
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:158
+msgid ""
+"If you would like to adjust the date format, input the appropriate PHP date "
+"format here."
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:167
+msgid "Content Length"
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:171 includes/modules/Posts/Posts.php:191
+msgid "Show Excerpt"
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:172
+msgid "Show Content"
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:180
+msgid ""
+"Showing the full content will not truncate your posts on the index page. "
+"Showing the excerpt will only display your excerpt text."
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:192
+msgid "Turn excerpt on and off."
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:210
+msgid "Excerpt Length"
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:211
+msgid ""
+"Define the length of automatically generated excerpts. Leave blank for "
+"default ( 270 ) "
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:226
+msgid "Show Read More Button"
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:234
+msgid ""
+"Here you can define whether to show \"read more\" link after the excerpts "
+"or not."
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:244
+msgid "Show Featured Image"
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:251
+msgid "This will turn thumbnails on and off."
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:261
+msgid "Show Author"
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:268
+msgid "Turn on or off the author link."
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:278
+msgid "Show Date"
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:285
+msgid "Turn the date on or off."
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:295
+msgid "Show Categories"
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:302
+msgid "Turn the category links on or off."
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:312
+msgid "Show Comment Count"
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:319
+msgid "Turn comment count on and off."
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:330
+msgid "Show Meta Separator"
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:337
+msgid "Turn meta separator on and off."
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:348
+msgid "Show Pagination"
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:355
+msgid "Turn pagination on and off."
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:365
+msgid "Post Offset Number"
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:368
+msgid ""
+"Choose how many posts you would like to skip. These posts will not be shown "
+"in the feed."
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:408
+msgid "Post Layout"
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:411
+msgid "Grid"
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:412
+msgid "List"
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:420
+msgid "Category Placement"
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:421
+msgid "Choose category placement, where you can place category in different place"
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:425 includes/modules/Rating/Rating.php:110
+msgid "Before Title"
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:426
+msgid "With Meta"
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:427
+msgid "On Thumbnail"
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:438
+msgid "Vertical Position"
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:439
+msgid "Define vertical position where you can choose (top/center/bottom)"
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:456
+msgid "Column Number"
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:525
+msgid "Thumbnail Width"
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:541
+msgid "Category Background"
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:542
+msgid "Define category background color"
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:552
+msgid "Category Padding"
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:553
+msgid "Define custom padding for category"
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:565
+msgid "Post Item Margin"
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:566
+msgid "Define custom margin for blog post item"
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:575
+msgid "Post Item Padding"
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:576
+msgid "Define custom padding for blog post item"
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:586
+msgid "Thumbnail Margin"
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:587
+msgid "Define custom margin for thumbnail"
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:596
+msgid "Thumbnail Padding"
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:597
+msgid "Define custom padding for thumbnail"
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:608 includes/modules/Review/Review.php:442
+#: includes/modules/ReviewSlider/ReviewSlider.php:616
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:381
+msgid "Define custom margin for content wrapper"
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:618 includes/modules/Review/Review.php:455
+#: includes/modules/ReviewSlider/ReviewSlider.php:626
+#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:394
+msgid "Define custom padding for content wrapper"
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:628
+msgid "Read More Background"
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:629
+msgid "Define read more background color"
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:640
+msgid "Read More Margin"
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:641
+msgid "Define custom margin for read more button"
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:651
+msgid "Read More Padding"
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:652
+msgid "Define custom padding for read more button"
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:665
+msgid "pagination Alignment"
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:695
+msgid "Page Color"
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:696 includes/modules/Posts/Posts.php:709
+msgid "Define page number color"
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:708
+msgid "Active Page Color"
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:721
+msgid "Page Background"
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:722 includes/modules/Posts/Posts.php:735
+msgid "Define page number background color"
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:734
+msgid "Active Page Background"
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:747
+msgid "Pagination Margin"
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:748
+msgid "Define custom margin for Pagination area"
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:760
+msgid "Page Number Padding"
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:761
+msgid "Define custom padding for page number"
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:866 includes/modules/Posts/Posts.php:947
+#: includes/modules/Posts/templates/dina-post.php:164
+msgid "Read More"
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:886
+msgid "Post Item"
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:906
+msgid "Thumbnail"
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:926
+msgid "Category Text"
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:968
+msgid "Page Number"
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:1155
+msgid "Prev"
+msgstr ""
+
+#: includes/modules/Posts/Posts.php:1156
+msgid "Next"
+msgstr ""
+
 #: includes/modules/PriceList/PriceList.php:13
 msgid "Price List"
 msgstr ""
 
-#: includes/modules/PriceList/PriceList.php:30
-#: includes/modules/PriceListChild/PriceListChild.php:22
-msgid "Price Icon"
-msgstr ""
-
 #: includes/modules/PriceList/PriceList.php:31
-#: includes/modules/PriceListChild/PriceListChild.php:23
-msgid "Price Image"
-msgstr ""
-
-#: includes/modules/PriceList/PriceList.php:35
 #: includes/modules/PriceListChild/PriceListChild.php:26
 msgid "Price List Texts"
 msgstr ""
 
-#: includes/modules/PriceList/PriceList.php:45
+#: includes/modules/PriceList/PriceList.php:41
 #: includes/modules/PriceList/PriceList.php:80
-#: includes/modules/PriceList/PriceList.php:496
+#: includes/modules/PriceList/PriceList.php:393
 #: includes/modules/PriceListChild/PriceListChild.php:36
-#: includes/modules/PriceListChild/PriceListChild.php:475
+#: includes/modules/PriceListChild/PriceListChild.php:462
 msgid "Price"
+msgstr ""
+
+#: includes/modules/PriceList/PriceList.php:45
+#: includes/modules/PriceListChild/PriceListChild.php:22
+msgid "Price Icon"
+msgstr ""
+
+#: includes/modules/PriceList/PriceList.php:46
+#: includes/modules/PriceListChild/PriceListChild.php:23
+msgid "Price Image"
 msgstr ""
 
 #: includes/modules/PriceList/PriceList.php:68
@@ -2957,36 +3551,41 @@ msgid "Media position top"
 msgstr ""
 
 #: includes/modules/PriceList/PriceList.php:108
-#: includes/modules/PriceListChild/PriceListChild.php:139
+#: includes/modules/PriceListChild/PriceListChild.php:138
 msgid "Content alignment"
 msgstr ""
 
-#: includes/modules/PriceList/PriceList.php:126
-#: includes/modules/PriceListChild/PriceListChild.php:156
+#: includes/modules/PriceList/PriceList.php:112
+#: includes/modules/PriceListChild/PriceListChild.php:142
+msgid "Start"
+msgstr ""
+
+#: includes/modules/PriceList/PriceList.php:114
+#: includes/modules/PriceListChild/PriceListChild.php:144
+msgid "End"
+msgstr ""
+
+#: includes/modules/PriceList/PriceList.php:123
+#: includes/modules/PriceListChild/PriceListChild.php:152
 msgid "Content space"
 msgstr ""
 
-#: includes/modules/PriceList/PriceList.php:199
-#: includes/modules/PriceListChild/PriceListChild.php:224
+#: includes/modules/PriceList/PriceList.php:193
+#: includes/modules/PriceListChild/PriceListChild.php:217
 msgid "Define custom margin for divider icon"
 msgstr ""
 
-#: includes/modules/PriceList/PriceList.php:210
-#: includes/modules/PriceListChild/PriceListChild.php:234
-msgid "Image Alignment"
-msgstr ""
-
-#: includes/modules/PriceList/PriceList.php:229
-#: includes/modules/PriceListChild/PriceListChild.php:252
+#: includes/modules/PriceList/PriceList.php:223
+#: includes/modules/PriceListChild/PriceListChild.php:245
 msgid "Here you can change image width."
 msgstr ""
 
-#: includes/modules/PriceList/PriceList.php:300
-#: includes/modules/PriceListChild/PriceListChild.php:320
+#: includes/modules/PriceList/PriceList.php:294
+#: includes/modules/PriceListChild/PriceListChild.php:312
 msgid "Divider Vertical Align"
 msgstr ""
 
-#: includes/modules/PriceList/PriceList.php:408
+#: includes/modules/PriceList/PriceList.php:449
 msgid "Price item"
 msgstr ""
 
@@ -3016,8 +3615,8 @@ msgid "Progress Bar"
 msgstr ""
 
 #: includes/modules/ProgressBar/ProgressBar.php:27
-#: includes/modules/ProgressBar/ProgressBar.php:273
-#: includes/modules/ProgressBar/ProgressBar.php:290
+#: includes/modules/ProgressBar/ProgressBar.php:298
+#: includes/modules/ProgressBar/ProgressBar.php:315
 #: includes/modules/ProgressBarChild/ProgressBarChild.php:27
 #: includes/modules/ProgressBarChild/ProgressBarChild.php:94
 #: includes/modules/ProgressBarChild/ProgressBarChild.php:345
@@ -3025,14 +3624,8 @@ msgstr ""
 msgid "Level"
 msgstr ""
 
-#: includes/modules/ProgressBar/ProgressBar.php:31
-#: includes/modules/ProgressBarChild/ProgressBarChild.php:31
-#: includes/modules/ReviewSlider/ReviewSlider.php:63
-msgid "Design"
-msgstr ""
-
 #: includes/modules/ProgressBar/ProgressBar.php:34
-#: includes/modules/ProgressBar/ProgressBar.php:61
+#: includes/modules/ProgressBar/ProgressBar.php:63
 #: includes/modules/ProgressBarChild/ProgressBarChild.php:34
 msgid "Level Text"
 msgstr ""
@@ -3044,7 +3637,7 @@ msgid "Texts"
 msgstr ""
 
 #: includes/modules/ProgressBar/ProgressBar.php:44
-#: includes/modules/ProgressBar/ProgressBar.php:57
+#: includes/modules/ProgressBar/ProgressBar.php:59
 #: includes/modules/ProgressBarChild/ProgressBarChild.php:44
 #: includes/modules/Review/Review.php:33
 #: includes/modules/ReviewSliderChild/ReviewSliderChild.php:29
@@ -3056,69 +3649,89 @@ msgstr ""
 msgid "Description Text"
 msgstr ""
 
-#: includes/modules/ProgressBar/ProgressBar.php:65
+#: includes/modules/ProgressBar/ProgressBar.php:51
+msgid "Progress Item"
+msgstr ""
+
+#: includes/modules/ProgressBar/ProgressBar.php:67
 #: includes/modules/ProgressBarChild/ProgressBarChild.php:6
 msgid "Progress Bar Item"
 msgstr ""
 
-#: includes/modules/ProgressBar/ProgressBar.php:94
+#: includes/modules/ProgressBar/ProgressBar.php:96
 #: includes/modules/ProgressBarChild/ProgressBarChild.php:158
 msgid "Height"
 msgstr ""
 
-#: includes/modules/ProgressBar/ProgressBar.php:95
+#: includes/modules/ProgressBar/ProgressBar.php:97
 #: includes/modules/ProgressBarChild/ProgressBarChild.php:159
 msgid "Define the progress bar height"
 msgstr ""
 
-#: includes/modules/ProgressBar/ProgressBar.php:110
+#: includes/modules/ProgressBar/ProgressBar.php:112
 #: includes/modules/ProgressBarChild/ProgressBarChild.php:173
 msgid "Corner Round"
 msgstr ""
 
-#: includes/modules/ProgressBar/ProgressBar.php:111
+#: includes/modules/ProgressBar/ProgressBar.php:113
 #: includes/modules/ProgressBarChild/ProgressBarChild.php:174
 msgid "Define the progress bar corner border radius"
 msgstr ""
 
-#: includes/modules/ProgressBar/ProgressBar.php:126
+#: includes/modules/ProgressBar/ProgressBar.php:128
 #: includes/modules/ProgressBarChild/ProgressBarChild.php:188
 msgid "Level Tooltip Background"
 msgstr ""
 
-#: includes/modules/ProgressBar/ProgressBar.php:127
+#: includes/modules/ProgressBar/ProgressBar.php:129
 #: includes/modules/ProgressBarChild/ProgressBarChild.php:189
 msgid "Define level tooltip background color"
 msgstr ""
 
-#: includes/modules/ProgressBar/ProgressBar.php:140
+#: includes/modules/ProgressBar/ProgressBar.php:142
 #: includes/modules/ProgressBarChild/ProgressBarChild.php:201
 msgid "Tooltip Padding"
 msgstr ""
 
-#: includes/modules/ProgressBar/ProgressBar.php:141
+#: includes/modules/ProgressBar/ProgressBar.php:143
 #: includes/modules/ProgressBarChild/ProgressBarChild.php:202
 msgid "Define custom padding for level tooltip"
 msgstr ""
 
-#: includes/modules/ProgressBar/ProgressBar.php:151
+#: includes/modules/ProgressBar/ProgressBar.php:153
 #: includes/modules/ProgressBarChild/ProgressBarChild.php:211
 msgid "Tooltip Round"
 msgstr ""
 
-#: includes/modules/ProgressBar/ProgressBar.php:152
+#: includes/modules/ProgressBar/ProgressBar.php:154
 #: includes/modules/ProgressBarChild/ProgressBarChild.php:212
 msgid "Define the progress bar level tooltip border radius"
 msgstr ""
 
-#: includes/modules/ProgressBar/ProgressBar.php:168
+#: includes/modules/ProgressBar/ProgressBar.php:170
 #: includes/modules/ProgressBarChild/ProgressBarChild.php:227
 msgid "Tooltip Vertical Offset"
 msgstr ""
 
-#: includes/modules/ProgressBar/ProgressBar.php:169
+#: includes/modules/ProgressBar/ProgressBar.php:171
 #: includes/modules/ProgressBarChild/ProgressBarChild.php:228
 msgid "Define the progress bar level tooltip vertical position"
+msgstr ""
+
+#: includes/modules/ProgressBar/ProgressBar.php:248
+msgid "Progress Item Margin"
+msgstr ""
+
+#: includes/modules/ProgressBar/ProgressBar.php:249
+msgid "Define custom margin for item"
+msgstr ""
+
+#: includes/modules/ProgressBar/ProgressBar.php:258
+msgid "Progress Item Padding"
+msgstr ""
+
+#: includes/modules/ProgressBar/ProgressBar.php:259
+msgid "Define custom padding for item"
 msgstr ""
 
 #: includes/modules/ProgressBarChild/ProgressBarChild.php:61
@@ -3146,12 +3759,12 @@ msgid "Turn on if you want to hide all the level text"
 msgstr ""
 
 #: includes/modules/ProgressBarChild/ProgressBarChild.php:304
-msgid "Name Placement"
+msgid "Text Placement"
 msgstr ""
 
 #: includes/modules/ProgressBarChild/ProgressBarChild.php:305
 msgid ""
-"Define the position of progress bar Name position (outside or inside) "
+"Define the position of progress bar text position (outside or inside) of "
 "progress bar"
 msgstr ""
 
@@ -3163,7 +3776,7 @@ msgstr ""
 msgid "Inside"
 msgstr ""
 
-#: includes/modules/Rating/Rating.php:13 includes/modules/Rating/Rating.php:67
+#: includes/modules/Rating/Rating.php:13 includes/modules/Rating/Rating.php:68
 #: includes/modules/Review/Review.php:31 includes/modules/Review/Review.php:231
 #: includes/modules/ReviewSlider/ReviewSlider.php:59
 #: includes/modules/ReviewSliderChild/ReviewSliderChild.php:27
@@ -3171,103 +3784,119 @@ msgstr ""
 msgid "Rating"
 msgstr ""
 
-#: includes/modules/Rating/Rating.php:27
+#: includes/modules/Rating/Rating.php:28
 msgid "Stars"
 msgstr ""
 
-#: includes/modules/Rating/Rating.php:28 includes/modules/Rating/Rating.php:156
+#: includes/modules/Rating/Rating.php:29 includes/modules/Rating/Rating.php:183
 #: includes/modules/Review/Review.php:32 includes/modules/Review/Review.php:523
-#: includes/modules/ReviewSlider/ReviewSlider.php:719
+#: includes/modules/ReviewSlider/ReviewSlider.php:714
 #: includes/modules/ReviewSliderChild/ReviewSliderChild.php:28
 #: includes/modules/ReviewSliderChild/ReviewSliderChild.php:462
 msgid "Rating Number"
 msgstr ""
 
-#: includes/modules/Rating/Rating.php:29 includes/modules/Rating/Rating.php:95
-#: includes/modules/Rating/Rating.php:172
+#: includes/modules/Rating/Rating.php:30 includes/modules/Rating/Rating.php:96
+#: includes/modules/Rating/Rating.php:199
 msgid "Rating Title"
 msgstr ""
 
-#: includes/modules/Rating/Rating.php:39 includes/modules/Review/Review.php:199
+#: includes/modules/Rating/Rating.php:40 includes/modules/Review/Review.php:199
 #: includes/modules/ReviewSliderChild/ReviewSliderChild.php:142
 msgid "Choose Rating Style"
 msgstr ""
 
-#: includes/modules/Rating/Rating.php:40 includes/modules/Review/Review.php:200
+#: includes/modules/Rating/Rating.php:41 includes/modules/Review/Review.php:200
 #: includes/modules/ReviewSliderChild/ReviewSliderChild.php:143
 msgid "Here you can choose different kind of styles"
 msgstr ""
 
-#: includes/modules/Rating/Rating.php:43 includes/modules/Review/Review.php:204
+#: includes/modules/Rating/Rating.php:44 includes/modules/Review/Review.php:204
 #: includes/modules/ReviewSliderChild/ReviewSliderChild.php:147
 msgid "Only Stars"
 msgstr ""
 
-#: includes/modules/Rating/Rating.php:44 includes/modules/Review/Review.php:205
+#: includes/modules/Rating/Rating.php:45 includes/modules/Review/Review.php:205
 #: includes/modules/ReviewSliderChild/ReviewSliderChild.php:148
 msgid "Only Number"
 msgstr ""
 
-#: includes/modules/Rating/Rating.php:45 includes/modules/Review/Review.php:206
+#: includes/modules/Rating/Rating.php:46 includes/modules/Review/Review.php:206
 #: includes/modules/ReviewSliderChild/ReviewSliderChild.php:149
 msgid "Both Start and Number"
 msgstr ""
 
-#: includes/modules/Rating/Rating.php:52 includes/modules/Review/Review.php:213
+#: includes/modules/Rating/Rating.php:53 includes/modules/Review/Review.php:213
 #: includes/modules/ReviewSliderChild/ReviewSliderChild.php:156
 msgid "Rating Scale"
 msgstr ""
 
-#: includes/modules/Rating/Rating.php:82
+#: includes/modules/Rating/Rating.php:83
 msgid "Use Title"
 msgstr ""
 
-#: includes/modules/Rating/Rating.php:83
+#: includes/modules/Rating/Rating.php:84
 msgid "Here you can choose whether rating title will be display or not"
 msgstr ""
 
-#: includes/modules/Rating/Rating.php:96
+#: includes/modules/Rating/Rating.php:97
 msgid "Define rating title"
 msgstr ""
 
+#: includes/modules/Rating/Rating.php:106
+msgid "Title Position"
+msgstr ""
+
 #: includes/modules/Rating/Rating.php:107
+msgid "Define title position where you can choose after rating / before rating"
+msgstr ""
+
+#: includes/modules/Rating/Rating.php:111
+msgid "After Title"
+msgstr ""
+
+#: includes/modules/Rating/Rating.php:123
+msgid "Rating Alignment"
+msgstr ""
+
+#: includes/modules/Rating/Rating.php:134
 #: includes/modules/Review/Review.php:350
-#: includes/modules/ReviewSlider/ReviewSlider.php:520
+#: includes/modules/ReviewSlider/ReviewSlider.php:521
 #: includes/modules/ReviewSliderChild/ReviewSliderChild.php:292
 msgid "Star Color"
 msgstr ""
 
-#: includes/modules/Rating/Rating.php:108
+#: includes/modules/Rating/Rating.php:135
 #: includes/modules/Review/Review.php:351
-#: includes/modules/ReviewSlider/ReviewSlider.php:521
+#: includes/modules/ReviewSlider/ReviewSlider.php:522
 #: includes/modules/ReviewSliderChild/ReviewSliderChild.php:293
 msgid "Here you can change star color."
 msgstr ""
 
-#: includes/modules/Rating/Rating.php:119
+#: includes/modules/Rating/Rating.php:146
 #: includes/modules/Review/Review.php:365
-#: includes/modules/ReviewSlider/ReviewSlider.php:536
+#: includes/modules/ReviewSlider/ReviewSlider.php:537
 #: includes/modules/ReviewSliderChild/ReviewSliderChild.php:306
 msgid "Active Star Color"
 msgstr ""
 
-#: includes/modules/Rating/Rating.php:120
+#: includes/modules/Rating/Rating.php:147
 #: includes/modules/Review/Review.php:366
-#: includes/modules/ReviewSlider/ReviewSlider.php:537
+#: includes/modules/ReviewSlider/ReviewSlider.php:538
 #: includes/modules/ReviewSliderChild/ReviewSliderChild.php:307
 msgid "Here you can change filled/active star color."
 msgstr ""
 
-#: includes/modules/Rating/Rating.php:131
+#: includes/modules/Rating/Rating.php:158
 #: includes/modules/Review/Review.php:380
-#: includes/modules/ReviewSlider/ReviewSlider.php:552
+#: includes/modules/ReviewSlider/ReviewSlider.php:553
 #: includes/modules/ReviewSliderChild/ReviewSliderChild.php:320
 msgid "star Size"
 msgstr ""
 
-#: includes/modules/Rating/Rating.php:132
+#: includes/modules/Rating/Rating.php:159
 #: includes/modules/Review/Review.php:381
-#: includes/modules/ReviewSlider/ReviewSlider.php:553
+#: includes/modules/ReviewSlider/ReviewSlider.php:554
 #: includes/modules/ReviewSliderChild/ReviewSliderChild.php:321
 msgid "Here you can change your back side star size."
 msgstr ""
@@ -3382,51 +4011,33 @@ msgid "Here you can change your back side image width."
 msgstr ""
 
 #: includes/modules/Review/Review.php:402
-#: includes/modules/ReviewSlider/ReviewSlider.php:575
+#: includes/modules/ReviewSlider/ReviewSlider.php:576
 #: includes/modules/ReviewSliderChild/ReviewSliderChild.php:341
 msgid "Define custom margin for image"
 msgstr ""
 
-#: includes/modules/Review/Review.php:412
-#: includes/modules/ReviewSlider/ReviewSlider.php:585
-#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:351
-msgid "Define custom padding for image"
-msgstr ""
-
 #: includes/modules/Review/Review.php:421
-#: includes/modules/ReviewSlider/ReviewSlider.php:594
+#: includes/modules/ReviewSlider/ReviewSlider.php:595
 #: includes/modules/ReviewSliderChild/ReviewSliderChild.php:360
 msgid "Rating Margin"
 msgstr ""
 
 #: includes/modules/Review/Review.php:422
-#: includes/modules/ReviewSlider/ReviewSlider.php:595
+#: includes/modules/ReviewSlider/ReviewSlider.php:596
 #: includes/modules/ReviewSliderChild/ReviewSliderChild.php:361
 msgid "Define custom margin for rating section"
 msgstr ""
 
 #: includes/modules/Review/Review.php:431
-#: includes/modules/ReviewSlider/ReviewSlider.php:604
+#: includes/modules/ReviewSlider/ReviewSlider.php:605
 #: includes/modules/ReviewSliderChild/ReviewSliderChild.php:370
 msgid "Rating Padding"
 msgstr ""
 
 #: includes/modules/Review/Review.php:432
-#: includes/modules/ReviewSlider/ReviewSlider.php:605
+#: includes/modules/ReviewSlider/ReviewSlider.php:606
 #: includes/modules/ReviewSliderChild/ReviewSliderChild.php:371
 msgid "Define custom padding for rating section"
-msgstr ""
-
-#: includes/modules/Review/Review.php:442
-#: includes/modules/ReviewSlider/ReviewSlider.php:615
-#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:381
-msgid "Define custom margin for content wrapper"
-msgstr ""
-
-#: includes/modules/Review/Review.php:455
-#: includes/modules/ReviewSlider/ReviewSlider.php:628
-#: includes/modules/ReviewSliderChild/ReviewSliderChild.php:394
-msgid "Define custom padding for content wrapper"
 msgstr ""
 
 #: includes/modules/ReviewSlider/ReviewSlider.php:13
@@ -3477,22 +4088,18 @@ msgstr ""
 msgid "DiviNationKit for Divi"
 msgstr ""
 
-#. Plugin URI of the plugin/theme
-msgid "https://divinationkit.comm"
+#. Author URI of the plugin/theme
+msgid "https://divinationkit.com"
 msgstr ""
 
 #. Description of the plugin/theme
 msgid ""
 "DiviNationKit is a powerful Divi extension to elevate your Divi theme "
-"experience by offering a plethora of functional and creative Divi modules. "
-"Perfect for designers, developers, and website owners, DiviNationKit "
-"empowers you to build stunning, highly customizable websites with ease."
+"experience by offering creative Divi modules. Perfect for designers, "
+"developers, and website owners, DiviNationKit empowers you to build "
+"stunning, highly customizable websites with ease."
 msgstr ""
 
 #. Author of the plugin/theme
 msgid "DiviNationKit"
-msgstr ""
-
-#. Author URI of the plugin/theme
-msgid "https://divinationkit.com"
 msgstr ""

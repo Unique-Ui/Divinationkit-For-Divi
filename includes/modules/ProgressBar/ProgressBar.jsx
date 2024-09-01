@@ -164,6 +164,19 @@ export class ProgressBar extends Component {
                 optionName: 'tooltip_padding',
                 property: 'padding',
             },
+
+            {
+                selector: '%%order_class%% .dina_progress_bar_child',
+                optionName: 'item_margin',
+                property: 'margin',
+                important: true,
+            },
+            {
+                selector: '%%order_class%% .dina_progress_bar_child',
+                optionName: 'item_padding',
+                property: 'padding',
+                important: true,
+            },
         ]);
 
         return additionalCss

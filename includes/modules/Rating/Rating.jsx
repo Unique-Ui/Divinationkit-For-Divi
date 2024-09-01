@@ -26,6 +26,11 @@ export class Rating extends Component {
                 property: 'color',
             },
             {
+                selector: '%%order_class%% .dina_rating-container',
+                optionName: 'rating_alignment',
+                property: 'justify-content',
+            },
+            {
                 selector: '%%order_class%% .dina_rating-star',
                 optionName: 'star_size',
                 property: 'font-size',
@@ -100,7 +105,8 @@ export class Rating extends Component {
             return (
                 <div className="dina_rating-wrapper">
                     <div className="dina_rating-number">
-                        ({this.props.rating}/{this.props.rating_scale})
+                        {this.props.rating}/{this.props.rating_scale}{' '}
+                        <span class="dina_rating-star">★</span>
                     </div>
                 </div>
             );
@@ -115,7 +121,7 @@ export class Rating extends Component {
                         )}
                     </div>
                     <div className="dina_rating-number">
-                        ({this.props.rating}/{this.props.rating_scale})
+                        {this.props.rating}/{this.props.rating_scale}
                     </div>
                 </div>
             );
@@ -137,8 +143,11 @@ export class Rating extends Component {
     render() {
         return (
             <div className="dina_rating-container">
+                {this.props.title_position === 'before' &&
+                    this.renderRatingTitle()}
                 {this.renderRating()}
-                {this.renderRatingTitle()}
+                {this.props.title_position === 'after' &&
+                    this.renderRatingTitle()}
             </div>
         );
     }

@@ -126,10 +126,9 @@ class DINA_PriceList_item extends DINA_Module_Core {
                 'description'    => esc_html__( 'Here you can choose different type of style', 'divinationkit-for-divi' ),
                 'type'           => 'select',
                 'options'        => array(
-                    'flex'  => esc_html__( 'Media position left', 'divinationkit-for-divi' ),
-                    'block' => esc_html__( 'Media position top', 'divinationkit-for-divi' ),
+                    'row'    => esc_html__( 'Media position left', 'divinationkit-for-divi' ),
+                    'column' => esc_html__( 'Media position top', 'divinationkit-for-divi' ),
                 ),
-                'default'        => 'flex',
                 'tab_slug'       => 'advanced',
                 'toggle_slug'    => 'layout',
                 'mobile_options' => true,
@@ -140,16 +139,13 @@ class DINA_PriceList_item extends DINA_Module_Core {
                 'description'    => esc_html__( 'Define the content vertical alignment', 'divinationkit-for-divi' ),
                 'type'           => 'select',
                 'options'        => array(
-                    'flex-start' => esc_html__( 'Top', 'divinationkit-for-divi' ),
-                    'center'     => esc_html__( 'Vertically Center', 'divinationkit-for-divi' ),
-                    'flex-end'   => esc_html__( 'Bottom', 'divinationkit-for-divi' ),
+                    'flex-start' => esc_html__( 'Start', 'divinationkit-for-divi' ),
+                    'center'     => esc_html__( 'Center', 'divinationkit-for-divi' ),
+                    'flex-end'   => esc_html__( 'End', 'divinationkit-for-divi' ),
                 ),
                 'mobile_options' => true,
                 'tab_slug'       => 'advanced',
                 'toggle_slug'    => 'layout',
-                'show_if'        => array(
-                    'layout' => 'flex',
-                ),
             ),
 
             'content_gap'      => array(
@@ -165,9 +161,6 @@ class DINA_PriceList_item extends DINA_Module_Core {
                 ),
                 'tab_slug'       => 'advanced',
                 'toggle_slug'    => 'layout',
-                'show_if'        => array(
-                    'layout' => 'flex',
-                ),
             ),
         );
 
@@ -286,10 +279,9 @@ class DINA_PriceList_item extends DINA_Module_Core {
                 'label'          => esc_html__( 'Divider Color', 'divinationkit-for-divi' ),
                 'description'    => esc_html__( 'Define the divi line color', 'divinationkit-for-divi' ),
                 'type'           => 'color-alpha',
-                'default'        => '#333333',
+                'default'        => '',
                 'tab_slug'       => 'advanced',
                 'toggle_slug'    => 'divider',
-                'default'        => '#0dc8f1',
                 'hover'          => 'tabs',
                 'mobile_options' => true,
 
@@ -312,7 +304,7 @@ class DINA_PriceList_item extends DINA_Module_Core {
                     'outset' => esc_html__( 'Outset', 'divinationkit-for-divi' ),
                     'none'   => esc_html__( 'None', 'divinationkit-for-divi' ),
                 ),
-                'default'        => 'solid',
+                'default'        => '',
                 'mobile_options' => true,
             ),
 
@@ -388,12 +380,7 @@ class DINA_PriceList_item extends DINA_Module_Core {
                     'important' => false,
                 ),
                 'defaults' => array(
-                    'border_radii'  => 'on|0px|0px|0px|0px',
-                    'border_styles' => array(
-                        'width' => '0px',
-                        'color' => $et_accent_color,
-                        'style' => 'solid',
-                    ),
+                    'border_radii' => 'on|0px|0px|0px|0px',
                 ),
             ),
         );
@@ -544,10 +531,8 @@ class DINA_PriceList_item extends DINA_Module_Core {
 
         if ( !empty( $this->props['image'] ) ) {
             return sprintf(
-                '<div class="dina_pricelist-image-wrapper">
-                    <div class="dina_pricelist-image">
-                        <img src="%1$s" alt="%2$s" />
-                    </div>
+                '<div class="dina_pricelist-image">
+                    <img src="%1$s" alt="%2$s" />
                 </div>',
                 $this->props['image'],
                 $this->props['image_alt'],
@@ -639,7 +624,7 @@ class DINA_PriceList_item extends DINA_Module_Core {
         $this->dina_responsive_css( $render_slug, array(
             array(
                 'option_slug' => 'layout',
-                'property'    => 'display',
+                'property'    => 'flex-direction',
                 'selector'    => '.dina_pricelist-container %%order_class%% .dina_pricelist-item-wrapper',
             ),
             array(
@@ -694,7 +679,7 @@ class DINA_PriceList_item extends DINA_Module_Core {
             array(
                 'option_slug' => 'image_align',
                 'property'    => 'justify-content',
-                'selector'    => '.dina_pricelist-container %%order_class%% .dina_pricelist-image-wrapper',
+                'selector'    => '.dina_pricelist-container %%order_class%% .dina_pricelist-image',
             ),
             array(
                 'option_slug' => 'divider_color',
@@ -732,7 +717,7 @@ class DINA_PriceList_item extends DINA_Module_Core {
                 array(
                     'option_slug' => 'image_width',
                     'property'    => 'width',
-                    'selector'    => '.dina_pricelist-container %%order_class%% .dina_pricelist-image-wrapper',
+                    'selector'    => '.dina_pricelist-container %%order_class%% .dina_pricelist-image',
                 ),
             ) );
         } else {

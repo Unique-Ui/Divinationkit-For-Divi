@@ -27,10 +27,6 @@ class DINA_PriceList extends DINA_Module_Core {
             'advanced' => array(
                 'toggles' => array(
                     'layout'  => esc_html__( 'Layout', 'divinationkit-for-divi' ),
-                    'icon'    => esc_html__( 'Price Icon', 'divinationkit-for-divi' ),
-                    'image'   => esc_html__( 'Price Image', 'divinationkit-for-divi' ),
-                    'divider' => esc_html__( 'Divider', 'divinationkit-for-divi' ),
-                    'item'    => esc_html__( 'List Item', 'divinationkit-for-divi' ),
                     'content' => array(
                         'title'             => esc_html__( 'Price List Texts', 'divinationkit-for-divi' ),
                         'tabbed_subtoggles' => true,
@@ -46,6 +42,10 @@ class DINA_PriceList extends DINA_Module_Core {
                             ),
                         ),
                     ),
+                    'icon'    => esc_html__( 'Price Icon', 'divinationkit-for-divi' ),
+                    'image'   => esc_html__( 'Price Image', 'divinationkit-for-divi' ),
+                    'divider' => esc_html__( 'Divider', 'divinationkit-for-divi' ),
+                    'item'    => esc_html__( 'List Item', 'divinationkit-for-divi' ),
                     'border'  => esc_html__( 'Border', 'divinationkit-for-divi' ),
                 ),
             ),
@@ -95,10 +95,10 @@ class DINA_PriceList extends DINA_Module_Core {
                 'description'    => esc_html__( 'Here you can choose different type of style', 'divinationkit-for-divi' ),
                 'type'           => 'select',
                 'options'        => array(
-                    'flex'  => esc_html__( 'Media position left', 'divinationkit-for-divi' ),
-                    'block' => esc_html__( 'Media position top', 'divinationkit-for-divi' ),
+                    'row'    => esc_html__( 'Media position left', 'divinationkit-for-divi' ),
+                    'column' => esc_html__( 'Media position top', 'divinationkit-for-divi' ),
                 ),
-                'default'        => 'flex',
+                'default'        => 'row',
                 'tab_slug'       => 'advanced',
                 'toggle_slug'    => 'layout',
                 'mobile_options' => true,
@@ -109,17 +109,14 @@ class DINA_PriceList extends DINA_Module_Core {
                 'description'    => esc_html__( 'Define the content vertical alignment', 'divinationkit-for-divi' ),
                 'type'           => 'select',
                 'options'        => array(
-                    'flex-start' => esc_html__( 'Top', 'divinationkit-for-divi' ),
-                    'center'     => esc_html__( 'Vertically Center', 'divinationkit-for-divi' ),
-                    'flex-end'   => esc_html__( 'Bottom', 'divinationkit-for-divi' ),
+                    'flex-start' => esc_html__( 'Start', 'divinationkit-for-divi' ),
+                    'center'     => esc_html__( 'Center', 'divinationkit-for-divi' ),
+                    'flex-end'   => esc_html__( 'End', 'divinationkit-for-divi' ),
                 ),
                 'default'        => 'flex-start',
                 'mobile_options' => true,
                 'tab_slug'       => 'advanced',
                 'toggle_slug'    => 'layout',
-                'show_if'        => array(
-                    'layout' => 'flex',
-                ),
             ),
 
             'content_gap'      => array(
@@ -136,9 +133,6 @@ class DINA_PriceList extends DINA_Module_Core {
                 ),
                 'tab_slug'       => 'advanced',
                 'toggle_slug'    => 'layout',
-                'show_if'        => array(
-                    'layout' => 'flex',
-                ),
             ),
         );
 
@@ -351,7 +345,7 @@ class DINA_PriceList extends DINA_Module_Core {
                 'type'           => 'custom_margin',
                 'tab_slug'       => 'advanced',
                 'toggle_slug'    => 'item',
-                'default'        => '0px|0px|20px|0px',
+                'default'        => '0px|0px|30px|0px',
                 'mobile_options' => true,
             ),
 
@@ -375,168 +369,163 @@ class DINA_PriceList extends DINA_Module_Core {
         // Get theme accent color
         $et_accent_color = et_builder_accent_color();
 
-        $advanced_fields                = array();
-        $advanced_fields['text']        = false;
-        $advanced_fields['text_shadow'] = array();
-        $advanced_fields['fonts']       = array();
-
-        // Border main
-        $advanced_fields['borders'] = array(
-            'tab_slug'    => 'advanced',
-            'toggle_slug' => 'border',
-            'default'     => array(
-                'css'      => array(
-                    'main'      => array(
-                        'border_radii'  => '%%order_class%%',
-                        'border_styles' => '%%order_class%%',
+        return array(
+            'text'           => false,
+            'fonts'          => array(
+                'title'       => array(
+                    'label'       => esc_html__( 'Title', 'divinationkit-for-divi' ),
+                    'css'         => array(
+                        'main'      => '%%order_class%% .dina_pricelist-title',
+                        'important' => false,
                     ),
-                    'important' => false,
-                ),
-                'defaults' => array(
-                    'border_radii'  => 'on|0px|0px|0px|0px',
-                    'border_styles' => array(
-                        'width' => '0px',
-                        'color' => $et_accent_color,
-                        'style' => 'solid',
+                    'font_size'   => array(
+                        'default' => '18px',
+                    ),
+                    'tab_slug'    => 'advanced',
+                    'toggle_slug' => 'content',
+                    'sub_toggle'  => 'title',
+                    'line_height' => array(
+                        'default' => '1.5em',
                     ),
                 ),
-            ),
-        );
 
-        // item border
-        $advanced_fields['borders']['list_item'] = array(
-            'label_prefix' => esc_html__( 'Price item', 'divinationkit-for-divi' ),
-            'tab_slug'     => 'advanced',
-            'toggle_slug'  => 'item',
-            'css'          => array(
+                'price'       => array(
+                    'label'       => esc_html__( 'Price', 'divinationkit-for-divi' ),
+                    'css'         => array(
+                        'main'      => '%%order_class%% .dina_pricelist-price',
+                        'important' => false,
+                    ),
+                    'font_size'   => array(
+                        'default' => '18px',
+                    ),
+                    'tab_slug'    => 'advanced',
+                    'toggle_slug' => 'content',
+                    'sub_toggle'  => 'price',
+                    'line_height' => array(
+                        'default' => '1.3em',
+                    ),
+                ),
+
+                'description' => array(
+                    'label'       => esc_html__( 'Description', 'divinationkit-for-divi' ),
+                    'css'         => array(
+                        'main'      => '%%order_class%% .dina_pricelist-description p',
+                        'important' => false,
+                    ),
+                    'tab_slug'    => 'advanced',
+                    'toggle_slug' => 'content',
+                    'sub_toggle'  => 'description',
+                    'font_size'   => array(
+                        'default' => '14px',
+                    ),
+                    'line_height' => array(
+                        'default' => '1.2em',
+                    ),
+                ),
+            ),
+            'borders'        => array(
                 'main'      => array(
-                    'border_radii'  => '%%order_class%% .dina_pricelist_child',
-                    'border_styles' => '%%order_class%% .dina_pricelist_child',
+                    'tab_slug'    => 'advanced',
+                    'toggle_slug' => 'border',
+                    'default'     => array(
+                        'css'      => array(
+                            'main'      => array(
+                                'border_radii'  => '%%order_class%%',
+                                'border_styles' => '%%order_class%%',
+                            ),
+                            'important' => false,
+                        ),
+                        'defaults' => array(
+                            'border_radii'  => 'on|0px|0px|0px|0px',
+                            'border_styles' => array(
+                                'width' => '0px',
+                                'color' => $et_accent_color,
+                                'style' => 'solid',
+                            ),
+                        ),
+                    ),
                 ),
-                'important' => false,
-            ),
-            'defaults'     => array(
-                'border_radii'  => 'on|0px|0px|0px|0px',
-                'border_styles' => array(
-                    'width' => '0px',
-                    'color' => '#333333',
-                    'style' => 'solid',
+                'list_item' => array(
+                    'label_prefix' => esc_html__( 'Price item', 'divinationkit-for-divi' ),
+                    'tab_slug'     => 'advanced',
+                    'toggle_slug'  => 'item',
+                    'css'          => array(
+                        'main'      => array(
+                            'border_radii'  => '%%order_class%% .dina_pricelist_child',
+                            'border_styles' => '%%order_class%% .dina_pricelist_child',
+                        ),
+                        'important' => false,
+                    ),
+                    'defaults'     => array(
+                        'border_radii'  => 'on|0px|0px|0px|0px',
+                        'border_styles' => array(
+                            'width' => '0px',
+                            'color' => '#333333',
+                            'style' => 'solid',
+                        ),
+                    ),
+                ),
+
+                'icon'      => array(
+                    'label_prefix'    => esc_html__( 'Icon', 'divinationkit-for-divi' ),
+                    'tab_slug'        => 'advanced',
+                    'toggle_slug'     => 'icon',
+                    'css'             => array(
+                        'main'      => array(
+                            'border_radii'  => '%%order_class%% .dina_pricelist-icon i.dina_icon',
+                            'border_styles' => '%%order_class%% .dina_pricelist-icon i.dina_icon',
+                        ),
+                        'important' => false,
+                    ),
+                    'depends_show_if' => array(
+                        'media_type' => 'icon',
+                    ),
+                    'defaults'        => array(
+                        'border_radii'  => 'on|0px|0px|0px|0px',
+                        'border_styles' => array(
+                            'width' => '0px',
+                            'color' => $et_accent_color,
+                            'style' => 'solid',
+                        ),
+                    ),
+                ),
+
+                'image'     => array(
+                    'label_prefix'    => esc_html__( 'Image', 'divinationkit-for-divi' ),
+                    'tab_slug'        => 'advanced',
+                    'toggle_slug'     => 'image',
+                    'css'             => array(
+                        'main'      => array(
+                            'border_radii'  => '%%order_class%% .dina_pricelist-image',
+                            'border_styles' => '%%order_class%% .dina_pricelist-image',
+                        ),
+                        'important' => false,
+                    ),
+                    'depends_show_if' => array(
+                        'media_type' => 'icon',
+                    ),
+                    'defaults'        => array(
+                        'border_radii'  => 'on|0px|0px|0px|0px',
+                        'border_styles' => array(
+                            'width' => '0px',
+                            'color' => $et_accent_color,
+                            'style' => 'solid',
+                        ),
+                    ),
                 ),
             ),
-        );
-
-        // icon border
-        $advanced_fields['borders']['icon'] = array(
-            'label_prefix'    => esc_html__( 'Icon', 'divinationkit-for-divi' ),
-            'tab_slug'        => 'advanced',
-            'toggle_slug'     => 'icon',
-            'css'             => array(
-                'main'      => array(
-                    'border_radii'  => '%%order_class%% .dina_pricelist-icon i.dina_icon',
-                    'border_styles' => '%%order_class%% .dina_pricelist-icon i.dina_icon',
-                ),
-                'important' => false,
-            ),
-            'depends_show_if' => array(
-                'media_type' => 'icon',
-            ),
-            'defaults'        => array(
-                'border_radii'  => 'on|0px|0px|0px|0px',
-                'border_styles' => array(
-                    'width' => '0px',
-                    'color' => $et_accent_color,
-                    'style' => 'solid',
+            'box_shadow'     => array(
+                'default' => array(
+                    'css' => array(
+                        'main'  => '%%order_class%% .dina_pricelist_child',
+                        'hover' => '%%order_class%% .dina_pricelist_child:hover',
+                    ),
                 ),
             ),
-        );
-
-        // Image border
-        $advanced_fields['borders']['image'] = array(
-            'label_prefix'    => esc_html__( 'Image', 'divinationkit-for-divi' ),
-            'tab_slug'        => 'advanced',
-            'toggle_slug'     => 'image',
-            'css'             => array(
-                'main'      => array(
-                    'border_radii'  => '%%order_class%% .dina_pricelist-image',
-                    'border_styles' => '%%order_class%% .dina_pricelist-image',
-                ),
-                'important' => false,
-            ),
-            'depends_show_if' => array(
-                'media_type' => 'icon',
-            ),
-            'defaults'        => array(
-                'border_radii'  => 'on|0px|0px|0px|0px',
-                'border_styles' => array(
-                    'width' => '0px',
-                    'color' => $et_accent_color,
-                    'style' => 'solid',
-                ),
-            ),
-        );
-
-        $advanced_fields['fonts']['title'] = array(
-            'label'       => esc_html__( 'Title', 'divinationkit-for-divi' ),
-            'css'         => array(
-                'main'      => '%%order_class%% .dina_pricelist-title',
-                'important' => false,
-            ),
-            'font_size'   => array(
-                'default' => '18px',
-            ),
-            'tab_slug'    => 'advanced',
-            'toggle_slug' => 'content',
-            'sub_toggle'  => 'title',
-            'line_height' => array(
-                'default' => '1.5em',
-            ),
-        );
-
-        $advanced_fields['fonts']['price'] = array(
-            'label'       => esc_html__( 'Price', 'divinationkit-for-divi' ),
-            'css'         => array(
-                'main'      => '%%order_class%% .dina_pricelist-price',
-                'important' => false,
-            ),
-            'font_size'   => array(
-                'default' => '18px',
-            ),
-            'tab_slug'    => 'advanced',
-            'toggle_slug' => 'content',
-            'sub_toggle'  => 'price',
-            'line_height' => array(
-                'default' => '1.3em',
-            ),
-        );
-
-        $advanced_fields['fonts']['description'] = array(
-            'label'       => esc_html__( 'Description', 'divinationkit-for-divi' ),
-            'css'         => array(
-                'main'      => '%%order_class%% .dina_pricelist-description p',
-                'important' => false,
-            ),
-            'tab_slug'    => 'advanced',
-            'toggle_slug' => 'content',
-            'sub_toggle'  => 'description',
-            'font_size'   => array(
-                'default' => '14px',
-            ),
-            'line_height' => array(
-                'default' => '1.2em',
-            ),
-        );
-
-        $advanced_fields['box_shadow'] = array(
-            'default' => array(
+            'margin_padding' => array(
                 'css' => array(
-                    'main' => '%%order_class%% .dina_pricelist_child',
+                    'important' => 'all',
                 ),
-            ),
-        );
-
-        $advanced_fields['margin_padding'] = array(
-            'css' => array(
-                'important' => 'all',
             ),
         );
 
@@ -554,7 +543,6 @@ class DINA_PriceList extends DINA_Module_Core {
                 </div>
             </div>',
             $this->content,
-            $this->props['layout']
         );
     }
 
@@ -563,7 +551,7 @@ class DINA_PriceList extends DINA_Module_Core {
         $this->dina_responsive_css( $render_slug, array(
             array(
                 'option_slug' => 'layout',
-                'property'    => 'display',
+                'property'    => 'flex-direction',
                 'selector'    => '%%order_class%% .dina_pricelist-item-wrapper',
             ),
             array(
@@ -618,7 +606,7 @@ class DINA_PriceList extends DINA_Module_Core {
             array(
                 'option_slug' => 'image_align',
                 'property'    => 'justify-content',
-                'selector'    => '%%order_class%% .dina_pricelist-image-wrapper',
+                'selector'    => '%%order_class%% .dina_pricelist-image',
             ),
             array(
                 'option_slug' => 'divider_color',
@@ -667,7 +655,7 @@ class DINA_PriceList extends DINA_Module_Core {
                 array(
                     'option_slug' => 'image_width',
                     'property'    => 'width',
-                    'selector'    => '%%order_class%% .dina_pricelist-image-wrapper',
+                    'selector'    => '%%order_class%% .dina_pricelist-image',
                 ),
             ) );
         } else {

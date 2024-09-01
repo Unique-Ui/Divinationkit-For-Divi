@@ -96,7 +96,7 @@ class DINA_Icon_List extends DINA_Module_Core {
                 'description'    => esc_html__( 'Define space between media and content', 'divinationkit-for-divi' ),
                 'type'           => 'range',
                 'default_unit'   => 'px',
-                'default'        => '5px',
+                'default'        => '10px',
                 'mobile_options' => true,
                 'range_settings' => array(
                     'min'  => 0,

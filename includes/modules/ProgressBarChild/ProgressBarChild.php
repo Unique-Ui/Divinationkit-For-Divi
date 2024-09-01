@@ -253,7 +253,7 @@ class DINA_Progress_Bar_Child extends DINA_Module_Core {
                 'label'          => esc_html__( 'Icon Color', 'divinationkit-for-divi' ),
                 'description'    => esc_html__( 'Here you can change icon color.', 'divinationkit-for-divi' ),
                 'type'           => 'color-alpha',
-                'default'        => '#000000',
+                'default'        => '',
                 'custom_color'   => true,
                 'tab_slug'       => 'advanced',
                 'toggle_slug'    => 'icon',
@@ -283,7 +283,7 @@ class DINA_Progress_Bar_Child extends DINA_Module_Core {
                 'type'           => 'custom_padding',
                 'tab_slug'       => 'advanced',
                 'toggle_slug'    => 'icon',
-                'default'        => '0px|0px|0px|0px',
+                'default'        => '',
                 'mobile_options' => true,
             ),
 
@@ -293,16 +293,16 @@ class DINA_Progress_Bar_Child extends DINA_Module_Core {
                 'type'           => 'custom_margin',
                 'tab_slug'       => 'advanced',
                 'toggle_slug'    => 'icon',
-                'default'        => 'false',
+                'default'        => '',
                 'mobile_options' => true,
             ),
         );
 
         $settings = array(
 
-            'name_placement' => array(
-                'label'       => esc_html__( 'Name Placement', 'divinationkit-for-divi' ),
-                'description' => esc_html__( 'Define the position of progress bar Name position (outside or inside) progress bar', 'divinationkit-for-divi' ),
+            'text_placement' => array(
+                'label'       => esc_html__( 'Text Placement', 'divinationkit-for-divi' ),
+                'description' => esc_html__( 'Define the position of progress bar text position (outside or inside) of progress bar', 'divinationkit-for-divi' ),
                 'type'        => 'select',
                 'options'     => array(
                     'outside' => esc_html__( 'Outside', 'divinationkit-for-divi' ),
@@ -344,7 +344,7 @@ class DINA_Progress_Bar_Child extends DINA_Module_Core {
         $advanced_fields['fonts']['level_text'] = array(
             'label'           => esc_html__( 'Level', 'divinationkit-for-divi' ),
             'css'             => array(
-                'main'      => '.dina_progress_bar-container %%order_class%% .dina_progress-level:before',
+                'main'      => '.dina_progress_bar-container %%order_class%% .dina_progress-level:before, .dina_progress_bar-container %%order_class%% .dina_progress_bar-level-text',
                 'important' => 'all',
             ),
             'tab_slug'        => 'advanced',
@@ -386,7 +386,7 @@ class DINA_Progress_Bar_Child extends DINA_Module_Core {
                     'border_radii'  => '.dina_progress_bar-container %%order_class%% .dina_progress-icon',
                     'border_styles' => '.dina_progress_bar-container %%order_class%% .dina_progress-icon',
                 ),
-                'important' => false,
+                'important' => 'all',
             ),
             'defaults'     => array(
                 'border_radii'  => 'on|0px|0px|0px|0px',
@@ -422,10 +422,18 @@ class DINA_Progress_Bar_Child extends DINA_Module_Core {
 
     public function render_name() {
 
-        $name_placement = $this->props['name_placement'];
+        $text_placement = $this->props['text_placement'];
 
         if ( $this->props['hide_name'] !== 'on' ) {
-            return sprintf( '<span class="dina_progress_bar-name %2$s">%1$s</span>', $this->props['name'], $name_placement );
+            return sprintf( '<span class="dina_progress_bar-name %2$s">%1$s</span>', $this->props['name'], $text_placement );
+        }
+    }
+
+    public function render_level() {
+        $text_placement = $this->props['text_placement'];
+
+        if ( $this->props['hide_level'] !== 'on' && $text_placement === 'inside' ) {
+            return sprintf( '<span class="dina_progress_bar-level-text">%1$s</span>', $this->props['level'] );
         }
     }
 
@@ -447,7 +455,7 @@ class DINA_Progress_Bar_Child extends DINA_Module_Core {
     public function render( $attrs, $content, $render_slug ) {
 
         $this->render_css( $render_slug );
-        $name_placement = $this->props['name_placement'];
+        $text_placement = $this->props['text_placement'];
 
         return sprintf(
             '<div class="dina_progress_bar-item dina_progress_bar-%4$s">
@@ -455,23 +463,41 @@ class DINA_Progress_Bar_Child extends DINA_Module_Core {
                 <div class="dina_progress_bar-wrapper">
                     %2$s
                     <div class="dina_progress">
-                        <div class="dina_progress-level" data-per="%6$s">
+                        <div class="dina_progress-level %7$s" data-per="%6$s">
                             %3$s
+                            %8$s
                         </div>
                     </div>
                     %5$s
                 </div>
             </div>',
             $this->render_icon(),
-            $name_placement === 'outside' ? $this->render_name() : '',
-            $name_placement === 'inside' ? $this->render_name() : '',
+            $text_placement === 'outside' ? $this->render_name() : '',
+            $text_placement === 'inside' ? $this->render_name() : '',
             $this->props['hide_level'] === 'off' ? 'show-level' : '',
             $this->render_description(), // 5
-            $this->props['level']
+            $this->props['level'],
+            $text_placement,
+            $this->render_level(), // 8
         );
     }
 
     public function render_css( $render_slug ) {
+
+        // Generate icon style
+        $this->generate_styles(
+            array(
+                'utility_arg'    => 'icon_font_family',
+                'render_slug'    => $render_slug,
+                'base_attr_name' => 'icon',
+                'important'      => true,
+                'selector'       => '.dina_progress_bar-container %%order_class%% .dina_progress_bar-icon i.dina_icon',
+                'processor'      => array(
+                    'ET_Builder_Module_Helper_Style_Processor',
+                    'process_extended_icon',
+                ),
+            )
+        );
 
         $this->dina_custom_bg_style( $render_slug, 'bar', '.dina_progress_bar-container %%order_class%% .dina_progress', '' );
         $this->dina_custom_bg_style( $render_slug, 'level', '.dina_progress_bar-container %%order_class%% .dina_progress-level', '' );
@@ -480,30 +506,30 @@ class DINA_Progress_Bar_Child extends DINA_Module_Core {
             array(
                 'option_slug' => 'icon_size',
                 'property'    => 'font-size',
-                'selector'    => '%%order_class%% .dina_progress_bar-icon i.dina_icon',
-                'hover'       => '%%order_class%%:hover i.dina_icon',
+                'selector'    => '.dina_progress_bar-container %%order_class%% .dina_progress_bar-icon i.dina_icon',
+                'hover'       => '.dina_progress_bar-container %%order_class%%:hover i.dina_icon',
             ),
             array(
                 'option_slug' => 'icon_color',
                 'property'    => 'color',
-                'selector'    => '%%order_class%% .dina_progress_bar-icon i.dina_icon',
-                'hover'       => '%%order_class%%:hover i.dina_icon',
+                'selector'    => '.dina_progress_bar-container %%order_class%% .dina_progress_bar-icon i.dina_icon',
+                'hover'       => '.dina_progress_bar-container %%order_class%%:hover i.dina_icon',
             ),
             array(
                 'option_slug' => 'icon_bg',
                 'property'    => 'background',
-                'selector'    => '%%order_class%% .dina_progress_bar-icon i.dina_icon',
-                'hover'       => '%%order_class%%:hover i.dina_icon',
+                'selector'    => '.dina_progress_bar-container %%order_class%% .dina_progress_bar-icon i.dina_icon',
+                'hover'       => '.dina_progress_bar-container %%order_class%%:hover i.dina_icon',
             ),
             array(
                 'option_slug' => 'icon_padding',
                 'property'    => 'padding',
-                'selector'    => '%%order_class%% .dina_progress_bar-icon i.dina_icon',
+                'selector'    => '.dina_progress_bar-container %%order_class%% .dina_progress_bar-icon i.dina_icon',
             ),
             array(
                 'option_slug' => 'icon_margin',
                 'property'    => 'margin',
-                'selector'    => '%%order_class%% .dina_progress_bar-icon',
+                'selector'    => '.dina_progress_bar-container %%order_class%% .dina_progress_bar-icon',
             ),
 
             array(

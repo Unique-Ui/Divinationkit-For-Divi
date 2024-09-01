@@ -83,7 +83,7 @@ class DINA_Business_Hour extends DINA_Module_Core {
                 'default_unit'   => 'px',
                 'default'        => '1px',
                 'range_settings' => array(
-                    'min'  => 1,
+                    'min'  => 0,
                     'step' => 1,
                     'max'  => 25,
                 ),
@@ -180,6 +180,7 @@ class DINA_Business_Hour extends DINA_Module_Core {
             'label_prefix' => esc_html__( 'Day', 'divinationkit-for-divi' ),
             'css'          => array(
                 'main'      => '%%order_class%% .dina_business_hour-day',
+                'hover'     => '%%order_class%% .dina_business_hour_child:hover .dina_business_hour-day',
                 'important' => 'all',
             ),
             'tab_slug'     => 'advanced',
@@ -194,9 +195,10 @@ class DINA_Business_Hour extends DINA_Module_Core {
         );
 
         $advanced_fields['fonts']['time'] = array(
-            'label'       => esc_html__( 'Description', 'divinationkit-for-divi' ),
+            'label'       => esc_html__( 'Time', 'divinationkit-for-divi' ),
             'css'         => array(
                 'main'      => '%%order_class%% .dina_business_hour-time',
+                'hover'     => '%%order_class%% .dina_business_hour_child:hover .dina_business_hour-time',
                 'important' => 'all',
             ),
             'tab_slug'    => 'advanced',

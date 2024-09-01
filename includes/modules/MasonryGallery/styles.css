@@ -1,0 +1,31 @@
+.dina_masonry_gallery-wrapper {
+    column-count: 4;
+    column-gap: 20px;
+}
+
+@media (max-width: 980px) {
+    .dina_masonry_gallery-wrapper {
+        column-count: 3;
+    }
+}
+@media (max-width: 768px) {
+    .dina_masonry_gallery-wrapper {
+        column-count: 2;
+    }
+}
+@media (max-width: 450px) {
+    .dina_masonry_gallery-wrapper {
+        column-count: 1;
+    }
+}
+
+.dina_masonry_gallery-item {
+    display: block;
+    break-inside: avoid;
+    margin-bottom: 20px;
+}
+
+.dina_masonry_gallery-item img {
+    width: 100%;
+    border-style: solid;
+}

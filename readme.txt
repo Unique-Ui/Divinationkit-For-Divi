@@ -23,6 +23,7 @@ Transform your website-building experience with DiviNationKit and unlock the ful
 ## DiviNationKit Lite contains 10 free custom modules and more to come soon. ##
 
 - <a href="https://divinationkit.com/modules/advanced-divider" target="_blank">Advanced Divider</a> - To separate two section. You will find 2 types of dividers. 1. Divider with icon 2. Divider with text. And you will have full control to customize those dividers.
+- <a href="https://divinationkit.com/modules/blog-posts" target="_blank">Blog Posts</a> - module enriches your Divi website by displaying your blog content in a customizable format. With options for post layout, category filters, and pagination.
 - <a href="https://divinationkit.com/modules/business-hour" target="_blank">Business Hour</a> - module enhances your Divi website by clearly displaying your operating hours. This helps inform visitors of your availability, improving user experience and ensuring they can plan their interactions with your business accordingly.
 - <a href="https://divinationkit.com/modules/dual-button" target="_blank">Dual Button</a> - Allowing users to add two distinct call-to-action buttons side-by-side. This feature increases engagement by offering multiple choices, encouraging visitors to take action and explore different options.
 - <a href="https://divinationkit.com/modules/flipcard" target="_blank">Flip Card</a> with 4 types of flip card effects to choose from (Flip Left, Flip Right, Flip Up, and Flip Down), you can create stunning interactive content that converts.
@@ -30,6 +31,7 @@ Transform your website-building experience with DiviNationKit and unlock the ful
 - <a href="https://divinationkit.com/modules/icon-box" target="_blank">Icon Box</a> - Can help you to define features with each item highlighted by its icon.
 - <a href="https://divinationkit.com/modules/icon-list" target="_blank">Icon List</a> - Create an easy-to-manage list of items, with each item highlighted by its icon.
 - <a href="https://divinationkit.com/modules/logo-slider" target="_blank">Logo Slider</a> - Module enhances a Divi website by showcasing a rotating carousel of client logos or partner brands. This visually appealing feature helps build credibility and trust, highlighting collaborations and endorsements to potential customers.
+- <a href="https://divinationkit.com/modules/Masonry Gallery" target="_blank">Masonry Gallery</a> - module enhances your Divi website by displaying images in a dynamic, grid-like layout with varying sizes. This visually captivating design optimizes space and creates a seamless flow, making your photo galleries more engaging and aesthetically pleasing.
 - <a href="https://divinationkit.com/modules/person" target="_blank">Person</a> - Module allowing users to create detailed profiles for team members, including photos, bios, and social media links. This personal touch helps build trust and connection with visitors by showcasing the people behind the business.
 - <a href="https://divinationkit.com/modules/price-list" target="_blank">Price List</a> - To enhance a Divi website by allowing users to display their products or services with clear, organized pricing. This helps to improve user experience and transparency, making it easier for visitors to understand and compare offerings.
 - <a href="https://divinationkit.com/modules/rating" target="_blank">Rating</a> - allowing users to display star ratings for products or services. This visual representation of customer satisfaction helps visitors quickly assess quality, boosting trust and increasing the likelihood of conversions.
@@ -37,22 +39,6 @@ Transform your website-building experience with DiviNationKit and unlock the ful
 - <a href="https://divinationkit.com/modules/progress-bar" target="_blank">Skill Progress Bar</a> - module brings an interactive element to a Divi website by showcasing your skills or competencies through visually engaging progress bars. This feature effectively communicates expertise levels, making it easier for visitors to grasp your strengths at a glance.
 - <a href="https://divinationkit.com/modules/testimonial-slider" target="_blank">Testimonial Slider</a> - module introduces a dynamic way to display customer testimonials on a Divi website. This feature allows you to rotate through multiple reviews in a sleek, space-saving slider, providing social proof and building trust with potential clients in an engaging format.
 
-## Upcoming features and modules
-<strong>Features</strong>
-- Dashboard: you can control upcoming features and modules
-- Collapse submenu on mobile
-- Allow upload svg, TTF, OTF, and WOFF font files
-- Allow Preloader
-- and many more
-
-<strong>Modules</strong>
-- Image Compare
-- Info Box
-- Image Hover Effect
-- Post Slider
-- Compare Table (basic)
-- Bar Chart
-- Post List
 
 Many more Divi Modules and Extensions are coming soon...
 
@@ -109,8 +95,13 @@ Yes! DiviNationKit is absolutely free. There is no hidden charge.
 
 == Changelog ==
 
-= Version 1.0.4 - 16 August 2024 =
+= Version 1.0.5 - 31 August 2024 =
+- Updated: Performance issues
 - Fixed: Testimonial Slider image size issue
+- Fixed: Progress Bar icon issue
+- Fixed: Other module issues
+- Added: Blog Post module
+- Added: Masonry Gallery
 
 = Version 1.0.4 - 15 August 2024 =
 - compatibility: Divi 4.27.1

@@ -162,24 +162,6 @@ class DINA_Person extends DINA_Module_Core {
                 'mobile_options' => true,
             ),
 
-            'image_width'           => array(
-                'label'          => esc_html__( 'Image Width', 'divinationkit-for-divi' ),
-                'description'    => esc_html__( 'Define person image width', 'divinationkit-for-divi' ),
-                'type'           => 'range',
-                'default_unit'   => '%',
-                'default'        => '45%',
-                'range_settings' => array(
-                    'min'  => 0,
-                    'step' => 1,
-                ),
-                'tab_slug'       => 'advanced',
-                'toggle_slug'    => 'layout',
-                'show_if'        => array(
-                    'layout' => 'style-four',
-                ),
-                'mobile_options' => true,
-            ),
-
         );
 
         $content_bg = $this->dina_custom_background_fields( 'content', 'Content', 'advanced', 'layout',
@@ -191,7 +173,7 @@ class DINA_Person extends DINA_Module_Core {
         );
 
         $design = array(
-            'icon_alignment' => array(
+            'icon_alignment'  => array(
                 'label'           => esc_html__( 'Icon Alignment', 'divinationkit-for-divi' ),
                 'type'            => 'text_align',
                 'option_category' => 'configuration',
@@ -201,7 +183,7 @@ class DINA_Person extends DINA_Module_Core {
                 'mobile_options'  => true,
             ),
 
-            'icon_bg'        => array(
+            'icon_bg'         => array(
                 'label'          => esc_html__( 'Icon Background', 'divinationkit-for-divi' ),
                 'description'    => esc_html__( 'Here you can change icon background color.', 'divinationkit-for-divi' ),
                 'type'           => 'color-alpha',
@@ -212,7 +194,7 @@ class DINA_Person extends DINA_Module_Core {
                 'mobile_options' => true,
             ),
 
-            'icon_color'     => array(
+            'icon_color'      => array(
                 'label'          => esc_html__( 'Icon Color', 'divinationkit-for-divi' ),
                 'description'    => esc_html__( 'Here you can change icon color.', 'divinationkit-for-divi' ),
                 'type'           => 'color-alpha',
@@ -224,7 +206,7 @@ class DINA_Person extends DINA_Module_Core {
                 'mobile_options' => true,
             ),
 
-            'icon_size'      => array(
+            'icon_size'       => array(
                 'label'          => esc_html__( 'Icon Size', 'divinationkit-for-divi' ),
                 'description'    => esc_html__( 'Here you can change icon size.', 'divinationkit-for-divi' ),
                 'type'           => 'range',
@@ -241,7 +223,7 @@ class DINA_Person extends DINA_Module_Core {
                 ),
             ),
 
-            'icon_gap'       => array(
+            'icon_gap'        => array(
                 'label'          => esc_html__( 'Space Between Icons', 'divinationkit-for-divi' ),
                 'description'    => esc_html__( 'Define space between icons', 'divinationkit-for-divi' ),
                 'type'           => 'range',
@@ -254,6 +236,51 @@ class DINA_Person extends DINA_Module_Core {
                 'default'        => '10px',
                 'tab_slug'       => 'advanced',
                 'toggle_slug'    => 'icon',
+                'mobile_options' => true,
+            ),
+
+            'image_alignment' => array(
+                'label'           => esc_html__( 'Image Alignment', 'divinationkit-for-divi' ),
+                'type'            => 'text_align',
+                'option_category' => 'configuration',
+                'options'         => et_builder_get_text_orientation_options( array( 'justified' ) ),
+                'default'         => 'center',
+                'tab_slug'        => 'advanced',
+                'toggle_slug'     => 'image',
+                'mobile_options'  => true,
+            ),
+
+            'image_width'     => array(
+                'label'          => esc_html__( 'Image Width', 'divinationkit-for-divi' ),
+                'description'    => esc_html__( 'Define person image width', 'divinationkit-for-divi' ),
+                'type'           => 'range',
+                'default_unit'   => '%',
+                'default'        => '100%',
+                'range_settings' => array(
+                    'min'  => 0,
+                    'step' => 1,
+                ),
+                'tab_slug'       => 'advanced',
+                'toggle_slug'    => 'image',
+                'mobile_options' => true,
+            ),
+
+            'image_margin'    => array(
+                'label'          => esc_html__( 'Image Margin', 'divinationkit-for-divi' ),
+                'description'    => esc_html__( 'Define custom margin for image wrapper', 'divinationkit-for-divi' ),
+                'type'           => 'custom_margin',
+                'tab_slug'       => 'advanced',
+                'toggle_slug'    => 'image',
+                'default'        => '0px|0px|0px|0px',
+                'mobile_options' => true,
+            ),
+            'image_padding'   => array(
+                'label'          => esc_html__( 'Image Padding', 'divinationkit-for-divi' ),
+                'description'    => esc_html__( 'Define custom padding for image wrapper', 'divinationkit-for-divi' ),
+                'type'           => 'custom_padding',
+                'tab_slug'       => 'advanced',
+                'toggle_slug'    => 'image',
+                'default'        => '0px|0px|0px|0px',
                 'mobile_options' => true,
             ),
         );
@@ -357,8 +384,8 @@ class DINA_Person extends DINA_Module_Core {
             'toggle_slug'  => 'image',
             'css'          => array(
                 'main'      => array(
-                    'border_radii'  => '%%order_class%% .dina_person-img',
-                    'border_styles' => '%%order_class%% .dina_person-img',
+                    'border_styles' => '%%order_class%% .dina_person-img img',
+                    'border_radii'  => '%%order_class%% .dina_person-img img',
                 ),
                 'important' => true,
             ),
@@ -416,19 +443,18 @@ class DINA_Person extends DINA_Module_Core {
         );
 
         $advanced_fields['fonts']['description'] = array(
-            'label'           => esc_html__( 'Description', 'divinationkit-for-divi' ),
-            'css'             => array(
+            'label'       => esc_html__( 'Description', 'divinationkit-for-divi' ),
+            'css'         => array(
                 'main'      => '%%order_class%% .dina_person-description p',
                 'important' => false,
             ),
-            'tab_slug'        => 'advanced',
-            'toggle_slug'     => 'content',
-            'sub_toggle'      => 'description',
-            'font_size'       => array(
+            'tab_slug'    => 'advanced',
+            'toggle_slug' => 'content',
+            'sub_toggle'  => 'description',
+            'font_size'   => array(
                 'default' => '14px',
             ),
-            'hide_text_align' => true,
-            'line_height'     => array(
+            'line_height' => array(
                 'default' => '1.2em',
             ),
         );
@@ -615,6 +641,23 @@ class DINA_Person extends DINA_Module_Core {
                 'selector'    => '%%order_class%% .dina_person-social-links',
             ),
 
+            array(
+                'option_slug' => 'image_alignment',
+                'property'    => 'justify-content',
+                'selector'    => '%%order_class%% .dina_person-img',
+            ),
+
+            array(
+                'option_slug' => 'image_margin',
+                'property'    => 'margin',
+                'selector'    => '%%order_class%% .dina_person-img',
+            ),
+            array(
+                'option_slug' => 'image_padding',
+                'property'    => 'padding',
+                'selector'    => '%%order_class%% .dina_person-img img',
+            ),
+
             // Style three
             array(
                 'option_slug' => 'offset_x',
@@ -622,13 +665,25 @@ class DINA_Person extends DINA_Module_Core {
                 'selector'    => '%%order_class%% .dina_person-style-three .dina_person-social-links',
             ),
 
-            // Style four
-            array(
-                'option_slug' => 'image_width',
-                'property'    => 'width',
-                'selector'    => '%%order_class%% .dina_person-style-four .dina_person-img',
-            ),
         ) );
+
+        if ( $layout === 'style-four' ) {
+            $this->dina_responsive_css( $render_slug, array(
+                array(
+                    'option_slug' => 'image_width',
+                    'property'    => 'width',
+                    'selector'    => '%%order_class%% .dina_person-img',
+                ),
+            ) );
+        } else {
+            $this->dina_responsive_css( $render_slug, array(
+                array(
+                    'option_slug' => 'image_width',
+                    'property'    => 'width',
+                    'selector'    => '%%order_class%% .dina_person-img img',
+                ),
+            ) );
+        }
 
         // Content background
         if ( $layout === 'style-two' ) {

@@ -48,6 +48,8 @@ class DINA_Progress_Bar extends DINA_Module_Core {
                             ),
                         ),
                     ),
+                    'item'         => esc_html__( 'Progress Item', 'divinationkit-for-divi' ),
+                    'border'       => esc_html__( 'Border', 'divinationkit-for-divi' ),
                 ),
             ),
         );
@@ -220,16 +222,6 @@ class DINA_Progress_Bar extends DINA_Module_Core {
                 ),
             ),
 
-            'icon_padding'    => array(
-                'label'          => esc_html__( 'Icon Padding', 'divinationkit-for-divi' ),
-                'description'    => esc_html__( 'Define custom padding for icon', 'divinationkit-for-divi' ),
-                'type'           => 'custom_padding',
-                'tab_slug'       => 'advanced',
-                'toggle_slug'    => 'icon',
-                'default'        => '0px|0px|0px|0px',
-                'mobile_options' => true,
-            ),
-
             'icon_margin'     => array(
                 'label'          => esc_html__( 'Icon Margin', 'divinationkit-for-divi' ),
                 'description'    => esc_html__( 'Define custom margin for icon', 'divinationkit-for-divi' ),
@@ -239,9 +231,42 @@ class DINA_Progress_Bar extends DINA_Module_Core {
                 'default'        => '0px|0px|0px|0px',
                 'mobile_options' => true,
             ),
+
+            'icon_padding'    => array(
+                'label'          => esc_html__( 'Icon Padding', 'divinationkit-for-divi' ),
+                'description'    => esc_html__( 'Define custom padding for icon', 'divinationkit-for-divi' ),
+                'type'           => 'custom_padding',
+                'tab_slug'       => 'advanced',
+                'toggle_slug'    => 'icon',
+                'default'        => '0px|0px|0px|0px',
+                'mobile_options' => true,
+            ),
         );
 
-        return array_merge( $bar_bg, $level_bg, $design );
+        $item_design = array(
+            'item_margin'  => array(
+                'label'          => esc_html__( 'Progress Item Margin', 'divinationkit-for-divi' ),
+                'description'    => esc_html__( 'Define custom margin for item', 'divinationkit-for-divi' ),
+                'type'           => 'custom_margin',
+                'tab_slug'       => 'advanced',
+                'toggle_slug'    => 'item',
+                'default'        => '0px|0px|15px|0px',
+                'mobile_options' => true,
+            ),
+
+            'item_padding' => array(
+                'label'          => esc_html__( 'Progress Item Padding', 'divinationkit-for-divi' ),
+                'description'    => esc_html__( 'Define custom padding for item', 'divinationkit-for-divi' ),
+                'type'           => 'custom_padding',
+                'tab_slug'       => 'advanced',
+                'toggle_slug'    => 'item',
+                'default'        => '0px|0px|0px|0px',
+                'mobile_options' => true,
+            ),
+
+        );
+
+        return array_merge( $bar_bg, $level_bg, $design, $item_design );
     }
 
     public function get_advanced_fields_config() {
@@ -272,7 +297,7 @@ class DINA_Progress_Bar extends DINA_Module_Core {
         $advanced_fields['fonts']['level_text'] = array(
             'label'           => esc_html__( 'Level', 'divinationkit-for-divi' ),
             'css'             => array(
-                'main'      => '%%order_class%% .dina_progress-level:before',
+                'main'      => '%%order_class%% .dina_progress-level:before, %%order_class%% .dina_progress_bar-level-text',
                 'important' => 'all',
             ),
             'tab_slug'        => 'advanced',
@@ -311,10 +336,50 @@ class DINA_Progress_Bar extends DINA_Module_Core {
             'toggle_slug'  => 'icon',
             'css'          => array(
                 'main'      => array(
-                    'border_radii'  => '%%order_class%% .dina_progress-icon',
-                    'border_styles' => '%%order_class%% .dina_progress-icon',
+                    'border_radii'  => '%%order_class%% .dina_progress_bar-icon i.dina_icon',
+                    'border_styles' => '%%order_class%% .dina_progress_bar-icon i.dina_icon',
                 ),
                 'important' => false,
+            ),
+            'defaults'     => array(
+                'border_radii'  => 'on|0px|0px|0px|0px',
+                'border_styles' => array(
+                    'width' => '0px',
+                    'color' => '#333333',
+                    'style' => 'solid',
+                ),
+            ),
+        );
+        $advanced_fields['borders']['item'] = array(
+            'label_prefix' => esc_html__( 'Icon', 'divinationkit-for-divi' ),
+            'tab_slug'     => 'advanced',
+            'toggle_slug'  => 'item',
+            'css'          => array(
+                'main'      => array(
+                    'border_radii'  => '%%order_class%% .dina_progress_bar_child',
+                    'border_styles' => '%%order_class%% .dina_progress_bar_child',
+                ),
+                'important' => 'all',
+            ),
+            'defaults'     => array(
+                'border_radii'  => 'on|0px|0px|0px|0px',
+                'border_styles' => array(
+                    'width' => '0px',
+                    'color' => '#333333',
+                    'style' => 'solid',
+                ),
+            ),
+        );
+        $advanced_fields['borders']['main'] = array(
+            'label_prefix' => esc_html__( 'Icon', 'divinationkit-for-divi' ),
+            'tab_slug'     => 'advanced',
+            'toggle_slug'  => 'border',
+            'css'          => array(
+                'main'      => array(
+                    'border_radii'  => '%%order_class%%',
+                    'border_styles' => '%%order_class%%',
+                ),
+                'important' => 'all',
             ),
             'defaults'     => array(
                 'border_radii'  => 'on|0px|0px|0px|0px',
@@ -410,6 +475,20 @@ class DINA_Progress_Bar extends DINA_Module_Core {
                 'option_slug' => 'tooltip_padding',
                 'property'    => 'padding',
                 'selector'    => '%%order_class%% .dina_progress-level:before',
+            ),
+
+            array(
+                'option_slug' => 'item_margin',
+                'property'    => 'margin',
+                'selector'    => '%%order_class%% .dina_progress_bar_child',
+                'important'   => true,
+            ),
+
+            array(
+                'option_slug' => 'item_padding',
+                'property'    => 'padding',
+                'selector'    => '%%order_class%% .dina_progress_bar_child',
+                'important'   => true,
             ),
         ) );
 

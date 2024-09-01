@@ -242,7 +242,6 @@ class DINA_Gradient_Heading extends DINA_Module_Core {
             'font'            => array(
                 'default' => '|700|||||||',
             ),
-            'hide_text_align' => true,
             'hide_text_color' => true,
             'tab_slug'        => 'advanced',
             'toggle_slug'     => 'gradient_text',

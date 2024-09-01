@@ -19,3 +19,11 @@ Tabler.io
 - License URI: https://tabler.io/license
 
 
+PhotoSwipe
+------------
+- File Location: assets/lib
+- Source: https://github.com/dimsemenov/photoswipe
+- License: MIT
+- License URI: https://opensource.org/licenses/MIT
+
+

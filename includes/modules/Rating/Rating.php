@@ -24,6 +24,7 @@ class DINA_Rating extends DINA_Module_Core {
             ),
             'advanced' => array(
                 'toggles' => array(
+                    'alignment'     => esc_html__( 'Alignment', 'divinationkit-for-divi' ),
                     'star'          => esc_html__( 'Stars', 'divinationkit-for-divi' ),
                     'rating_number' => esc_html__( 'Rating Number', 'divinationkit-for-divi' ),
                     'rating_title'  => esc_html__( 'Rating Title', 'divinationkit-for-divi' ),
@@ -35,7 +36,7 @@ class DINA_Rating extends DINA_Module_Core {
     public function get_fields() {
 
         $rating = array(
-            'rating_style' => array(
+            'rating_style'   => array(
                 'label'       => esc_html__( 'Choose Rating Style', 'divinationkit-for-divi' ),
                 'description' => esc_html__( 'Here you can choose different kind of styles', 'divinationkit-for-divi' ),
                 'type'        => 'select',
@@ -48,7 +49,7 @@ class DINA_Rating extends DINA_Module_Core {
                 'toggle_slug' => 'content',
             ),
 
-            'rating_scale' => array(
+            'rating_scale'   => array(
                 'label'          => esc_html__( 'Rating Scale', 'divinationkit-for-divi' ),
                 'type'           => 'range',
                 'default'        => '5',
@@ -63,7 +64,7 @@ class DINA_Rating extends DINA_Module_Core {
                 'toggle_slug'    => 'content',
             ),
 
-            'rating'       => array(
+            'rating'         => array(
                 'label'          => esc_html__( 'Rating', 'divinationkit-for-divi' ),
                 'type'           => 'range',
                 'default'        => '5',
@@ -78,7 +79,7 @@ class DINA_Rating extends DINA_Module_Core {
                 'toggle_slug'    => 'content',
             ),
 
-            'use_title'    => array(
+            'use_title'      => array(
                 'label'           => esc_html__( 'Use Title', 'divinationkit-for-divi' ),
                 'description'     => esc_html__( 'Here you can choose whether rating title will be display or not', 'divinationkit-for-divi' ),
                 'type'            => 'yes_no_button',
@@ -91,7 +92,7 @@ class DINA_Rating extends DINA_Module_Core {
                 'toggle_slug'     => 'content',
             ),
 
-            'rating_title' => array(
+            'rating_title'   => array(
                 'label'       => esc_html__( 'Rating Title', 'divinationkit-for-divi' ),
                 'description' => esc_html__( 'Define rating title', 'divinationkit-for-divi' ),
                 'type'        => 'text',
@@ -100,10 +101,36 @@ class DINA_Rating extends DINA_Module_Core {
                     'use_title' => 'on',
                 ),
             ),
+
+            'title_position' => array(
+                'label'       => esc_html__( 'Title Position', 'divinationkit-for-divi' ),
+                'description' => esc_html__( 'Define title position where you can choose after rating / before rating', 'divinationkit-for-divi' ),
+                'type'        => 'select',
+                'options'     => array(
+                    'before' => esc_html__( 'Before Title', 'divinationkit-for-divi' ),
+                    'after'  => esc_html__( 'After Title', 'divinationkit-for-divi' ),
+                ),
+                'default'     => 'after',
+                'toggle_slug' => 'content',
+                'show_if'     => array(
+                    'use_title' => 'on',
+                ),
+            ),
         );
 
         $design = array(
-            'star_color'      => array(
+            'rating_alignment' => array(
+                'label'           => esc_html__( 'Rating Alignment', 'divinationkit-for-divi' ),
+                'type'            => 'text_align',
+                'option_category' => 'configuration',
+                'options'         => et_builder_get_text_orientation_options( array( 'justified' ) ),
+                'default'         => 'left',
+                'tab_slug'        => 'advanced',
+                'toggle_slug'     => 'alignment',
+                'mobile_options'  => true,
+            ),
+
+            'star_color'       => array(
                 'label'          => esc_html__( 'Star Color', 'divinationkit-for-divi' ),
                 'description'    => esc_html__( 'Here you can change star color.', 'divinationkit-for-divi' ),
                 'type'           => 'color-alpha',
@@ -115,7 +142,7 @@ class DINA_Rating extends DINA_Module_Core {
                 'hover'          => 'tabs',
             ),
 
-            'fill_star_color' => array(
+            'fill_star_color'  => array(
                 'label'          => esc_html__( 'Active Star Color', 'divinationkit-for-divi' ),
                 'description'    => esc_html__( 'Here you can change filled/active star color.', 'divinationkit-for-divi' ),
                 'type'           => 'color-alpha',
@@ -127,12 +154,12 @@ class DINA_Rating extends DINA_Module_Core {
                 'hover'          => 'tabs',
             ),
 
-            'star_size'       => array(
+            'star_size'        => array(
                 'label'          => esc_html__( 'star Size', 'divinationkit-for-divi' ),
                 'description'    => esc_html__( 'Here you can change your back side star size.', 'divinationkit-for-divi' ),
                 'type'           => 'range',
                 'default_unit'   => 'px',
-                'default'        => '20px',
+                'default'        => '30px',
                 'tab_slug'       => 'advanced',
                 'toggle_slug'    => 'star',
                 'mobile_options' => true,
@@ -161,7 +188,7 @@ class DINA_Rating extends DINA_Module_Core {
             'tab_slug'    => 'advanced',
             'toggle_slug' => 'rating_number',
             'font_size'   => array(
-                'default' => '16px',
+                'default' => '18px',
             ),
             'line_height' => array(
                 'default' => '1.2em',
@@ -219,7 +246,7 @@ class DINA_Rating extends DINA_Module_Core {
             return sprintf(
                 '<div class="dina_rating-wrapper">
                     <div class="dina_rating-number">
-                        (%1$s/%2$s ★)
+                        %1$s/%2$s <span class="dina_rating-star">★</span>
                     </div>
                 </div>',
                 $rating,
@@ -235,7 +262,7 @@ class DINA_Rating extends DINA_Module_Core {
                         %1$s
                     </div>
                     <div class="dina_rating-number">
-                        (%2$s/%3$s)
+                        %2$s/%3$s
                     </div>
                 </div>',
                 $this->render_stars( $rating, $rating_scale ),
@@ -264,14 +291,17 @@ class DINA_Rating extends DINA_Module_Core {
     public function render( $attrs, $content, $render_slug ) {
 
         $this->render_css( $render_slug );
+        $title_position = $this->props['title_position'];
 
         return sprintf(
             '<div class="dina_rating-container">
                 %1$s
                 %2$s
+                %3$s
             </div>',
+            $title_position === 'before' ? $this->render_rating_title() : '',
             $this->render_rating(),
-            $this->render_rating_title(),
+            $title_position === 'after' ? $this->render_rating_title() : '',
         );
     }
 
@@ -291,6 +321,11 @@ class DINA_Rating extends DINA_Module_Core {
                 'option_slug' => 'star_color',
                 'property'    => 'color',
                 'selector'    => '%%order_class%% .dina_rating-star',
+            ),
+            array(
+                'option_slug' => 'rating_alignment',
+                'property'    => 'justify-content',
+                'selector'    => '%%order_class%% .dina_rating-container',
             ),
             array(
                 'option_slug' => 'star_size',

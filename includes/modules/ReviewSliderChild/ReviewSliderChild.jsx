@@ -260,7 +260,7 @@ export class TestimonialSliderChild extends Component {
                                 this.renderRating()}
                         </div>
                     </div>
-                    <div className="dina_testimonial_box-content">
+                    <div className="dina_testimonial_box-content-wrapper">
                         {ratingPosition === 'top_testimonial' &&
                             this.renderRating()}
 
@@ -279,7 +279,7 @@ export class TestimonialSliderChild extends Component {
                 <div
                     className={`dina_testimonial_box-container dina_testimonial_box-${layout}`}
                 >
-                    <div className="dina_testimonial_box-content">
+                    <div className="dina_testimonial_box-content-wrapper">
                         {ratingPosition === 'top_testimonial' &&
                             this.renderRating()}
 

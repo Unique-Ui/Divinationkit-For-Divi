@@ -166,9 +166,6 @@ class DINA_Divider extends DINA_Module_Core {
                 'tab_slug'        => 'advanced',
                 'toggle_slug'     => 'divider',
                 'mobile_options'  => true,
-                'show_if'         => array(
-                    'use_text' => 'off',
-                ),
             ),
 
             'divider_color'     => array(

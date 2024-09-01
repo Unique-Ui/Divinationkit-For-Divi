@@ -103,6 +103,20 @@ class DINA_testimonial_Slider extends DINA_Module_Core {
         $et_accent_color = et_builder_accent_color();
 
         $slider_settings = array(
+            'space_between'   => array(
+                'label'           => esc_html__( 'Space Between Sliders', 'divinationkit-for-divi' ),
+                'type'            => 'range',
+                'option_category' => 'basic_option',
+                'range_settings'  => array(
+                    'step' => 1,
+                    'min'  => 0,
+                    'max'  => 100,
+                ),
+                'default'         => '15px',
+                'default_unit'    => 'px',
+                'toggle_slug'     => 'slider_settings',
+            ),
+
             'autoplay'        => array(
                 'label'          => esc_html__( 'Autoplay', 'divinationkit-for-divi' ),
                 'type'           => 'yes_no_button',
@@ -283,21 +297,7 @@ class DINA_testimonial_Slider extends DINA_Module_Core {
         );
 
         $slider = array(
-            'space_between' => array(
-                'label'           => esc_html__( 'Space Between Sliders', 'divinationkit-for-divi' ),
-                'type'            => 'range',
-                'option_category' => 'basic_option',
-                'range_settings'  => array(
-                    'step' => 1,
-                    'min'  => 0,
-                    'max'  => 100,
-                ),
-                'default'         => '15px',
-                'default_unit'    => 'px',
-                'tab_slug'        => 'advanced',
-                'toggle_slug'     => 'slider_item',
-            ),
-            'item_margin'   => array(
+            'item_margin'  => array(
                 'label'          => esc_html__( 'Item Margin', 'divinationkit-for-divi' ),
                 'description'    => esc_html__( 'Define custom margin for testimonial slider item', 'divinationkit-for-divi' ),
                 'type'           => 'custom_margin',
@@ -307,7 +307,7 @@ class DINA_testimonial_Slider extends DINA_Module_Core {
                 'mobile_options' => true,
             ),
 
-            'item_padding'  => array(
+            'item_padding' => array(
                 'label'          => esc_html__( 'Item Padding', 'divinationkit-for-divi' ),
                 'description'    => esc_html__( 'Define custom padding for testimonial slider item', 'divinationkit-for-divi' ),
                 'type'           => 'custom_padding',
@@ -618,9 +618,6 @@ class DINA_testimonial_Slider extends DINA_Module_Core {
                 'tab_slug'       => 'advanced',
                 'toggle_slug'    => 'custom_spacing',
                 'default'        => '0px|0px|0px|0px',
-                'show_if'        => array(
-                    'layout' => array( 'style-three', 'style-four' ),
-                ),
                 'mobile_options' => true,
             ),
 
@@ -631,9 +628,6 @@ class DINA_testimonial_Slider extends DINA_Module_Core {
                 'tab_slug'       => 'advanced',
                 'toggle_slug'    => 'custom_spacing',
                 'default'        => '0px|0px|0px|0px',
-                'show_if'        => array(
-                    'layout' => array( 'style-three', 'style-four' ),
-                ),
                 'mobile_options' => true,
             ),
 
@@ -787,6 +781,14 @@ class DINA_testimonial_Slider extends DINA_Module_Core {
             ),
             'line_height' => array(
                 'default' => '1.2em',
+            ),
+        );
+
+        $advanced_fields['box_shadow'] = array(
+            'default' => array(
+                'css' => array(
+                    'main' => "%%order_class%% .dina_testimonial_slider_child",
+                ),
             ),
         );
 

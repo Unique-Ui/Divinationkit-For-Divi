@@ -1,3 +1,7 @@
+.dina_pricelist-item-wrapper {
+    display: flex;
+}
+
 .dina_pricelist-heading {
     display: flex;
     justify-content: space-between;
@@ -23,5 +27,9 @@
 }
 
 .dina_pricelist-image img {
-    display: block;
+    width: 100%;
+}
+
+.dina_pricelist-description {
+    margin-top: 12px;
 }

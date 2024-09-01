@@ -24,7 +24,7 @@ body *[class^='dina'] img {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     direction: ltr;
-    font-style: normal !important;
+    transition: all 0.3s ease;
 }
 
 .dina_btn {
@@ -60,6 +60,17 @@ body *[class^='dina'] img {
     font-style: normal;
     display: inline-block;
     line-height: 1;
+}
+
+.dina_rating-star::before {
+    content: '★';
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .dina_rating-star-1::before {

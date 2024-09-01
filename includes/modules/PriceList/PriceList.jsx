@@ -15,7 +15,7 @@ class PriceList extends Component {
             {
                 selector: '%%order_class%% .dina_pricelist-item-wrapper',
                 optionName: 'layout',
-                property: 'display',
+                property: 'flex-direction',
             },
             {
                 selector: '%%order_class%% .dina_pricelist-item-wrapper',
@@ -65,7 +65,7 @@ class PriceList extends Component {
                 property: 'padding',
             },
             {
-                selector: '%%order_class%% .dina_pricelist-image-wrapper',
+                selector: '%%order_class%% .dina_pricelist-image',
                 optionName: 'image_align',
                 property: 'justify-content',
             },
@@ -113,7 +113,7 @@ class PriceList extends Component {
         if (layout === 'flex') {
             imageDesign = setResponsiveCSS(props, [
                 {
-                    selector: '%%order_class%% .dina_pricelist-image-wrapper',
+                    selector: '%%order_class%% .dina_pricelist-image',
                     optionName: 'image_width',
                     property: 'width',
                 },

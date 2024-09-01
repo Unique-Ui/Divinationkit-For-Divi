@@ -242,9 +242,9 @@ class DINA_Testimonial_Slider_Child extends DINA_Module_Core {
                 'type'            => 'select',
                 'option_category' => 'configuration',
                 'options'         => array(
-                    'start'  => esc_html__( 'Top', 'divinationkit-for-divi' ),
-                    'center' => esc_html__( 'Center', 'divinationkit-for-divi' ),
-                    'end'    => esc_html__( 'Bottom', 'divinationkit-for-divi' ),
+                    'flex-start' => esc_html__( 'Top', 'divinationkit-for-divi' ),
+                    'center'     => esc_html__( 'Center', 'divinationkit-for-divi' ),
+                    'flex-end'   => esc_html__( 'Bottom', 'divinationkit-for-divi' ),
                 ),
                 'default'         => 'center',
                 'tab_slug'        => 'advanced',
@@ -665,7 +665,7 @@ class DINA_Testimonial_Slider_Child extends DINA_Module_Core {
                            %7$s
                         </div>
                     </div>
-                    <div class="dina_testimonial_box-content">
+                    <div class="dina_testimonial_box-content-wrapper">
                         %8$s
                         <div class="dina_testimonial_box-description">
                             %5$s
@@ -688,7 +688,7 @@ class DINA_Testimonial_Slider_Child extends DINA_Module_Core {
         if ( $layout === 'style-two' ) {
             $model = sprintf(
                 '<div class="dina_testimonial_box-container dina_testimonial_box-%6$s">
-                <div class="dina_testimonial_box-content">
+                <div class="dina_testimonial_box-content-wrapper">
                     %8$s
                     <div class="dina_testimonial_box-description">
                         %5$s
@@ -732,7 +732,6 @@ class DINA_Testimonial_Slider_Child extends DINA_Module_Core {
                             %8$s
                             <div class="dina_testimonial_box-description">
                                 %5$s
-                                %6$s
                             </div>
                             %9$s
                         </div>
@@ -768,7 +767,6 @@ class DINA_Testimonial_Slider_Child extends DINA_Module_Core {
                             %8$s
                             <div class="dina_testimonial_box-description">
                                 %5$s
-                                %6$s
                             </div>
                             %9$s
                         </div>
