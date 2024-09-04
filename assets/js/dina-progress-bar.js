@@ -1,4 +1,4 @@
-$(document).ready(function() {
+(function($) {
     // Function to animate the progress bar
     function animateProgressBar() {
         $('.dina_progress_bar_child .dina_progress_bar-item').each(function() {
@@ -28,4 +28,4 @@ $(document).ready(function() {
     $(window).scroll(function() {
         animateProgressBar();
     });
-});
+})(jQuery);

@@ -2,9 +2,9 @@
 # This file is distributed under the GPL2.
 msgid ""
 msgstr ""
-"Project-Id-Version: DiviNationKit for Divi 1.0.5\n"
+"Project-Id-Version: DiviNationKit for Divi 1.0.6\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/divinationkit\n"
-"POT-Creation-Date: 2024-08-31 03:57:09+00:00\n"
+"POT-Creation-Date: 2024-09-01 19:28:32+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1498,7 +1498,7 @@ msgstr ""
 #: includes/modules/IconListChild/IconListChild.php:255
 #: includes/modules/MasonryGallery/MasonryGallery.php:31
 #: includes/modules/Person/Person.php:38 includes/modules/Posts/Posts.php:35
-#: includes/modules/Posts/Posts.php:132 includes/modules/Posts/Posts.php:806
+#: includes/modules/Posts/Posts.php:132 includes/modules/Posts/Posts.php:807
 #: includes/modules/PriceList/PriceList.php:35
 #: includes/modules/PriceList/PriceList.php:376
 #: includes/modules/PriceListChild/PriceListChild.php:30
@@ -1533,7 +1533,7 @@ msgstr ""
 #: includes/modules/IconListChild/IconListChild.php:293
 #: includes/modules/Person/Person.php:44 includes/modules/Person/Person.php:90
 #: includes/modules/Person/Person.php:446 includes/modules/Posts/Posts.php:38
-#: includes/modules/Posts/Posts.php:832 includes/modules/Posts/Posts.php:849
+#: includes/modules/Posts/Posts.php:833 includes/modules/Posts/Posts.php:850
 #: includes/modules/PriceList/PriceList.php:38
 #: includes/modules/PriceList/PriceList.php:84
 #: includes/modules/PriceList/PriceList.php:410
@@ -1783,7 +1783,7 @@ msgstr ""
 #: includes/modules/FlipCard/FlipCard.php:524
 #: includes/modules/FlipCard/FlipCard.php:551
 #: includes/modules/IconBox/IconBox.php:301
-#: includes/modules/Posts/Posts.php:473 includes/modules/Review/Review.php:285
+#: includes/modules/Posts/Posts.php:474 includes/modules/Review/Review.php:285
 #: includes/modules/ReviewSliderChild/ReviewSliderChild.php:227
 msgid "Content Alignment"
 msgstr ""
@@ -1797,7 +1797,7 @@ msgid "Define custom padding for flip card container"
 msgstr ""
 
 #: includes/modules/FlipCard/FlipCard.php:577
-#: includes/modules/Person/Person.php:299 includes/modules/Posts/Posts.php:617
+#: includes/modules/Person/Person.php:299 includes/modules/Posts/Posts.php:618
 #: includes/modules/Review/Review.php:454
 #: includes/modules/ReviewSlider/ReviewSlider.php:625
 #: includes/modules/ReviewSliderChild/ReviewSliderChild.php:393
@@ -1809,7 +1809,7 @@ msgid "Define custom padding for flip card content wrapper"
 msgstr ""
 
 #: includes/modules/FlipCard/FlipCard.php:588
-#: includes/modules/Person/Person.php:290 includes/modules/Posts/Posts.php:607
+#: includes/modules/Person/Person.php:290 includes/modules/Posts/Posts.php:608
 #: includes/modules/Review/Review.php:441
 #: includes/modules/ReviewSlider/ReviewSlider.php:615
 #: includes/modules/ReviewSliderChild/ReviewSliderChild.php:380
@@ -2738,8 +2738,8 @@ msgid "Define how many column you want to display"
 msgstr ""
 
 #: includes/modules/MasonryGallery/MasonryGallery.php:75
-#: includes/modules/Posts/Posts.php:487 includes/modules/Posts/Posts.php:504
-#: includes/modules/Posts/Posts.php:678
+#: includes/modules/Posts/Posts.php:488 includes/modules/Posts/Posts.php:505
+#: includes/modules/Posts/Posts.php:679
 msgid "Space Between Item"
 msgstr ""
 
@@ -3093,7 +3093,7 @@ msgstr ""
 msgid "Meta"
 msgstr ""
 
-#: includes/modules/Posts/Posts.php:46 includes/modules/Posts/Posts.php:786
+#: includes/modules/Posts/Posts.php:46 includes/modules/Posts/Posts.php:787
 msgid "Category"
 msgstr ""
 
@@ -3334,164 +3334,164 @@ msgstr ""
 msgid "Column Number"
 msgstr ""
 
-#: includes/modules/Posts/Posts.php:525
+#: includes/modules/Posts/Posts.php:526
 msgid "Thumbnail Width"
 msgstr ""
 
-#: includes/modules/Posts/Posts.php:541
+#: includes/modules/Posts/Posts.php:542
 msgid "Category Background"
 msgstr ""
 
-#: includes/modules/Posts/Posts.php:542
+#: includes/modules/Posts/Posts.php:543
 msgid "Define category background color"
 msgstr ""
 
-#: includes/modules/Posts/Posts.php:552
+#: includes/modules/Posts/Posts.php:553
 msgid "Category Padding"
 msgstr ""
 
-#: includes/modules/Posts/Posts.php:553
+#: includes/modules/Posts/Posts.php:554
 msgid "Define custom padding for category"
 msgstr ""
 
-#: includes/modules/Posts/Posts.php:565
+#: includes/modules/Posts/Posts.php:566
 msgid "Post Item Margin"
 msgstr ""
 
-#: includes/modules/Posts/Posts.php:566
+#: includes/modules/Posts/Posts.php:567
 msgid "Define custom margin for blog post item"
 msgstr ""
 
-#: includes/modules/Posts/Posts.php:575
+#: includes/modules/Posts/Posts.php:576
 msgid "Post Item Padding"
 msgstr ""
 
-#: includes/modules/Posts/Posts.php:576
+#: includes/modules/Posts/Posts.php:577
 msgid "Define custom padding for blog post item"
 msgstr ""
 
-#: includes/modules/Posts/Posts.php:586
+#: includes/modules/Posts/Posts.php:587
 msgid "Thumbnail Margin"
 msgstr ""
 
-#: includes/modules/Posts/Posts.php:587
+#: includes/modules/Posts/Posts.php:588
 msgid "Define custom margin for thumbnail"
 msgstr ""
 
-#: includes/modules/Posts/Posts.php:596
+#: includes/modules/Posts/Posts.php:597
 msgid "Thumbnail Padding"
 msgstr ""
 
-#: includes/modules/Posts/Posts.php:597
+#: includes/modules/Posts/Posts.php:598
 msgid "Define custom padding for thumbnail"
 msgstr ""
 
-#: includes/modules/Posts/Posts.php:608 includes/modules/Review/Review.php:442
+#: includes/modules/Posts/Posts.php:609 includes/modules/Review/Review.php:442
 #: includes/modules/ReviewSlider/ReviewSlider.php:616
 #: includes/modules/ReviewSliderChild/ReviewSliderChild.php:381
 msgid "Define custom margin for content wrapper"
 msgstr ""
 
-#: includes/modules/Posts/Posts.php:618 includes/modules/Review/Review.php:455
+#: includes/modules/Posts/Posts.php:619 includes/modules/Review/Review.php:455
 #: includes/modules/ReviewSlider/ReviewSlider.php:626
 #: includes/modules/ReviewSliderChild/ReviewSliderChild.php:394
 msgid "Define custom padding for content wrapper"
 msgstr ""
 
-#: includes/modules/Posts/Posts.php:628
+#: includes/modules/Posts/Posts.php:629
 msgid "Read More Background"
 msgstr ""
 
-#: includes/modules/Posts/Posts.php:629
+#: includes/modules/Posts/Posts.php:630
 msgid "Define read more background color"
 msgstr ""
 
-#: includes/modules/Posts/Posts.php:640
+#: includes/modules/Posts/Posts.php:641
 msgid "Read More Margin"
 msgstr ""
 
-#: includes/modules/Posts/Posts.php:641
+#: includes/modules/Posts/Posts.php:642
 msgid "Define custom margin for read more button"
 msgstr ""
 
-#: includes/modules/Posts/Posts.php:651
+#: includes/modules/Posts/Posts.php:652
 msgid "Read More Padding"
 msgstr ""
 
-#: includes/modules/Posts/Posts.php:652
+#: includes/modules/Posts/Posts.php:653
 msgid "Define custom padding for read more button"
 msgstr ""
 
-#: includes/modules/Posts/Posts.php:665
+#: includes/modules/Posts/Posts.php:666
 msgid "pagination Alignment"
 msgstr ""
 
-#: includes/modules/Posts/Posts.php:695
+#: includes/modules/Posts/Posts.php:696
 msgid "Page Color"
 msgstr ""
 
-#: includes/modules/Posts/Posts.php:696 includes/modules/Posts/Posts.php:709
+#: includes/modules/Posts/Posts.php:697 includes/modules/Posts/Posts.php:710
 msgid "Define page number color"
 msgstr ""
 
-#: includes/modules/Posts/Posts.php:708
+#: includes/modules/Posts/Posts.php:709
 msgid "Active Page Color"
 msgstr ""
 
-#: includes/modules/Posts/Posts.php:721
+#: includes/modules/Posts/Posts.php:722
 msgid "Page Background"
 msgstr ""
 
-#: includes/modules/Posts/Posts.php:722 includes/modules/Posts/Posts.php:735
+#: includes/modules/Posts/Posts.php:723 includes/modules/Posts/Posts.php:736
 msgid "Define page number background color"
 msgstr ""
 
-#: includes/modules/Posts/Posts.php:734
+#: includes/modules/Posts/Posts.php:735
 msgid "Active Page Background"
 msgstr ""
 
-#: includes/modules/Posts/Posts.php:747
+#: includes/modules/Posts/Posts.php:748
 msgid "Pagination Margin"
 msgstr ""
 
-#: includes/modules/Posts/Posts.php:748
+#: includes/modules/Posts/Posts.php:749
 msgid "Define custom margin for Pagination area"
 msgstr ""
 
-#: includes/modules/Posts/Posts.php:760
+#: includes/modules/Posts/Posts.php:761
 msgid "Page Number Padding"
 msgstr ""
 
-#: includes/modules/Posts/Posts.php:761
+#: includes/modules/Posts/Posts.php:762
 msgid "Define custom padding for page number"
 msgstr ""
 
-#: includes/modules/Posts/Posts.php:866 includes/modules/Posts/Posts.php:947
+#: includes/modules/Posts/Posts.php:867 includes/modules/Posts/Posts.php:948
 #: includes/modules/Posts/templates/dina-post.php:164
 msgid "Read More"
 msgstr ""
 
-#: includes/modules/Posts/Posts.php:886
+#: includes/modules/Posts/Posts.php:887
 msgid "Post Item"
 msgstr ""
 
-#: includes/modules/Posts/Posts.php:906
+#: includes/modules/Posts/Posts.php:907
 msgid "Thumbnail"
 msgstr ""
 
-#: includes/modules/Posts/Posts.php:926
+#: includes/modules/Posts/Posts.php:927
 msgid "Category Text"
 msgstr ""
 
-#: includes/modules/Posts/Posts.php:968
+#: includes/modules/Posts/Posts.php:969
 msgid "Page Number"
 msgstr ""
 
-#: includes/modules/Posts/Posts.php:1155
+#: includes/modules/Posts/Posts.php:1156
 msgid "Prev"
 msgstr ""
 
-#: includes/modules/Posts/Posts.php:1156
+#: includes/modules/Posts/Posts.php:1157
 msgid "Next"
 msgstr ""
 

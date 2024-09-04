@@ -95,6 +95,10 @@ Yes! DiviNationKit is absolutely free. There is no hidden charge.
 
 == Changelog ==
 
+= Version 1.0.7 - 02 September 2024 =
+- Fixed: Blog post thumbnail alt text
+- Fixed: Progress bar animation issue
+
 = Version 1.0.6 - 02 September 2024 =
 - Fixed: Blog posts module column issue
 
@@ -145,4 +149,3 @@ Added New Modules, features and fixed issues
 * Official Public release
 
 == Upgrade Notice ==
-There is a Security update, please update "Divinationkit" as soon as possible.

@@ -1,6 +1,7 @@
 <?php
 
 $show_thumbnail    = $args['show_thumbnail'] === 'on' ? true : false;
+$alt_text          = get_post_meta( get_post_thumbnail_id(), '_wp_attachment_image_alt', true );
 $show_author       = $args['show_author'] === 'on' ? true : false;
 $show_date         = $args['show_date'] === 'on' ? true : false;
 $show_categories   = $args['show_categories'] === 'on' ? true : false;
@@ -44,13 +45,14 @@ if ( $show_thumbnail && has_post_thumbnail() ) {
     $thumbnail = sprintf(
         '<div class="dina_posts-thumbnail-wrapper">
             <a href="%1$s" class="dina_posts-thumbnail">
-                <img src="%2$s" alt="">
+                <img src="%2$s" alt="%3$s">
             </a>
-            %3$s
+            %4$s
         </div>',
         esc_url( get_the_permalink() ),
         esc_url( get_the_post_thumbnail_url() ),
-        $category_position === 'image' ? $categories : ''
+        $alt_text,
+        $category_position === 'image' ? $categories : '',
     );
 }
 
